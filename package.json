@@ -1,0 +1,15 @@
+{
+  "name": "css-styleguid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "kss --config kss-config.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "kss": "^3.0.0-beta.23",
+    "michelangelo": "^0.8.0"
+  }
+}
