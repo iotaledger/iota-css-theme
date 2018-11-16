@@ -1,0 +1,31 @@
+.button {
+  padding: 1em 2em;
+  margin: .5em;
+  display: inline-block;
+  font-size: .9em;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #f56476;
+  background-color: #fff;
+  border: 2px solid #f56476;
+  transition: .2s color, .2s background-color, .2s border-color;
+}
+
+.button:hover {
+  color: #fff;
+  background-color: #f56476;
+}
+
+.button:focus {
+  color: #3ddc97;
+  border-color: currentColor;
+}
+
+.button--small {
+  font-size: .5em;
+}
+
+.button--large {
+  font-size: 1.5em;
+}

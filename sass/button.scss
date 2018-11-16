@@ -1,19 +1,17 @@
-// Buttons (title, same as before)
+// Buttons
 //
-// Various button styles. (description, just as before)
+// Various button styles.
 //
-// Markup: (we add the `{{modifier_class}}` to every element that has a modifier)
-// Link Button
+// Markup:
 // <button class="button {{modifier_class}}">Button Element</button>
 // <input class="button {{modifier_class}}" type="button" value="Input Button" />
 //
-// (a new modifiers section)
 // :hover - When user hovers over button.
 // :focus - When button is focused.
 // .button--small - A small button.
 // .button--large - A large button.
 //
-// Styleguide Components.button (organization, just as before)
+// Styleguide Components.button
 
 .button {
   padding: 1em 2em;
