@@ -1,3 +1,3 @@
 # iota-css-theme
 
-[Demo](https://dist-xjcrwydryd.now.sh)
+[Demo](https://dist-gqnqvbuwbn.now.sh/section-components)
