@@ -10,8 +10,6 @@ function ready(callback){
 }
 
 ready(function(){
-  console.log('only when dom is ready')
-
+  console.log('run this script only when dom is ready')
+  // TODO
 });
-
-console.log('always run first')
