@@ -3,19 +3,23 @@
 // Various button styles.
 //
 // Markup:
-// <input type="text" class="input-register {{modifier_class}}"/><button class="input-register__button"><span class="input-register__button-text">Register</span></button>
+// <div class="input-register-container"><input type="text" class="input-register {{modifier_class}}"/><button class="input-register__button"><span class="input-register__button-text">Register</span></button></div>
 //
 // :focus - When Input is focused.
 //
 // Styleguide Components.input-register
 
 $common-hight: 55px;
+
+.input-register-container {
+  display: flex;
+}
+
 .input-register {
   width: 300px;
-  height: $common-hight;
+  height: calc($common-hight - 2px);
   background-color: $white;
   color: $body-copy;
-  padding: 5px;
   padding-left: 16px;
   font-family: NunitoSans;
   font-size: 18px;
