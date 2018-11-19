@@ -1,0 +1,47 @@
+// input-register
+//
+// Various button styles.
+//
+// Markup:
+// <input type="text" class="input-register {{modifier_class}}"/><button class="input-register__button"><span class="input-register__button-text">Register</span></button>
+//
+// :focus - When Input is focused.
+//
+// Styleguide Components.input-register
+
+$common-hight: 55px;
+.input-register {
+  width: 300px;
+  height: $common-hight;
+  background-color: $white;
+  color: $body-copy;
+  padding: 5px;
+  padding-left: 16px;
+  font-family: NunitoSans;
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  border: none;
+  outline: none;
+}
+
+.input-register__button {
+  background-color: $blue-berry;
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+  height: $common-hight;
+  width: $common-hight;
+  border: none;
+  &:after {
+    content: '\f061';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    color: $white;
+  }
+}
+
+.input-register__button-text {
+  display: none;
+}
