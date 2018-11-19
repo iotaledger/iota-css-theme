@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "kss --config kss-config.json && node-sass ./main.scss ./dist/main.css"
+    "build": "kss --config kss-config.json && node-sass ./main.scss ./dist/main.css && http-server -p 3000 ./dist"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "http-server": "^0.11.1",
     "kss": "^3.0.0-beta.23",
     "michelangelo": "^0.8.0",
     "node-sass": "^4.10.0"
