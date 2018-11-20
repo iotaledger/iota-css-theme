@@ -1,12 +1,14 @@
-body {
-  margin: 0;
-  padding: 0;
-}
+:global {
+  body {
+    margin: 0;
+    padding: 0;
+  }
 
-h1, h2, h3, h4, h5, h6, div, span, p, label, input, select, button, section {
-  font-family: "Nunito Sans";
-}
+  h1, h2, h3, h4, h5, h6, div, span, p, label, input, select, button, section {
+    font-family: "Nunito Sans";
+  }
 
-.hidden {
-  display: none;
+  .hidden {
+    display: none;
+  }
 }
