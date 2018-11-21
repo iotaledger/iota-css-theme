@@ -1,8 +1,10 @@
-@import 'sass/palette';
 //for visibility of some elements
 article.kss-section__modifiers {
   background-color: silver;
 }
+@import 'node_modules/normalize.css/normalize';
+@import 'sass/palette';
+@import 'sass/globals';
 @import 'sass/button';
 @import 'sass/input-search';
 @import 'sass/input-register';
