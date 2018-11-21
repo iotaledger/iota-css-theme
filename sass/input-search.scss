@@ -3,15 +3,14 @@
 // Various button styles.
 //
 // Markup:
-// <div class="input-wrapper"><input type="text" class="input-search {{modifier_class}}" placeholder="Search for topics"/><span class="input-search__icon" /></div>
+// <div class="container-test"><input type="text" class="input-search {{modifier_class}}" placeholder="Search for topics"/><span class="input-search__icon" /></div>
 //
 // :focus - When Input is focused.
 //
 // Styleguide Components.input-search
 
-.input-wrapper {
-  display: inline-flex;
-  width: 100%
+.container-test {
+display: inline-flex;
 }
 
 .input-search {
@@ -30,7 +29,6 @@
   outline: none;
   &::placeholder {
     color: $white;
-    font-family: NunitoSans;
     font-size: 20px;
     font-weight: 600;
     font-style: normal;
@@ -43,7 +41,7 @@
   &::after {
     content: "\f002";
     font-family: 'Font Awesome\ 5 Free';
-    color: white;
+    color: $white;
     right: 26px;
     top: 2px;
     position: relative;
