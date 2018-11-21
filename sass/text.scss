@@ -9,8 +9,9 @@
 // .text--large - A large button.
 // .text--x-large - A extra large button.
 // .text--white - A white color text.
-// .text--tealish.text--x-large  - A tealish color and extra large.
-// .text--white.text--x-large  - A tealish color and extra large.
+// .text--primary.text--x-large  - A tealish color and extra large.
+// .text--secondary.text--x-large  - A tealish color and extra large.
+// .text--link - A link color
 //
 // Styleguide Components.text
 
@@ -21,6 +22,7 @@
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
+  color: $dark-grey; //default color
 }
 
 .text--small {
@@ -31,17 +33,21 @@
   font-size: 36px;
   font-weight: bold;
 }
+
 .text--x-large {
   font-size: 40px;
   font-weight: bold;
   line-height: 1.35;
 }
 
-.text--white {
-  color: $white;
-}
-
-.text--tealish {
+.text--primary {
   color: $tealish;
 }
 
+.text--secondary {
+  color: $white;
+}
+
+.text--link {
+  color: $gunmetal-grey;
+}
