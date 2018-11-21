@@ -3,14 +3,15 @@
 // Various button styles.
 //
 // Markup:
-// <div class="container-test"><input type="text" class="input-search {{modifier_class}}" placeholder="Search for topics"/><span class="input-search__icon" /></div>
+// <div class="input-wrapper"><input type="text" class="input-search {{modifier_class}}" placeholder="Search for topics"/><span class="input-search__icon" /></div>
 //
 // :focus - When Input is focused.
 //
 // Styleguide Components.input-search
 
-.container-test {
-display: inline-flex;
+.input-wrapper {
+  display: inline-flex;
+  width: 100%;
 }
 
 .input-search {
