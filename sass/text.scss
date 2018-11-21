@@ -1,0 +1,49 @@
+// Text
+//
+// Various button styles.
+//
+// Markup:
+// <span class="text {{modifier_class}}">Sample Text</span>
+//
+// .text--small - A small text.
+// .text--large - A large button.
+// .text--x-large - A extra large button.
+// .text--white - A white color text.
+// .text--tealish.text--x-large  - A tealish color and extra large.
+// .text--white.text--x-large  - A tealish color and extra large.
+//
+// Styleguide Components.text
+
+.text {
+  font-family: NunitoSans;
+  font-family: NunitoSans;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.text--small {
+  font-size: 15px;
+}
+
+.text--large {
+  font-size: 36px;
+  font-weight: bold;
+}
+.text--x-large {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.35;
+}
+
+.text--white {
+  color: $white;
+}
+
+.text--tealish {
+  color: $tealish;
+}
+
