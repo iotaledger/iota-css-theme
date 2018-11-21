@@ -3,14 +3,19 @@
 // Various button styles.
 //
 // Markup:
-// <input type="text" class="input-search {{modifier_class}}" value="Search for topics"/><i class="fas fa-search input-search__icon"></i>
+// <div class="container-test"><input type="text" class="input-search {{modifier_class}}" placeholder="Search for topics"/><span class="input-search__icon" /></div>
 //
 // :focus - When Input is focused.
 //
 // Styleguide Components.input-search
 
+.container-test {
+display: inline-flex;
+}
+
 .input-search {
-  width: 366px;
+  width: 100%;
+  max-width: 100%;
   background-color: $tealish;
   border-color: $tealish;
   color: $tealish;
@@ -22,16 +27,31 @@
   line-height: normal;
   border: none;
   outline: none;
-
+  &::placeholder {
+    color: $white;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+  }
 }
 
 .input-search__icon {
-  position: relative;
-  left: -30px;
-  color: white;
+  padding: 10px 0px 10px 0px;
+  font-weight: 600;
+  &::after {
+    content: "\f002";
+    font-family: 'Font Awesome\ 5 Free';
+    color: $white;
+    right: 26px;
+    top: 2px;
+    position: relative;
+  }
 }
 
 .input-search:focus {
   color: $white;
   border-bottom: $white 2px solid;
+  & + .input-search__icon:after {
+    content: "\f00d";
+  }
 }
