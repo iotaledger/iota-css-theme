@@ -1,0 +1,75 @@
+// Text
+//
+// Various button styles.
+//
+// Markup:
+// <span class="text {{modifier_class}}">Sample Text</span>
+//
+// .text--level1 - Level 1.
+// .text--level2 - Level 2.
+// .text--level3 - Level 3.
+// .text--level4 - Level 4.
+// .text--level5  - Level 5.
+// .text--level6  - Level 6.
+// .text--primary - primary color
+// .text--secondary - secondary color
+// .text--tertiary - tertiary color
+// .text--primary.text--level3 - .text--primary.text--level3
+// .text--secondary.text--level3 - .text--primary.text--level3
+// .text--tertiary.text--level3 - .text--primary.text--level3
+//
+// Styleguide Components.text
+
+.text {
+  font-style: normal;
+  font-stretch: normal;
+  color: $dark-grey; //default color
+}
+
+.text--level1 {
+  line-height: 1.2;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.text--level2 {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.71;
+}
+
+.text--level3 {
+  font-size: 24px;
+  line-height: 2;
+  font-weight: bold;
+}
+
+.text--level4 {
+  font-size: 20px;
+  line-height: 2.4;
+  font-weight: bold;
+}
+
+.text--level5 {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 2.67;
+}
+
+.text--level6 {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 2.82;
+}
+
+.text--primary {
+  color: $blueberry;
+}
+
+.text--secondary {
+  color: $white;
+}
+
+.text--tertiary {
+  color: $tealish;
+}
