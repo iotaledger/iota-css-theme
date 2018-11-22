@@ -3,22 +3,31 @@
 // Various button styles.
 //
 // Markup:
-// <div class="container-test"><input type="text" class="input-search {{modifier_class}}" placeholder="Search for topics"/><span class="input-search__icon" /></div>
-//
-// :focus - When Input is focused.
+// <div class="input-wrapper"><input type="text" class="input-search {{modifier_class}}" placeholder="Search for topics" /></div>
 //
 // Styleguide Components.input-search
 
-.container-test {
-display: inline-flex;
+.input-wrapper {
+  display: inline-flex;
+  width: 100%;
+  &::before {
+    content: "\f002";
+    font-family: 'Font Awesome\ 5 Free';
+    color: $white;
+    font-weight: 600;
+    position: relative;
+    left: 30px;
+    top: 10px;
+  }
 }
 
 .input-search {
   width: 100%;
+  padding-left: 40px;
   max-width: 100%;
   background-color: $tealish;
   border-color: $tealish;
-  color: $tealish;
+  color: $white;
   padding: 10px;
   font-size: 18px;
   font-weight: 600;
@@ -27,31 +36,12 @@ display: inline-flex;
   line-height: normal;
   border: none;
   outline: none;
+  padding-left: 43px;
   &::placeholder {
     color: $white;
     font-size: 20px;
     font-weight: 600;
     font-style: normal;
   }
-}
-
-.input-search__icon {
-  padding: 10px 0px 10px 0px;
-  font-weight: 600;
-  &::after {
-    content: "\f002";
-    font-family: 'Font Awesome\ 5 Free';
-    color: $white;
-    right: 26px;
-    top: 2px;
-    position: relative;
-  }
-}
-
-.input-search:focus {
-  color: $white;
-  border-bottom: $white 2px solid;
-  & + .input-search__icon:after {
-    content: "\f00d";
-  }
+  border-bottom: 2px solid $white;
 }
