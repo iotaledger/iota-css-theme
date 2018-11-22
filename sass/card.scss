@@ -3,13 +3,12 @@
 // <b>Please ignore the inline CSS its just for fixing the layout!</b>
 //
 // Markup:
-// <div style="margin-bottom: 60px;"><div class="card"><img class="card__image" src="assets/1.png" alt="IOTA intro" /><a href="#" class="card__label text text--level5">What is IOTA?</a></div></div>
+// <div class="card"><img class="card__image" src="assets/1.png" alt="IOTA intro" /><a href="#" class="card__label text text--level5">What is IOTA?</a></div>
 //
 // Styleguide Components.card
 
 .card {
   width: 343px;
-  height: 260px;
   display: flex;
   flex-direction: column;
 }
