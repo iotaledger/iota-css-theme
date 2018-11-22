@@ -5,13 +5,18 @@
 // Markup:
 // <span class="text {{modifier_class}}">Sample Text</span>
 //
-// .text--small - A small text.
-// .text--large - A large button.
-// .text--x-large - A extra large button.
-// .text--white - A white color text.
-// .text--primary.text--x-large  - A tealish color and extra large.
-// .text--secondary.text--x-large  - A tealish color and extra large.
-// .text--link - A link color
+// .text--level1 - Level 1.
+// .text--level2 - Level 2.
+// .text--level3 - Level 3.
+// .text--level4 - Level 4.
+// .text--level5  - Level 5.
+// .text--level6  - Level 6.
+// .text--primary - primary color
+// .text--secondary - secondary color
+// .text--tertiary - tertiary color
+// .text--primary.text--level3 - .text--primary.text--level3
+// .text--secondary.text--level3 - .text--primary.text--level3
+// .text--tertiary.text--level3 - .text--primary.text--level3
 //
 // Styleguide Components.text
 
