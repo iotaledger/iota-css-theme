@@ -16,38 +16,55 @@
 // Styleguide Components.text
 
 .text {
-  font-size: 18px;
-  font-weight: 300;
   font-style: normal;
   font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: $dark-grey; //default color
 }
 
-.text--small {
-  font-size: 15px;
-}
-
-.text--large {
-  font-size: 36px;
+.text--level1 {
+  line-height: 1.2;
   font-weight: bold;
-}
-
-.text--x-large {
   font-size: 40px;
+}
+
+.text--level2 {
   font-weight: bold;
-  line-height: 1.35;
+  font-size: 28px;
+  line-height: 1.71;
+}
+
+.text--level3 {
+  font-size: 24px;
+  line-height: 2;
+  font-weight: bold;
+}
+
+.text--level4 {
+  font-size: 20px;
+  line-height: 2.4;
+  font-weight: bold;
+}
+
+.text--level5 {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 2.67;
+}
+
+.text--level6 {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 2.82;
 }
 
 .text--primary {
-  color: $tealish;
+  color: $blueberry;
 }
 
 .text--secondary {
   color: $white;
 }
 
-.text--link {
-  color: $gunmetal-grey;
+.text--tertiary {
+  color: $tealish;
 }
