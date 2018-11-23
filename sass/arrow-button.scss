@@ -14,30 +14,25 @@
   width: 35px;
   height: 35px;
   background-color: $white;
+    &::before {
+      font-family: 'Font Awesome\ 5 Free';
+      color: $tealish;
+      font-weight: 600;
+      position: relative;
+      left: 14px;
+      top: 4px;
+      font-size: 24px;
+    }
 }
 
 .arrow-button--left {
   &::before {
     content: "\f104";
-    font-family: 'Font Awesome\ 5 Free';
-    color: $tealish;
-    font-weight: 600;
-    position: relative;
-    left: 14px;
-    top: 4px;
-    font-size: 24px;
   }
 }
 
 .arrow-button--right {
   &::before {
     content: "\f105";
-    font-family: 'Font Awesome\ 5 Free';
-    color: $tealish;
-    font-weight: 600;
-    position: relative;
-    left: 14px;
-    top: 4px;
-    font-size: 24px;
   }
 }
