@@ -1,0 +1,65 @@
+// input-search-sticky
+//
+// Input Search for sticky header, using javascript you can apply any time the ' .input-sticky-wrapper--expanded' modifier class to make it expanded with animation
+//
+// Markup:
+// <div class="input-sticky-wrapper {{modifier_class}}"><input type="text" class="input-search-sticky" placeholder="Search for topics" /></div>
+//
+// .input-sticky-wrapper--expanded   - expanded input
+//
+// Styleguide Components.input-search-sticky
+
+.input-sticky-wrapper {
+  display: inline-flex;
+  transition: all 0.7s ease 0s;
+  width: 20px;
+  &::before {
+    content: "\f002";
+    font-family: 'Font Awesome\ 5 Free';
+    color: $white;
+    font-weight: 600;
+    position: relative;
+    left: 30px;
+    top: 10px;
+  }
+}
+
+ .input-sticky-wrapper--expanded {
+   width: 100%;
+   .input-search-sticky {
+     border-bottom: 2px solid $white;
+     padding-right: 40px;
+   }
+   &::after {
+     content: "\f00d";
+     font-family: 'Font Awesome\ 5 Free';
+     color: $white;
+     font-weight: 600;
+     position: relative;
+     right: 30px;
+     top: 10px;
+   }
+ }
+
+.input-search-sticky {
+  width: 100%;
+  padding: 10px 0;
+  max-width: 100%;
+  background-color: $tealish;
+  border-color: $tealish;
+  color: $white;
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  border: none;
+  outline: none;
+  padding-left: 43px;
+  &::placeholder {
+    color: $white;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+  }
+}
