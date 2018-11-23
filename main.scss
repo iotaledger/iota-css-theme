@@ -1,6 +1,6 @@
 //for visibility of some elements
 article.kss-section__modifiers {
-  background-color: #e6c9a8d4;
+  background-color: silver;
 }
 @import 'node_modules/normalize.css/normalize';
 @import 'sass/palette';
@@ -9,6 +9,6 @@ article.kss-section__modifiers {
 @import 'sass/input-search';
 @import 'sass/input-search-sticky';
 @import 'sass/input-register';
-@import 'sass/text.scss';
+@import 'sass/text';
 @import 'sass/top-header';
-@import 'sass/card.scss';
+@import 'sass/card';
