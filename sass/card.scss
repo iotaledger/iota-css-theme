@@ -1,0 +1,25 @@
+// card
+//
+// <b>Please ignore the inline CSS its just for fixing the layout!</b>
+//
+// Markup:
+// <div class="card"><img class="card__image" src="assets/1.png" alt="IOTA intro" /><a href="#" class="card__label text text--level5">What is IOTA?</a></div>
+//
+// Styleguide Components.card
+
+.card {
+  width: 343px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__image {
+  width: 343px;
+  height: 260px;
+}
+
+.card__label {
+  padding: 22px;
+  background-color: $white;
+  line-height: 1;
+}
