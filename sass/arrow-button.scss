@@ -1,0 +1,43 @@
+// arrow-button
+//
+// Various button styles.
+//
+// Markup:
+// <div class="arrow-button {{modifier_class}}"></div>
+//
+// .arrow-button--left - Arrow left.
+// .arrow-button--right - Arrow right.
+//
+// Styleguide Components.arrow-button
+
+.arrow-button {
+  width: 35px;
+  height: 35px;
+  background-color: $white;
+}
+
+.arrow-button--left {
+  &::before {
+    content: "\f104";
+    font-family: 'Font Awesome\ 5 Free';
+    color: $tealish;
+    font-weight: 600;
+    position: relative;
+    left: 14px;
+    top: 4px;
+    font-size: 24px;
+  }
+}
+
+.arrow-button--right {
+  &::before {
+    content: "\f105";
+    font-family: 'Font Awesome\ 5 Free';
+    color: $tealish;
+    font-weight: 600;
+    position: relative;
+    left: 14px;
+    top: 4px;
+    font-size: 24px;
+  }
+}
