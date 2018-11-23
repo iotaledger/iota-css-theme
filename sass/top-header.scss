@@ -1,0 +1,23 @@
+// top-header
+//
+// Various button styles.
+//
+// Markup:
+// <ul class="top-header"><li class="top-header__item">IOTA.ORG</li><li class="top-header__item">NEWS</li><li class="top-header__item">WALLET</li><li class="top-header__item">QUBIC</li><li class="top-header__item">ECOSYSTEM</li></ul>
+//
+// Styleguide Components.input-search
+
+.top-header {
+  display:  flex;
+  justify-content: flex-end;
+  padding: 0 26px;
+  opacity: 0.1;
+  mix-blend-mode: multiply;
+  background: linear-gradient(to left, #5a5a5a, rgba(255, 255, 255, 0));
+  list-style-type: none;
+}
+
+.top-header__item {
+  color: $white;
+  padding: 0 15px;
+}
