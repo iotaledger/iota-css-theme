@@ -9,6 +9,7 @@
 // Styleguide Components.input-register
 
 $common-hight: 55px;
+$common-desktop-width: 155px;
 
 .input-register-container {
   display: flex;
@@ -37,6 +38,8 @@ $common-hight: 55px;
   height: $common-hight;
   width: $common-hight;
   border: none;
+  font-size: 17px;
+  font-weight: bold;
   &:after {
     content: '\f061';
     font-family: "Font Awesome 5 Free";
@@ -46,5 +49,18 @@ $common-hight: 55px;
 }
 
 .input-register__button-text {
+  color: $white;
   display: none;
+}
+
+@include desktop {
+  .input-register__button {
+    display: flex;
+    justify-content: space-between;
+    width: $common-desktop-width;
+    padding: 15px 30px;
+  }
+  .input-register__button-text {
+    display: inline;
+  }
 }
