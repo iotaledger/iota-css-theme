@@ -1,15 +1,10 @@
 // Card
 //
-// <b>Please ignore the inline CSS its just for fixing the layout!</b>
+// Home page card styles.
 //
-// Markup:
-// <div class="cards__wrapper">
-// <div class="card"><a href="#" class="link card__link"><img class="image card__image" src="assets/1.png" alt="IOTA intro" /><div class="card__label__wrapper"><span class="text text--level5 card__label">What is IOTA?</span></div></a></div>
-// <div class="card"><a href="#" class="link card__link"><img class="image card__image" src="assets/2.png" alt="IOTA intro" /><div class="card__label__wrapper"><span class="text text--level5 card__label">Getting Started</span></div></a></div>
-// <div class="card"><a href="#" class="link card__link"><img class="image card__image" src="assets/3.png" alt="IOTA intro" /><div class="card__label__wrapper"><span class="text text--level5 card__label">Next Steps</span></div></a></div>
-// </div>
+// Markup: html/cards.html
 //
-// Styleguide Components.card
+// Styleguide Components.Card
 
 .cards__wrapper {
   width: 100%;
@@ -28,6 +23,15 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  text-decoration: none;
+
+  & .text {
+    color: $gunmetal-grey;
+  }
+
+  &:visited {
+    color: $gunmetal-grey;
+  }
 }
 
 .card__image {
@@ -35,7 +39,7 @@
   height: 260px;
 }
 
-.card__label__wrapper {
+.card__wrapper {
   width: 100%;
   display: flex;
 }

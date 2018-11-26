@@ -9,13 +9,4 @@
 
 .link {
   cursor: pointer;
-  text-decoration: none;
-
-  & .text {
-    color: $gunmetal-grey;
-  }
-
-  &:visited {
-    color: $gunmetal-grey;
-  }
 }
