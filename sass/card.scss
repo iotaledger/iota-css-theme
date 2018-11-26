@@ -1,25 +1,47 @@
-// card
+// Card
 //
 // <b>Please ignore the inline CSS its just for fixing the layout!</b>
 //
 // Markup:
-// <div class="card"><img class="card__image" src="assets/1.png" alt="IOTA intro" /><a href="#" class="card__label text text--level5">What is IOTA?</a></div>
+// <div class="cards__wrapper">
+// <div class="card"><a href="#" class="link card__link"><img class="image card__image" src="assets/1.png" alt="IOTA intro" /><div class="card__label__wrapper"><span class="text text--level5 card__label">What is IOTA?</span></div></a></div>
+// <div class="card"><a href="#" class="link card__link"><img class="image card__image" src="assets/2.png" alt="IOTA intro" /><div class="card__label__wrapper"><span class="text text--level5 card__label">Getting Started</span></div></a></div>
+// <div class="card"><a href="#" class="link card__link"><img class="image card__image" src="assets/3.png" alt="IOTA intro" /><div class="card__label__wrapper"><span class="text text--level5 card__label">Next Steps</span></div></a></div>
+// </div>
 //
 // Styleguide Components.card
 
+.cards__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .card {
-  width: 343px;
+  width: 340px;
+}
+
+.card__link {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 
 .card__image {
-  width: 343px;
+  width: 340px;
   height: 260px;
 }
 
+.card__label__wrapper {
+  width: 100%;
+  display: flex;
+}
+
 .card__label {
-  padding: 22px;
+  padding: 24px;
+  width: 100%;
+  margin: 0;
   background-color: $white;
   line-height: 1;
 }

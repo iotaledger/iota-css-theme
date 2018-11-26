@@ -1,0 +1,21 @@
+// Link
+//
+// <b>Please ignore the inline CSS its just for fixing the layout!</b>
+//
+// Markup:
+// <a href="#" class="link"><span class="text text--level4">What is IOTA?</span></a>
+//
+// Styleguide Components.link
+
+.link {
+  cursor: pointer;
+  text-decoration: none;
+
+  & .text {
+    color: $gunmetal-grey;
+  }
+
+  &:visited {
+    color: $gunmetal-grey;
+  }
+}
