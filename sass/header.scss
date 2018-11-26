@@ -7,12 +7,20 @@
 // Styleguide Components.Header
 
 .header {
-  height: 120px;
+  height: 100%;
   padding: 32px;
   background-color: $tealish;
+  display: block;
+}
+
+.header__head {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.header__body {
+  margin-top: 87px;
 }
 
 .header__brand {
@@ -22,6 +30,7 @@
 
 .header__search {
   height: 42px;
+  margin-top: 80px;
 }
 
 .header__icon {
