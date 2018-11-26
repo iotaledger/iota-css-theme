@@ -3,6 +3,7 @@ article.kss-section__modifiers {
   background-color: silver;
 }
 @import 'node_modules/normalize.css/normalize';
+@import 'sass/mediaQueries';
 @import 'sass/palette';
 @import 'sass/globals';
 @import 'sass/button';
