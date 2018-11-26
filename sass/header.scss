@@ -1,0 +1,38 @@
+// Header
+//
+// This is the home page header.
+//
+// Markup: html/header.html
+//
+// Styleguide Components.Header
+
+.header {
+  height: 100%;
+  padding: 32px;
+  background-color: $tealish;
+  display: block;
+}
+
+.header__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__body {
+  margin-top: 87px;
+}
+
+.header__brand {
+  width: 167px;
+  height: 56px;
+}
+
+.header__search {
+  height: 42px;
+  margin-top: 80px;
+}
+
+.header__icon {
+  color: $white;
+}
