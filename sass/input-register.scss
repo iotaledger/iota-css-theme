@@ -8,7 +8,8 @@
 //
 // Styleguide Components.input-register
 
-$common-hight: 55px;
+$common-height: 55px;
+$common-desktop-width: 155px;
 
 .input-register-container {
   display: flex;
@@ -16,7 +17,7 @@ $common-hight: 55px;
 
 .input-register {
   width: 300px;
-  height: calc($common-hight - 2px);
+  height: calc($common-height - 2px);
   background-color: $white;
   color: $body-copy;
   padding-left: 16px;
@@ -34,9 +35,11 @@ $common-hight: 55px;
   background-color: $blueberry;
   border-bottom-right-radius: 6px;
   border-top-right-radius: 6px;
-  height: $common-hight;
-  width: $common-hight;
+  height: $common-height;
+  width: $common-height;
   border: none;
+  font-size: 17px;
+  font-weight: bold;
   &:after {
     content: '\f061';
     font-family: "Font Awesome 5 Free";
@@ -46,5 +49,18 @@ $common-hight: 55px;
 }
 
 .input-register__button-text {
+  color: $white;
   display: none;
+}
+
+@include desktop {
+  .input-register__button {
+    display: flex;
+    justify-content: space-between;
+    width: $common-desktop-width;
+    padding: 15px 30px;
+  }
+  .input-register__button-text {
+    display: inline;
+  }
 }
