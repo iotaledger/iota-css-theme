@@ -7,23 +7,20 @@
 // Styleguide Components.Card
 
 .cards__wrapper {
-  width: 100%;
+  width: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
   background-color: $sand-grey;
-  padding: 70px 90px;
-}
-
-.card {
-  width: 340px;
+  padding: 70px 70px 20px;
 }
 
 .card__link {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  text-decoration: none;
 
   & .text {
     color: $gunmetal-grey;
@@ -32,11 +29,6 @@
   &:visited {
     color: $gunmetal-grey;
   }
-}
-
-.card__image {
-  width: 340px;
-  height: 260px;
 }
 
 .card__wrapper {
@@ -51,4 +43,29 @@
   background-color: $white;
   line-height: 1;
   text-align: left;
+}
+
+.card {
+  width: 343px;
+  margin-bottom: 50px;
+}
+
+.card__image {
+  width: 343px;
+  height: 260px;
+}
+
+@include desktop {
+  .card__link {
+    text-decoration: none;
+  }
+
+  .card {
+    width: 340px;
+  }
+
+  .card__image {
+    width: 340px;
+    height: 255px;
+  }
 }
