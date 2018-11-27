@@ -7,16 +7,30 @@
 // Styleguide Components.top-header
 
 .top-header {
-  display:  flex;
+  display: flex;
   justify-content: flex-end;
   padding: 0 26px;
+  height: 50px;
+}
+
+.top-header__background {
   opacity: 0.1;
   mix-blend-mode: multiply;
   background: linear-gradient(to left, $brown-dark, rgba(255, 255, 255, 0));
   list-style-type: none;
+  width: 550px;
+  position: relative;
+  left: 532px;
+  top: 0;
+}
+
+.top-header__items {
+  display:  flex;
+  align-items: center;
 }
 
 .top-header__item {
   color: $white;
   padding: 0 15px;
+  font-weight: 600;
 }
