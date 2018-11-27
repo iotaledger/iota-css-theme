@@ -1,0 +1,96 @@
+// Project Topics
+//
+// <b>Please ignore the inline CSS its just for fixing the layout!</b>
+//
+// Markup: html/project-topics.html
+//
+// Styleguide Components.ProjectTopics
+
+.project__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-bottom: 1px solid $brown-grey;
+  padding: 60px 0 15px;
+}
+
+.project__heading {
+  color: $tealish;
+  margin: 0;
+}
+
+.project-topics {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 35px;
+}
+
+.project-topic__link {
+  width: 100%;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-decoration: none;
+
+  & .text {
+    color: $gunmetal-grey;
+  }
+   &:visited {
+    color: $gunmetal-grey;
+  }
+}
+
+.project-topic__heading {
+  line-height: 2;
+}
+
+.project-topic__subheading {
+  text-align: left;
+  font-weight: lighter;
+  line-height: 2;
+}
+
+@include tablet {
+  .project-topic__link {
+    width: calc(50% + 25px);
+    padding-bottom: 50px;
+    padding-right: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &:nth-child(2n) {
+      padding-right: 0;
+      width: calc(50% - 25px);
+    }
+  }
+}
+
+@include desktop {
+  .project-topic__link {
+    width: calc(33% + 25px);
+    padding-bottom: 50px;
+    padding-right: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &:nth-child(3n) {
+      padding-right: 0;
+      width: calc(33% - 50px);
+    }
+  }
+}
