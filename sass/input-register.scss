@@ -8,7 +8,7 @@
 //
 // Styleguide Components.input-register
 
-$common-hight: 55px;
+$common-height: 55px;
 $common-desktop-width: 155px;
 
 .input-register-container {
@@ -17,7 +17,7 @@ $common-desktop-width: 155px;
 
 .input-register {
   width: 300px;
-  height: calc($common-hight - 2px);
+  height: calc($common-height - 2px);
   background-color: $white;
   color: $body-copy;
   padding-left: 16px;
@@ -35,8 +35,8 @@ $common-desktop-width: 155px;
   background-color: $blueberry;
   border-bottom-right-radius: 6px;
   border-top-right-radius: 6px;
-  height: $common-hight;
-  width: $common-hight;
+  height: $common-height;
+  width: $common-height;
   border: none;
   font-size: 17px;
   font-weight: bold;
