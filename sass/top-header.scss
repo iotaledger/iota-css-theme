@@ -7,9 +7,6 @@
 // Styleguide Components.top-header
 
 .top-header {
-  display: flex;
-  justify-content: flex-end;
-  padding: 0 26px;
   height: 50px;
 }
 
@@ -18,15 +15,16 @@
   mix-blend-mode: multiply;
   background: linear-gradient(to left, $brown-dark, rgba(255, 255, 255, 0));
   list-style-type: none;
-  width: 550px;
-  position: relative;
-  left: 532px;
-  top: 0;
+  width: 100%;
+  height: 100%
 }
 
 .top-header__items {
   display:  flex;
   align-items: center;
+  position: absolute;
+  top: 40%;
+  right: 18px;
 }
 
 .top-header__item {
