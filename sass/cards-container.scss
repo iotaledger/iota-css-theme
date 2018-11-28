@@ -1,0 +1,32 @@
+// cards-container
+//
+// Various button styles.
+//
+// Markup: html/cards-container.html
+//
+// Styleguide Components.cards-container
+
+.cards-container {
+  background-color: $sand-grey;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .card {
+    margin-bottom: 20px;
+  }
+}
+
+.cards-container__caption {
+  width: 100%;
+  margin: 40px 20px;
+}
+
+.cards-container__text {
+  color: $tealish;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@include tablet {
+
+}
