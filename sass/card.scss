@@ -2,52 +2,14 @@
 //
 // Home page card styles.
 //
-// Markup: html/cards.html
+// Markup: html/card.html
 //
 // Styleguide Components.Card
 
-.cards__wrapper {
-  width: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-content: space-between;
-  flex-wrap: wrap;
-  background-color: $sand-grey;
-  padding: 70px 70px 20px;
-}
-
-.card__link {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
-  & .text {
-    color: $gunmetal-grey;
-  }
-
-  &:visited {
-    color: $gunmetal-grey;
-  }
-}
-
-.card__wrapper {
-  width: 100%;
-  display: flex;
-}
-
-.card__label {
-  padding: 5px 24px;
-  width: 100%;
-  margin: 0;
-  background-color: $white;
-  line-height: 1;
-  text-align: left;
-}
-
 .card {
   width: 343px;
-  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
 }
 
 .card__image {
@@ -55,17 +17,17 @@
   height: 260px;
 }
 
+.card__label {
+  padding: 22px;
+  background-color: $white;
+  line-height: 1;
+}
+
 @include desktop {
-  .card__link {
-    text-decoration: none;
-  }
-
-  .card {
-    width: 340px;
-  }
-
   .card__image {
     width: 340px;
-    height: 255px;
+  }
+  .card__label {
+    text-decoration: none;
   }
 }
