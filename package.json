@@ -6,8 +6,7 @@
   "scripts": {
     "serve": "http-server -p 3000 ./dist",
     "build": "kss --config kss-config.json && node-sass ./main.scss ./dist/main.css && copyfiles script.js assets/*.* dist",
-    "build-serve": "run-s build serve",
-    "postinstall": "npm run build"
+    "build-serve": "run-s build serve"
   },
   "author": "",
   "license": "ISC",
