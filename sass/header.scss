@@ -8,11 +8,13 @@
 
 .header {
   height: 100%;
-  padding: 32px;
+
   background-color: $tealish;
   display: block;
 }
-
+.header__wrapper {
+  padding: 32px;
+}
 .header__head {
   display: flex;
   justify-content: space-between;
