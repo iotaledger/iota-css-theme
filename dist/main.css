@@ -650,3 +650,20 @@ h6, .text--level6 {
     font-size: 15px;
     padding: 4px 0;
     font-weight: 200; }
+
+.cards-container {
+  background-color: #f3f2f1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .cards-container .card {
+    margin-bottom: 20px; }
+
+.cards-container__caption {
+  width: 100%;
+  margin: 40px 20px; }
+
+.cards-container__text {
+  color: #20a49d;
+  font-size: 24px;
+  font-weight: bold; }
