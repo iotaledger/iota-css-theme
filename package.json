@@ -2,7 +2,7 @@
   "name": "css-styleguid",
   "version": "1.0.0",
   "description": "",
-  "main": "main.scss",
+  "main": "dist/main.css",
   "scripts": {
     "serve": "http-server -p 3000 ./dist",
     "build": "kss --config kss-config.json && node-sass ./main.scss ./dist/main.css && copyfiles script.js assets/*.* dist",
