@@ -1,0 +1,20 @@
+options:
+  merge-default-rules: true
+  formatter: stylish
+files:
+  include: sass/**/*.s+(a|c)ss
+rules:
+  class-name-format:
+    - 1
+    -
+      convention: hyphenatedbem
+  hex-length:
+    - 1
+    - 
+      style: long
+  leading-zero: 0
+  no-color-literals: 0
+  property-sort-order:
+    - 1
+    -
+      order: smacss
