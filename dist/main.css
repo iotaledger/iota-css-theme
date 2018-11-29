@@ -342,6 +342,10 @@ h1, h2, h3, h4, h5, h6, div, span, p, label, input, select, button, section {
 .button--large {
   font-size: 1.5em; }
 
+.link {
+  cursor: pointer;
+  color: #603f98; }
+
 .input-wrapper {
   display: inline-flex;
   width: 100%; }
@@ -607,6 +611,12 @@ h6, .text--level6 {
   background-color: #ffffff;
   line-height: 1; }
 
+@media (min-width: 1024px) {
+  .card__image {
+    width: 340px; }
+  .card__label {
+    text-decoration: none; } }
+
 .side-menu {
   background-color: #3f3f3f;
   height: 100%;
@@ -667,3 +677,13 @@ h6, .text--level6 {
   color: #20a49d;
   font-size: 24px;
   font-weight: bold; }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .card {
+    margin-right: 10px;
+    margin-left: 10px; } }
+
+@media (min-width: 1024px) {
+  .card {
+    margin-right: 10px;
+    margin-left: 10px; } }
