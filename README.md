@@ -31,3 +31,13 @@ If you are developing the styles you can serve the guide with watchers on the co
 ```shell
 npm run watch
 ```
+
+## Linting
+
+The sass linting is run as part of the build process but you can run it by itself using:
+
+```shell
+npm run build-lint
+```
+
+If you use VSCode the linting also integrates with this [VSCode Plugin](https://marketplace.visualstudio.com/items?itemName=glen-84.sass-lint) with no extra configuration needed.
