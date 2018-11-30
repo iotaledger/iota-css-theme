@@ -11,7 +11,7 @@ import "css-styleguide";
 
 ## Documentation
 
-Use the [Styleguide](https://dist-rfxcerjmcx.now.sh)
+Use the [Styleguide](https://dist-tvtsdyrjmp.now.sh)
 
 ## Developement 
 
