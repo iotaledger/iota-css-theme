@@ -1,5 +1,5 @@
 {
-  "name": "css-styleguid",
+  "name": "css-styleguide",
   "version": "1.0.0",
   "description": "",
   "main": "dist/main.css",
@@ -8,7 +8,7 @@
     "build": "kss --config kss-config.json && node-sass ./main.scss ./dist/main.css && copyfiles script.js assets/*.* dist",
     "build-serve": "run-s build serve"
   },
-  "author": "",
+  "author": "IOTA Foundation",
   "license": "ISC",
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.5.0",
