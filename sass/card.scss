@@ -6,38 +6,11 @@
 //
 // Styleguide Components.Card
 
-
-.card__link {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
-  & .text {
-    color: $gunmetal-grey;
-  }
-
-  &:visited {
-    color: $gunmetal-grey;
-  }
-}
-
-.card__wrapper {
-  width: 100%;
-  display: flex;
-}
-
-.card__label {
-  padding: 24px;
-  width: 100%;
-  margin: 0;
-  background-color: $white;
-  line-height: 1;
-  text-align: left;
-}
-
 .card {
   width: 343px;
-  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .card__image {
@@ -45,17 +18,28 @@
   height: 260px;
 }
 
+.card__label {
+  padding: 22px;
+  background-color: $white;
+  line-height: 1;
+}
+
 @include desktop {
-  .card__link {
-    text-decoration: none;
-  }
-
   .card {
-    width: 340px;
+    margin-right: 10px;
+    margin-left: 10px;
   }
-
   .card__image {
     width: 340px;
-    height: 255px;
+  }
+  .card__label {
+    text-decoration: none;
+  }
+}
+
+@include tablet {
+  .card {
+    margin-right: 10px;
+    margin-left: 10px;
   }
 }
