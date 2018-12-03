@@ -1,0 +1,36 @@
+// floating-menu
+//
+// Various arrow button styles.
+//
+// Markup: html/floating-menu.html
+//
+// Styleguide Components.Floating-menu
+
+.floating-menu {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.floating-menu__item {
+  font-size: 17px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.35;
+}
+
+.floating-menu__item--selected {
+  font-size: 26px;
+  font-weight: bold;
+  color: $tealish;
+  //padding-left: 20px;
+//  border-left: 4px solid $tealish;
+  &:before {
+    content: " ";
+    border-left: 4px solid $tealish;
+    position: absolute;
+    left: -6px;
+    height: 58px;
+  }
+}
