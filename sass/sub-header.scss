@@ -1,0 +1,46 @@
+// sub-header
+//
+// Various arrow button styles.
+//
+// Markup: html/sub-header.html
+//
+// Styleguide Components.Sub-header
+
+.sub-header {
+  padding: 16px;
+  background-color: $jade;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $white;
+  height: 120px;
+  justify-content: space-around;
+}
+.sub-header__title {
+  font-size: 28px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+}
+.sub-header__bottom-title {
+  display: flex;
+  align-items: center;
+}
+.sub-header__body {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+@include desktop {
+  .sub-header__title {
+    display: none;
+  }
+  .sub-header__bottom-title {
+    font-size: 34px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.59;
+  }
+}
