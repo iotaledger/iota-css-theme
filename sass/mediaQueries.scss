@@ -12,3 +12,9 @@ $desktop-width: 1024px;
     @content;
   }
 }
+
+@mixin tabletUp {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
