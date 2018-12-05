@@ -21,6 +21,10 @@
   padding: 60px 0 15px;
 }
 
+.project:last-child {
+  border-bottom: none;
+}
+
 .project__heading {
   color: $tealish;
   margin: 0;
@@ -92,5 +96,15 @@
       padding-right: 0;
       width: calc(33% - 50px);
     }
+  }
+}
+
+@include tabletUp {
+  .project__wrapper {
+    margin-bottom: 100px;
+  }
+
+  .project:last-child {
+    border-bottom: 1px solid $brown-grey;
   }
 }
