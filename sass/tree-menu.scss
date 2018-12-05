@@ -1,0 +1,42 @@
+// Tree-menu
+//
+// Home page card styles.
+//
+// Markup: html/tree-menu.html
+//
+// Styleguide Components.Tree-menu
+
+.tree-menu {
+    padding: 0 20px;
+}
+
+.tree-menu__section-title {
+  font-size: 17px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.06;
+  color: $gunmetal-grey;
+}
+
+.tree-menu__section-title--selected {
+  color: $tealish;
+  border-left: 4px solid $tealish;
+  margin-left: -20px;
+  padding-left: 20px;
+}
+
+.tree-menu__section {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.tree-menu__section-item {
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.9;
+  letter-spacing: normal;
+  color: $body-copy;
+}
