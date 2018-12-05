@@ -1,0 +1,33 @@
+// Dropdown
+//
+// Dropdown styles.
+//
+// Markup: html/dropdown.html
+//
+// Styleguide Components.Dropdown
+
+.select {
+  max-width: 343px;
+  width: 100%;
+  height: 55px;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.1);
+  background-image: url(../assets/Dropdown.svg);
+  background-position: right 20px center, right bottom, right bottom, right bottom;
+  background-repeat: no-repeat;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: inherit;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  outline: none;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -webkit-padding-end: 20px;
+  -moz-padding-end: 20px;
+  -webkit-padding-start: 20px;
+  -moz-padding-start: 20px;
+}
