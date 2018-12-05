@@ -441,7 +441,8 @@ h1, h2, h3, h4, h5, h6, div, span, p, label, input, select, button, section {
   align-items: center; }
 
 .header__body {
-  margin-top: 87px; }
+  max-width: 1420px;
+  margin: 87px auto 50px auto; }
 
 .header__brand {
   width: 167px;

@@ -22,7 +22,8 @@
 }
 
 .header__body {
-  margin-top: 87px;
+  max-width: $max-width;
+  margin: 87px auto 50px auto;
 }
 
 .header__brand {
