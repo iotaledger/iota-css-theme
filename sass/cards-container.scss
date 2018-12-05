@@ -6,20 +6,14 @@
 //
 // Styleguide Components.Cards-container
 
+
 .cards-container {
-  background-color: $sand-grey;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.cards-container__caption {
   width: 100%;
-  margin: 40px 20px;
-}
-
-.cards-container__text {
-  color: $tealish;
-  font-size: 24px;
-  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+  background-color: $sand-grey;
+  padding: 70px 0 20px;
 }
