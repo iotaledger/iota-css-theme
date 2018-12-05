@@ -811,3 +811,44 @@ h6, .text--level6 {
     position: absolute;
     left: -6px;
     height: 58px; }
+
+.navigator {
+  height: 119px;
+  background-color: #ffffff;
+  display: flex;
+  font-size: 18px; }
+
+.navigator__back {
+  border: 1px #f3f2f1 solid;
+  display: block;
+  width: 100%;
+  padding: 18px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.navigator__next {
+  border: 1px #f3f2f1 solid;
+  display: block;
+  width: 100%;
+  padding: 18px 16px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.navigator__label {
+  color: #20a49d; }
+
+.navigator__title {
+  color: #696f76; }
+
+@media (min-width: 1024px) {
+  .navigator {
+    font-size: 24px;
+    height: 152px;
+    font-weight: bold; }
+  .navigator__next {
+    padding-right: 90px; }
+  .navigator__back {
+    padding-left: 90px; } }
