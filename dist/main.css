@@ -462,6 +462,103 @@ h1, h2, h3, h4, h5, h6, div, span, p, label, input, select, button, section {
     display: flex;
     justify-content: space-between; } }
 
+footer {
+  background-image: linear-gradient(to top, #3e3e3e, #2e2e2e);
+  display: flex;
+  justify-content: center; }
+
+.footer__wrapper {
+  max-width: 1420px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0; }
+
+.footer-bottom-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 50px; }
+
+.footer-top-content {
+  display: none; }
+
+.footer-top-content__wrapper {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  padding-right: 30px;
+  padding-left: 30px; }
+
+.footer-top-content__wrapper h3 {
+  line-height: 1.75;
+  margin: 0; }
+
+.footer-top-content__dropdown-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px; }
+
+.footer-top-content__dropdown-wrapper h3 {
+  margin-top: 0; }
+
+.footer-top-content__wrapper h3 .text,
+.footer-top-content__dropdown-wrapper h3 .text {
+  line-height: 1.75;
+  color: #20a49d; }
+
+.footer-top-content__link {
+  text-decoration: none; }
+
+.footer-top-content__link:hover {
+  text-decoration: underline; }
+
+.footer-top-content__item.text {
+  font-weight: 300;
+  line-height: 2.25;
+  color: #ffffff; }
+
+.footer-bottom-content__wrapper, .footer-bottom-content__copyright {
+  min-width: 250px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-right: 30px;
+  padding-left: 30px; }
+
+.footer-bottom-content__item.text {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 2;
+  color: #8e8e8e; }
+
+.footer-bottom-content__copyright {
+  display: none; }
+
+@media (min-width: 768px) {
+  .footer__wrapper {
+    margin-top: 95px; }
+  .footer-top-content, .footer-bottom-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 95px; }
+  .footer-top-content__dropdown-wrapper {
+    display: none; }
+  .footer-top-content__dropdown-wrapper h3 {
+    margin-top: unset; } }
+
+@media (max-width: 514px) {
+  .footer-bottom-content__copyright {
+    display: block; }
+  .footer-bottom-content__wrapper.legal {
+    margin: 45px 0; }
+  .footer-bottom-content__wrapper.legal .footer-bottom-content__item.text:first-child {
+    display: none; } }
+
 .input-sticky-wrapper {
   display: inline-flex;
   transition: all 0.7s ease 0s;
