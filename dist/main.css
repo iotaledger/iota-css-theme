@@ -974,3 +974,33 @@ h6, .text--level6 {
     padding-right: 90px; }
   .navigator__back {
     padding-left: 90px; } }
+
+.tree-menu {
+  padding: 0 20px; }
+
+.tree-menu__section-title {
+  font-size: 17px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.06;
+  color: #3f3f3f; }
+
+.tree-menu__section-title--selected {
+  color: #20a49d;
+  border-left: 4px solid #20a49d;
+  margin-left: -20px;
+  padding-left: 20px; }
+
+.tree-menu__section {
+  list-style-type: none;
+  padding-left: 20px; }
+
+.tree-menu__section-item {
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.9;
+  letter-spacing: normal;
+  color: #696f76; }
