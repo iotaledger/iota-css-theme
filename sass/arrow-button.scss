@@ -14,7 +14,7 @@
   height: 35px;
   background-color: $white;
     &::before {
-      font-family: 'Font Awesome\ 5 Free';
+      font-family: $font-family-icons;
       color: $tealish;
       font-weight: 600;
       position: relative;

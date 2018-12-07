@@ -2,10 +2,7 @@ $max-width : 1420px;
 
 body {
   padding: 0;
-}
-
-h1, h2, h3, h4, h5, h6, div, span, p, label, input, select, button, section {
-  font-family: "Nunito Sans",sans-serif!important;
+  font-family: $font-family-sans-serif;
 }
 
 .hidden {

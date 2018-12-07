@@ -14,7 +14,7 @@
   width: 20px;
   &::before {
     content: "\f002";
-    font-family: 'Font Awesome\ 5 Free';
+    font-family: $font-family-icons;
     color: $white;
     font-weight: 600;
     position: relative;
@@ -31,7 +31,7 @@
    }
    &::after {
      content: "\f00d";
-     font-family: 'Font Awesome\ 5 Free';
+     font-family: $font-family-icons;
      color: $white;
      font-weight: 600;
      position: relative;

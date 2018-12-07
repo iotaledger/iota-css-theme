@@ -42,7 +42,7 @@ $common-desktop-width: 155px;
   font-weight: bold;
   &:after {
     content: '\f061';
-    font-family: "Font Awesome 5 Free";
+    font-family: $font-family-icons;
     font-weight: 600;
     color: $white;
   }

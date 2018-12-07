@@ -6,13 +6,23 @@ article.kss-section__modifiers {
 // Normalize the css
 @import '../node_modules/normalize.css/normalize';
 
-// Include Font Awesome directlry instead of each app having to manage it
+// Include Font Awesome directly instead of each app having to manage it
 @import '../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
 
 // Include the fonts from the fontawesome cdn
 $fa-font-path: 'https://use.fontawesome.com/releases/v5.5.0/webfonts/';
+
 @import '../node_modules/@fortawesome/fontawesome-free/scss/regular.scss';
 @import '../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
+
+// Import our custom font
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700');
+
+// Create custom font stack
+// based on https://getbootstrap.com/docs/4.1/content/reboot/
+$font-family-sans-serif: 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !default;
+
+$font-family-icons: 'Font Awesome\ 5 Free';
 
 @import 'media-queries';
 @import 'palette';

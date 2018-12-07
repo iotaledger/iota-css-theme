@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700");
 article.kss-section__modifiers {
   background-color: silver; }
 
@@ -4303,10 +4304,8 @@ readers do not read off random characters that represent icons */
   font-weight: 900; }
 
 body {
-  padding: 0; }
-
-h1, h2, h3, h4, h5, h6, div, span, p, label, input, select, button, section {
-  font-family: "Nunito Sans", sans-serif !important; }
+  padding: 0;
+  font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
 .hidden {
   display: none; }
@@ -4347,7 +4346,7 @@ h1, h2, h3, h4, h5, h6, div, span, p, label, input, select, button, section {
   width: 100%; }
   .input-wrapper::before {
     content: "\f002";
-    font-family: 'Font Awesome\ 5 Free';
+    font-family: "Font Awesome 5 Free";
     color: #ffffff;
     font-weight: 600;
     position: relative;
@@ -4562,7 +4561,7 @@ footer {
   width: 20px; }
   .input-sticky-wrapper::before {
     content: "\f002";
-    font-family: 'Font Awesome\ 5 Free';
+    font-family: "Font Awesome 5 Free";
     color: #ffffff;
     font-weight: 600;
     position: relative;
@@ -4576,7 +4575,7 @@ footer {
     padding-right: 40px; }
   .input-sticky-wrapper--expanded::after {
     content: "\f00d";
-    font-family: 'Font Awesome\ 5 Free';
+    font-family: "Font Awesome 5 Free";
     color: #ffffff;
     font-weight: 600;
     position: relative;
@@ -4702,7 +4701,7 @@ h6, .text--level6 {
   height: 35px;
   background-color: #ffffff; }
   .arrow-button::before {
-    font-family: 'Font Awesome\ 5 Free';
+    font-family: "Font Awesome 5 Free";
     color: #20a49d;
     font-weight: 600;
     position: relative;
