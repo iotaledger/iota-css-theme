@@ -9,7 +9,7 @@
     "build-clean": "rimraf ./dist",
     "build-compile-kss": "kss --config kss-config.json",
     "build-compile-sass": "node-sass ./sass/main.scss ./dist/main.css",
-    "build-compile-sass-watch": "chokidar \"./sass/*.scss\" -c \"npm run build-compile-sass\"",
+    "build-compile-sass-watch": "chokidar \"./sass/*\" -c \"run-s build-compile-kss build-compile-sass\"",
     "build-copy": "copyfiles assets/*.* dist",
     "build": "run-s build-clean build-compile-kss build-copy build-compile-sass",
     "build-serve": "run-s build serve",
