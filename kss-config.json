@@ -4,8 +4,7 @@
   "destination": "dist/",
   "builder": "node_modules/michelangelo/kss_styleguide/custom-template/",
   "css": [
-    "./main.css",
-    "https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    "./main.css"
   ],
   "js" : [
   ]

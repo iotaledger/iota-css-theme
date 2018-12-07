@@ -1,8 +1,19 @@
-//for visibility of some elements
+// for visibility of some elements
 article.kss-section__modifiers {
   background-color: silver;
 }
-@import '../../node_modules/normalize.css/normalize.css';
+
+// Normalize the css
+@import '../node_modules/normalize.css/normalize';
+
+// Include Font Awesome directlry instead of each app having to manage it
+@import '../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+
+// Include the fonts from the fontawesome cdn
+$fa-font-path: 'https://use.fontawesome.com/releases/v5.5.0/webfonts/';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/regular.scss';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
+
 @import 'mediaQueries';
 @import 'palette';
 @import 'globals';
