@@ -1,37 +1,52 @@
-// arrow-button
+// Arrow-button
 //
 // Various arrow button styles.
 //
 // Markup: html/arrow-button.html
 //
 // .arrow-button--left - Arrow left.
+// .arrow-button--left:disabled - Arrow left disabled.
 // .arrow-button--right - Arrow right.
+// .arrow-button--right:disabled - Arrow right disabled.
 //
 // Styleguide Components.arrow-button
 
 .arrow-button {
   width: 35px;
   height: 35px;
+  border: 0;
   background-color: $white;
-    &::before {
-      font-family: $font-family-icons;
-      color: $tealish;
-      font-weight: 600;
-      position: relative;
-      left: 14px;
-      top: 4px;
-      @include font-size(24px);
-    }
+
+  &::before {
+    font-family: $font-family-icons;
+    @include font-size(24px);
+    font-weight: 600;
+    color: $tealish;
+  }
+
+  &:hover:not([disabled]) {
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: default;
+    pointer-events: none;
+  }
 }
 
 .arrow-button--left {
   &::before {
-    content: "\f104";
+    content: '\f104';
   }
 }
 
 .arrow-button--right {
   &::before {
-    content: "\f105";
+    content: '\f105';
   }
 }
