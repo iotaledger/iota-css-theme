@@ -1,10 +1,10 @@
-// top-header
+// Top Header
 //
 // Header styles.
 //
 // Markup: html/top-header.html
 //
-// Styleguide Components.top-header
+// Styleguide Molecules.Top Header
 
 .top-header {
   height: 50px;
@@ -13,7 +13,7 @@
 .top-header__background {
   opacity: 0.1;
   mix-blend-mode: multiply;
-  background: linear-gradient(to left, $brown-dark, rgba(255, 255, 255, 0));
+  background: linear-gradient(to left, #5a5a5a, rgba(255, 255, 255, 0));
   list-style-type: none;
   width: 100%;
   height: 100%
