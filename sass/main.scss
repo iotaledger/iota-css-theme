@@ -1,0 +1,27 @@
+//for visibility of some elements
+article.kss-section__modifiers {
+  background-color: silver;
+}
+@import '~normalize.css';
+@import 'mediaQueries';
+@import 'palette';
+@import 'globals';
+@import 'button';
+@import 'link';
+@import 'input-search';
+@import 'input-register';
+@import 'header';
+@import 'footer';
+@import 'input-search-sticky';
+@import 'text';
+@import 'dropdown';
+@import 'top-header';
+@import 'arrow-button';
+@import 'card';
+@import 'side-menu';
+@import 'cards-container';
+@import 'project-topics';
+@import 'sub-header';
+@import 'floating-menu';
+@import 'navigator';
+@import 'tree-menu';
