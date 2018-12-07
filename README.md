@@ -5,16 +5,30 @@
 
 In your main React file, you could do :
 
-```
-import "css-styleguide";
+```shell
+import "iota-css-theme";
 ```
 
 ## Documentation
 
-Use the [Styleguide](https://dist-tvtsdyrjmp.now.sh)
+View the [Styleguide](https://dist-tvtsdyrjmp.now.sh)
 
-## Developement 
+## Developement
 
+To build the package run:
+
+```shell
+npm run build
 ```
+
+or to build and then serve the style guide locally:
+
+```shell
 npm run build-serve
+```
+
+or to watch the sass files and automatically rebuild once they have been served you can use:
+
+```shell
+npm run build-serve-watch
 ```
