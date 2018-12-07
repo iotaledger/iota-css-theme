@@ -11,7 +11,7 @@
   height: 119px;
   background-color: $white;
   display: flex;
-  font-size: 18px;
+  @include font-size(18px);
 }
 
 .navigator__back {
@@ -45,7 +45,7 @@
 
 @include desktop {
   .navigator {
-    font-size: 24px;
+    @include font-size(24px);
     height: 152px;
     font-weight: bold;
   }

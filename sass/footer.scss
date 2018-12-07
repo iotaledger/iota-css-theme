@@ -86,7 +86,7 @@ footer {
 }
 
 .footer-bottom-content__item.text {
-  font-size: 15px;
+  @include font-size(15px);
   font-weight: 300;
   line-height: 2;
   color: $brown-grey;

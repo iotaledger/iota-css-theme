@@ -28,36 +28,36 @@
 h1, .text--level1 {
   line-height: 1.2;
   font-weight: bold;
-  font-size: 40px;
+  @include font-size(40px);
 }
 
 h2, .text--level2 {
   font-weight: bold;
-  font-size: 28px;
+  @include font-size(28px);
   line-height: 1.71;
 }
 
 h3, .text--level3 {
-  font-size: 24px;
+  @include font-size(24px);
   line-height: 2;
   font-weight: bold;
 }
 
 h4, .text--level4 {
-  font-size: 20px;
+  @include font-size(20px);
   line-height: 2.4;
   font-weight: bold;
 }
 
 h5, .text--level5 {
-  font-size: 18px;
+  @include font-size(18px);
   font-weight: normal;
   line-height: 2.67;
 }
 
 h6, .text--level6 {
   font-weight: bold;
-  font-size: 17px;
+  @include font-size(17px);
   line-height: 2.82;
 }
 

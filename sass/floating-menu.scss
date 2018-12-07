@@ -14,14 +14,14 @@
 }
 
 .floating-menu__item {
-  font-size: 17px;
+  @include font-size(17px);
   font-style: normal;
   font-stretch: normal;
   line-height: 2.35;
 }
 
 .floating-menu__item--selected {
-  font-size: 26px;
+  @include font-size(26px);
   font-weight: bold;
   color: $tealish;
   //padding-left: 20px;

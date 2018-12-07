@@ -24,6 +24,7 @@ $font-family-sans-serif: 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Sego
 
 $font-family-icons: 'Font Awesome\ 5 Free';
 
+@import 'mixins';
 @import 'media-queries';
 @import 'palette';
 @import 'globals';

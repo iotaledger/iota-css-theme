@@ -22,7 +22,7 @@ $common-desktop-width: 155px;
   color: $body-copy;
   padding-left: 16px;
   font-family: NunitoSans;
-  font-size: 18px;
+  @include font-size(18px);
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
@@ -38,7 +38,7 @@ $common-desktop-width: 155px;
   height: $common-height;
   width: $common-height;
   border: none;
-  font-size: 17px;
+  @include font-size(17px);
   font-weight: bold;
   &:after {
     content: '\f061';

@@ -4311,10 +4311,11 @@ body {
   display: none; }
 
 .button {
-  padding: 1em 2em;
-  margin: .5em;
+  padding: 16px 32px;
+  margin: 8px;
   display: inline-block;
-  font-size: .9em;
+  font-size: 14.5px;
+  font-size: 0.90625rem;
   font-weight: bold;
   text-transform: uppercase;
   color: #1e9a93;
@@ -4332,10 +4333,12 @@ body {
   outline: none; }
 
 .button--small {
-  font-size: .5em; }
+  font-size: 8px;
+  font-size: 0.5rem; }
 
 .button--large {
-  font-size: 1.5em; }
+  font-size: 24px;
+  font-size: 1.5rem; }
 
 .link {
   cursor: pointer;
@@ -4362,6 +4365,7 @@ body {
   color: #ffffff;
   padding: 10px;
   font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
@@ -4373,6 +4377,7 @@ body {
   .input-search::placeholder {
     color: #ffffff;
     font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
     font-style: normal; }
 
@@ -4387,6 +4392,7 @@ body {
   padding-left: 16px;
   font-family: NunitoSans;
   font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
@@ -4402,6 +4408,7 @@ body {
   width: 55px;
   border: none;
   font-size: 17px;
+  font-size: 1.0625rem;
   font-weight: bold; }
   .input-register__button:after {
     content: '\f061';
@@ -4526,6 +4533,7 @@ footer {
 
 .footer-bottom-content__item.text {
   font-size: 15px;
+  font-size: 0.9375rem;
   font-weight: 300;
   line-height: 2;
   color: #8e8e8e; }
@@ -4590,6 +4598,7 @@ footer {
   border-color: #20a49d;
   color: #ffffff;
   font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
@@ -4600,6 +4609,7 @@ footer {
   .input-search-sticky::placeholder {
     color: #ffffff;
     font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
     font-style: normal; }
 
@@ -4611,31 +4621,37 @@ footer {
 h1, .text--level1 {
   line-height: 1.2;
   font-weight: bold;
-  font-size: 40px; }
+  font-size: 40px;
+  font-size: 2.5rem; }
 
 h2, .text--level2 {
   font-weight: bold;
   font-size: 28px;
+  font-size: 1.75rem;
   line-height: 1.71; }
 
 h3, .text--level3 {
   font-size: 24px;
+  font-size: 1.5rem;
   line-height: 2;
   font-weight: bold; }
 
 h4, .text--level4 {
   font-size: 20px;
+  font-size: 1.25rem;
   line-height: 2.4;
   font-weight: bold; }
 
 h5, .text--level5 {
   font-size: 18px;
+  font-size: 1.125rem;
   font-weight: normal;
   line-height: 2.67; }
 
 h6, .text--level6 {
   font-weight: bold;
   font-size: 17px;
+  font-size: 1.0625rem;
   line-height: 2.82; }
 
 .text--primary {
@@ -4694,7 +4710,8 @@ h6, .text--level6 {
   color: #ffffff;
   padding: 0 15px;
   font-weight: 600;
-  font-size: 12px; }
+  font-size: 12px;
+  font-size: 0.75rem; }
 
 .arrow-button {
   width: 35px;
@@ -4707,7 +4724,8 @@ h6, .text--level6 {
     position: relative;
     left: 14px;
     top: 4px;
-    font-size: 24px; }
+    font-size: 24px;
+    font-size: 1.5rem; }
 
 .arrow-button--left::before {
   content: "\f104"; }
@@ -4778,6 +4796,7 @@ h6, .text--level6 {
   color: #ffffff;
   height: 90px;
   font-size: 24px;
+  font-size: 1.5rem;
   margin: 0;
   padding: 0 24px 0 28px;
   display: flex;
@@ -4790,6 +4809,7 @@ h6, .text--level6 {
   background-color: rgba(255, 255, 255, 0.1);
   color: #ffffff;
   font-size: 20px;
+  font-size: 1.25rem;
   padding: 0 24px 0 28px;
   display: flex;
   justify-content: space-between;
@@ -4799,6 +4819,7 @@ h6, .text--level6 {
   color: #ffffff; }
   .side-menu__list li {
     font-size: 15px;
+    font-size: 0.9375rem;
     padding: 4px 0;
     font-weight: 200; }
 
@@ -4901,6 +4922,7 @@ h6, .text--level6 {
 
 .sub-header__title {
   font-size: 28px;
+  font-size: 1.75rem;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal; }
@@ -4919,6 +4941,7 @@ h6, .text--level6 {
     display: none; }
   .sub-header__bottom-title {
     font-size: 34px;
+    font-size: 2.125rem;
     font-weight: bold;
     font-style: normal;
     font-stretch: normal;
@@ -4932,12 +4955,14 @@ h6, .text--level6 {
 
 .floating-menu__item {
   font-size: 17px;
+  font-size: 1.0625rem;
   font-style: normal;
   font-stretch: normal;
   line-height: 2.35; }
 
 .floating-menu__item--selected {
   font-size: 26px;
+  font-size: 1.625rem;
   font-weight: bold;
   color: #20a49d; }
   .floating-menu__item--selected:before {
@@ -4951,7 +4976,8 @@ h6, .text--level6 {
   height: 119px;
   background-color: #ffffff;
   display: flex;
-  font-size: 18px; }
+  font-size: 18px;
+  font-size: 1.125rem; }
 
 .navigator__back {
   border: 1px #f3f2f1 solid;
@@ -4981,6 +5007,7 @@ h6, .text--level6 {
 @media (min-width: 1024px) {
   .navigator {
     font-size: 24px;
+    font-size: 1.5rem;
     height: 152px;
     font-weight: bold; }
   .navigator__next {
@@ -4993,6 +5020,7 @@ h6, .text--level6 {
 
 .tree-menu__section-title {
   font-size: 17px;
+  font-size: 1.0625rem;
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
@@ -5011,6 +5039,7 @@ h6, .text--level6 {
 
 .tree-menu__section-item {
   font-size: 15px;
+  font-size: 0.9375rem;
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;

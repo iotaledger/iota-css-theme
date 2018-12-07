@@ -12,10 +12,10 @@
 // Styleguide Components.button
 
 .button {
-  padding: 1em 2em;
-  margin: .5em;
+  padding: 16px 32px;
+  margin: 8px;
   display: inline-block;
-  font-size: .9em;
+  @include font-size(14.5px);
   font-weight: bold;
   text-transform: uppercase;
   color: $jade;
@@ -36,9 +36,9 @@
 }
 
 .button--small {
-  font-size: .5em;
+  @include font-size(8px);
 }
 
 .button--large {
-  font-size: 1.5em;
+  @include font-size(24px);
 }

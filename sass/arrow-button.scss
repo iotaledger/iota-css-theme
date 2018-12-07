@@ -20,7 +20,7 @@
       position: relative;
       left: 14px;
       top: 4px;
-      font-size: 24px;
+      @include font-size(24px);
     }
 }
 

@@ -31,5 +31,5 @@
   color: $white;
   padding: 0 15px;
   font-weight: 600;
-  font-size: 12px;
+  @include font-size(12px);
 }

@@ -47,7 +47,7 @@
   background-color: $tealish;
   border-color: $tealish;
   color: $white;
-  font-size: 18px;
+  @include font-size(18px);
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
@@ -57,7 +57,7 @@
   padding-left: 43px;
   &::placeholder {
     color: $white;
-    font-size: 20px;
+    @include font-size(20px);
     font-weight: 600;
     font-style: normal;
   }

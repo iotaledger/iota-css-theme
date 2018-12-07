@@ -37,7 +37,7 @@ $side-menu-right-padding: 24px;
 .side-menu__caption {
   color: $white;
   height: 90px;
-  font-size: 24px;
+  @include font-size(24px);
   margin: 0;
   padding: 0 $side-menu-right-padding 0 $side-menu-left-padding;
   display: flex;
@@ -50,7 +50,7 @@ $side-menu-right-padding: 24px;
   height: 55px;
   background-color: rgba(255, 255, 255, 0.1);
   color: $white;
-  font-size: 20px;
+  @include font-size(20px);
   padding: 0 $side-menu-right-padding 0 $side-menu-left-padding;
   display: flex;
   justify-content: space-between;
@@ -59,7 +59,7 @@ $side-menu-right-padding: 24px;
 .side-menu__list {
   color: $white;
   li {
-    font-size: 15px;
+    @include font-size(15px);
     padding: 4px 0;
     font-weight: 200;
   }
