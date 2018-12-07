@@ -4368,9 +4368,13 @@ body {
     border-color: #ffffff; }
 
 .link {
-  color: #603f98; }
+  font-size: 16px;
+  font-size: 1rem;
+  color: #603f98 !important;
+  line-height: 1.5;
+  font-weight: bold; }
   .link:hover {
-    color: #4e2c88; }
+    color: #4e2c88 !important; }
 
 .input-wrapper {
   display: inline-flex;
