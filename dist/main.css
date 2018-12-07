@@ -4318,19 +4318,21 @@ body {
   font-size: 0.90625rem;
   font-weight: bold;
   text-transform: uppercase;
-  color: #1e9a93;
-  background-color: #ffffff;
-  border: 2px solid #1e9a93;
-  transition: .2s color, .2s background-color, .2s border-color; }
-
-.button:hover {
   color: #ffffff;
-  background-color: #1e9a93; }
-
-.button:focus {
-  color: #603f98;
-  border-color: #1e9a93;
-  outline: none; }
+  background-color: #603f98;
+  border: 2px solid #603f98;
+  border-radius: 5px;
+  transition: .2s color, .2s background-color, .2s border-color; }
+  .button:hover:not([disabled]) {
+    background-color: #493074;
+    border-color: #493074;
+    cursor: pointer; }
+  .button:focus:enabled {
+    outline: none; }
+  .button:disabled {
+    opacity: 0.5;
+    cursor: default;
+    pointer-events: none; }
 
 .button--small {
   font-size: 8px;
@@ -4339,6 +4341,30 @@ body {
 .button--large {
   font-size: 24px;
   font-size: 1.5rem; }
+
+.button--primary {
+  background-color: #603f98;
+  border-color: #603f98;
+  color: #ffffff; }
+  .button--primary:hover:not([disabled]) {
+    background-color: #493074;
+    border-color: #493074; }
+
+.button--secondary {
+  background-color: transparent;
+  border-color: #603f98;
+  color: #603f98; }
+  .button--secondary:hover:not([disabled]) {
+    background-color: transparent;
+    border-color: #493074; }
+
+.button--tertiary {
+  background-color: transparent;
+  border-color: #ffffff;
+  color: #ffffff; }
+  .button--tertiary:hover:not([disabled]) {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: #ffffff; }
 
 .link {
   cursor: pointer;
@@ -4716,22 +4742,28 @@ h6, .text--level6 {
 .arrow-button {
   width: 35px;
   height: 35px;
+  border: 0;
   background-color: #ffffff; }
   .arrow-button::before {
     font-family: "Font Awesome 5 Free";
-    color: #20a49d;
-    font-weight: 600;
-    position: relative;
-    left: 14px;
-    top: 4px;
     font-size: 24px;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #20a49d; }
+  .arrow-button:hover:not([disabled]) {
+    cursor: pointer; }
+  .arrow-button:focus {
+    outline: none; }
+  .arrow-button:disabled {
+    opacity: 0.5;
+    cursor: default;
+    pointer-events: none; }
 
 .arrow-button--left::before {
-  content: "\f104"; }
+  content: '\f104'; }
 
 .arrow-button--right::before {
-  content: "\f105"; }
+  content: '\f105'; }
 
 .card__link {
   width: 340px;
