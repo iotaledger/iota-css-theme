@@ -14,7 +14,8 @@
     "build": "run-s build-clean build-compile-kss build-copy build-compile-sass",
     "build-serve": "run-s build serve",
     "watch": "run-p serve-watch build-compile-sass-watch",
-    "build-serve-watch": "run-s build watch"
+    "build-serve-watch": "run-s build watch",
+    "deploy": "cd dist && now --local-config=../now.json && now alias --local-config=../now.json"
   },
   "author": "IOTA Foundation",
   "license": "Apache-2.0",

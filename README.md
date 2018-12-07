@@ -11,7 +11,7 @@ import "iota-css-theme";
 
 ## Documentation
 
-View the [Styleguide](https://dist-tvtsdyrjmp.now.sh)
+View the Styleguide at <https://iota-css-theme.dag.sh>
 
 ## Developement
 
