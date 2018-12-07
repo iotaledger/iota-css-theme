@@ -1,0 +1,29 @@
+// Fonts
+//
+// Standard font defintions.
+//
+// Markup: html/fonts.html
+//
+// Styleguide Atoms.Fonts
+
+// Import our custom primary font
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700');
+
+// Import our custom secondary font
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+// Create custom font stack
+// based on https://getbootstrap.com/docs/4.1/content/reboot/
+$font-primary: 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+$font-secondary: 'Source Code Pro', monospace;
+
+// Include Font Awesome directly instead of each app having to manage it
+@import '../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+
+// Include the fonts from the fontawesome cdn
+$fa-font-path: 'https://use.fontawesome.com/releases/v5.5.0/webfonts/';
+
+@import '../node_modules/@fortawesome/fontawesome-free/scss/regular.scss';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
+
+$font-family-icons: 'Font Awesome\ 5 Free';
