@@ -1,0 +1,75 @@
+// Text Inline
+//
+// Various inline text styles.
+//
+// Markup: html/text-inline.html
+//
+// .text-inline - Default style.
+// .text-inline--strong - Color is darker and font weight is strong.
+// .text-inline--emphasis - Color is darker.
+// .text-inline--bold - Font weight is bold.
+// .text-inline--alert - Color is danger.
+// .text-inline--italic - Font has italic attribute.
+// .text-inline--underline - Text is underlined.
+// .text-inline--strikethrough - Text has a line through it.
+// .text-inline--small - For fine print.
+// .text-inline--quotation - Italic and emphasized.
+// .text-inline--code - Font family is used for computer output.
+//
+// Styleguide Atoms.Text Inline
+
+.text-inline {
+  @include font-size(17px);
+
+  color: $body-copy;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.41;
+  letter-spacing: normal;
+}
+
+.text-inline--strong {
+  font-weight: 600;
+  color: $black;
+}
+
+.text-inline--emphasis {
+  color: $black;
+}
+
+.text-inline--bold {
+  font-weight: bold;
+}
+
+.text-inline--alert {
+    font-weight: bold;
+    color: $danger;
+  }
+  
+  
+.text-inline--italic {
+  font-style: italic;
+}
+
+.text-inline--underline {
+  text-decoration: underline;
+}
+
+.text-inline--strikethrough {
+  text-decoration: line-through;
+}
+
+.text-inline--small {
+    @include font-size(12px);
+  }
+  
+  .text-inline--quotation {
+    font-style: italic;
+    color: $black;
+  }
+  
+  
+.text-inline--code {
+  font-family: $font-secondary;
+}

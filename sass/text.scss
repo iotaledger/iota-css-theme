@@ -10,14 +10,18 @@
 // .text--level4 - Level 4.
 // .text--level5  - Level 5.
 // .text--level6  - Level 6.
-// .text--primary - primary color
-// .text--secondary - secondary color
-// .text--tertiary - tertiary color
-// .text--primary.text--level3 - .text--primary.text--level3
-// .text--secondary.text--level3 - .text--primary.text--level3
-// .text--tertiary.text--level3 - .text--primary.text--level3
+// .text--primary - primary color.
+// .text--secondary - secondary color.
+// .text--tertiary - tertiary color.
+// .text--warning - warning color.
+// .text--danger - danger color.
+// .text--success - success color.
+// .text--info - info color.
+// .text--primary .text--level3 - Combined primary and level3
+// .text--secondary .text--level3 - Combined secondary and level3
+// .text--tertiary .text--level3 - Combined tertiary and level 3
 //
-// Styleguide Components.text
+// Styleguide Atoms.Text
 
 .text {
   font-style: normal;
@@ -71,4 +75,26 @@ h6, .text--level6 {
 
 .text--tertiary {
   color: $tealish;
+}
+
+.text--warning {
+    color: $warning;
+}
+
+.text--danger {
+    color: $danger;
+}
+
+.text--success {
+    color: $success;
+}
+
+.text--info {
+    color: $info;
+}
+
+p {
+    @include font-size(17px);
+    line-height: 2px;
+    color: $body-copy;
 }

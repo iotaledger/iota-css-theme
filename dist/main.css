@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
 article.kss-section__modifiers {
   background-color: silver; }
 
@@ -4367,8 +4368,9 @@ body {
     border-color: #ffffff; }
 
 .link {
-  cursor: pointer;
   color: #603f98; }
+  .link:hover {
+    color: #4e2c88; }
 
 .input-wrapper {
   display: inline-flex;
@@ -4688,6 +4690,84 @@ h6, .text--level6 {
 
 .text--tertiary {
   color: #20a49d; }
+
+.text--warning {
+  color: #ffc107; }
+
+.text--danger {
+  color: #dc3545; }
+
+.text--success {
+  color: #28a745; }
+
+.text--info {
+  color: #17a2b8; }
+
+p {
+  font-size: 17px;
+  font-size: 1.0625rem;
+  line-height: 2px;
+  color: #696f76; }
+
+.text-inline {
+  font-size: 17px;
+  font-size: 1.0625rem;
+  color: #696f76;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.41;
+  letter-spacing: normal; }
+
+.text-inline--strong {
+  font-weight: 600;
+  color: #1c1e21; }
+
+.text-inline--emphasis {
+  color: #1c1e21; }
+
+.text-inline--bold {
+  font-weight: bold; }
+
+.text-inline--alert {
+  font-weight: bold;
+  color: #dc3545; }
+
+.text-inline--italic {
+  font-style: italic; }
+
+.text-inline--underline {
+  text-decoration: underline; }
+
+.text-inline--strikethrough {
+  text-decoration: line-through; }
+
+.text-inline--small {
+  font-size: 12px;
+  font-size: 0.75rem; }
+
+.text-inline--quotation {
+  font-style: italic;
+  color: #1c1e21; }
+
+.text-inline--code {
+  font-family: "Source Code Pro", monospace; }
+
+p, .text-paragraph {
+  font-size: 17px;
+  font-size: 1.0625rem;
+  line-height: 2;
+  color: #696f76; }
+
+hr, .horizontal-rule {
+  border-style: solid;
+  border: none;
+  border-top: 2px solid #c4c4c4;
+  width: 100%;
+  margin: 8px 0px 8px 0px; }
+
+.horizontal-rule--small {
+  width: 160px; }
 
 .select {
   max-width: 343px;

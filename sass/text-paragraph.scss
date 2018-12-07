@@ -1,0 +1,15 @@
+// Text Paragraph
+//
+// Various paragraph text styles.
+//
+// Markup: html/text.html
+//
+// .text-paragraph - Paragraph.
+//
+// Styleguide Atoms.Text Paragraph
+
+p, .text-paragraph {
+    @include font-size(17px);
+    line-height: 2;
+    color: $body-copy;
+}

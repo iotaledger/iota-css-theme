@@ -1,0 +1,22 @@
+// Horizontal Rule
+//
+// Various text styles.
+//
+// Markup: html/horizontal-rule.html
+//
+// .horizontal-rule - Horizontal ruler.
+// .horizontal-rule--small - Horizontal ruler small.
+//
+// Styleguide Atoms.Horizontal Rule
+
+hr, .horizontal-rule {
+    border-style: solid;
+    border: none;
+    border-top: 2px solid $light-grey;
+    width: 100%;
+    margin: 8px 0px 8px 0px;
+}
+
+.horizontal-rule--small {
+    width: 160px;
+}

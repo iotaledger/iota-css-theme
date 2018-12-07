@@ -1,0 +1,17 @@
+// Colors Overlay
+//
+// The overlay colors for IOTA branding.
+//
+// The $hero-dark-gradient variable defines the linear gradient from $hero-dark-start to $hero-dark-end
+//
+// $hero-dark-start -  #3f3f3f; Hero Dark Start
+// $hero-dark-end -  #131313; Hero Dark End
+// $image-dark      -  #414141; Image Dark
+//
+// Styleguide Atoms.Colors Overlay
+
+$hero-dark-start: $gunmetal-grey;
+$hero-dark-end: #131313;
+$hero-dark-gradient: linear-gradient(to top, $hero-dark-start, $hero-dark-end);
+$image-dark: #414141;
+
