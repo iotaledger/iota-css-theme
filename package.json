@@ -7,7 +7,7 @@
     "serve": "http-server -p 3000 ./dist",
     "build-kss": "kss --config kss-config.json",
     "build-sass": "node-sass ./sass/main.scss ./dist/main.css",
-    "build-copy-files": "copyfiles script.js assets/*.* dist",
+    "build-copy-files": "copyfiles assets/*.* dist",
     "build": "run-s build-kss build-sass build-copy-files",
     "build-serve": "run-s build serve"
   },

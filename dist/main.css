@@ -1,4 +1,4 @@
-@import url(~normalize.css);
+@import url(../../node_modules/normalize.css/normalize.css);
 article.kss-section__modifiers {
   background-color: silver; }
 
