@@ -11,6 +11,18 @@
   margin-left: 0;
   padding-left: 20px;
   position: relative;
+  .floating-menu__item:hover {
+    @include font-size(26px);
+    font-weight: bold;
+    color: $tealish;
+    &:before {
+      content: " ";
+      border-left: 4px solid $tealish;
+      position: absolute;
+      left: -6px;
+      height: 58px;
+    }
+  }
 }
 
 .floating-menu__item {
