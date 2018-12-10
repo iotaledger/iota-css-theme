@@ -4930,6 +4930,11 @@ hr, .horizontal-rule {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  .side-menu__heading:hover {
+    cursor: pointer; }
+
+.side-menu__close:hover {
+  cursor: pointer; }
 
 .side-menu__list {
   color: #ffffff; }
@@ -4938,6 +4943,8 @@ hr, .horizontal-rule {
     font-size: 0.9375rem;
     padding: 4px 0;
     font-weight: 200; }
+    .side-menu__list li:hover {
+      cursor: pointer; }
 
 .cards-container {
   width: 100%;

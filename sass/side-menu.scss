@@ -55,6 +55,14 @@ $side-menu-right-padding: 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.side-menu__close {
+  &:hover {
+    cursor: pointer;
+  }
 }
 .side-menu__list {
   color: $white;
@@ -62,5 +70,8 @@ $side-menu-right-padding: 24px;
     @include font-size(15px);
     padding: 4px 0;
     font-weight: 200;
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
