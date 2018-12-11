@@ -10,6 +10,9 @@
   position: relative;
   width: 100%;
   max-width: 343px;
+  border: 1px solid $white;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.1);
   line-height: 1.5;
 
   &::after {
@@ -33,10 +36,9 @@
   height: 55px;
   padding-right: 55px;
   padding-left: 20px;
-  border: 1px solid $white;
-  border-radius: 6px;
+  border: none;
+  background: none;
   outline: none;
-  background-color: rgba(255, 255, 255, 0.1);
   color: $white;
   font-size: inherit;
   text-overflow: ellipsis;
@@ -48,7 +50,19 @@
   -moz-appearance: none;
   appearance: none;
 
+  // Remove the down arrow on Edge
   &::-ms-expand {
     display: none;
+  }
+
+  // Remove the focus rect on Firefox
+  &:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 $white;
+  }
+
+  &:-moz-focusring * {
+    color: $white;
+    text-shadow: none;
   }
 }
