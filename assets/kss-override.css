@@ -1,9 +1,5 @@
-article.kss-section__modifiers {
-  background-color: silver;
-}
-
 .kss-modifier__wrapper {
-  background-color: silver;
+  background-color: #dddddd;
 }
 
 #kss-node .kss-sidebar {

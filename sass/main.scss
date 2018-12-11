@@ -1,6 +1,7 @@
 // Normalize the css
 @import '../node_modules/normalize.css/normalize';
 
+// Globals
 @import 'mixins';
 @import 'media-queries';
 @import 'colors-brand';
@@ -9,26 +10,34 @@
 @import 'colors-overlay';
 @import 'fonts';
 @import 'globals';
+
+// Atoms
+@import 'arrow-button';
 @import 'button';
+@import 'dropdown';
+@import 'horizontal-rule';
 @import 'link';
-@import 'input-search';
-@import 'input-register';
-@import 'header';
-@import 'footer';
-@import 'input-search-sticky';
 @import 'text';
 @import 'text-inline';
 @import 'text-paragraph';
-@import 'horizontal-rule';
-@import 'dropdown';
-@import 'top-header';
-@import 'table';
-@import 'arrow-button';
+
+// Molecules
 @import 'card';
-@import 'side-menu';
 @import 'cards-container';
-@import 'project-topics';
-@import 'sub-header';
 @import 'floating-menu';
+@import 'input-search';
+@import 'input-register';
+@import 'input-search-sticky';
 @import 'navigator';
+@import 'pagination';
+@import 'project-topics';
+@import 'side-menu';
+@import 'sub-header';
+@import 'table';
+@import 'top-header';
 @import 'tree-menu';
+
+// Organisms
+@import 'footer';
+@import 'header';
+
