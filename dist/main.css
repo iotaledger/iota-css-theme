@@ -4654,7 +4654,7 @@ textarea,
     outline: none; }
   .feedback-button .feedback-button--icon::before {
     position: absolute;
-    top: 17px;
+    top: 18px;
     left: 19px;
     color: #ffffff;
     font-family: "Font Awesome 5 Free";
@@ -4664,7 +4664,7 @@ textarea,
     content: '\f27a'; }
   .feedback-button .feedback-button--icon::after {
     position: absolute;
-    top: 22px;
+    top: 23px;
     left: 26px;
     color: #ffffff;
     font-family: "Font Awesome 5 Free";
@@ -5403,6 +5403,9 @@ table,
       font-size: 40px;
       font-size: 2.5rem;
       cursor: pointer; }
+      .feedback-form .feedback-form-button .feedback-form-button-circle:hover {
+        border-color: #603f98;
+        color: #603f98; }
       .feedback-form .feedback-form-button .feedback-form-button-circle:focus {
         outline: none; }
     .feedback-form .feedback-form-button .feedback-form-button-label {
@@ -5414,6 +5417,8 @@ table,
       font-weight: bold;
       line-height: 1.12;
       cursor: pointer; }
+      .feedback-form .feedback-form-button .feedback-form-button-label:hover {
+        color: #603f98; }
       .feedback-form .feedback-form-button .feedback-form-button-label:focus {
         outline: none; }
     .feedback-form .feedback-form-button.feedback-form-button--selected .feedback-form-button-circle {

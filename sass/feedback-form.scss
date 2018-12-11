@@ -54,6 +54,11 @@
       @include font-size(40px);
       cursor: pointer;
 
+      &:hover {
+        border-color: $blueberry;
+        color: $blueberry;
+      }
+
       &:focus {
         outline: none;
       }
@@ -67,6 +72,10 @@
       font-weight: bold;
       line-height: 1.12;
       cursor: pointer;
+
+      &:hover {
+        color: $blueberry;
+      }
 
       &:focus {
         outline: none;
