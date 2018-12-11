@@ -1,0 +1,47 @@
+// Feedback Button
+//
+// Markup: html/feedback-button.html
+//
+// hover - Button in hover state.
+//
+// Styleguide Molecules.Feedback Button
+
+.feedback-button {
+  width: 65px;
+  height: 65px;
+  border: 0;
+  border-radius: 33px;
+  background-color: $blueberry;
+
+  &:hover {
+    background-color: #4e2c88;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  .feedback-button--icon {
+    &::before {
+      position: absolute;
+      top: 17px;
+      left: 19px;
+      color: $white;
+      font-family: $font-family-icons;
+      @include font-size(28px);
+      font-weight: 400;
+      content: '\f27a';
+    }
+
+    &::after {
+      position: absolute;
+      top: 22px;
+      left: 26px;
+      color: $white;
+      font-family: $font-family-icons;
+      @include font-size(14px);
+      font-weight: 900;
+      content: '\f00c';
+    }
+  }
+}

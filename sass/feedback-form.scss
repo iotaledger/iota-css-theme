@@ -1,0 +1,103 @@
+// Feedback Form
+//
+// Markup: html/feedback-form.html
+//
+// Styleguide Organisms.Feedback Form
+
+.feedback-form__wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: $blueberry;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 720px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: $white;
+
+  h1 {
+    color: $black;
+    font-family: $font-primary;
+    @include font-size(32px);
+    font-weight: bold;
+    line-height: 1;
+  }
+
+  h2 {
+    margin: 0;
+    color: $black;
+    font-family: $font-primary;
+    @include font-size(28px);
+    font-weight: 300;
+    line-height: 1;
+  }
+
+  .feedback-form-button {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 35px;
+
+    .feedback-form-button-circle {
+      width: 105px;
+      height: 105px;
+      margin-bottom: 20px;
+      border: 2px solid rgba(0, 0, 0, 0.1);
+      border-radius: 60px;
+      background: none;
+      color: rgba(0, 0, 0, 0.1);
+      @include font-size(40px);
+      cursor: pointer;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .feedback-form-button-label {
+      border: 0;
+      background: none;
+      color: $body-copy;
+      @include font-size(17px);
+      font-weight: bold;
+      line-height: 1.12;
+      cursor: pointer;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &.feedback-form-button--selected {
+      .feedback-form-button-circle {
+        background-color: $blueberry;
+        color: $white;
+      }
+
+      .feedback-form-button-label {
+        color: $blueberry;
+      }
+    }
+  }
+
+  textarea {
+    width: 60%;
+  }
+
+  .feedback-form-button-submit {
+    width: 60%;
+    margin: 30px;
+    padding: 20px;
+    border: 0;
+    border-radius: 5px;
+    background: $blueberry;
+    color: $white;
+    @include font-size(17px);
+    font-weight: bold;
+  }
+}

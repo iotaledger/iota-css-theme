@@ -21,9 +21,9 @@ $font-secondary: 'Source Code Pro', monospace;
 @import '../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
 
 // Include the fonts from the fontawesome cdn
-$fa-font-path: 'https://use.fontawesome.com/releases/v5.5.0/webfonts/';
+$fa-font-path: 'https://use.fontawesome.com/releases/v5.5.0/webfonts';
 
 @import '../node_modules/@fortawesome/fontawesome-free/scss/regular';
 @import '../node_modules/@fortawesome/fontawesome-free/scss/solid';
 
-$font-family-icons: 'Font Awesome\ 5 Free';
+$font-family-icons: 'Font Awesome 5 Free';

@@ -1,0 +1,20 @@
+// Textarea
+//
+// Markup: html/textarea.html
+//
+// Styleguide Atoms.Textarea
+
+textarea,
+.textarea {
+  width: 100%;
+  padding: 25px;
+  border: 1px solid $light-grey;
+  border-radius: 5px;
+  color: $body-copy;
+  resize: none;
+  box-sizing: border-box;
+
+  &:focus {
+    outline: none;
+  }
+}

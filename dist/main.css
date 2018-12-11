@@ -4278,8 +4278,8 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Free';
   font-style: normal;
   font-weight: 400;
-  src: url("https://use.fontawesome.com/releases/v5.5.0/webfonts//fa-regular-400.eot");
-  src: url("https://use.fontawesome.com/releases/v5.5.0/webfonts//fa-regular-400.eot?#iefix") format("embedded-opentype"), url("https://use.fontawesome.com/releases/v5.5.0/webfonts//fa-regular-400.woff2") format("woff2"), url("https://use.fontawesome.com/releases/v5.5.0/webfonts//fa-regular-400.woff") format("woff"), url("https://use.fontawesome.com/releases/v5.5.0/webfonts//fa-regular-400.ttf") format("truetype"), url("https://use.fontawesome.com/releases/v5.5.0/webfonts//fa-regular-400.svg#fontawesome") format("svg"); }
+  src: url("https://use.fontawesome.com/releases/v5.5.0/webfonts/fa-regular-400.eot");
+  src: url("https://use.fontawesome.com/releases/v5.5.0/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("https://use.fontawesome.com/releases/v5.5.0/webfonts/fa-regular-400.woff2") format("woff2"), url("https://use.fontawesome.com/releases/v5.5.0/webfonts/fa-regular-400.woff") format("woff"), url("https://use.fontawesome.com/releases/v5.5.0/webfonts/fa-regular-400.ttf") format("truetype"), url("https://use.fontawesome.com/releases/v5.5.0/webfonts/fa-regular-400.svg#fontawesome") format("svg"); }
 
 .far {
   font-family: 'Font Awesome 5 Free';
@@ -4293,8 +4293,8 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Free';
   font-style: normal;
   font-weight: 900;
-  src: url("https://use.fontawesome.com/releases/v5.5.0/webfonts//fa-solid-900.eot");
-  src: url("https://use.fontawesome.com/releases/v5.5.0/webfonts//fa-solid-900.eot?#iefix") format("embedded-opentype"), url("https://use.fontawesome.com/releases/v5.5.0/webfonts//fa-solid-900.woff2") format("woff2"), url("https://use.fontawesome.com/releases/v5.5.0/webfonts//fa-solid-900.woff") format("woff"), url("https://use.fontawesome.com/releases/v5.5.0/webfonts//fa-solid-900.ttf") format("truetype"), url("https://use.fontawesome.com/releases/v5.5.0/webfonts//fa-solid-900.svg#fontawesome") format("svg"); }
+  src: url("https://use.fontawesome.com/releases/v5.5.0/webfonts/fa-solid-900.eot");
+  src: url("https://use.fontawesome.com/releases/v5.5.0/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("https://use.fontawesome.com/releases/v5.5.0/webfonts/fa-solid-900.woff2") format("woff2"), url("https://use.fontawesome.com/releases/v5.5.0/webfonts/fa-solid-900.woff") format("woff"), url("https://use.fontawesome.com/releases/v5.5.0/webfonts/fa-solid-900.ttf") format("truetype"), url("https://use.fontawesome.com/releases/v5.5.0/webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
 
 .fa,
 .fas {
@@ -4580,6 +4580,19 @@ p,
   font-size: 1.0625rem;
   line-height: 2; }
 
+textarea,
+.textarea {
+  width: 100%;
+  padding: 25px;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  color: #696f76;
+  resize: none;
+  box-sizing: border-box; }
+  textarea:focus,
+  .textarea:focus {
+    outline: none; }
+
 .card__link {
   display: flex;
   flex-direction: column;
@@ -4628,6 +4641,37 @@ p,
   width: 100%;
   padding: 70px 0px 20px 0px;
   background-color: #f3f2f1; }
+
+.feedback-button {
+  width: 65px;
+  height: 65px;
+  border: 0;
+  border-radius: 33px;
+  background-color: #603f98; }
+  .feedback-button:hover {
+    background-color: #4e2c88; }
+  .feedback-button:focus {
+    outline: none; }
+  .feedback-button .feedback-button--icon::before {
+    position: absolute;
+    top: 17px;
+    left: 19px;
+    color: #ffffff;
+    font-family: "Font Awesome 5 Free";
+    font-size: 28px;
+    font-size: 1.75rem;
+    font-weight: 400;
+    content: '\f27a'; }
+  .feedback-button .feedback-button--icon::after {
+    position: absolute;
+    top: 22px;
+    left: 26px;
+    color: #ffffff;
+    font-family: "Font Awesome 5 Free";
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: 900;
+    content: '\f00c'; }
 
 .floating-menu {
   position: relative;
@@ -5313,6 +5357,83 @@ table,
   line-height: 1.9;
   text-decoration: none;
   font-stretch: normal; }
+
+.feedback-form__wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #603f98; }
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 720px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #ffffff; }
+  .feedback-form h1 {
+    color: #1c1e21;
+    font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 32px;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1; }
+  .feedback-form h2 {
+    margin: 0;
+    color: #1c1e21;
+    font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 28px;
+    font-size: 1.75rem;
+    font-weight: 300;
+    line-height: 1; }
+  .feedback-form .feedback-form-button {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 35px; }
+    .feedback-form .feedback-form-button .feedback-form-button-circle {
+      width: 105px;
+      height: 105px;
+      margin-bottom: 20px;
+      border: 2px solid rgba(0, 0, 0, 0.1);
+      border-radius: 60px;
+      background: none;
+      color: rgba(0, 0, 0, 0.1);
+      font-size: 40px;
+      font-size: 2.5rem;
+      cursor: pointer; }
+      .feedback-form .feedback-form-button .feedback-form-button-circle:focus {
+        outline: none; }
+    .feedback-form .feedback-form-button .feedback-form-button-label {
+      border: 0;
+      background: none;
+      color: #696f76;
+      font-size: 17px;
+      font-size: 1.0625rem;
+      font-weight: bold;
+      line-height: 1.12;
+      cursor: pointer; }
+      .feedback-form .feedback-form-button .feedback-form-button-label:focus {
+        outline: none; }
+    .feedback-form .feedback-form-button.feedback-form-button--selected .feedback-form-button-circle {
+      background-color: #603f98;
+      color: #ffffff; }
+    .feedback-form .feedback-form-button.feedback-form-button--selected .feedback-form-button-label {
+      color: #603f98; }
+  .feedback-form textarea {
+    width: 60%; }
+  .feedback-form .feedback-form-button-submit {
+    width: 60%;
+    margin: 30px;
+    padding: 20px;
+    border: 0;
+    border-radius: 5px;
+    background: #603f98;
+    color: #ffffff;
+    font-size: 17px;
+    font-size: 1.0625rem;
+    font-weight: bold; }
 
 footer {
   display: flex;

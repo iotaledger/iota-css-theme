@@ -20,10 +20,12 @@
 @import 'text';
 @import 'text-inline';
 @import 'text-paragraph';
+@import 'textarea';
 
 // Molecules
 @import 'card';
 @import 'cards-container';
+@import 'feedback-button';
 @import 'floating-menu';
 @import 'input-search';
 @import 'input-register';
@@ -38,6 +40,7 @@
 @import 'tree-menu';
 
 // Organisms
+@import 'feedback-form';
 @import 'footer';
 @import 'header';
 
