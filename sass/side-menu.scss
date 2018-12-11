@@ -19,24 +19,19 @@ $side-menu-right-padding: 24px;
 
 .side-menu__group {
   margin-bottom: 2px;
+
+  .side-menu__list {
+    display: none;
+  }
 }
 
 .side-menu__group--selected {
   .side-menu__heading {
-    h5 {
-      color: $tealish;
-    }
+    color: $tealish;
   }
-}
 
-.side-menu__close {
-  background: none;
-  color: white;
-  border: none;
-  cursor: pointer;  
-
-  &:focus {
-    outline: none;
+  .side-menu__list {
+    display: block;
   }
 }
 
@@ -46,57 +41,44 @@ $side-menu-right-padding: 24px;
   justify-content: space-between;
   height: 90px;
   margin: 0;
-  padding: 0 $side-menu-right-padding - 8px 0 $side-menu-left-padding;
+  padding: 0 $side-menu-right-padding 0 $side-menu-left-padding;
   color: $white;
-
   @include font-size(24px);
 }
 
 .side-menu__heading {
-  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 55px;
+  margin: 0;
+  padding: 0 $side-menu-right-padding 0 $side-menu-left-padding;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: $white;
+  @include font-size(20px);
 
-  h5 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 55px;
-    margin: 0;
-    padding: 0 $side-menu-right-padding 0 $side-menu-left-padding;
-    background-color: rgba(255, 255, 255, 0.1);
-    color: $white;
-    @include font-size(20px);
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.side-menu__close {
+  &:hover {
+    cursor: pointer;
   }
 }
 
 .side-menu__list {
-  max-height: 0;
-  transition: max-height 0.15s ease-out;
-  overflow: hidden;
-  margin: 0;
-  
+  color: $white;
+
   li {
+    @include font-size(15px);
+
     padding: 4px 0;
-    color: $white;
+    font-weight: 200;
 
-    a {
-      color: $white;
-      font-weight: 200;
-      @include font-size(15px);
-      text-decoration: none;
-    }
-
-    &.side-menu__item--selected {
-      color: $tealish;
-
-      a {
-        color: $tealish;
-      }
+    &:hover {
+      cursor: pointer;
     }
   }
-}
-
-.side-menu__list--expanded {
-  max-height: 500px;
-  transition: max-height 0.25s ease-in;
-  margin: 16px 0px 16px 0px;
 }

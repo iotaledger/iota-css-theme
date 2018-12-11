@@ -14,41 +14,33 @@
 }
 
 .floating-menu__item {
+  color: $black;
+  @include font-size(17px);
+  font-style: normal;
+  font-weight: normal;
   line-height: 2.35;
+  text-decoration: none;
+  font-stretch: normal;
 
-  a {
-    color: $black;
-    @include font-size(17px);
-    font-style: normal;
-    font-weight: normal;
-    text-decoration: none;
-    font-stretch: normal;
+  &:hover {
+    @include font-size(26px);
+    font-weight: bold;
 
-    &:hover {
-      @include font-size(26px);
-
-      font-weight: bold;
+    &::before {
+      position: absolute;
+      left: -6px;
+      height: 40px;
+      border-left: 4px solid $tealish;
       color: $tealish;
-
-      &:before {
-        content: ' ';
-        border-left: 4px solid $tealish;
-        position: absolute;
-        left: -6px;
-        height: 40px;
-      }
+      content: ' ';
     }
   }
 }
 
 .floating-menu__item--selected {
-  a {
-    color: $tealish;
-
-    @include font-size(26px);
-
-    font-weight: bold;
-  }
+  color: $tealish;
+  @include font-size(26px);
+  font-weight: bold;
 
   &::before {
     position: absolute;
