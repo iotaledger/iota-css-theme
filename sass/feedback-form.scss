@@ -47,6 +47,8 @@
       width: 105px;
       height: 105px;
       margin-bottom: 20px;
+      transition: 0.7s ease 0s;
+      transition-property: border color;
       border: 2px solid rgba(0, 0, 0, 0.1);
       border-radius: 60px;
       background: none;
@@ -65,6 +67,8 @@
     }
 
     .feedback-form-button-label {
+      transition: 0.7s ease 0s;
+      transition-property: border color;
       border: 0;
       background: none;
       color: $body-copy;
@@ -102,11 +106,25 @@
     width: 60%;
     margin: 30px;
     padding: 20px;
+    transition: 0.7s ease 0s;
+    transition-property: border background;
     border: 0;
     border-radius: 5px;
     background: $blueberry;
     color: $white;
     @include font-size(17px);
     font-weight: bold;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      &:not([disabled]) {
+        border-color: darken($blueberry, 10%);
+        background-color: darken($blueberry, 10%);
+      }
+    }
   }
 }

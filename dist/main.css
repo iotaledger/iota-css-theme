@@ -5396,6 +5396,8 @@ table,
       width: 105px;
       height: 105px;
       margin-bottom: 20px;
+      transition: 0.7s ease 0s;
+      transition-property: border color;
       border: 2px solid rgba(0, 0, 0, 0.1);
       border-radius: 60px;
       background: none;
@@ -5409,6 +5411,8 @@ table,
       .feedback-form .feedback-form-button .feedback-form-button-circle:focus {
         outline: none; }
     .feedback-form .feedback-form-button .feedback-form-button-label {
+      transition: 0.7s ease 0s;
+      transition-property: border color;
       border: 0;
       background: none;
       color: #696f76;
@@ -5432,13 +5436,21 @@ table,
     width: 60%;
     margin: 30px;
     padding: 20px;
+    transition: 0.7s ease 0s;
+    transition-property: border background;
     border: 0;
     border-radius: 5px;
     background: #603f98;
     color: #ffffff;
     font-size: 17px;
     font-size: 1.0625rem;
-    font-weight: bold; }
+    font-weight: bold;
+    cursor: pointer; }
+    .feedback-form .feedback-form-button-submit:focus {
+      outline: none; }
+    .feedback-form .feedback-form-button-submit:hover:not([disabled]) {
+      border-color: #493074;
+      background-color: #493074; }
 
 footer {
   display: flex;
