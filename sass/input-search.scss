@@ -36,7 +36,7 @@
   line-height: normal;
   font-stretch: normal;
 
-  &::placeholder {
+  @include placeholder {
     color: $white;
     @include font-size(20px);
     font-style: normal;

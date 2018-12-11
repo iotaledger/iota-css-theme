@@ -4,3 +4,11 @@
   // sass-lint:disable no-duplicate-properties
   font-size: #{$size / 16px}rem;
 }
+
+@mixin placeholder {
+  &::placeholder {@content}
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}  
+}

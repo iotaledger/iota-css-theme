@@ -57,8 +57,9 @@
   font-weight: 600;
   line-height: normal;
   font-stretch: normal;
+  overflow: hidden;
 
-  &::placeholder {
+  @include placeholder {
     color: $white;
     @include font-size(20px);
     font-style: normal;
