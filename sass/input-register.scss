@@ -18,49 +18,53 @@ $common-desktop-width: 155px;
 .input-register {
   width: 300px;
   height: $common-height - 2px;
+  padding-left: 16px;
+  border: 0;
+  outline: none;
   background-color: $white;
   color: $body-copy;
-  padding-left: 16px;
-  font-family: NunitoSans;
   @include font-size(18px);
-  font-weight: 600;
   font-style: normal;
-  font-stretch: normal;
+  font-weight: 600;
   line-height: normal;
-  border: none;
-  outline: none;
+  font-stretch: normal;
 }
 
 .input-register__button {
-  background-color: $blueberry;
-  border-bottom-right-radius: 6px;
-  border-top-right-radius: 6px;
-  height: $common-height;
   width: $common-height;
-  border: none;
+  height: $common-height;
+  border: 0;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-color: $blueberry;
   @include font-size(17px);
   font-weight: bold;
-  &:after {
-    content: '\f061';
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::after {
+    color: $white;
     font-family: $font-family-icons;
     font-weight: 600;
-    color: $white;
+    content: '\f061';
   }
-}
 
-.input-register__button-text {
-  color: $white;
-  display: none;
-}
-
-@include desktop {
-  .input-register__button {
+  @include desktop {
     display: flex;
     justify-content: space-between;
     width: $common-desktop-width;
     padding: 15px 30px;
   }
-  .input-register__button-text {
+}
+
+.input-register__button-text {
+  display: none;
+  color: $white;
+
+  @include desktop {
     display: inline;
   }
 }

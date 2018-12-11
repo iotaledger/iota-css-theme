@@ -6,28 +6,49 @@
 //
 // Styleguide Atoms.Dropdown
 
-.select {
-  max-width: 343px;
+.select-wrapper {
+  position: relative;
   width: 100%;
+  max-width: 343px;
+  line-height: 1.5;
+
+  &::after {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: $white;
+    font-family: $font-family-icons;
+
+    @include font-size(24px);
+
+    font-weight: 600;
+    content: '\f107';
+    pointer-events: none;
+  }
+}
+
+.select {
+  width: 100%;
+  max-width: 343px;
   height: 55px;
-  border-radius: 6px;
-  background-color: rgba(255, 255, 255, 0.1);
-  background-image: url(../assets/Dropdown.svg);
-  background-position: right 20px center, right bottom, right bottom, right bottom;
-  background-repeat: no-repeat;
+  padding-right: 55px;
+  padding-left: 20px;
   border: 1px solid $white;
+  border-radius: 6px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.1);
   color: $white;
   font-size: inherit;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  outline: none;
-  -webkit-appearance: button;
-  -moz-appearance: button;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -webkit-padding-end: 20px;
-  -moz-padding-end: 20px;
-  -webkit-padding-start: 20px;
-  -moz-padding-start: 20px;
+  overflow: hidden;
+
+  // sass-lint:disable no-vendor-prefixes
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  &::-ms-expand {
+    display: none;
+  }
 }

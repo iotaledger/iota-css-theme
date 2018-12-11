@@ -7,14 +7,15 @@
 //
 // Styleguide Atoms.Link
 
+a,
 .link {
+  color: $blueberry;
   @include font-size(16px);
-
-  color: $blueberry !important;
-  line-height: 1.5;
   font-weight: bold;
+  line-height: 1.5;
+  cursor: pointer;
 
   &:hover {
-    color: #4e2c88 !important;
+    color: #4e2c88;
   }
 }

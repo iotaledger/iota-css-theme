@@ -18,12 +18,12 @@ $font-primary: 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Ro
 $font-secondary: 'Source Code Pro', monospace;
 
 // Include Font Awesome directly instead of each app having to manage it
-@import '../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
 
 // Include the fonts from the fontawesome cdn
 $fa-font-path: 'https://use.fontawesome.com/releases/v5.5.0/webfonts/';
 
-@import '../node_modules/@fortawesome/fontawesome-free/scss/regular.scss';
-@import '../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/regular';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/solid';
 
 $font-family-icons: 'Font Awesome\ 5 Free';

@@ -7,23 +7,43 @@
 // Styleguide Organisms.Header
 
 .header {
-  height: 100%;
-
-  background-color: $tealish;
   display: block;
+  min-width: $min-width;
+  height: 100%;
+  background-color: $tealish;
+
+  .top-header {
+    @include tablet-down {
+      display: none;
+    }
+  }
 }
+
 .header__wrapper {
-  padding: 32px;
+  padding: 0px 32px 32px 32px;
+
+  @include tablet {
+    padding: 32px;
+  }
 }
+
 .header__head {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  @include tablet-down {
+    padding-top: 10px;
+  }
 }
 
 .header__body {
   max-width: $max-width;
   margin: 87px auto 50px auto;
+
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .header__brand {
@@ -34,19 +54,26 @@
 .header__search {
   height: 42px;
   margin-top: 80px;
+
+  @include desktop {
+    width: 700px;
+    margin-top: 0;
+  }
 }
 
 .header__icon {
+  border: 0;
+  background: none;
   color: $white;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:disabled {
+    cursor: default;
+    pointer-events: none;
+  }
 }
 
-@include desktop {
-  .header__search {
-    margin-top: 0;
-    width: 700px;
-  }
-  .header__body {
-    display: flex;
-    justify-content: space-between;
-  }
-}

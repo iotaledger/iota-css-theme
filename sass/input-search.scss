@@ -9,38 +9,37 @@
 .input-wrapper {
   display: inline-flex;
   width: 100%;
+
   &::before {
-    content: "\f002";
-    font-family: $font-family-icons;
-    color: $white;
-    font-weight: 600;
     position: relative;
-    left: 30px;
     top: 10px;
+    left: 30px;
+    color: $white;
+    font-family: $font-family-icons;
+    font-weight: 600;
+    content: '\f002';
   }
 }
 
 .input-search {
   width: 100%;
-  padding-left: 40px;
   max-width: 100%;
-  background-color: $tealish;
-  border-color: $tealish;
-  color: $white;
-  padding: 10px;
-  @include font-size(18px);
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  border: none;
+  padding: 10px 10px 10px 43px;
+  border: 0;
+  border-bottom: 2px solid $white;
   outline: none;
-  padding-left: 43px;
+  background-color: $tealish;
+  color: $white;
+  @include font-size(18px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+
   &::placeholder {
     color: $white;
     @include font-size(20px);
-    font-weight: 600;
     font-style: normal;
+    font-weight: 600;
   }
-  border-bottom: 2px solid $white;
 }

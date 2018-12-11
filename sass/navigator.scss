@@ -7,51 +7,73 @@
 // Styleguide Molecules.Navigator
 
 .navigator {
+  display: flex;
   height: 119px;
   background-color: $white;
-  display: flex;
   @include font-size(18px);
+
+  @include desktop {
+    height: 152px;
+    @include font-size(24px);
+    font-weight: bold;
+  }
 }
 
 .navigator__back {
-  border: 1px $sand-grey solid;
-  display: block;
-  width: 100%;
-  padding: 18px 16px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
+  padding: 18px 16px;
+  border: 1px $sand-grey solid;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:disabled {
+    cursor: default;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  @include desktop {
+    padding-left: 90px;
+  }
 }
 
 .navigator__next {
-  border: 1px $sand-grey solid;
-  display: block;
-  width: 100%;
-  padding: 18px 16px;
-  text-align: right;
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   justify-content: center;
+  width: 100%;
+  padding: 18px 16px;
+  border: 1px $sand-grey solid;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:disabled {
+    cursor: default;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  @include desktop {
+    padding-right: 90px;
+  }
 }
 
 .navigator__label {
-  color: $tealish
+  color: $tealish;
 }
 
 .navigator__title {
-  color: $body-copy
-}
-
-@include desktop {
-  .navigator {
-    @include font-size(24px);
-    height: 152px;
-    font-weight: bold;
-  }
-  .navigator__next {
-    padding-right: 90px;
-  }
-  .navigator__back {
-    padding-left: 90px;
-  }
+  color: $body-copy;
 }

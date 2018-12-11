@@ -10,55 +10,58 @@
 
 .input-sticky-wrapper {
   display: inline-flex;
-  transition: all 0.7s ease 0s;
   width: 20px;
+  transition: width 0.7s ease 0s;
+
   &::before {
-    content: "\f002";
-    font-family: $font-family-icons;
-    color: $white;
-    font-weight: 600;
     position: relative;
-    left: 30px;
     top: 10px;
+    left: 30px;
+    color: $white;
+    font-family: $font-family-icons;
+    font-weight: 600;
+    content: '\f002';
   }
 }
 
- .input-sticky-wrapper--expanded {
-   width: 100%;
-   .input-search-sticky {
-     border-bottom: 2px solid $white;
-     padding-right: 40px;
-   }
-   &::after {
-     content: "\f00d";
-     font-family: $font-family-icons;
-     color: $white;
-     font-weight: 600;
-     position: relative;
-     right: 30px;
-     top: 10px;
-   }
- }
+.input-sticky-wrapper--expanded {
+  width: 100%;
+
+  .input-search-sticky {
+    padding-right: 40px;
+    border-bottom: 2px solid $white;
+  }
+
+  &::after {
+    position: relative;
+    top: 10px;
+    right: 30px;
+    color: $white;
+    font-family: $font-family-icons;
+    font-weight: 600;
+    content: '\f00d';
+  }
+}
 
 .input-search-sticky {
   width: 100%;
-  padding: 10px 0;
   max-width: 100%;
-  background-color: $tealish;
+  padding: 10px 0px 7px 43px;
+  border: 0;
   border-color: $tealish;
+  outline: none;
+  background-color: $tealish;
   color: $white;
   @include font-size(18px);
-  font-weight: 600;
   font-style: normal;
-  font-stretch: normal;
+  font-weight: 600;
   line-height: normal;
-  border: none;
-  outline: none;
-  padding-left: 43px;
+  font-stretch: normal;
+
   &::placeholder {
     color: $white;
     @include font-size(20px);
-    font-weight: 600;
     font-style: normal;
+    font-weight: 600;
   }
 }

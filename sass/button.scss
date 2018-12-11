@@ -22,33 +22,35 @@
 // Styleguide Atoms.Button
 
 .button {
-  padding: 16px 32px;
-  margin: 8px;
   display: inline-block;
-
-  @include font-size(14.5px);
-
-  font-weight: bold;
-  text-transform: uppercase;
-  color: $white;
-  background-color: $blueberry;
+  margin: 8px;
+  padding: 16px 32px;
+  transition: .2s color, .2s background-color, .2s border-color;
   border: 2px solid $blueberry;
   border-radius: 5px;
-  transition: .2s color, .2s background-color, .2s border-color;
+  background-color: $blueberry;
+  color: $white;
+  @include font-size(14.5px);
+  font-weight: bold;
+  text-transform: uppercase;
 
-  &:hover:not([disabled]) {
-    background-color: darken($blueberry, 10%);
-    border-color: darken($blueberry, 10%);
-    cursor: pointer;
+  &:hover {
+    &:not([disabled]) {
+      border-color: darken($blueberry, 10%);
+      background-color: darken($blueberry, 10%);
+      cursor: pointer;
+    }
   }
 
-  &:focus:enabled {
+  &:focus {
+    &:enabled {
       outline: none;
+    }
   }
 
   &:disabled {
-    opacity: 0.5;
     cursor: default;
+    opacity: 0.5;
     pointer-events: none;
   }
 }
@@ -62,34 +64,40 @@
 }
 
 .button--primary {
-  background-color: $blueberry;
   border-color: $blueberry;
+  background-color: $blueberry;
   color: $white;
 
-  &:hover:not([disabled]) {
-    background-color: darken($blueberry, 10%);
-    border-color: darken($blueberry, 10%);
+  &:hover {
+    &:not([disabled]) {
+      border-color: darken($blueberry, 10%);
+      background-color: darken($blueberry, 10%);
+    }
   }
 }
 
 .button--secondary {
-    background-color: transparent;
-    border-color: $blueberry;
-    color: $blueberry;
-  
-    &:hover:not([disabled]) {
-        background-color: transparent;
-        border-color: darken($blueberry, 10%);
+  border-color: $blueberry;
+  background-color: transparent;
+  color: $blueberry;
+
+  &:hover {
+    &:not([disabled]) {
+      border-color: darken($blueberry, 10%);
+      background-color: transparent;
     }
+  }
 }
 
 .button--tertiary {
-    background-color: transparent;
-    border-color: $white;
-    color: $white;
-  
-    &:hover:not([disabled]) {
-        background-color: rgba(255, 255, 255, 0.2);
-        border-color: $white;
+  border-color: $white;
+  background-color: transparent;
+  color: $white;
+
+  &:hover {
+    &:not([disabled]) {
+      border-color: $white;
+      background-color: rgba(255, 255, 255, 0.2);
     }
+  }
 }

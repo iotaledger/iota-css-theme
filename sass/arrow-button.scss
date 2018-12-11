@@ -18,14 +18,16 @@
   background-color: $white;
 
   &::before {
+    color: $tealish;
     font-family: $font-family-icons;
     @include font-size(24px);
     font-weight: 600;
-    color: $tealish;
   }
 
-  &:hover:not([disabled]) {
-    cursor: pointer;
+  &:hover {
+    &:not([disabled]) {
+      cursor: pointer;
+    }
   }
 
   &:focus {
@@ -33,8 +35,8 @@
   }
 
   &:disabled {
-    opacity: 0.5;
     cursor: default;
+    opacity: 0.5;
     pointer-events: none;
   }
 }

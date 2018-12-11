@@ -4,7 +4,6 @@
 //
 // Markup: html/text-inline.html
 //
-// .text-inline - Default style.
 // .text-inline--strong - Color is darker and font weight is strong.
 // .text-inline--emphasis - Color is darker.
 // .text-inline--bold - Font weight is bold.
@@ -19,19 +18,18 @@
 // Styleguide Atoms.Text Inline
 
 .text-inline {
-  @include font-size(17px);
-
   color: $body-copy;
-  font-weight: normal;
+  @include font-size(17px);
   font-style: normal;
-  font-stretch: normal;
-  line-height: 1.41;
+  font-weight: normal;
   letter-spacing: normal;
+  line-height: 1.41;
+  font-stretch: normal;
 }
 
 .text-inline--strong {
-  font-weight: 600;
   color: $black;
+  font-weight: 600;
 }
 
 .text-inline--emphasis {
@@ -43,11 +41,10 @@
 }
 
 .text-inline--alert {
-    font-weight: bold;
-    color: $danger;
-  }
-  
-  
+  color: $danger;
+  font-weight: bold;
+}
+
 .text-inline--italic {
   font-style: italic;
 }
@@ -61,15 +58,14 @@
 }
 
 .text-inline--small {
-    @include font-size(12px);
-  }
-  
-  .text-inline--quotation {
-    font-style: italic;
-    color: $black;
-  }
-  
-  
+  @include font-size(12px);
+}
+
+.text-inline--quotation {
+  color: $black;
+  font-style: italic;
+}
+
 .text-inline--code {
   font-family: $font-secondary;
 }

@@ -7,51 +7,89 @@
 // Styleguide Molecules.ProjectTopics
 
 .project__wrapper {
-  width: 100%;
   display: flex;
   flex-direction: column;
+  width: 100%;
   background-color: $white;
+
+  @include tablet-up {
+    margin-bottom: 100px;
+  }
 }
 
 .project {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  border-bottom: 1px solid $brown-grey;
   padding: 60px 0 15px;
-}
+  border-bottom: 1px solid $brown-grey;
 
-.project:last-child {
-  border-bottom: none;
+  &:last-child {
+    border-bottom: 0;
+
+    @include tablet-up {
+      border-bottom: 1px solid $brown-grey;
+    }
+  }
 }
 
 .project__heading {
-  color: $tealish;
   margin: 0;
+  color: $tealish;
 }
 
 .project-topics {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
   flex-wrap: wrap;
+  justify-content: flex-start;
   width: 100%;
   margin-top: 35px;
 }
 
 .project-topic__link {
-  width: 100%;
-  padding-bottom: 50px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 100%;
+  padding-bottom: 50px;
   text-decoration: none;
 
   & .text {
     color: $gunmetal-grey;
   }
-   &:visited {
+
+  &:visited {
     color: $gunmetal-grey;
+  }
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: calc(50% + 25px);
+    padding-right: 50px;
+    padding-bottom: 50px;
+
+    &:nth-child(2n) {
+      width: calc(50% - 25px);
+      padding-right: 0;
+    }
+  }
+
+
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: calc(33% + 25px);
+    padding-right: 50px;
+    padding-bottom: 50px;
+
+    &:nth-child(3n) {
+      width: calc(33% - 50px);
+      padding-right: 0;
+    }
   }
 }
 
@@ -60,51 +98,7 @@
 }
 
 .project-topic__subheading {
-  text-align: left;
   font-weight: lighter;
   line-height: 2;
-}
-
-@include tablet {
-  .project-topic__link {
-    width: calc(50% + 25px);
-    padding-bottom: 50px;
-    padding-right: 50px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-    &:nth-child(2n) {
-      padding-right: 0;
-      width: calc(50% - 25px);
-    }
-  }
-}
-
-@include desktop {
-  .project-topic__link {
-    width: calc(33% + 25px);
-    padding-bottom: 50px;
-    padding-right: 50px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-    &:nth-child(3n) {
-      padding-right: 0;
-      width: calc(33% - 50px);
-    }
-  }
-}
-
-@include tabletUp {
-  .project__wrapper {
-    margin-bottom: 100px;
-  }
-
-  .project:last-child {
-    border-bottom: 1px solid $brown-grey;
-  }
+  text-align: left;
 }

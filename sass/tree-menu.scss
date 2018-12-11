@@ -7,36 +7,39 @@
 // Styleguide Molecules.Tree Menu
 
 .tree-menu {
-    padding: 0 20px;
+  padding: 0 20px;
 }
 
 .tree-menu__section-title {
-  @include font-size(17px);
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 2.06;
   color: $gunmetal-grey;
+  @include font-size(17px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.06;
+  font-stretch: normal;
 }
 
 .tree-menu__section-title--selected {
-  color: $tealish;
-  border-left: 4px solid $tealish;
   margin-left: -20px;
   padding-left: 20px;
+  border-left: 4px solid $tealish;
+  color: $tealish;
 }
 
 .tree-menu__section {
-  list-style-type: none;
   padding-left: 20px;
+  list-style-type: none;
 }
 
 .tree-menu__section-item {
-  @include font-size(15px);
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.9;
-  letter-spacing: normal;
-  color: $body-copy;
+  a {
+    color: $body-copy;
+    @include font-size(15px);
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: normal;
+    line-height: 1.9;
+    text-decoration: none;
+    font-stretch: normal;
+  }
 }

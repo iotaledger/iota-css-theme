@@ -7,29 +7,32 @@
 // Styleguide Molecules.Top Header
 
 .top-header {
-  height: 50px;
-}
-
-.top-header__background {
-  opacity: 0.1;
-  mix-blend-mode: multiply;
-  background: linear-gradient(to left, #5a5a5a, rgba(255, 255, 255, 0));
-  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   width: 100%;
-  height: 100%
+  height: 50px;
+  background: linear-gradient(to left, rgba(90, 90, 90, 0.1), rgba(255, 255, 255, 0));
 }
 
 .top-header__items {
-  display:  flex;
+  display: flex;
   align-items: center;
-  position: absolute;
-  top: 17px;
-  right: 18px;
+  margin: 0px 18px 0px 18px;
+  list-style: none;
 }
 
 .top-header__item {
-  color: $white;
   padding: 0 15px;
-  font-weight: 600;
-  @include font-size(12px);
+
+  a {
+    color: $white;
+    @include font-size(12px);
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+      color: $white;
+    }
+  }
 }

@@ -6,59 +6,56 @@
 //
 // Styleguide Molecules.Card
 
-
 .card__link {
-  width: 340px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 340px;
 
-  & .text {
+  &.text {
     color: $gunmetal-grey;
   }
 
   &:visited {
     color: $gunmetal-grey;
   }
+
+  @include desktop {
+    text-decoration: none;
+  }
 }
 
 .card__wrapper {
-  width: 100%;
   display: flex;
+  width: 100%;
 }
 
 .card__label {
-  padding: 24px;
   width: 100%;
   margin: 0;
+  padding: 24px;
   background-color: $white;
   line-height: 1;
   text-align: left;
 }
 
 .card {
-  width: 33%;
-  margin-bottom: 50px;
-  min-width: 340px;
   display: flex;
   justify-content: center;
-}
+  width: 33%;
+  min-width: 340px;
+  margin-bottom: 50px;
 
-.card:first-child {
-  justify-content: flex-start;
-}
+  &:first-child {
+    justify-content: flex-start;
+  }
 
-.card:last-child {
-  justify-content: flex-end;
+  &:last-child {
+    justify-content: flex-end;
+  }
 }
 
 .card__image {
   width: 340px;
   height: 260px;
-}
-
-@include desktop {
-  .card__link {
-    text-decoration: none;
-  }
 }

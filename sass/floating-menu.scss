@@ -7,30 +7,54 @@
 // Styleguide Molecules.Floating Menu
 
 .floating-menu {
-  list-style: none;
+  position: relative;
   margin-left: 0;
   padding-left: 20px;
-  position: relative;
+  list-style: none;
 }
 
 .floating-menu__item {
-  @include font-size(17px);
-  font-style: normal;
-  font-stretch: normal;
   line-height: 2.35;
+
+  a {
+    color: $black;
+    @include font-size(17px);
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-stretch: normal;
+
+    &:hover {
+      @include font-size(26px);
+
+      font-weight: bold;
+      color: $tealish;
+
+      &:before {
+        content: ' ';
+        border-left: 4px solid $tealish;
+        position: absolute;
+        left: -6px;
+        height: 40px;
+      }
+    }
+  }
 }
 
 .floating-menu__item--selected {
-  @include font-size(26px);
-  font-weight: bold;
-  color: $tealish;
-  //padding-left: 20px;
-//  border-left: 4px solid $tealish;
-  &:before {
-    content: " ";
-    border-left: 4px solid $tealish;
+  a {
+    color: $tealish;
+
+    @include font-size(26px);
+
+    font-weight: bold;
+  }
+
+  &::before {
     position: absolute;
     left: -6px;
-    height: 58px;
+    height: 40px;
+    border-left: 4px solid $tealish;
+    content: ' ';
   }
 }

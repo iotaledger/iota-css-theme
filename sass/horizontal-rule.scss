@@ -4,19 +4,19 @@
 //
 // Markup: html/horizontal-rule.html
 //
-// .horizontal-rule - Horizontal ruler.
 // .horizontal-rule--small - Horizontal ruler small.
 //
 // Styleguide Atoms.Horizontal Rule
 
-hr, .horizontal-rule {
-    border-style: solid;
-    border: none;
-    border-top: 2px solid $light-grey;
-    width: 100%;
-    margin: 8px 0px 8px 0px;
+hr,
+.horizontal-rule {
+  width: 100%;
+  margin: 8px 0px 8px 0px;
+  border: 0;
+  border-top: 2px solid $light-grey;
+  border-style: solid;
 }
 
 .horizontal-rule--small {
-    width: 160px;
+  width: 160px;
 }
