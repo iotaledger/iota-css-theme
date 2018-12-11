@@ -1,6 +1,5 @@
 # iota-css-theme
 
-
 ## Usage
 
 In your main React file, you could do :

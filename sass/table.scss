@@ -1,0 +1,105 @@
+// Table
+//
+// Markup: html/table.html
+//
+// Styleguide Molecules.Table
+
+table,
+.table {
+  width: 100%;
+  border-top: 1px solid #ececec;
+  border-left: 1px solid #ececec;
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+
+  thead,
+  .table-head {
+    vertical-align: top;
+
+    tr,
+    .table-head-row {
+      th,
+      .table-head-row--item {
+        padding: 0px 18px 0px 18px;
+        border-right: 1px solid #ececec;
+        border-bottom: 1px solid #ececec;
+        background-color: $gunmetal-grey;
+        color: $white;
+
+        @include font-size(20px);
+
+        font-weight: bold;
+        line-height: 2.4;
+        text-align: left;
+      }
+    }
+
+    .table-head-row {
+      display: flex;
+    }
+
+    .table-head-row--item {
+      display: flex;
+      flex-basis: 0;
+      flex-grow: 1;
+      overflow: hidden;
+    }
+  }
+
+  tbody,
+  .table-body {
+    vertical-align: top;
+
+    tr,
+    .table-body-row {
+      &:nth-child(odd) {
+        background-color: $white;
+      }
+
+      &:nth-child(even) {
+        background-color: #f8f8f8;
+      }
+
+      th,
+      .table-body-row--header {
+        padding: 4px 18px 4px 18px;
+        border-right: 1px solid #ececec;
+        border-bottom: 1px solid #ececec;
+        color: $blueberry;
+        font-family: $font-secondary;
+
+        @include font-size(17px);
+        font-weight: normal;
+        line-height: 2.82;
+        text-align: left;
+      }
+
+      td,
+      .table-body-row--item {
+        padding: 12px 18px 12px 18px;
+        border-right: 1px solid #ececec;
+        border-bottom: 1px solid #ececec;
+        color: $body-copy;
+
+        @include font-size(17px);
+        font-weight: normal;
+        line-height: 1.88;
+        text-align: left;
+      }
+    }
+
+    .table-body-row {
+      display: flex;
+    }
+
+    .table-body-row--header,
+    .table-body-row--item {
+      display: flex;
+      flex-basis: 0;
+      flex-grow: 1;
+      overflow: hidden;
+    }
+  }
+}
+
