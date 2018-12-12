@@ -1,0 +1,27 @@
+// Feedback Overlay
+//
+// Styleguide Organisms.Feedback Overlay
+
+.feedback-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 50px;
+  overflow: auto;
+
+  .feedback-overlay-close {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    border: 0;
+    background: none;
+    color: $white;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

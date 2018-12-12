@@ -7,9 +7,13 @@ body {
   padding: 0;
   font-family: $font-primary;
   box-sizing: border-box;
+
+  &.no-scroll {
+    position: fixed;
+    overflow: hidden;
+  }
 }
 
 .hidden {
   display: none;
 }
-

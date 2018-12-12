@@ -6,14 +6,41 @@
 //
 // Styleguide Molecules.Feedback Button
 
+.feedback-button__wrapper {
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  height: 65px;
+  transition: 0.5s ease-out;
+  transition-property: left, top, width, height, box-shadow;
+  border: 0;
+  border-radius: 50%;
+  background-color: $blueberry;
+  box-shadow: 0px 0px 0px 0px lighten($blueberry, 20);
+}
+
+.feedback-button__wrapper--expanded {
+  top: -100vh;
+  left: -20vw;
+  width: 200vh;
+  height: 200vh;
+  transition: 0.5s ease-out;
+  box-shadow: 0px 0px 0px 100px lighten($blueberry, 20);
+}
+
 .feedback-button {
   width: 65px;
   height: 65px;
   transition: $transition-duration ease;
   transition-property: background;
   border: 0;
-  border-radius: 33px;
+  border-radius: 50%;
   background-color: $blueberry;
+  cursor: pointer;
 
   &:hover {
     background-color: #4e2c88;
@@ -30,7 +57,9 @@
       left: 19px;
       color: $white;
       font-family: $font-family-icons;
+
       @include font-size(28px);
+
       font-weight: 400;
       content: '\f27a';
     }
@@ -41,9 +70,15 @@
       left: 26px;
       color: $white;
       font-family: $font-family-icons;
+
       @include font-size(14px);
+
       font-weight: 900;
       content: '\f00c';
     }
   }
+}
+
+.feedback-button--hide-content {
+  display: none;
 }
