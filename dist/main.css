@@ -4694,18 +4694,25 @@ textarea,
     content: '\f27a'; }
   .feedback-button .feedback-button--icon::after {
     position: absolute;
-    top: 23px;
-    left: 26px;
+    top: 24px;
+    left: 27px;
     color: #ffffff;
     font-family: "Font Awesome 5 Free";
     font-size: 14px;
     font-size: 0.875rem;
     font-weight: 900;
-    content: ' '; }
+    content: '\f128';
+    opacity: 0.7; }
   .feedback-button .feedback-button--icon-yes::after {
-    content: '\f164'; }
+    top: 23px;
+    left: 26px;
+    content: '\f164';
+    opacity: 1; }
   .feedback-button .feedback-button--icon-no::after {
-    content: '\f165'; }
+    top: 23px;
+    left: 26px;
+    content: '\f165';
+    opacity: 1; }
 
 .feedback-button--hide-content {
   display: none; }
