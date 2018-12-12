@@ -9,6 +9,8 @@
 .feedback-button {
   width: 65px;
   height: 65px;
+  transition: $transition-duration ease;
+  transition-property: background;
   border: 0;
   border-radius: 33px;
   background-color: $blueberry;

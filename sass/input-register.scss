@@ -33,6 +33,8 @@ $common-desktop-width: 155px;
 .input-register__button {
   width: $common-height;
   height: $common-height;
+  transition: $transition-duration ease;
+  transition-property: background;
   border: 0;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -40,6 +42,10 @@ $common-desktop-width: 155px;
   @include font-size(17px);
   font-weight: bold;
   cursor: pointer;
+
+  &:hover {
+    background-color: #4e2c88;
+  }
 
   &:focus {
     outline: none;

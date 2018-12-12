@@ -11,7 +11,8 @@
 .input-sticky-wrapper {
   display: inline-flex;
   width: 20px;
-  transition: width 0.7s ease 0s;
+  transition: $transition-duration ease;
+  transition-property: width;
 
   &::before {
     position: relative;
