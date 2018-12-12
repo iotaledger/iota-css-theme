@@ -1,0 +1,80 @@
+// Sticky header
+//
+// This is the home page header.
+//
+// Markup: html/sticky-header.html
+//
+// .input-sticky-wrapper--expanded - when the input is expandedf.
+//
+// Styleguide Organisms.sticky-header
+
+.sticky-header {
+  display: block;
+  min-width: $min-width;
+  padding: 32px 25px;
+  background-color: $tealish;
+  .input-sticky-wrapper.input-sticky-wrapper--expanded {
+    margin-right: 0px;
+  }
+}
+
+.sticky-header__wrapper {
+  //margin-right: 46px;
+}
+
+.sticky-header__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sticky-header__body {
+  max-width: $max-width;
+  margin: 87px auto 50px auto;
+
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.sticky-header__brand {
+  width: 167px;
+  height: 56px;
+}
+
+.sticky-header__control {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  //height: 42px;
+  //margin-top: 80px;
+  .input-sticky-wrapper {
+    margin-right: 50px;
+  }
+  .input-sticky-wrapper::before {
+    font-size: x-large;
+    top: 7px;
+  }
+
+  @include desktop {
+  //  width: 700px;
+    //margin-top: 0;
+  }
+}
+
+.sticky-header__icon {
+  border: 0;
+  background: none;
+  color: $white;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:disabled {
+    cursor: default;
+    pointer-events: none;
+  }
+}
