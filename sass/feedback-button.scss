@@ -74,7 +74,19 @@
       @include font-size(14px);
 
       font-weight: 900;
-      content: '\f00c';
+      content: ' ';
+    }
+  }
+
+  .feedback-button--icon-yes {
+    &::after {
+      content: '\f164';
+    }
+  }
+
+  .feedback-button--icon-no {
+    &::after {
+      content: '\f165';
     }
   }
 }
