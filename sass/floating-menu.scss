@@ -7,46 +7,51 @@
 // Styleguide Molecules.Floating Menu
 
 .floating-menu {
-  position: relative;
   margin-left: 0;
-  padding-left: 20px;
+  padding-left: 0;
   list-style: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
 }
 
 .floating-menu__item {
-  color: $black;
-  @include font-size(17px);
-  font-style: normal;
-  font-weight: normal;
-  line-height: 2.35;
-  text-decoration: none;
-  font-stretch: normal;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  transition: $transition-duration ease;
+  transition-property: border;
+  border-left: 4px solid transparent;
+
+  a {
+    transition: inherit;
+    transition-property: font-size, color;
+    color: $black;
+    @include font-size(17px);
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.5;
+    text-decoration: none;
+    font-stretch: normal;
+  }
 
   &:hover {
-    @include font-size(26px);
-    font-weight: bold;
+    border-color: $tealish;
 
-    &::before {
-      position: absolute;
-      left: -6px;
-      height: 40px;
-      border-left: 4px solid $tealish;
+    a {
       color: $tealish;
-      content: ' ';
+      @include font-size(26px);
+      font-weight: bold;
     }
   }
 }
 
 .floating-menu__item--selected {
-  color: $tealish;
-  @include font-size(26px);
-  font-weight: bold;
+  border-color: $tealish;
 
-  &::before {
-    position: absolute;
-    left: -6px;
-    height: 40px;
-    border-left: 4px solid $tealish;
-    content: ' ';
+  a {
+    color: $tealish;
+    @include font-size(26px);
+    font-weight: bold;
   }
 }
