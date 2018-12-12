@@ -5915,6 +5915,9 @@ footer {
   background-color: #20a49d; }
   .sticky-header .input-sticky-wrapper.input-sticky-wrapper--expanded {
     margin-right: 0px; }
+  @media (min-width: 1024px) {
+    .sticky-header .input-sticky-wrapper.input-sticky-wrapper--expanded {
+      width: 389px; } }
 
 .sticky-header__head {
   display: flex;

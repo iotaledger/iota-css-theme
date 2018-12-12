@@ -16,10 +16,11 @@
   .input-sticky-wrapper.input-sticky-wrapper--expanded {
     margin-right: 0px;
   }
-}
-
-.sticky-header__wrapper {
-  //margin-right: 46px;
+  @include desktop {
+    .input-sticky-wrapper.input-sticky-wrapper--expanded  {
+      width: 389px;
+    }
+  }
 }
 
 .sticky-header__head {
@@ -47,19 +48,12 @@
   display: flex;
   width: 100%;
   justify-content: flex-end;
-  //height: 42px;
-  //margin-top: 80px;
   .input-sticky-wrapper {
     margin-right: 50px;
   }
   .input-sticky-wrapper::before {
     font-size: x-large;
     top: 7px;
-  }
-
-  @include desktop {
-  //  width: 700px;
-    //margin-top: 0;
   }
 }
 
