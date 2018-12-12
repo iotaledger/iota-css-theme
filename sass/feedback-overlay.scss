@@ -9,7 +9,11 @@
   width: 100vw;
   height: 100vh;
   padding: 50px;
+  transition: 0.1s ease-out;
+  transition-property: opacity;
+  opacity: 0;
   overflow: auto;
+  pointer-events: none;
 
   .feedback-overlay-close {
     position: absolute;
@@ -24,4 +28,11 @@
       outline: none;
     }
   }
+}
+
+
+.feedback-overlay--expanded {
+  transition: $transition-duration ease-in;
+  opacity: 1;
+  pointer-events: all;
 }

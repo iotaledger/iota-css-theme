@@ -15,7 +15,7 @@
   justify-content: center;
   width: 65px;
   height: 65px;
-  transition: 0.5s ease-out;
+  transition: $transition-duration ease-out;
   transition-property: left, top, width, height, box-shadow;
   border: 0;
   border-radius: 50%;
