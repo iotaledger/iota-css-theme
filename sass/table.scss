@@ -31,7 +31,18 @@ table,
 
         font-weight: bold;
         line-height: 2.4;
-        text-align: left;
+      }
+    }
+
+    th {
+      text-align: left;
+
+      &.table-head-row-item--center {
+        text-align: center;
+      }
+
+      &.table-head-row-item--right {
+        text-align: right;
       }
     }
 
@@ -43,7 +54,16 @@ table,
       display: flex;
       flex-basis: 0;
       flex-grow: 1;
+      justify-content: flex-start;
       overflow: hidden;
+
+      &.table-head-row-item--center {
+        justify-content: center;
+      }
+
+      &.table-head-row-item--right {
+        justify-content: flex-end;
+      }
     }
   }
 
@@ -70,9 +90,22 @@ table,
         font-family: $font-secondary;
 
         @include font-size(17px);
+
         font-weight: normal;
         line-height: 2.82;
+      }
+
+      th,
+      td {
         text-align: left;
+
+        &.table-body-row-item--center {
+          text-align: center;
+        }
+
+        &.table-body-row-item--right {
+          text-align: right;
+        }
       }
 
       td,
@@ -83,9 +116,9 @@ table,
         color: $body-copy;
 
         @include font-size(17px);
+
         font-weight: normal;
         line-height: 1.88;
-        text-align: left;
       }
     }
 
@@ -98,8 +131,16 @@ table,
       display: flex;
       flex-basis: 0;
       flex-grow: 1;
+      justify-content: flex-start;
       overflow: hidden;
+
+      &.table-body-row-item--center {
+        justify-content: center;
+      }
+
+      &.table-body-row-item--right {
+        justify-content: flex-end;
+      }
     }
   }
 }
-

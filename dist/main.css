@@ -5273,8 +5273,22 @@ table,
       font-size: 20px;
       font-size: 1.25rem;
       font-weight: bold;
-      line-height: 2.4;
+      line-height: 2.4; }
+    table thead th,
+    table .table-head th,
+    .table thead th,
+    .table .table-head th {
       text-align: left; }
+      table thead th.table-head-row-item--center,
+      table .table-head th.table-head-row-item--center,
+      .table thead th.table-head-row-item--center,
+      .table .table-head th.table-head-row-item--center {
+        text-align: center; }
+      table thead th.table-head-row-item--right,
+      table .table-head th.table-head-row-item--right,
+      .table thead th.table-head-row-item--right,
+      .table .table-head th.table-head-row-item--right {
+        text-align: right; }
     table thead .table-head-row,
     table .table-head .table-head-row,
     .table thead .table-head-row,
@@ -5287,7 +5301,18 @@ table,
       display: flex;
       flex-basis: 0;
       flex-grow: 1;
+      justify-content: flex-start;
       overflow: hidden; }
+      table thead .table-head-row--item.table-head-row-item--center,
+      table .table-head .table-head-row--item.table-head-row-item--center,
+      .table thead .table-head-row--item.table-head-row-item--center,
+      .table .table-head .table-head-row--item.table-head-row-item--center {
+        justify-content: center; }
+      table thead .table-head-row--item.table-head-row-item--right,
+      table .table-head .table-head-row--item.table-head-row-item--right,
+      .table thead .table-head-row--item.table-head-row-item--right,
+      .table .table-head .table-head-row--item.table-head-row-item--right {
+        justify-content: flex-end; }
   table tbody,
   table .table-body,
   .table tbody,
@@ -5335,8 +5360,58 @@ table,
       font-size: 17px;
       font-size: 1.0625rem;
       font-weight: normal;
-      line-height: 2.82;
+      line-height: 2.82; }
+    table tbody tr th,
+    table tbody tr td,
+    table tbody .table-body-row th,
+    table tbody .table-body-row td,
+    table .table-body tr th,
+    table .table-body tr td,
+    table .table-body .table-body-row th,
+    table .table-body .table-body-row td,
+    .table tbody tr th,
+    .table tbody tr td,
+    .table tbody .table-body-row th,
+    .table tbody .table-body-row td,
+    .table .table-body tr th,
+    .table .table-body tr td,
+    .table .table-body .table-body-row th,
+    .table .table-body .table-body-row td {
       text-align: left; }
+      table tbody tr th.table-body-row-item--center,
+      table tbody tr td.table-body-row-item--center,
+      table tbody .table-body-row th.table-body-row-item--center,
+      table tbody .table-body-row td.table-body-row-item--center,
+      table .table-body tr th.table-body-row-item--center,
+      table .table-body tr td.table-body-row-item--center,
+      table .table-body .table-body-row th.table-body-row-item--center,
+      table .table-body .table-body-row td.table-body-row-item--center,
+      .table tbody tr th.table-body-row-item--center,
+      .table tbody tr td.table-body-row-item--center,
+      .table tbody .table-body-row th.table-body-row-item--center,
+      .table tbody .table-body-row td.table-body-row-item--center,
+      .table .table-body tr th.table-body-row-item--center,
+      .table .table-body tr td.table-body-row-item--center,
+      .table .table-body .table-body-row th.table-body-row-item--center,
+      .table .table-body .table-body-row td.table-body-row-item--center {
+        text-align: center; }
+      table tbody tr th.table-body-row-item--right,
+      table tbody tr td.table-body-row-item--right,
+      table tbody .table-body-row th.table-body-row-item--right,
+      table tbody .table-body-row td.table-body-row-item--right,
+      table .table-body tr th.table-body-row-item--right,
+      table .table-body tr td.table-body-row-item--right,
+      table .table-body .table-body-row th.table-body-row-item--right,
+      table .table-body .table-body-row td.table-body-row-item--right,
+      .table tbody tr th.table-body-row-item--right,
+      .table tbody tr td.table-body-row-item--right,
+      .table tbody .table-body-row th.table-body-row-item--right,
+      .table tbody .table-body-row td.table-body-row-item--right,
+      .table .table-body tr th.table-body-row-item--right,
+      .table .table-body tr td.table-body-row-item--right,
+      .table .table-body .table-body-row th.table-body-row-item--right,
+      .table .table-body .table-body-row td.table-body-row-item--right {
+        text-align: right; }
     table tbody tr td,
     table tbody tr .table-body-row--item,
     table tbody .table-body-row td,
@@ -5360,8 +5435,7 @@ table,
       font-size: 17px;
       font-size: 1.0625rem;
       font-weight: normal;
-      line-height: 1.88;
-      text-align: left; }
+      line-height: 1.88; }
     table tbody .table-body-row,
     table .table-body .table-body-row,
     .table tbody .table-body-row,
@@ -5378,7 +5452,26 @@ table,
       display: flex;
       flex-basis: 0;
       flex-grow: 1;
+      justify-content: flex-start;
       overflow: hidden; }
+      table tbody .table-body-row--header.table-body-row-item--center,
+      table tbody .table-body-row--item.table-body-row-item--center,
+      table .table-body .table-body-row--header.table-body-row-item--center,
+      table .table-body .table-body-row--item.table-body-row-item--center,
+      .table tbody .table-body-row--header.table-body-row-item--center,
+      .table tbody .table-body-row--item.table-body-row-item--center,
+      .table .table-body .table-body-row--header.table-body-row-item--center,
+      .table .table-body .table-body-row--item.table-body-row-item--center {
+        justify-content: center; }
+      table tbody .table-body-row--header.table-body-row-item--right,
+      table tbody .table-body-row--item.table-body-row-item--right,
+      table .table-body .table-body-row--header.table-body-row-item--right,
+      table .table-body .table-body-row--item.table-body-row-item--right,
+      .table tbody .table-body-row--header.table-body-row-item--right,
+      .table tbody .table-body-row--item.table-body-row-item--right,
+      .table .table-body .table-body-row--header.table-body-row-item--right,
+      .table .table-body .table-body-row--item.table-body-row-item--right {
+        justify-content: flex-end; }
 
 .top-header {
   display: flex;
