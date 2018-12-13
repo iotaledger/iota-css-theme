@@ -5473,6 +5473,47 @@ table,
       .table .table-body .table-body-row--item.table-body-row-item--right {
         justify-content: flex-end; }
 
+.tabs {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  border: 1px solid #ececec;
+  border-radius: 0px 0px 5px 5px;
+  background-color: #f8f8f8; }
+  .tabs .tab-header {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+    padding: 12px 55px 12px 12px;
+    background-color: #3f3f3f;
+    list-style: none; }
+    .tabs .tab-header .tab-header-item {
+      margin: 0px 12px 0px 12px; }
+      .tabs .tab-header .tab-header-item a {
+        color: #ffffff;
+        font-size: 17px;
+        font-size: 1.0625rem;
+        font-weight: normal;
+        text-decoration: none;
+        opacity: 0.5; }
+      .tabs .tab-header .tab-header-item.tab-header-item--selected a {
+        font-weight: bold;
+        opacity: 1; }
+  .tabs .tab-header-copy {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    border: 0;
+    background: none;
+    color: #ffffff;
+    cursor: pointer; }
+    .tabs .tab-header-copy:focus {
+      outline: none; }
+  .tabs .tab-container {
+    padding: 22px; }
+
 .top-header {
   display: flex;
   align-items: center;
