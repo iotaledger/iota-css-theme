@@ -5118,10 +5118,12 @@ textarea,
   display: flex; }
 
 .input-register {
-  width: 300px;
-  height: 53px;
+  width: 280px;
+  height: 51px;
   padding-left: 16px;
-  border: 0;
+  border: 1px solid #c4c4c4;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
   outline: none;
   background-color: #ffffff;
   color: #696f76;
@@ -5138,17 +5140,21 @@ textarea,
   transition: 0.3s ease;
   transition-property: background;
   border: 0;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
   background-color: #603f98;
   font-size: 17px;
   font-size: 1.0625rem;
   font-weight: bold;
   cursor: pointer; }
-  .input-register__button:hover {
+  .input-register__button:hover:not([disabled]) {
     background-color: #4e2c88; }
   .input-register__button:focus {
     outline: none; }
+  .input-register__button:disabled {
+    cursor: default;
+    opacity: 0.5;
+    pointer-events: none; }
   .input-register__button::after {
     color: #ffffff;
     font-family: "Font Awesome 5 Free";

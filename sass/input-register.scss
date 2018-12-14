@@ -16,10 +16,12 @@ $common-desktop-width: 155px;
 }
 
 .input-register {
-  width: 300px;
-  height: $common-height - 2px;
+  width: 280px;
+  height: $common-height - 4px;
   padding-left: 16px;
-  border: 0;
+  border: 1px solid $light-grey;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
   outline: none;
   background-color: $white;
   color: $body-copy;
@@ -36,20 +38,28 @@ $common-desktop-width: 155px;
   transition: $transition-duration ease;
   transition-property: background;
   border: 0;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
   background-color: $blueberry;
   @include font-size(17px);
   font-weight: bold;
   cursor: pointer;
 
   &:hover {
-    background-color: #4e2c88;
+    &:not([disabled]) {
+      background-color: #4e2c88;
+    }
   }
 
   &:focus {
     outline: none;
   }
+
+  &:disabled {
+    cursor: default;
+    opacity: 0.5;
+    pointer-events: none;
+  }  
 
   &::after {
     color: $white;
