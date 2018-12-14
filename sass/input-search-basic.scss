@@ -1,0 +1,46 @@
+// Input Search Basic
+//
+// Various input styles.
+//
+// Markup: html/input-search-basic.html
+//
+// Styleguide Atoms.Input Search Basic
+
+.input-wrapper-basic {
+  display: inline-flex;
+  width: 100%;
+
+  &::before {
+    position: relative;
+    top: 10px;
+    left: 30px;
+    color: $light-grey;
+    font-family: $font-family-icons;
+    font-weight: 600;
+    content: '\f002';
+    top: 19px;
+    left: 56px;
+    font-size: xx-large;
+  }
+  .input-search-basic {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px 40px 20px 73px;
+    background-color: $white;
+    border: 2px solid $light-grey;
+    outline: none;
+    color: $light-grey;
+    @include font-size(23px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-stretch: normal;
+
+    @include placeholder {
+      color: $white;
+      @include font-size(20px);
+      font-style: normal;
+      font-weight: 600;
+    }
+  }
+}
