@@ -4662,8 +4662,8 @@ textarea,
   box-shadow: 0px 0px 0px 0px #9477c6; }
 
 .feedback-button__wrapper--expanded {
-  top: 100vh;
-  left: -100vh;
+  top: 150vh;
+  left: -150vh;
   width: 400vh;
   height: 400vh;
   transition: 0.5s ease-out;
@@ -4723,7 +4723,7 @@ textarea,
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 50px;
+  padding: 50px 0px 50px 0px;
   transition: 0.1s ease-out;
   transition-property: opacity;
   opacity: 0;
@@ -4996,7 +4996,8 @@ textarea,
   padding: 18px 16px;
   border: 1px #f3f2f1 solid;
   background-color: transparent;
-  cursor: pointer; }
+  cursor: pointer;
+  text-decoration: none; }
   .navigator__back:focus {
     outline: none; }
   .navigator__back:disabled {
@@ -5016,7 +5017,8 @@ textarea,
   padding: 18px 16px;
   border: 1px #f3f2f1 solid;
   background-color: transparent;
-  cursor: pointer; }
+  cursor: pointer;
+  text-decoration: none; }
   .navigator__next:focus {
     outline: none; }
   .navigator__next:disabled {
@@ -5596,7 +5598,8 @@ table,
 
 .feedback-form__wrapper {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  margin: 40px; }
 
 .feedback-form {
   display: flex;

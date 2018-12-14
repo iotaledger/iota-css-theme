@@ -29,6 +29,8 @@
   border: 1px $sand-grey solid;
   background-color: transparent;
   cursor: pointer;
+  text-decoration: none;
+
 
   &:focus {
     outline: none;
@@ -55,6 +57,7 @@
   border: 1px $sand-grey solid;
   background-color: transparent;
   cursor: pointer;
+  text-decoration: none;
 
   &:focus {
     outline: none;
