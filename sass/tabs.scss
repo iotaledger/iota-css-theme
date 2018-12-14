@@ -61,4 +61,12 @@
   .tab-container {
     padding: 22px;
   }
+
+  .tab-item {
+    display: none;
+  }
+
+  .tab-item--selected {
+    display: block;
+  }
 }

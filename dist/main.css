@@ -5823,6 +5823,10 @@ table,
       outline: none; }
   .tabs .tab-container {
     padding: 22px; }
+  .tabs .tab-item {
+    display: none; }
+  .tabs .tab-item--selected {
+    display: block; }
 
 .top-header {
   display: flex;
