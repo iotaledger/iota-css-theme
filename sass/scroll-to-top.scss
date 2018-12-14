@@ -1,0 +1,29 @@
+// Scroll To Top
+//
+// Markup: html/scroll-to-top.html
+//
+// Styleguide Molecules.Scroll To Top
+
+.scroll-to-top {
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  transition: $transition-duration ease;
+  transition-property: opacity;
+  border: 0;
+  border-radius: 5px;
+  background-color: $blueberry;
+  color: $white;
+  @include font-size(26px);
+  cursor: pointer;
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.scroll-to-top--hidden {
+  opacity: 0;
+}
