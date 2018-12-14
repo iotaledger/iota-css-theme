@@ -4996,8 +4996,8 @@ textarea,
   padding: 18px 16px;
   border: 1px #f3f2f1 solid;
   background-color: transparent;
-  cursor: pointer;
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer; }
   .navigator__back:focus {
     outline: none; }
   .navigator__back:disabled {
@@ -5017,8 +5017,8 @@ textarea,
   padding: 18px 16px;
   border: 1px #f3f2f1 solid;
   background-color: transparent;
-  cursor: pointer;
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer; }
   .navigator__next:focus {
     outline: none; }
   .navigator__next:disabled {
