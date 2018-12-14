@@ -1,0 +1,12 @@
+// Block Quote
+//
+// Markup: html/block-quote.html
+//
+// Styleguide Atoms.Block Quote
+
+blockquote,
+.blockquote {
+  margin: 0;
+  padding-left: 30px;
+  border-left: 3px solid $blueberry;
+}

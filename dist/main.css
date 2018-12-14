@@ -4547,6 +4547,12 @@ body {
 .arrow-button--right::before {
   content: '\f105'; }
 
+blockquote,
+.blockquote {
+  margin: 0;
+  padding-left: 30px;
+  border-left: 3px solid #603f98; }
+
 .button {
   display: inline-block;
   margin: 8px;
