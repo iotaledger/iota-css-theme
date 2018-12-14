@@ -5496,13 +5496,18 @@ textarea,
 
 .side-menu__list {
   color: #ffffff; }
-  .side-menu__list li {
+  .side-menu__list .side-menu-item {
     font-size: 15px;
     font-size: 0.9375rem;
     padding: 4px 0;
     font-weight: 200; }
-    .side-menu__list li:hover {
+    .side-menu__list .side-menu-item a {
+      color: #ffffff;
+      text-decoration: none; }
+    .side-menu__list .side-menu-item:hover {
       cursor: pointer; }
+    .side-menu__list .side-menu-item .side-menu-item--active {
+      color: #20a49d; }
 
 .sub-header {
   display: flex;
