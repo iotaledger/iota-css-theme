@@ -17,13 +17,15 @@
   color: $white;
   @include font-size(26px);
   cursor: pointer;
-  opacity: 0.5;
 
-  &:hover {
-    opacity: 1;
+  &:focus {
+    outline: none;
   }
 }
 
 .scroll-to-top--hidden {
   opacity: 0;
+  &:hover {
+    opacity: 0;
+  }
 }

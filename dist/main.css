@@ -5158,13 +5158,14 @@ textarea,
   color: #ffffff;
   font-size: 26px;
   font-size: 1.625rem;
-  cursor: pointer;
-  opacity: 0.5; }
-  .scroll-to-top:hover {
-    opacity: 1; }
+  cursor: pointer; }
+  .scroll-to-top:focus {
+    outline: none; }
 
 .scroll-to-top--hidden {
   opacity: 0; }
+  .scroll-to-top--hidden:hover {
+    opacity: 0; }
 
 .side-menu {
   width: 311px;
