@@ -4550,7 +4550,7 @@ body {
 blockquote,
 .blockquote {
   margin: 0;
-  padding-left: 30px;
+  padding: 10px 0px 10px 36px;
   border-left: 3px solid #603f98; }
 
 .button {
@@ -4794,6 +4794,7 @@ h6,
 
 p,
 .text-paragraph {
+  margin-bottom: 1.0625rem;
   color: #696f76;
   font-size: 17px;
   font-size: 1.0625rem;
@@ -5818,14 +5819,24 @@ table,
           font-weight: bold;
           opacity: 1; }
     .tabs .tab-header .tab-header-copy {
-      margin: 4px;
-      padding: 0px 12px 0px 12px;
-      border: 0;
-      background: none;
-      color: #ffffff;
-      cursor: pointer; }
-      .tabs .tab-header .tab-header-copy:focus {
-        outline: none; }
+      padding: 0px 12px 0px 12px; }
+      .tabs .tab-header .tab-header-copy .tab-header-copy-text {
+        transition: 0.3s ease-out;
+        transition-property: opacity;
+        color: #28a745;
+        opacity: 0; }
+      .tabs .tab-header .tab-header-copy .tab-header-copy-text--active {
+        opacity: 1; }
+      .tabs .tab-header .tab-header-copy .tab-header-copy-text--failed {
+        color: #dc3545; }
+      .tabs .tab-header .tab-header-copy .tab-header-copy-button {
+        margin: 4px;
+        border: 0;
+        background: none;
+        color: #ffffff;
+        cursor: pointer; }
+        .tabs .tab-header .tab-header-copy .tab-header-copy-button:focus {
+          outline: none; }
   .tabs .tab-container {
     padding: 22px; }
   .tabs .tab-item {

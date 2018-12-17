@@ -8,6 +8,7 @@
 
 p,
 .text-paragraph {
+  margin-bottom: 1.0625rem;
   color: $body-copy;
   @include font-size(17px);
   line-height: 2;

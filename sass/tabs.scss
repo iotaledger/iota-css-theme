@@ -52,15 +52,33 @@
     }
 
     .tab-header-copy {
-      margin: 4px;
       padding: 0px 12px 0px 12px;
-      border: 0;
-      background: none;
-      color: $white;
-      cursor: pointer;
 
-      &:focus {
-        outline: none;
+      .tab-header-copy-text {
+        transition: $transition-duration ease-out;
+        transition-property: opacity;
+        color: $success;
+        opacity: 0;
+      }
+
+      .tab-header-copy-text--active {
+        opacity: 1;
+      }
+
+      .tab-header-copy-text--failed {
+        color: $danger;
+      }
+
+      .tab-header-copy-button {
+        margin: 4px;
+        border: 0;
+        background: none;
+        color: $white;
+        cursor: pointer;
+
+        &:focus {
+          outline: none;
+        }
       }
     }
   }
