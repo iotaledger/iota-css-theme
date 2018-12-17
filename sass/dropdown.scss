@@ -50,6 +50,14 @@
   -moz-appearance: none;
   appearance: none;
 
+  option {
+    color: $black;
+  }
+
+  optgroup {
+    color: $gunmetal-grey;
+  }
+
   // Remove the down arrow on Edge
   &::-ms-expand {
     display: none;

@@ -4647,6 +4647,10 @@ blockquote,
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none; }
+  .select option {
+    color: #1c1e21; }
+  .select optgroup {
+    color: #3f3f3f; }
   .select::-ms-expand {
     display: none; }
   .select:-moz-focusring {
