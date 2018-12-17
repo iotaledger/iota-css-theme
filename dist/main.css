@@ -4840,22 +4840,20 @@ textarea,
   width: 100%; }
   .input-wrapper-basic::before {
     position: relative;
-    top: 10px;
-    left: 30px;
-    color: #c4c4c4;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 600;
-    content: '\f002';
     top: 19px;
     left: 56px;
-    font-size: xx-large; }
+    color: #c4c4c4;
+    font-family: "Font Awesome 5 Free";
+    font-size: xx-large;
+    font-weight: 600;
+    content: '\f002'; }
   .input-wrapper-basic .input-search-basic {
     width: 100%;
     max-width: 100%;
     padding: 20px 40px 20px 73px;
-    background-color: #ffffff;
     border: 2px solid #c4c4c4;
     outline: none;
+    background-color: #ffffff;
     color: #c4c4c4;
     font-size: 23px;
     font-size: 1.4375rem;
@@ -5514,8 +5512,14 @@ textarea,
   .side-menu__heading:hover {
     cursor: pointer; }
 
-.side-menu__close:hover {
-  cursor: pointer; }
+.side-menu__close {
+  border: 0;
+  background: none;
+  color: #ffffff; }
+  .side-menu__close:hover:not([disabled]) {
+    cursor: pointer; }
+  .side-menu__close:focus {
+    outline: none; }
 
 .side-menu__list {
   color: #ffffff; }
@@ -6215,13 +6219,13 @@ footer {
 
 .sticky-header__control {
   display: flex;
-  width: 100%;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  width: 100%; }
   .sticky-header__control .input-sticky-wrapper {
     margin-right: 50px; }
-  .sticky-header__control .input-sticky-wrapper::before {
-    font-size: x-large;
-    top: 3px; }
+    .sticky-header__control .input-sticky-wrapper::before {
+      top: 3px;
+      font-size: x-large; }
 
 .sticky-header__icon {
   border: 0;

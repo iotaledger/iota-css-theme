@@ -12,25 +12,26 @@
 
   &::before {
     position: relative;
-    top: 10px;
-    left: 30px;
-    color: $light-grey;
-    font-family: $font-family-icons;
-    font-weight: 600;
-    content: '\f002';
     top: 19px;
     left: 56px;
+    color: $light-grey;
+    font-family: $font-family-icons;
     font-size: xx-large;
+    font-weight: 600;
+    content: '\f002';
   }
+
   .input-search-basic {
     width: 100%;
     max-width: 100%;
     padding: 20px 40px 20px 73px;
-    background-color: $white;
     border: 2px solid $light-grey;
     outline: none;
+    background-color: $white;
     color: $light-grey;
+
     @include font-size(23px);
+
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -38,7 +39,9 @@
 
     @include placeholder {
       color: $white;
+
       @include font-size(20px);
+
       font-style: normal;
       font-weight: 600;
     }

@@ -65,8 +65,18 @@ $side-menu-right-padding: 24px;
 }
 
 .side-menu__close {
+  border: 0;
+  background: none;
+  color: $white;
+
   &:hover {
-    cursor: pointer;
+    &:not([disabled]) {
+      cursor: pointer;
+    }
+  }
+
+  &:focus {
+    outline: none;
   }
 }
 
