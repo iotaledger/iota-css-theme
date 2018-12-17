@@ -1,0 +1,17 @@
+// Heading Label
+//
+// Markup: html/heading-label.html
+//
+// Styleguide Atoms.Heading Label
+
+.heading-label {
+  display: inline-flex;
+  align-items: center;
+  height: 25px;
+  padding: 0px 8px 0px 8px;
+  border-radius: 3px;
+  background-color: $tealish;
+  color: #f6f6f6;
+  @include font-size(12px);
+  font-weight: 600;
+}

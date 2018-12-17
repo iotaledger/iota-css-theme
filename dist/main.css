@@ -4656,6 +4656,18 @@ blockquote,
     color: #ffffff;
     text-shadow: none; }
 
+.heading-label {
+  display: inline-flex;
+  align-items: center;
+  height: 25px;
+  padding: 0px 8px 0px 8px;
+  border-radius: 3px;
+  background-color: #20a49d;
+  color: #f6f6f6;
+  font-size: 12px;
+  font-size: 0.75rem;
+  font-weight: 600; }
+
 hr,
 .horizontal-rule {
   width: 100%;
