@@ -4692,6 +4692,12 @@ a,
   .link:hover {
     color: #4e2c88; }
 
+li {
+  color: #696f76;
+  font-size: 17px;
+  font-size: 1.0625rem;
+  line-height: 2; }
+
 .text {
   color: #1c1e21;
   font-style: normal;

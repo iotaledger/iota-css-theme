@@ -1,0 +1,13 @@
+// List Item
+//
+// Various list item styles.
+//
+// Markup: html/list-item.html
+//
+// Styleguide Atoms.List Item
+
+li {
+  color: $body-copy;
+  @include font-size(17px);
+  line-height: 2;
+}
