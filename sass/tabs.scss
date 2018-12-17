@@ -13,48 +13,55 @@
   background-color: #f8f8f8;
 
   .tab-header {
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 0;
-    padding: 12px 55px 12px 12px;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 12px;
     background-color: $gunmetal-grey;
-    list-style: none;
 
-    .tab-header-item {
-      margin: 0px 12px 0px 12px;
+    .tab-header-list {
+      display: inline-flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      list-style: none;
 
-      a {
-        color: $white;
+      .tab-header-item {
+        margin: 0px 12px 0px 12px;
 
-        @include font-size(17px);
-
-        font-weight: normal;
-        text-decoration: none;
-        opacity: 0.5;
-      }
-
-      &.tab-header-item--selected {
         a {
-          font-weight: bold;
-          opacity: 1;
+          color: $white;
+
+          @include font-size(17px);
+
+          font-weight: normal;
+          text-decoration: none;
+          opacity: 0.5;
+        }
+
+        &.tab-header-item--selected {
+          a {
+            font-weight: bold;
+            opacity: 1;
+          }
         }
       }
     }
-  }
 
-  .tab-header-copy {
-    position: absolute;
-    top: 18px;
-    right: 18px;
-    border: 0;
-    background: none;
-    color: $white;
-    cursor: pointer;
+    .tab-header-copy {
+      margin: 4px;
+      padding: 0px 12px 0px 12px;
+      border: 0;
+      background: none;
+      color: $white;
+      cursor: pointer;
 
-    &:focus {
-      outline: none;
+      &:focus {
+        outline: none;
+      }
     }
   }
 
