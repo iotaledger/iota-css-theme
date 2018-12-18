@@ -64,18 +64,13 @@
 
     @include tablet {
       width: 50%;
-
-      &:nth-child(2n) {
-        padding-right: 0;
-      }
     }
 
-
     @include desktop {
-      width: 33.33%;
+      width: calc(33.33% -  14px);
 
-      &:nth-child(3n) {
-        padding-right: 0;
+      &:nth-child(3n+2) {
+        margin: 0 21px;
       }
     }
 

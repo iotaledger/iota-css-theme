@@ -314,10 +314,10 @@ template {
 
 body {
   padding: 0;
+  color: #696f76;
   font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 200;
-  box-sizing: border-box;
-  color: #696f76; }
+  box-sizing: border-box; }
   body.no-scroll {
     overflow: hidden; }
 
@@ -721,7 +721,7 @@ textarea,
     .cards-container {
       justify-content: space-between; }
       .cards-container .card {
-        width: calc(33.33% - 13px); } }
+        width: calc(33.33% - 14px); } }
 
 .feedback-button__wrapper {
   display: flex;
@@ -1035,10 +1035,10 @@ textarea,
 
 .input-sticky-wrapper {
   display: inline-flex;
+  position: relative;
   width: 20px;
   transition: 0.3s ease;
-  transition-property: width;
-  position: relative; }
+  transition-property: width; }
   .input-sticky-wrapper::before {
     position: absolute;
     top: 12px;
@@ -1240,9 +1240,9 @@ textarea,
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%; }
-  .project-topics:after {
-    content: " ";
-    flex: auto; }
+  .project-topics::after {
+    flex: auto;
+    content: ' '; }
   .project-topics .project-topic__link {
     display: flex;
     flex-direction: column;
@@ -1252,18 +1252,16 @@ textarea,
     box-sizing: border-box; }
     @media (min-width: 768px) and (max-width: 1023px) {
       .project-topics .project-topic__link {
-        width: 50%; }
-        .project-topics .project-topic__link:nth-child(2n) {
-          padding-right: 0; } }
+        width: 50%; } }
     @media (min-width: 1024px) {
       .project-topics .project-topic__link {
-        width: 33.33%; }
-        .project-topics .project-topic__link:nth-child(3n) {
-          padding-right: 0; } }
+        width: calc(33.33% -  14px); }
+        .project-topics .project-topic__link:nth-child(3n+2) {
+          margin: 0 21px; } }
     .project-topics .project-topic__link .project-topic__heading {
+      color: #3f3f3f;
       font-weight: 600;
-      line-height: 2;
-      color: #3f3f3f; }
+      line-height: 2; }
       .project-topics .project-topic__link .project-topic__heading.project-topic__primary-bullet::before, .project-topics .project-topic__link .project-topic__heading.project-topic__secondary-bullet::before {
         display: inline-block;
         position: relative;
@@ -1276,9 +1274,9 @@ textarea,
       .project-topics .project-topic__link .project-topic__heading.project-topic__secondary-bullet::before {
         background: #20a49d; }
     .project-topics .project-topic__link .project-topic__subheading {
+      padding-right: 36px;
       font-weight: 200;
       line-height: 30px;
-      padding-right: 36px;
       box-sizing: border-box; }
 
 .project-topics__compressed .project-topic__link {
@@ -1344,7 +1342,7 @@ textarea,
   color: #ffffff;
   font-size: 20px;
   font-size: 1.25rem; }
-  .side-menu__heading:before {
+  .side-menu__heading::before {
     position: absolute;
     top: calc(50% - 9px);
     right: 28px;
@@ -1358,7 +1356,7 @@ textarea,
 
 .side-menu__group--selected .side-menu__heading {
   color: #20a49d; }
-  .side-menu__group--selected .side-menu__heading:before {
+  .side-menu__group--selected .side-menu__heading::before {
     font-family: "IOTA icons";
     font-size: 16px;
     font-weight: 300;
@@ -1369,13 +1367,13 @@ textarea,
   display: block; }
 
 .side-menu__close {
-  border: 0;
-  background: none;
-  color: #ffffff;
+  position: relative;
   width: 20px;
   height: 20px;
-  position: relative; }
-  .side-menu__close:before {
+  border: 0;
+  background: none;
+  color: #ffffff; }
+  .side-menu__close::before {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -2117,23 +2115,30 @@ footer {
   display: flex;
   justify-content: space-between; }
   .header__head > div {
-    text-align: right; }
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; }
   @media (max-width: 767px) {
     .header__head {
       padding-top: 10px; } }
 
 .header__body {
   max-width: 1420px;
-  margin: 87px auto 50px auto; }
+  margin: 87px auto 50px auto;
+  padding: 0 16px; }
   @media (min-width: 1024px) {
     .header__body {
       display: flex;
-      justify-content: space-between; } }
+      justify-content: space-between;
+      padding: 0 90px; } }
 
 .header__brand {
   width: 167px;
   height: 56px;
-  margin: 32px 46px; }
+  margin: 17px; }
+  @media (min-width: 768px) {
+    .header__brand {
+      margin: 32px 46px; } }
 
 .header__search {
   height: 42px;
@@ -2144,18 +2149,23 @@ footer {
       margin-top: 0; } }
 
 .header__icon {
+  margin: 27px 25px 0 0;
+  padding: 5px 10px;
   border: 0;
   background: none;
   color: #ffffff;
-  cursor: pointer;
-  margin: 27px 36px 0 0;
-  padding: 5px 10px; }
-  .header__icon:before {
+  cursor: pointer; }
+  @media (min-width: 1024px) {
+    .header__icon {
+      margin: 27px 36px 0 0; } }
+  .header__icon::before {
     font-family: "IOTA icons";
     font-size: 24px;
     font-weight: 300;
     line-height: 24px;
     content: "🍔"; }
+  .header__icon:hover {
+    opacity: 0.5; }
   .header__icon:focus {
     outline: none; }
   .header__icon:disabled {
@@ -2238,7 +2248,7 @@ footer {
   background: none;
   color: #ffffff;
   cursor: pointer; }
-  .sticky-header__icon:before {
+  .sticky-header__icon::before {
     font-family: "IOTA icons";
     font-size: 32px;
     font-weight: 300;

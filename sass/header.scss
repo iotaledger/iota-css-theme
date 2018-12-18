@@ -24,7 +24,9 @@
   justify-content: space-between;
 
   >div {
-    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
   }
 
   @include tablet-down {
@@ -35,17 +37,23 @@
 .header__body {
   max-width: $max-width;
   margin: 87px auto 50px auto;
+  padding: 0 16px;
 
   @include desktop {
     display: flex;
     justify-content: space-between;
+    padding:0 90px;
   }
 }
 
 .header__brand {
   width: 167px;
   height: 56px;
-  margin: 32px 46px;
+  margin: 17px;
+
+  @include tablet-up {
+    margin: 32px 46px;
+  }
 }
 
 .header__search {
@@ -59,15 +67,23 @@
 }
 
 .header__icon {
-  margin: 27px 36px 0 0;
+  margin: 27px 25px 0 0;
   padding: 5px 10px;
   border: 0;
   background: none;
   color: $white;
   cursor: pointer;
 
+  @include desktop {
+    margin: 27px 36px 0 0;
+  }
+
   &::before {
     @include icon(🍔, 24px);
+  }
+
+  &:hover{
+    opacity: 0.5;
   }
 
   &:focus {
