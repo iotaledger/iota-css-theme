@@ -25,6 +25,10 @@
   @include desktop {
     display: none;
   }
+
+  &.sub-header-title__fixed {
+    display: block;
+  }
 }
 
 .sub-header__bottom-title {

@@ -5580,6 +5580,8 @@ textarea,
   @media (min-width: 1024px) {
     .sub-header__title {
       display: none; } }
+  .sub-header__title.sub-header-title__fixed {
+    display: block; }
 
 .sub-header__bottom-title {
   display: flex;
@@ -6222,7 +6224,7 @@ footer {
   .search-result .search-result__total {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 50px;
     margin-bottom: 30px;
     font-size: 17px;
     font-size: 1.0625rem;
