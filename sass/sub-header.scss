@@ -18,11 +18,13 @@
 }
 
 .sub-header__title {
+  display: block;
   @include font-size(28px);
   font-style: normal;
   font-weight: bold;
   font-stretch: normal;
-  @include desktop {
+
+  @include tablet-up {
     display: none;
   }
 

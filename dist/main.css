@@ -5572,12 +5572,13 @@ textarea,
   color: #ffffff; }
 
 .sub-header__title {
+  display: block;
   font-size: 28px;
   font-size: 1.75rem;
   font-style: normal;
   font-weight: bold;
   font-stretch: normal; }
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     .sub-header__title {
       display: none; } }
   .sub-header__title.sub-header-title__fixed {
