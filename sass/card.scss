@@ -42,8 +42,8 @@
 .card {
   display: flex;
   justify-content: center;
-  width: 33%;
   min-width: 340px;
+  margin-right: 25px;
   margin-bottom: 50px;
 
   &:first-child {
@@ -52,6 +52,10 @@
 
   &:last-child {
     justify-content: flex-end;
+  }
+
+  @include phone-down {
+    margin-right: 0px;
   }
 }
 

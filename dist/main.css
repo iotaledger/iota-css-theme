@@ -4666,16 +4666,18 @@ blockquote,
   height: 25px;
   padding: 0px 8px 0px 8px;
   border-radius: 3px;
-  background-color: #20a49d;
+  background-color: #603f98;
   color: #f6f6f6;
   font-size: 12px;
   font-size: 0.75rem;
   font-weight: 600; }
+  .heading-label.heading-label--secondary {
+    background-color: #20a49d; }
 
 hr,
 .horizontal-rule {
   width: 100%;
-  margin: 8px 0px 8px 0px;
+  margin: 16px 0px 16px 0px;
   border: 0;
   border-top: 2px solid #c4c4c4;
   border-style: solid;
@@ -4920,13 +4922,16 @@ textarea,
 .card {
   display: flex;
   justify-content: center;
-  width: 33%;
   min-width: 340px;
+  margin-right: 25px;
   margin-bottom: 50px; }
   .card:first-child {
     justify-content: flex-start; }
   .card:last-child {
     justify-content: flex-end; }
+  @media (max-width: 514px) {
+    .card {
+      margin-right: 0px; } }
 
 .card__image {
   width: 340px;
@@ -5423,22 +5428,20 @@ textarea,
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      width: calc(50% + 25px);
+      width: calc(40% + 25px);
       padding-right: 50px;
       padding-bottom: 50px; }
       .project-topic__link:nth-child(2n) {
-        width: calc(50% - 25px);
         padding-right: 0; } }
   @media (min-width: 1024px) {
     .project-topic__link {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      width: calc(33% + 25px);
+      width: calc(25% + 25px);
       padding-right: 50px;
       padding-bottom: 50px; }
       .project-topic__link:nth-child(3n) {
-        width: calc(33% - 50px);
         padding-right: 0; } }
 
 .project-topic__heading {
@@ -5448,6 +5451,28 @@ textarea,
   font-weight: lighter;
   line-height: 2;
   text-align: left; }
+
+.project-topic__primary-bullet::before {
+  position: relative;
+  top: -2px;
+  margin-right: 10px;
+  color: #603f98;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 800;
+  font-size: 10px;
+  font-size: 0.625rem;
+  content: '\f0c8'; }
+
+.project-topic__secondary-bullet::before {
+  position: relative;
+  top: -2px;
+  margin-right: 10px;
+  color: #20a49d;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 800;
+  font-size: 10px;
+  font-size: 0.625rem;
+  content: '\f0c8'; }
 
 .scroll-to-top {
   width: 50px;

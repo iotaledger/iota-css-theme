@@ -10,8 +10,12 @@
   height: 25px;
   padding: 0px 8px 0px 8px;
   border-radius: 3px;
-  background-color: $tealish;
+  background-color: $blueberry;
   color: #f6f6f6;
   @include font-size(12px);
   font-weight: 600;
+
+  &.heading-label--secondary {
+    background-color: $tealish;
+  }
 }
