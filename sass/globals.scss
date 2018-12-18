@@ -16,3 +16,14 @@ body {
 .hidden {
   display: none;
 }
+
+input {
+  &[type='search'] {
+    // sass-lint:disable no-vendor-prefixes
+    &::-webkit-search-cancel-button {
+      width: 0px;
+      height: 0px;
+      -webkit-appearance: none;
+    }
+  }
+}
