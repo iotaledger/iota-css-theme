@@ -5,9 +5,10 @@ $transition-duration: 0.3s;
 
 body {
   padding: 0;
+  color: $body-copy;
   font-family: $font-primary;
-  box-sizing: border-box;
   font-weight: 200;
+  box-sizing: border-box;
 
   &.no-scroll {
     overflow: hidden;

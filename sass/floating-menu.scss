@@ -24,34 +24,27 @@
   border-left: 4px solid transparent;
 
   a {
+    display: inline-block;
+    transform-origin: left center;
     transition: inherit;
-    transition-property: font-size, color;
+    transition-property: transform, color;
     color: $black;
     @include font-size(17px);
     font-style: normal;
     font-weight: normal;
-    line-height: 1.5;
+    line-height: 26px;
     text-decoration: none;
     font-stretch: normal;
   }
 
-  &:hover {
+  &:hover,
+  &.floating-menu__item--selected {
     border-color: $tealish;
 
     a {
+      transform: scale(1.4);
       color: $tealish;
-      @include font-size(26px);
       font-weight: bold;
     }
-  }
-}
-
-.floating-menu__item--selected {
-  border-color: $tealish;
-
-  a {
-    color: $tealish;
-    @include font-size(26px);
-    font-weight: bold;
   }
 }

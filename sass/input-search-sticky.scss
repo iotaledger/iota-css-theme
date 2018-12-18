@@ -10,6 +10,7 @@
 
 .input-sticky-wrapper {
   display: inline-flex;
+  position: relative;
   width: 20px;
   transition: $transition-duration ease;
   transition-property: width;

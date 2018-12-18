@@ -15,9 +15,9 @@
 }
 
 @mixin icon($icon, $size: null) {
-  content: "#{$icon}";
   font-family: $font-family-icons;
   font-size: $size;
-  line-height: $size;
   font-weight: 300;
+  line-height: $size;
+  content: '#{$icon}';
 }

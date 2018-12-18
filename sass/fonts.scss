@@ -19,10 +19,10 @@ $font-secondary: 'Source Code Pro', monospace;
 
 // Define icon font
 @font-face {
-   font-family: 'IOTA icons';
-   src: url('/assets/iota-icons.ttf') format('truetype');
-   font-weight: normal;
-   font-style: normal;
+  font-family: 'IOTA icons';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/iota-icons.ttf') format('truetype');
 }
 
 $font-family-icons: 'IOTA icons';

@@ -8,12 +8,13 @@
 
 .input-wrapper {
   display: inline-flex;
+  position: relative;
   width: 100%;
 
   &::before {
-    position: relative;
-    top: 12px;
-    left: 30px;
+    position: absolute;
+    top: calc(50% - 10px);
+    left: 14px;
     color: $white;
     @include icon(🔍);
   }

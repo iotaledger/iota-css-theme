@@ -59,7 +59,8 @@
     margin-right: 50px;
 
     &::before {
-      top: 3px;
+      top: calc(50% - 12px);
+      left: 8px;
       font-size: x-large;
     }
   }
@@ -70,6 +71,10 @@
   background: none;
   color: $white;
   cursor: pointer;
+
+  &::before {
+    @include icon(🍔, 32px);
+  }
 
   &:focus {
     outline: none;

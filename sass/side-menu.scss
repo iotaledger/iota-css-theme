@@ -25,15 +25,6 @@ $side-menu-right-padding: 24px;
   }
 }
 
-.side-menu__group--selected {
-  .side-menu__heading {
-    color: $tealish;
-  }
-
-  .side-menu__list {
-    display: block;
-  }
-}
 
 .side-menu__caption {
   display: flex;
@@ -49,6 +40,7 @@ $side-menu-right-padding: 24px;
 
 .side-menu__heading {
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: space-between;
   height: 55px;
@@ -57,6 +49,13 @@ $side-menu-right-padding: 24px;
   background-color: rgba(255, 255, 255, 0.1);
   color: $white;
 
+  &::before {
+    position: absolute;
+    top: calc(50% - 9px);
+    right: 28px;
+    @include icon(⬇️, 16px);
+  }
+
   @include font-size(20px);
 
   &:hover {
@@ -64,10 +63,34 @@ $side-menu-right-padding: 24px;
   }
 }
 
+.side-menu__group--selected {
+  .side-menu__heading {
+    color: $tealish;
+
+    &::before {
+      @include icon(⬆️, 16px);
+    }
+  }
+
+  .side-menu__list {
+    display: block;
+  }
+}
+
 .side-menu__close {
+  position: relative;
+  width: 20px;
+  height: 20px;
   border: 0;
   background: none;
   color: $white;
+
+  &::before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    @include icon(✖︎, 18px);
+  }
 
   &:hover {
     &:not([disabled]) {

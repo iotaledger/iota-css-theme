@@ -19,18 +19,14 @@
   }
 }
 
-.header__wrapper {
-  padding: 0px 32px 32px 32px;
-
-  @include tablet {
-    padding: 32px;
-  }
-}
-
 .header__head {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+
+  >div {
+    text-align: right;
+  }
+
   @include tablet-down {
     padding-top: 10px;
   }
@@ -49,6 +45,7 @@
 .header__brand {
   width: 167px;
   height: 56px;
+  margin: 32px 46px;
 }
 
 .header__search {
@@ -62,10 +59,16 @@
 }
 
 .header__icon {
+  margin: 27px 36px 0 0;
+  padding: 5px 10px;
   border: 0;
   background: none;
   color: $white;
   cursor: pointer;
+
+  &::before {
+    @include icon(🍔, 24px);
+  }
 
   &:focus {
     outline: none;
