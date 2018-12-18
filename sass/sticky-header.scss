@@ -14,13 +14,17 @@
   padding: 32px 25px;
   background-color: $tealish;
 
-  .input-sticky-wrapper.input-sticky-wrapper--expanded {
-    margin-right: 0px;
+  .input-sticky-wrapper {
+    &.input-sticky-wrapper--expanded {
+      margin-right: 0px;
+    }
   }
 
   @include desktop {
-    .input-sticky-wrapper.input-sticky-wrapper--expanded {
-      width: 389px;
+    .input-sticky-wrapper {
+      &.input-sticky-wrapper--expanded {
+        width: 389px;
+      }
     }
   }
 }

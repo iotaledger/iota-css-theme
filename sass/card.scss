@@ -7,10 +7,11 @@
 // Styleguide Molecules.Card
 
 .card__link {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 340px;
+  display: block;
+  position: relative;
+  width: 100%;
+  padding-top: 75%;
+  overflow: hidden;
 
   &.text {
     color: $gunmetal-grey;
@@ -31,20 +32,22 @@
 }
 
 .card__label {
+  position: relative;
   width: 100%;
   margin: 0;
   padding: 24px;
   background-color: $white;
   line-height: 1;
   text-align: left;
+  z-index: 2;
 }
 
 .card {
-  display: flex;
-  justify-content: center;
-  min-width: 340px;
-  margin-right: 25px;
-  margin-bottom: 50px;
+  width: 100%;
+  max-width: 380px;
+  margin-bottom: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
 
   &:first-child {
     justify-content: flex-start;
@@ -57,9 +60,19 @@
   @include phone-down {
     margin-right: 0px;
   }
-}
 
-.card__image {
-  width: 340px;
-  height: 260px;
+  .card__image {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: auto;
+    transition: transform 1s;
+  }
+
+  &:hover {
+    .card__image {
+      transform: scale(1.05);
+    }
+  }
+
 }

@@ -12,6 +12,19 @@
   flex-wrap: wrap;
   justify-content: space-around;
   width: 100%;
-  padding: 70px 0px 20px 0px;
+  padding: 70px 0px 50px;
   background-color: $sand-grey;
+
+  @include tablet {
+    justify-content: flex-start;
+    .card {
+      width: 50%;
+    }
+  }
+
+  @include desktop {
+    .card {
+      width: 33.33%;
+    }
+  }
 }

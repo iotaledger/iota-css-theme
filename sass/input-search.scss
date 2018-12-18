@@ -12,7 +12,7 @@
 
   &::before {
     position: relative;
-    top: 10px;
+    top: 12px;
     left: 30px;
     color: $white;
     font-family: $font-family-icons;
@@ -40,6 +40,7 @@
     color: $white;
     @include font-size(20px);
     font-style: normal;
-    font-weight: 600;
+    font-weight: 300;
+    opacity: 0.6;
   }
 }

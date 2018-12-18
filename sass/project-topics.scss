@@ -54,12 +54,11 @@
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    padding-right: 50px;
-    padding-bottom: 50px;
-    text-decoration: none;
+    padding: 0 50px 50px 0;
+    box-sizing: border-box;
 
     @include tablet {
-      width: calc(40% + 25px);
+      width: 50%;
 
       &:nth-child(2n) {
         padding-right: 0;
@@ -68,7 +67,7 @@
 
 
     @include desktop {
-      width: calc(25% + 25px);
+      width: 33.33%;
 
       &:nth-child(3n) {
         padding-right: 0;
