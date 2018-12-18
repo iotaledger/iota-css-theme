@@ -1,0 +1,141 @@
+// Version Picker
+//
+// Markup: html/version-picker.html
+//
+// Styleguide Molecules.Version Picker
+
+.version-picker__wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #f8f8f8;
+
+  .version-picker {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    max-width: $max-width;
+
+    .left-column {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .middle-column {
+      flex: 5;
+      padding: 0px 10px 0px 10px;
+    }
+
+    .right-column {
+      flex: 1;
+      min-width: 260px;
+    }
+
+    @include tablet-down {
+      .left-column {
+        display: none;
+      }
+    }
+
+    @include phone-down {
+      flex-direction: column-reverse;
+      flex-wrap: wrap-reverse;
+      align-items: stretch;
+
+      .left-column {
+        display: none;
+      }
+    }
+  }
+}
+
+.version-picker__current {
+  color: $gunmetal-grey;
+  @include font-size(16px);
+  font-weight: 600;
+  text-align: center;
+
+  @include phone-down {
+    padding: 20px;
+  }
+}
+
+.version-picker-select__wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 250px;
+  border: 0;
+  background-color: $light-grey;
+  line-height: 1.5;
+
+  &::after {
+    position: absolute;
+    top: 7px;
+    right: 25px;
+    color: $white;
+    font-family: $font-family-icons;
+
+    @include font-size(24px);
+
+    font-weight: 600;
+    content: '\f107';
+    pointer-events: none;
+  }
+
+  @include phone-down {
+    max-width: unset;
+  }
+}
+
+.version-picker__select {
+  width: 100%;
+  max-width: 250px;
+  height: 50px;
+  padding-right: 55px;
+  padding-left: 20px;
+  border: 0;
+  outline: none;
+  background: none;
+  color: $white;
+
+  @include font-size(17px);
+
+  font-weight: bold;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+
+  // sass-lint:disable no-vendor-prefixes
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  option {
+    color: $black;
+  }
+
+  optgroup {
+    color: $gunmetal-grey;
+  }
+
+  // Remove the down arrow on Edge
+  &::-ms-expand {
+    display: none;
+  }
+
+  // Remove the focus rect on Firefox
+  &:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 $white;
+  }
+
+  &:-moz-focusring * {
+    color: $white;
+    text-shadow: none;
+  }
+
+  @include phone-down {
+    max-width: unset;
+  }
+}
