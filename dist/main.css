@@ -5404,8 +5404,8 @@ textarea,
   color: #20a49d; }
 
 .project__subheading {
-  margin-top: 35px;
-  margin-bottom: 35px; }
+  margin-top: 5px;
+  margin-bottom: 25px; }
 
 .project-topics {
   display: flex;
