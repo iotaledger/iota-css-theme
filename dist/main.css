@@ -5237,14 +5237,6 @@ textarea,
   .input-sticky-wrapper--expanded .input-search-sticky {
     padding-right: 40px;
     border-bottom: 2px solid #ffffff; }
-  .input-sticky-wrapper--expanded::after {
-    position: relative;
-    top: 10px;
-    right: 30px;
-    color: #ffffff;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 600;
-    content: '\f00d'; }
 
 .input-search-sticky {
   width: 100%;
