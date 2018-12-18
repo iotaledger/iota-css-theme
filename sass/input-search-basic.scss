@@ -4,7 +4,7 @@
 //
 // Markup: html/input-search-basic.html
 //
-// Styleguide Atoms.Input Search Basic
+// Styleguide Molecules.Input Search Basic
 
 .input-wrapper-basic {
   display: inline-flex;
@@ -12,11 +12,11 @@
 
   &::before {
     position: relative;
-    top: 19px;
+    top: 14px;
     left: 56px;
     color: $light-grey;
     font-family: $font-family-icons;
-    font-size: xx-large;
+    @include font-size(32px);
     font-weight: 600;
     content: '\f002';
   }
@@ -25,12 +25,13 @@
     width: 100%;
     max-width: 100%;
     padding: 20px 40px 20px 73px;
-    border: 2px solid $light-grey;
+    border: 1px solid $light-grey;
+    border-radius: 5px;
     outline: none;
     background-color: $white;
     color: $light-grey;
 
-    @include font-size(23px);
+    @include font-size(18px);
 
     font-style: normal;
     font-weight: 600;

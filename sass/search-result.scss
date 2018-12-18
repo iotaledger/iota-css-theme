@@ -1,0 +1,43 @@
+// Search Result
+//
+// Markup: html/search-result.html
+//
+// Styleguide Organisms.Search Result
+
+.search-result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+
+  .search-result__total {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    @include font-size(17px);
+    color: $black;
+  }
+
+  .search-result__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+    .search-result-item__heading {
+      margin-bottom: 10px;
+      color: $tealish;
+      @include font-size(18px);
+      font-weight: bold;
+    }
+
+    .search-result-item__link {
+      color: $gunmetal-grey;
+      @include font-size(17px);
+      font-weight: 300;
+    }
+  }
+}

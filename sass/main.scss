@@ -24,7 +24,6 @@
 @import 'text-inline';
 @import 'text-paragraph';
 @import 'textarea';
-@import 'input-search-basic';
 
 // Molecules
 @import 'card';
@@ -32,8 +31,9 @@
 @import 'feedback-button';
 @import 'feedback-overlay';
 @import 'floating-menu';
-@import 'input-search';
 @import 'input-register';
+@import 'input-search';
+@import 'input-search-basic';
 @import 'input-search-sticky';
 @import 'navigator';
 @import 'pagination';
@@ -45,9 +45,11 @@
 @import 'tabs';
 @import 'top-header';
 @import 'tree-menu';
+@import 'version-picker';
 
 // Organisms
 @import 'feedback-form';
 @import 'footer';
 @import 'header';
+@import 'search-result';
 @import 'sticky-header';
