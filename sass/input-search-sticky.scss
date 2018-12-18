@@ -15,13 +15,11 @@
   transition-property: width;
 
   &::before {
-    position: relative;
+    position: absolute;
     top: 12px;
-    left: 30px;
+    left: 12px;
     color: $white;
-    font-family: $font-family-icons;
-    font-weight: 600;
-    content: '\f002';
+    @include icon(🔍, 18px);
   }
 }
 

@@ -87,33 +87,22 @@
       font-weight: 600;
       line-height: 2;
 
-      &.project-topic__primary-bullet {
+      &.project-topic__primary-bullet, &.project-topic__secondary-bullet  {
         &::before {
           position: relative;
+          display: inline-block;
           top: -2px;
           margin-right: 10px;
-          color: $blueberry;
-          font-family: $font-family-icons;
-          font-weight: 800;
-
-          @include font-size(10px);
-
-          content: '\f0c8';
+          background: $blueberry;
+          width: 8px;
+          height: 8px;
+          content: " ";
         }
       }
 
       &.project-topic__secondary-bullet {
         &::before {
-          position: relative;
-          top: -2px;
-          margin-right: 10px;
-          color: $tealish;
-          font-family: $font-family-icons;
-          font-weight: 800;
-
-          @include font-size(10px);
-
-          content: '\f0c8';
+          background: $tealish;
         }
       }
     }

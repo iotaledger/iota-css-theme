@@ -63,9 +63,7 @@ $common-desktop-width: 155px;
 
   &::after {
     color: $white;
-    font-family: $font-family-icons;
-    font-weight: 600;
-    content: '\f061';
+    @include icon(→);
   }
 
   @include desktop {

@@ -16,15 +16,16 @@
   background-color: $sand-grey;
 
   @include tablet {
-    justify-content: flex-start;
+    justify-content: space-between;
     .card {
-      width: 50%;
+      width: calc(50% - 10px);
     }
   }
 
   @include desktop {
+    justify-content: space-between;
     .card {
-      width: 33.33%;
+      width: calc(33.33% - 13px);
     }
   }
 }

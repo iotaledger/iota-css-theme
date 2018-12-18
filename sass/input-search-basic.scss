@@ -11,14 +11,11 @@
   width: 100%;
 
   &::before {
-    position: relative;
-    top: 14px;
-    left: 56px;
+    position: absolute;
+    top: calc(50% - 16px);
+    left: 24px;
     color: $light-grey;
-    font-family: $font-family-icons;
-    @include font-size(32px);
-    font-weight: 600;
-    content: '\f002';
+    @include icon(🔍, 32px);
   }
 
   .input-search-basic {

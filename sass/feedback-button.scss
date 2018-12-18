@@ -53,45 +53,23 @@
   .feedback-button--icon {
     &::before {
       position: absolute;
-      top: 18px;
-      left: 19px;
+      top: calc(50% - 10px);
+      left: calc(50% - 13px);
       color: $white;
-      font-family: $font-family-icons;
-
-      @include font-size(28px);
-
-      font-weight: 400;
-      content: '\f27a';
-    }
-
-    &::after {
-      position: absolute;
-      top: 24px;
-      left: 27px;
-      color: $white;
-      font-family: $font-family-icons;
-      @include font-size(14px);
-      font-weight: 900;
-      content: '\f128';
-      opacity: 0.7;
+      @include icon(💬, 28px);
     }
   }
 
   .feedback-button--icon-yes {
-    &::after {
-      top: 23px;
-      left: 26px;
-      content: '\f164';
-      opacity: 1;
+    &::before {
+      top: calc(50% - 14px);
+      @include icon(👍, 28px);
     }
   }
 
   .feedback-button--icon-no {
-    &::after {
-      top: 23px;
-      left: 26px;
-      content: '\f165';
-      opacity: 1;
+    &::before {
+      @include icon(👎, 28px);
     }
   }
 }

@@ -19,9 +19,7 @@
 
   &::before {
     color: $tealish;
-    font-family: $font-family-icons;
-    @include font-size(24px);
-    font-weight: 600;
+    line-height: 35px;
   }
 
   &:hover {
@@ -43,12 +41,12 @@
 
 .arrow-button--left {
   &::before {
-    content: '\f104';
+    @include icon(➡️, 16px);
   }
 }
 
 .arrow-button--right {
   &::before {
-    content: '\f105';
+    @include icon(⬅️, 16px);
   }
 }

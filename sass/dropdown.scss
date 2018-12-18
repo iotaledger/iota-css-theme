@@ -17,15 +17,11 @@
 
   &::after {
     position: absolute;
-    top: 10px;
+    top: calc(50% - 9px);
     right: 25px;
     color: $white;
-    font-family: $font-family-icons;
-
-    @include font-size(24px);
-
-    font-weight: 600;
-    content: '\f107';
+    @include icon(⬇️, 18px);
+    line-height: 18px;
     pointer-events: none;
   }
 }
