@@ -23,7 +23,7 @@
   display: flex;
   justify-content: space-between;
 
-  >div {
+  > div {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -42,7 +42,7 @@
   @include desktop {
     display: flex;
     justify-content: space-between;
-    padding:0 90px;
+    padding: 0 90px;
   }
 }
 
@@ -78,11 +78,12 @@
     margin: 27px 36px 0 0;
   }
 
+
   &::before {
     @include icon(🍔, 24px);
   }
 
-  &:hover{
+  &:hover {
     opacity: 0.5;
   }
 
@@ -95,4 +96,3 @@
     pointer-events: none;
   }
 }
-

@@ -1243,7 +1243,7 @@ textarea,
   .project-topics::after {
     flex: auto;
     content: ' '; }
-  .project-topics .project-topic__link {
+  .project-topics .project-topic__item {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1251,18 +1251,18 @@ textarea,
     padding: 0 0 50px 0;
     box-sizing: border-box; }
     @media (min-width: 768px) and (max-width: 1023px) {
-      .project-topics .project-topic__link {
+      .project-topics .project-topic__item {
         width: 50%; } }
     @media (min-width: 1024px) {
-      .project-topics .project-topic__link {
+      .project-topics .project-topic__item {
         width: calc(33.33% -  14px); }
-        .project-topics .project-topic__link:nth-child(3n+2) {
+        .project-topics .project-topic__item:nth-child(3n+2) {
           margin: 0 21px; } }
-    .project-topics .project-topic__link .project-topic__heading {
+    .project-topics .project-topic__item .project-topic__heading {
       color: #3f3f3f;
       font-weight: 600;
       line-height: 2; }
-      .project-topics .project-topic__link .project-topic__heading.project-topic__primary-bullet::before, .project-topics .project-topic__link .project-topic__heading.project-topic__secondary-bullet::before {
+      .project-topics .project-topic__item .project-topic__heading.project-topic__primary-bullet::before, .project-topics .project-topic__item .project-topic__heading.project-topic__secondary-bullet::before {
         display: inline-block;
         position: relative;
         top: -2px;
@@ -1271,20 +1271,20 @@ textarea,
         margin-right: 10px;
         background: #603f98;
         content: ' '; }
-      .project-topics .project-topic__link .project-topic__heading.project-topic__secondary-bullet::before {
+      .project-topics .project-topic__item .project-topic__heading.project-topic__secondary-bullet::before {
         background: #20a49d; }
-    .project-topics .project-topic__link .project-topic__subheading {
+    .project-topics .project-topic__item .project-topic__subheading {
       padding-right: 36px;
       font-weight: 200;
       line-height: 30px;
       box-sizing: border-box; }
 
-.project-topics__compressed .project-topic__link {
+.project-topics__compressed .project-topic__item {
   width: calc(40% + 25px);
   padding-bottom: 15px; }
-  .project-topics__compressed .project-topic__link:nth-child(2n) {
+  .project-topics__compressed .project-topic__item:nth-child(2n) {
     padding-right: 0; }
-  .project-topics__compressed .project-topic__link:nth-child(3n) {
+  .project-topics__compressed .project-topic__item:nth-child(3n) {
     padding-right: 50px; }
 
 .scroll-to-top {

@@ -54,7 +54,7 @@
     content: ' ';
   }
 
-  .project-topic__link {
+  .project-topic__item {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -110,7 +110,7 @@
 }
 
 .project-topics__compressed {
-  .project-topic__link {
+  .project-topic__item {
     width: calc(40% + 25px);
     padding-bottom: 15px;
 

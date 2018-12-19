@@ -17,13 +17,16 @@
 
   @include tablet {
     justify-content: space-between;
+
     .card {
       width: calc(50% - 10px);
     }
   }
 
+
   @include desktop {
     justify-content: space-between;
+
     .card {
       width: calc(33.33% - 14px);
     }
