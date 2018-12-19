@@ -6,6 +6,7 @@ module.exports = {
    "chevron-right": "➡️",
    "chevron-left": "⬅️",
    "cross": "✖︎",
+   "copy": "📄",
    "feedback": "💬",
    "search": '🔍',
    "thumb-up": "👍",

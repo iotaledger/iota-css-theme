@@ -50,6 +50,12 @@
     }
   };
 
+  &.icon-copy {
+    &::before {
+      content: '📄';
+    }
+  };
+
   &.icon-feedback {
     &::before {
       content: '💬';

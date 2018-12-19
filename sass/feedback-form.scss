@@ -46,6 +46,14 @@
     align-items: center;
     margin: 35px;
 
+    &:last-of-type{
+      .feedback-form-button-circle {
+        i{
+          top: calc(50% - 14px);
+        }
+      }
+    }
+
     .feedback-form-button-circle {
       width: 105px;
       height: 105px;
@@ -56,8 +64,15 @@
       border-radius: 60px;
       background: none;
       color: rgba(0, 0, 0, 0.1);
+      position: relative;
 
       @include font-size(40px);
+
+      i{
+        position: absolute;
+        left: calc(50% - 20px);
+        top: calc(50% - 24px);
+      }
 
       cursor: pointer;
 

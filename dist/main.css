@@ -677,6 +677,8 @@ textarea,
     content: '⬅️'; }
   .icon.icon-cross::before {
     content: '✖︎'; }
+  .icon.icon-copy::before {
+    content: '📄'; }
   .icon.icon-feedback::before {
     content: '💬'; }
   .icon.icon-search::before {
@@ -1328,6 +1330,7 @@ textarea,
   padding: 0;
   transition: 0.3s ease;
   transition-property: opacity;
+  line-height: 58px;
   border: 0;
   border-radius: 5px;
   background-color: #603f98;
@@ -1723,9 +1726,10 @@ table,
   .tabs .tab-header {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
-    padding: 12px;
+    padding: 0 12px;
+    height: 50px;
     background-color: #3f3f3f; }
     .tabs .tab-header .tab-header-list {
       display: inline-flex;
@@ -1748,7 +1752,9 @@ table,
           font-weight: bold;
           opacity: 1; }
     .tabs .tab-header .tab-header-copy {
-      padding: 0px 12px 0px 12px; }
+      display: flex;
+      align-items: center;
+      padding: 0px 12px; }
       .tabs .tab-header .tab-header-copy .tab-header-copy-text {
         transition: 0.3s ease-out;
         transition-property: opacity;
@@ -1759,11 +1765,13 @@ table,
       .tabs .tab-header .tab-header-copy .tab-header-copy-text--failed {
         color: #dc3545; }
       .tabs .tab-header .tab-header-copy .tab-header-copy-button {
-        margin: 4px;
         border: 0;
         background: none;
         color: #ffffff;
-        cursor: pointer; }
+        cursor: pointer;
+        font-size: 18px;
+        padding: 2px 4px 0;
+        margin-left: 8px; }
         .tabs .tab-header .tab-header-copy .tab-header-copy-button:focus {
           outline: none; }
   .tabs .tab-container {
@@ -1977,6 +1985,8 @@ table,
     flex-direction: column;
     align-items: center;
     margin: 35px; }
+    .feedback-form .feedback-form-button:last-of-type .feedback-form-button-circle i {
+      top: calc(50% - 14px); }
     .feedback-form .feedback-form-button .feedback-form-button-circle {
       width: 105px;
       height: 105px;
@@ -1987,9 +1997,14 @@ table,
       border-radius: 60px;
       background: none;
       color: rgba(0, 0, 0, 0.1);
+      position: relative;
       font-size: 40px;
       font-size: 2.5rem;
       cursor: pointer; }
+      .feedback-form .feedback-form-button .feedback-form-button-circle i {
+        position: absolute;
+        left: calc(50% - 20px);
+        top: calc(50% - 24px); }
       .feedback-form .feedback-form-button .feedback-form-button-circle:hover {
         border-color: #603f98;
         color: #603f98; }
