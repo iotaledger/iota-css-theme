@@ -48,6 +48,8 @@ $side-menu-right-padding: 24px;
   padding: 0 $side-menu-right-padding 0 $side-menu-left-padding;
   background-color: rgba(255, 255, 255, 0.1);
   color: $white;
+  @include font-size(17px);
+  font-weight: 600;
 
   &::before {
     position: absolute;
@@ -56,10 +58,9 @@ $side-menu-right-padding: 24px;
     @include icon(⬇️, 16px);
   }
 
-  @include font-size(20px);
-
   &:hover {
     cursor: pointer;
+    text-decoration: underline;
   }
 }
 
@@ -105,24 +106,30 @@ $side-menu-right-padding: 24px;
 
 .side-menu__list {
   color: $white;
+  padding: 16px 28px;
+  background: rgba(255, 255, 255, 0.05);
+  margin: 0px;
 
   .side-menu-item {
+    list-style: none;
     @include font-size(15px);
 
     padding: 4px 0;
-    font-weight: 200;
 
     a {
       color: $white;
       text-decoration: none;
+      font-weight: 300;
     }
 
     &:hover {
       cursor: pointer;
+      text-decoration: underline;
     }
 
     .side-menu-item--active {
       color: $tealish;
+      font-weight: 600;
     }
   }
 }

@@ -1377,8 +1377,9 @@ textarea,
   padding: 0 24px 0 28px;
   background-color: rgba(255, 255, 255, 0.1);
   color: #ffffff;
-  font-size: 20px;
-  font-size: 1.25rem; }
+  font-size: 17px;
+  font-size: 1.0625rem;
+  font-weight: 600; }
   .side-menu__heading::before {
     position: absolute;
     top: calc(50% - 9px);
@@ -1389,7 +1390,8 @@ textarea,
     line-height: 16px;
     content: "⬇️"; }
   .side-menu__heading:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    text-decoration: underline; }
 
 .side-menu__group--selected .side-menu__heading {
   color: #20a49d; }
@@ -1425,19 +1427,25 @@ textarea,
     outline: none; }
 
 .side-menu__list {
-  color: #ffffff; }
+  color: #ffffff;
+  padding: 16px 28px;
+  background: rgba(255, 255, 255, 0.05);
+  margin: 0px; }
   .side-menu__list .side-menu-item {
+    list-style: none;
     font-size: 15px;
     font-size: 0.9375rem;
-    padding: 4px 0;
-    font-weight: 200; }
+    padding: 4px 0; }
     .side-menu__list .side-menu-item a {
       color: #ffffff;
-      text-decoration: none; }
+      text-decoration: none;
+      font-weight: 300; }
     .side-menu__list .side-menu-item:hover {
-      cursor: pointer; }
+      cursor: pointer;
+      text-decoration: underline; }
     .side-menu__list .side-menu-item .side-menu-item--active {
-      color: #20a49d; }
+      color: #20a49d;
+      font-weight: 600; }
 
 .sub-header {
   display: flex;
@@ -1801,7 +1809,7 @@ table,
     color: #ffffff;
     font-size: 12px;
     font-size: 0.75rem;
-    font-weight: 600;
+    font-weight: 300;
     text-decoration: none; }
     .top-header__item a:hover {
       color: #ffffff; }
