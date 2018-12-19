@@ -7,6 +7,21 @@ const fontStream = new SVGIcons2SVGFontStream({
     fontName: 'IOTA icons',
 });
 
+const iconSCSS = `
+// This file is auto-generated, do not edit
+.icon {
+  display: inline-block;
+  font-family: $font-family-icons;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+#{icons}
+}
+`;
+
+let iconClasses = "";
+
 fontStream
     .pipe(fs.createWriteStream('./Icons.svg'))
     .on('finish', () => {
@@ -25,6 +40,16 @@ Object.keys(icons).forEach((glyph) => {
         name: glyph,
     };
     fontStream.write(iconFile);
+
+    iconClasses += `
+  &.icon-${glyph} {
+    &::before {
+      content: '${icons[glyph]}';
+    }
+  };
+`
 });
+
+fs.writeFileSync('./sass/icon.scss', iconSCSS.replace('#{icons}', iconClasses));
 
 fontStream.end();

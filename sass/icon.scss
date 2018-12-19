@@ -1,0 +1,77 @@
+
+// This file is auto-generated, do not edit
+.icon {
+  display: inline-block;
+  font-family: $font-family-icons;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+
+  &.icon-arrow-right {
+    &::before {
+      content: '→';
+    }
+  };
+
+  &.icon-burger {
+    &::before {
+      content: '🍔';
+    }
+  };
+
+  &.icon-chevron-up {
+    &::before {
+      content: '⬆';
+    }
+  };
+
+  &.icon-chevron-down {
+    &::before {
+      content: '⬇️';
+    }
+  };
+
+  &.icon-chevron-right {
+    &::before {
+      content: '➡️';
+    }
+  };
+
+  &.icon-chevron-left {
+    &::before {
+      content: '⬅️';
+    }
+  };
+
+  &.icon-cross {
+    &::before {
+      content: '✖︎';
+    }
+  };
+
+  &.icon-feedback {
+    &::before {
+      content: '💬';
+    }
+  };
+
+  &.icon-search {
+    &::before {
+      content: '🔍';
+    }
+  };
+
+  &.icon-thumb-up {
+    &::before {
+      content: '👍';
+    }
+  };
+
+  &.icon-thumb-down {
+    &::before {
+      content: '👎';
+    }
+  };
+
+}

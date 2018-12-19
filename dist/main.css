@@ -6,7 +6,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600");
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,600");
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
 html {
   line-height: 1.15;
@@ -656,6 +656,36 @@ textarea,
   .textarea:focus {
     outline: none; }
 
+.icon {
+  display: inline-block;
+  font-family: "IOTA icons";
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto; }
+  .icon.icon-arrow-right::before {
+    content: '→'; }
+  .icon.icon-burger::before {
+    content: '🍔'; }
+  .icon.icon-chevron-up::before {
+    content: '⬆'; }
+  .icon.icon-chevron-down::before {
+    content: '⬇️'; }
+  .icon.icon-chevron-right::before {
+    content: '➡️'; }
+  .icon.icon-chevron-left::before {
+    content: '⬅️'; }
+  .icon.icon-cross::before {
+    content: '✖︎'; }
+  .icon.icon-feedback::before {
+    content: '💬'; }
+  .icon.icon-search::before {
+    content: '🔍'; }
+  .icon.icon-thumb-up::before {
+    content: '👍'; }
+  .icon.icon-thumb-down::before {
+    content: '👎'; }
+
 .card__link {
   display: block;
   position: relative;
@@ -763,7 +793,7 @@ textarea,
     outline: none; }
   .feedback-button .feedback-button--icon::before {
     position: absolute;
-    top: calc(50% - 10px);
+    top: calc(50% - 12px);
     left: calc(50% - 13px);
     color: #ffffff;
     font-family: "IOTA icons";
@@ -779,6 +809,7 @@ textarea,
     line-height: 28px;
     content: "👍"; }
   .feedback-button .feedback-button--icon-no::before {
+    top: calc(50% - 10px);
     font-family: "IOTA icons";
     font-size: 28px;
     font-weight: 300;
@@ -917,17 +948,19 @@ textarea,
   width: 100%; }
   .input-wrapper::before {
     position: absolute;
-    top: calc(50% - 10px);
-    left: 14px;
+    top: calc(50% - 12px);
+    left: 0;
     color: #ffffff;
     font-family: "IOTA icons";
+    font-size: 24px;
     font-weight: 300;
+    line-height: 24px;
     content: "🔍"; }
 
 .input-search {
   width: 100%;
   max-width: 100%;
-  padding: 10px 10px 10px 43px;
+  padding: 13px 10px 13px 43px;
   border: 0;
   border-bottom: 2px solid #ffffff;
   outline: none;
@@ -1751,7 +1784,7 @@ table,
 .top-header__items {
   display: flex;
   align-items: center;
-  margin: 0px 26px;
+  margin: 0px 25px;
   list-style: none; }
 
 .top-header__item {
@@ -2039,8 +2072,7 @@ footer {
   flex-direction: column;
   flex-grow: 1;
   min-width: 250px;
-  padding-right: 30px;
-  padding-left: 30px; }
+  padding: 0 40px; }
   .footer-top-content__wrapper .footer-top-content__heading {
     margin: 0;
     color: #20a49d;
@@ -2089,9 +2121,7 @@ footer {
   flex-direction: column;
   flex-grow: 1;
   min-width: 250px;
-  padding-right: 30px;
-  padding-bottom: 30px;
-  padding-left: 30px; }
+  padding: 0 40px 30px; }
   @media (max-width: 514px) {
     .footer-bottom-content__wrapper.legal .footer-bottom-content__item:first-child {
       display: none; } }
@@ -2140,13 +2170,16 @@ footer {
 
 .header__body {
   max-width: 1420px;
-  margin: 87px auto 50px auto;
+  margin: 60px auto;
   padding: 0 16px; }
+  .header__body .text {
+    max-width: 420px; }
   @media (min-width: 1024px) {
     .header__body {
       display: flex;
+      align-items: center;
       justify-content: space-between;
-      padding: 0 90px; } }
+      padding: 0 40px; } }
 
 .header__brand {
   width: 167px;
@@ -2154,11 +2187,11 @@ footer {
   margin: 17px; }
   @media (min-width: 768px) {
     .header__brand {
-      margin: 32px 46px; } }
+      margin: 32px 40px; } }
 
 .header__search {
-  height: 42px;
-  margin-top: 80px; }
+  height: 50px;
+  margin-top: 40px; }
   @media (min-width: 1024px) {
     .header__search {
       width: 700px;

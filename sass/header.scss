@@ -36,13 +36,18 @@
 
 .header__body {
   max-width: $max-width;
-  margin: 87px auto 50px auto;
+  margin: 60px auto;
   padding: 0 16px;
+
+  .text {
+    max-width: 420px;
+  }
 
   @include desktop {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 0 90px;
+    padding: 0 40px;
   }
 }
 
@@ -52,13 +57,13 @@
   margin: 17px;
 
   @include tablet-up {
-    margin: 32px 46px;
+    margin: 32px 40px;
   }
 }
 
 .header__search {
-  height: 42px;
-  margin-top: 80px;
+  height: 50px;
+  margin-top: 40px;
 
   @include desktop {
     width: 700px;

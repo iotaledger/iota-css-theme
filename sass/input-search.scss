@@ -13,17 +13,17 @@
 
   &::before {
     position: absolute;
-    top: calc(50% - 10px);
-    left: 14px;
+    top: calc(50% - 12px);
+    left: 0;
     color: $white;
-    @include icon(🔍);
+    @include icon(🔍, 24px);
   }
 }
 
 .input-search {
   width: 100%;
   max-width: 100%;
-  padding: 10px 10px 10px 43px;
+  padding: 13px 10px 13px 43px;
   border: 0;
   border-bottom: 2px solid $white;
   outline: none;

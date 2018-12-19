@@ -42,8 +42,7 @@ footer {
   flex-direction: column;
   flex-grow: 1;
   min-width: 250px;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding: 0 40px;
 
   .footer-top-content__heading {
     margin: 0;
@@ -110,9 +109,7 @@ footer {
   flex-direction: column;
   flex-grow: 1;
   min-width: 250px;
-  padding-right: 30px;
-  padding-bottom: 30px;
-  padding-left: 30px;
+  padding: 0 40px 30px;
 
   &.legal {
     .footer-bottom-content__item {

@@ -53,7 +53,7 @@
   .feedback-button--icon {
     &::before {
       position: absolute;
-      top: calc(50% - 10px);
+      top: calc(50% - 12px);
       left: calc(50% - 13px);
       color: $white;
       @include icon(💬, 28px);
@@ -69,6 +69,7 @@
 
   .feedback-button--icon-no {
     &::before {
+      top: calc(50% - 10px);
       @include icon(👎, 28px);
     }
   }
