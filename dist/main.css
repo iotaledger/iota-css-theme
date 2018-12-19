@@ -1775,6 +1775,13 @@ table,
   font-weight: 600;
   line-height: 2.06;
   font-stretch: normal; }
+  .tree-menu__section-title a {
+    color: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    font-stretch: inherit; }
 
 .tree-menu__section-title--selected {
   margin-left: -20px;
@@ -1796,6 +1803,8 @@ table,
   line-height: 1.9;
   text-decoration: none;
   font-stretch: normal; }
+  .tree-menu__section-item a:hover {
+    text-decoration: underline; }
 
 .version-picker__wrapper {
   display: flex;

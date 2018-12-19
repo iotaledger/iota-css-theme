@@ -12,11 +12,22 @@
 
 .tree-menu__section-title {
   color: $gunmetal-grey;
+
   @include font-size(17px);
+
   font-style: normal;
   font-weight: 600;
   line-height: 2.06;
   font-stretch: normal;
+
+  a {
+    color: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    font-stretch: inherit;
+  }
 }
 
 .tree-menu__section-title--selected {
@@ -34,12 +45,18 @@
 .tree-menu__section-item {
   a {
     color: $body-copy;
+
     @include font-size(15px);
+
     font-style: normal;
     font-weight: 300;
     letter-spacing: normal;
     line-height: 1.9;
     text-decoration: none;
     font-stretch: normal;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
