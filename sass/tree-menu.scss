@@ -60,3 +60,11 @@
     }
   }
 }
+
+.tree-menu__section-item--selected {
+  margin-left: -20px;
+  padding-left: 20px;
+  border-left: 4px solid $tealish;
+  color: $tealish;
+}
+
