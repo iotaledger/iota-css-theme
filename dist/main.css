@@ -330,15 +330,22 @@ input[type='search']::-webkit-search-cancel-button {
   -webkit-appearance: none; }
 
 .arrow-button {
+  position: relative;
   width: 35px;
   height: 35px;
   border: 0;
   background-color: #ffffff; }
+  @media (min-width: 768px) {
+    .arrow-button {
+      width: 40px;
+      height: 40px; } }
   .arrow-button::before {
     color: #20a49d;
-    line-height: 35px; }
+    position: absolute;
+    top: calc(50% - 8px); }
   .arrow-button:hover:not([disabled]) {
-    cursor: pointer; }
+    cursor: pointer;
+    opacity: 0.75; }
   .arrow-button:focus {
     outline: none; }
   .arrow-button:disabled {
@@ -351,14 +358,16 @@ input[type='search']::-webkit-search-cancel-button {
   font-size: 16px;
   font-weight: 300;
   line-height: 16px;
-  content: "➡️"; }
+  content: "⬅️";
+  left: calc(50% - 9px); }
 
 .arrow-button--right::before {
   font-family: "IOTA icons";
   font-size: 16px;
   font-weight: 300;
   line-height: 16px;
-  content: "⬅️"; }
+  content: "➡️";
+  left: calc(50% - 7px); }
 
 blockquote,
 .blockquote {
@@ -1072,7 +1081,7 @@ textarea,
 .input-sticky-wrapper {
   display: inline-flex;
   position: relative;
-  width: 20px;
+  width: 40px;
   transition: 0.3s ease;
   transition-property: width; }
   .input-sticky-wrapper::before {
@@ -1330,11 +1339,11 @@ textarea,
   padding: 0;
   transition: 0.3s ease;
   transition-property: opacity;
-  line-height: 58px;
   border: 0;
   border-radius: 5px;
   background-color: #603f98;
   color: #ffffff;
+  line-height: 58px;
   font-size: 26px;
   font-size: 1.625rem;
   cursor: pointer; }
@@ -1390,8 +1399,8 @@ textarea,
     line-height: 16px;
     content: "⬇️"; }
   .side-menu__heading:hover {
-    cursor: pointer;
-    text-decoration: underline; }
+    text-decoration: underline;
+    cursor: pointer; }
 
 .side-menu__group--selected .side-menu__heading {
   color: #20a49d; }
@@ -1427,22 +1436,22 @@ textarea,
     outline: none; }
 
 .side-menu__list {
-  color: #ffffff;
+  margin: 0px;
   padding: 16px 28px;
   background: rgba(255, 255, 255, 0.05);
-  margin: 0px; }
+  color: #ffffff; }
   .side-menu__list .side-menu-item {
+    padding: 4px 0;
     list-style: none;
     font-size: 15px;
-    font-size: 0.9375rem;
-    padding: 4px 0; }
+    font-size: 0.9375rem; }
     .side-menu__list .side-menu-item a {
       color: #ffffff;
-      text-decoration: none;
-      font-weight: 300; }
+      font-weight: 300;
+      text-decoration: none; }
     .side-menu__list .side-menu-item:hover {
-      cursor: pointer;
-      text-decoration: underline; }
+      text-decoration: underline;
+      cursor: pointer; }
     .side-menu__list .side-menu-item .side-menu-item--active {
       color: #20a49d;
       font-weight: 600; }
@@ -1452,10 +1461,13 @@ textarea,
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 120px;
-  padding: 16px;
+  padding: 19px 16px;
   background-color: #1e9a93;
   color: #ffffff; }
+  @media (min-width: 768px) {
+    .sub-header {
+      height: 85px;
+      padding: 0 40px; } }
 
 .sub-header__title {
   display: block;
@@ -1473,7 +1485,7 @@ textarea,
 .sub-header__bottom-title {
   display: flex;
   align-items: center; }
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     .sub-header__bottom-title {
       font-size: 34px;
       font-size: 2.125rem;
@@ -1485,6 +1497,7 @@ textarea,
 .sub-header__body {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%; }
 
 table,
@@ -1736,8 +1749,8 @@ table,
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 0 12px;
     height: 50px;
+    padding: 0 12px;
     background-color: #3f3f3f; }
     .tabs .tab-header .tab-header-list {
       display: inline-flex;
@@ -1773,13 +1786,13 @@ table,
       .tabs .tab-header .tab-header-copy .tab-header-copy-text--failed {
         color: #dc3545; }
       .tabs .tab-header .tab-header-copy .tab-header-copy-button {
+        margin-left: 8px;
+        padding: 2px 4px 0;
         border: 0;
         background: none;
         color: #ffffff;
-        cursor: pointer;
         font-size: 18px;
-        padding: 2px 4px 0;
-        margin-left: 8px; }
+        cursor: pointer; }
         .tabs .tab-header .tab-header-copy .tab-header-copy-button:focus {
           outline: none; }
   .tabs .tab-container {
@@ -1812,7 +1825,8 @@ table,
     font-weight: 300;
     text-decoration: none; }
     .top-header__item a:hover {
-      color: #ffffff; }
+      color: #ffffff;
+      text-decoration: underline; }
 
 .tree-menu {
   padding: 0 20px; }
@@ -1996,6 +2010,7 @@ table,
     .feedback-form .feedback-form-button:last-of-type .feedback-form-button-circle i {
       top: calc(50% - 14px); }
     .feedback-form .feedback-form-button .feedback-form-button-circle {
+      position: relative;
       width: 105px;
       height: 105px;
       margin-bottom: 20px;
@@ -2005,14 +2020,13 @@ table,
       border-radius: 60px;
       background: none;
       color: rgba(0, 0, 0, 0.1);
-      position: relative;
+      cursor: pointer;
       font-size: 40px;
-      font-size: 2.5rem;
-      cursor: pointer; }
+      font-size: 2.5rem; }
       .feedback-form .feedback-form-button .feedback-form-button-circle i {
         position: absolute;
-        left: calc(50% - 20px);
-        top: calc(50% - 24px); }
+        top: calc(50% - 24px);
+        left: calc(50% - 20px); }
       .feedback-form .feedback-form-button .feedback-form-button-circle:hover {
         border-color: #603f98;
         color: #603f98; }
@@ -2279,7 +2293,7 @@ footer {
 .sticky-header {
   display: block;
   min-width: 375px;
-  padding: 32px 25px;
+  padding: 22px 40px;
   background-color: #20a49d; }
   .sticky-header .input-sticky-wrapper.input-sticky-wrapper--expanded {
     margin-right: 0px; }
@@ -2307,9 +2321,10 @@ footer {
 .sticky-header__control {
   display: flex;
   justify-content: flex-end;
-  width: 100%; }
+  width: 100%;
+  padding-top: 4px; }
   .sticky-header__control .input-sticky-wrapper {
-    margin-right: 50px; }
+    margin-right: 10px; }
     .sticky-header__control .input-sticky-wrapper::before {
       top: calc(50% - 12px);
       left: 8px;
@@ -2322,12 +2337,14 @@ footer {
   cursor: pointer; }
   .sticky-header__icon::before {
     font-family: "IOTA icons";
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 300;
-    line-height: 32px;
+    line-height: 24px;
     content: "🍔"; }
   .sticky-header__icon:focus {
     outline: none; }
+  .sticky-header__icon:hover {
+    opacity: 0.5; }
   .sticky-header__icon:disabled {
     cursor: default;
     pointer-events: none; }

@@ -46,15 +46,16 @@
     align-items: center;
     margin: 35px;
 
-    &:last-of-type{
+    &:last-of-type {
       .feedback-form-button-circle {
-        i{
+        i {
           top: calc(50% - 14px);
         }
       }
     }
 
     .feedback-form-button-circle {
+      position: relative;
       width: 105px;
       height: 105px;
       margin-bottom: 20px;
@@ -64,17 +65,14 @@
       border-radius: 60px;
       background: none;
       color: rgba(0, 0, 0, 0.1);
-      position: relative;
-
+      cursor: pointer;
       @include font-size(40px);
 
-      i{
+      i {
         position: absolute;
-        left: calc(50% - 20px);
         top: calc(50% - 24px);
+        left: calc(50% - 20px);
       }
-
-      cursor: pointer;
 
       &:hover {
         border-color: $blueberry;

@@ -59,8 +59,8 @@ $side-menu-right-padding: 24px;
   }
 
   &:hover {
-    cursor: pointer;
     text-decoration: underline;
+    cursor: pointer;
   }
 }
 
@@ -105,26 +105,25 @@ $side-menu-right-padding: 24px;
 }
 
 .side-menu__list {
-  color: $white;
+  margin: 0px;
   padding: 16px 28px;
   background: rgba(255, 255, 255, 0.05);
-  margin: 0px;
+  color: $white;
 
   .side-menu-item {
+    padding: 4px 0;
     list-style: none;
     @include font-size(15px);
 
-    padding: 4px 0;
-
     a {
       color: $white;
-      text-decoration: none;
       font-weight: 300;
+      text-decoration: none;
     }
 
     &:hover {
-      cursor: pointer;
       text-decoration: underline;
+      cursor: pointer;
     }
 
     .side-menu-item--active {

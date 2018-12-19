@@ -12,19 +12,27 @@
 // Styleguide Atoms.Arrow Button
 
 .arrow-button {
+  position: relative;
   width: 35px;
   height: 35px;
   border: 0;
   background-color: $white;
 
+  @include tablet-up {
+    width: 40px;
+    height: 40px;
+  }
+
   &::before {
+    position: absolute;
+    top: calc(50% - 8px);
     color: $tealish;
-    line-height: 35px;
   }
 
   &:hover {
     &:not([disabled]) {
       cursor: pointer;
+      opacity: 0.75;
     }
   }
 
@@ -41,12 +49,14 @@
 
 .arrow-button--left {
   &::before {
-    @include icon(➡️, 16px);
+    @include icon(⬅️, 16px);
+    left: calc(50% - 9px);
   }
 }
 
 .arrow-button--right {
   &::before {
-    @include icon(⬅️, 16px);
+    @include icon(➡️, 16px);
+    left: calc(50% - 7px);
   }
 }

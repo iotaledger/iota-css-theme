@@ -11,7 +11,7 @@
 .sticky-header {
   display: block;
   min-width: $min-width;
-  padding: 32px 25px;
+  padding: 22px 40px;
   background-color: $tealish;
 
   .input-sticky-wrapper {
@@ -54,9 +54,10 @@
   display: flex;
   justify-content: flex-end;
   width: 100%;
+  padding-top: 4px;
 
   .input-sticky-wrapper {
-    margin-right: 50px;
+    margin-right: 10px;
 
     &::before {
       top: calc(50% - 12px);
@@ -73,11 +74,15 @@
   cursor: pointer;
 
   &::before {
-    @include icon(🍔, 32px);
+    @include icon(🍔, 24px);
   }
 
   &:focus {
     outline: none;
+  }
+
+  &:hover {
+    opacity: 0.5;
   }
 
   &:disabled {
