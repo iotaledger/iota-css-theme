@@ -1402,7 +1402,9 @@ textarea,
   color: #ffffff;
   font-size: 17px;
   font-size: 1.0625rem;
-  font-weight: 600; }
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer; }
   .side-menu__heading::before {
     position: absolute;
     top: calc(50% - 9px);
@@ -1413,8 +1415,7 @@ textarea,
     line-height: 16px;
     content: "⬇️"; }
   .side-menu__heading:hover {
-    text-decoration: underline;
-    cursor: pointer; }
+    text-decoration: none; }
 
 .side-menu__group--selected .side-menu__heading {
   color: #20a49d; }
@@ -1471,7 +1472,10 @@ textarea,
     .side-menu__list .side-menu-item a {
       color: #ffffff;
       font-weight: 300;
-      text-decoration: none; }
+      text-decoration: underline; }
+      @media (min-width: 1024px) {
+        .side-menu__list .side-menu-item a {
+          text-decoration: none; } }
     .side-menu__list .side-menu-item:hover {
       text-decoration: underline;
       cursor: pointer; }
