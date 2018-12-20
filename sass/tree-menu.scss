@@ -71,5 +71,9 @@
   margin-left: -20px;
   padding-left: 20px;
   border-left: 4px solid $tealish;
-  color: $tealish;
+
+  a {
+    color: $tealish;
+    font-weight: 600;
+  }
 }

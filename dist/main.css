@@ -1911,8 +1911,10 @@ table,
 .tree-menu__section-item--selected {
   margin-left: -20px;
   padding-left: 20px;
-  border-left: 4px solid #20a49d;
-  color: #20a49d; }
+  border-left: 4px solid #20a49d; }
+  .tree-menu__section-item--selected a {
+    color: #20a49d;
+    font-weight: 600; }
 
 .version-picker__wrapper {
   display: flex;
