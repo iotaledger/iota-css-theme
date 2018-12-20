@@ -16,23 +16,22 @@
 }
 
 .floating-menu__item {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding-left: 20px;
+  padding-left: 32px;
   transition: $transition-duration ease;
   transition-property: border;
-  border-left: 4px solid transparent;
+  border-left: 3px solid $white;
 
   a {
     display: inline-block;
+    margin: 0px;
     transform-origin: left center;
     transition: inherit;
-    transition-property: transform, color;
+    transition-property: transform, color, border-color;
     color: $black;
     @include font-size(17px);
     font-style: normal;
-    font-weight: normal;
-    line-height: 26px;
+    font-weight: 600;
+    line-height: 46px;
     text-decoration: none;
     font-stretch: normal;
   }
@@ -42,9 +41,8 @@
     border-color: $tealish;
 
     a {
-      transform: scale(1.4);
+      transform: scale(1.3);
       color: $tealish;
-      font-weight: bold;
     }
   }
 }
