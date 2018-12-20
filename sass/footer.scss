@@ -79,7 +79,11 @@ footer {
   color: $white;
   font-weight: 300;
   line-height: 2.25;
-  text-decoration: none;
+  text-decoration: underline;
+
+  @include desktop {
+    text-decoration: none;
+  }
 
   &:hover {
     color: $white;
@@ -144,7 +148,15 @@ footer {
       color: $tealish;
       @include font-size(15px);
       font-weight: normal;
-      text-decoration: none;
+      text-decoration: underline;
+
+      @include desktop {
+        text-decoration: none;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }

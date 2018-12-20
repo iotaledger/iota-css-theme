@@ -2173,7 +2173,10 @@ footer {
   color: #ffffff;
   font-weight: 300;
   line-height: 2.25;
-  text-decoration: none; }
+  text-decoration: underline; }
+  @media (min-width: 1024px) {
+    .footer-top-content__link {
+      text-decoration: none; } }
   .footer-top-content__link:hover {
     color: #ffffff;
     text-decoration: underline; }
@@ -2221,7 +2224,12 @@ footer {
       font-size: 15px;
       font-size: 0.9375rem;
       font-weight: normal;
-      text-decoration: none; }
+      text-decoration: underline; }
+      @media (min-width: 1024px) {
+        .footer-bottom-content__wrapper .footer-bottom-content__item a {
+          text-decoration: none; } }
+      .footer-bottom-content__wrapper .footer-bottom-content__item a:hover {
+        text-decoration: underline; }
 
 .header {
   display: block;
