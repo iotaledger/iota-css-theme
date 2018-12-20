@@ -26,11 +26,10 @@ table,
         border-bottom: 1px solid #ececec;
         background-color: $gunmetal-grey;
         color: $white;
-
         @include font-size(20px);
-
         font-weight: bold;
         line-height: 2.4;
+        @include word-break;
       }
     }
 
@@ -88,11 +87,10 @@ table,
         border-bottom: 1px solid #ececec;
         color: $blueberry;
         font-family: $font-secondary;
-
         @include font-size(17px);
-
         font-weight: normal;
         line-height: 2.82;
+        @include word-break;
       }
 
       th,
@@ -114,11 +112,10 @@ table,
         border-right: 1px solid #ececec;
         border-bottom: 1px solid #ececec;
         color: $body-copy;
-
         @include font-size(17px);
-
         font-weight: normal;
         line-height: 1.88;
+        @include word-break;
       }
     }
 

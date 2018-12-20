@@ -14,6 +14,14 @@
   &:-ms-input-placeholder      {@content}
 }
 
+@mixin word-break {
+  word-break: break-all;
+
+  // break-word is not supported in all browsers but behaves better than break all
+  // sass-lint:disable no-duplicate-properties
+  word-break: break-word;
+}
+
 @mixin icon($icon, $size: null) {
   font-family: $font-family-icons;
   font-size: $size;

@@ -19,6 +19,10 @@
   }
 }
 
+.header__wrapper {
+  padding-bottom: 40px;
+}
+
 .header__head {
   display: flex;
   justify-content: space-between;
@@ -36,7 +40,7 @@
 
 .header__body {
   max-width: $max-width;
-  margin: 60px auto;
+  margin: 60px auto 0px auto;
   padding: 0 16px;
 
   .text {
@@ -59,6 +63,10 @@
   @include tablet-up {
     margin: 32px 40px;
   }
+}
+
+.header__title {
+  margin-right: 30px;
 }
 
 .header__search {
