@@ -2361,7 +2361,8 @@ footer {
 
 .sticky-header__brand {
   width: 167px;
-  height: 56px; }
+  height: 56px;
+  margin-right: 30px; }
 
 .sticky-header__control {
   display: flex;
