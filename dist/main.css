@@ -1464,7 +1464,7 @@ textarea,
   background: rgba(255, 255, 255, 0.05);
   color: #ffffff; }
   .side-menu__list .side-menu-item {
-    padding: 4px 0;
+    padding: 4px 0px 0px 16px;
     list-style: none;
     font-size: 15px;
     font-size: 0.9375rem; }
@@ -1475,17 +1475,9 @@ textarea,
     .side-menu__list .side-menu-item:hover {
       text-decoration: underline;
       cursor: pointer; }
-    .side-menu__list .side-menu-item::before {
-      display: inline-block;
-      width: 16px;
-      margin-left: 16px;
-      color: #ffffff;
-      content: '\2022'; }
     .side-menu__list .side-menu-item .side-menu-item--active {
       color: #20a49d;
       font-weight: 600; }
-    .side-menu__list .side-menu-item.side-menu-item--active::before {
-      color: #20a49d; }
 
 .sub-header {
   display: flex;

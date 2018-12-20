@@ -150,7 +150,7 @@ $side-menu-right-padding: 24px;
   color: $white;
 
   .side-menu-item {
-    padding: 4px 0;
+    padding: 4px 0px 0px 16px;
     list-style: none;
 
     @include font-size(15px);
@@ -166,23 +166,9 @@ $side-menu-right-padding: 24px;
       cursor: pointer;
     }
 
-    &::before {
-      display: inline-block;
-      width: 16px;
-      margin-left: 16px;
-      color: $white;
-      content: '\2022';
-    }
-
     .side-menu-item--active {
       color: $tealish;
       font-weight: 600;
-    }
-
-    &.side-menu-item--active {
-      &::before {
-        color: $tealish;
-      }
     }
   }
 }
