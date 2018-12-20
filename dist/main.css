@@ -511,6 +511,7 @@ hr,
 
 a,
 .link {
+  outline: 0;
   color: #696f76;
   font-size: 16px;
   font-size: 1rem;
@@ -524,6 +525,9 @@ a,
   a:hover,
   .link:hover {
     text-decoration: underline; }
+  a:focus,
+  .link:focus {
+    outline: 0; }
 
 li {
   color: #696f76;
@@ -912,6 +916,9 @@ textarea,
   font-stretch: normal; }
 
 .input-register__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 55px;
   height: 55px;
   transition: 0.3s ease;
@@ -939,10 +946,9 @@ textarea,
     content: "→"; }
   @media (min-width: 1024px) {
     .input-register__button {
-      display: flex;
       justify-content: space-between;
       width: 155px;
-      padding: 15px 30px; } }
+      padding: 0px 30px; } }
 
 .input-register__button-text {
   display: none;

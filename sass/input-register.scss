@@ -33,6 +33,9 @@ $common-desktop-width: 155px;
 }
 
 .input-register__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: $common-height;
   height: $common-height;
   transition: $transition-duration ease;
@@ -67,10 +70,9 @@ $common-desktop-width: 155px;
   }
 
   @include desktop {
-    display: flex;
     justify-content: space-between;
     width: $common-desktop-width;
-    padding: 15px 30px;
+    padding: 0px 30px;
   }
 }
 
