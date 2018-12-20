@@ -1179,7 +1179,7 @@ textarea,
   padding: 18px 16px;
   border: 1px #f3f2f1 solid;
   background-color: transparent;
-  text-decoration: none;
+  text-decoration: underline;
   cursor: pointer; }
   .navigator__back:focus {
     outline: none; }
@@ -1187,9 +1187,12 @@ textarea,
     cursor: default;
     opacity: 0.5;
     pointer-events: none; }
+  .navigator__back:hover {
+    text-decoration: underline; }
   @media (min-width: 1024px) {
     .navigator__back {
-      padding-left: 90px; } }
+      padding-left: 90px;
+      text-decoration: none; } }
 
 .navigator__next {
   display: flex;
@@ -1200,7 +1203,7 @@ textarea,
   padding: 18px 16px;
   border: 1px #f3f2f1 solid;
   background-color: transparent;
-  text-decoration: none;
+  text-decoration: underline;
   cursor: pointer; }
   .navigator__next:focus {
     outline: none; }
@@ -1208,9 +1211,12 @@ textarea,
     cursor: default;
     opacity: 0.5;
     pointer-events: none; }
+  .navigator__next:hover {
+    text-decoration: underline; }
   @media (min-width: 1024px) {
     .navigator__next {
-      padding-right: 90px; } }
+      padding-right: 90px;
+      text-decoration: none; } }
 
 .navigator__label {
   color: #20a49d; }
@@ -1240,7 +1246,7 @@ textarea,
       content: ''; }
     .pagination .pagination-item:first-child::before {
       background-color: transparent; }
-    .pagination .pagination-item * {
+    .pagination .pagination-item a {
       font-size: 16px;
       font-size: 1rem;
       display: inline-flex;
@@ -1250,7 +1256,13 @@ textarea,
       padding-right: 12px;
       padding-left: 12px;
       color: #84898f;
-      font-weight: normal; }
+      font-weight: normal;
+      text-decoration: underline; }
+      .pagination .pagination-item a:hover {
+        text-decoration: underline; }
+      @media (min-width: 1024px) {
+        .pagination .pagination-item a {
+          text-decoration: none; } }
   .pagination .pagination-item--selected a {
     background-color: #20a49d;
     color: #ffffff; }

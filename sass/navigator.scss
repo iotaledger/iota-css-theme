@@ -28,7 +28,7 @@
   padding: 18px 16px;
   border: 1px $sand-grey solid;
   background-color: transparent;
-  text-decoration: none;
+  text-decoration: underline;
   cursor: pointer;
 
   &:focus {
@@ -41,8 +41,13 @@
     pointer-events: none;
   }
 
+  &:hover {
+    text-decoration: underline;
+  }
+
   @include desktop {
     padding-left: 90px;
+    text-decoration: none;
   }
 }
 
@@ -55,7 +60,7 @@
   padding: 18px 16px;
   border: 1px $sand-grey solid;
   background-color: transparent;
-  text-decoration: none;
+  text-decoration: underline;
   cursor: pointer;
 
   &:focus {
@@ -68,8 +73,13 @@
     pointer-events: none;
   }
 
+  &:hover {
+    text-decoration: underline;
+  }
+
   @include desktop {
     padding-right: 90px;
+    text-decoration: none;
   }
 }
 
