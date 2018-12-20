@@ -15,6 +15,26 @@ $side-menu-right-padding: 24px;
   width: 311px;
   height: 100%;
   background-color: $gunmetal-grey;
+
+  &.side-menu__hidden {
+    position: fixed;
+    top: 0;
+    right: -328px;
+    padding-right: 17px;
+    transition: 300ms ease;
+    z-index: 3;
+    overflow-y: scroll;
+  }
+
+  &.side-menu__shown {
+    position: fixed;
+    top: 0;
+    right: -32px;
+    padding-right: 17px;
+    transition: 300ms ease;
+    z-index: 3;
+    overflow-y: scroll;
+  }
 }
 
 .side-menu__group {
@@ -24,7 +44,6 @@ $side-menu-right-padding: 24px;
     display: none;
   }
 }
-
 
 .side-menu__caption {
   display: flex;
@@ -48,13 +67,16 @@ $side-menu-right-padding: 24px;
   padding: 0 $side-menu-right-padding 0 $side-menu-left-padding;
   background-color: rgba(255, 255, 255, 0.1);
   color: $white;
+
   @include font-size(17px);
+
   font-weight: 600;
 
   &::before {
     position: absolute;
     top: calc(50% - 9px);
     right: 28px;
+
     @include icon(⬇️, 16px);
   }
 
@@ -67,7 +89,11 @@ $side-menu-right-padding: 24px;
 .side-menu__group--selected {
   .side-menu__heading {
     color: $tealish;
+  }
+}
 
+.side-menu__group--expanded {
+  .side-menu__heading {
     &::before {
       @include icon(⬆️, 16px);
     }
@@ -90,6 +116,7 @@ $side-menu-right-padding: 24px;
     position: absolute;
     top: 0px;
     left: 0px;
+
     @include icon(✖︎, 18px);
   }
 
@@ -104,15 +131,28 @@ $side-menu-right-padding: 24px;
   }
 }
 
+.side-menu-item__header {
+  font-weight: 600;
+}
+
+.side-menu__sub-list {
+  padding: 10px 0px 0px 16px;
+
+  ul {
+    padding: 0;
+  }
+}
+
 .side-menu__list {
   margin: 0px;
-  padding: 16px 28px;
+  padding: 16px;
   background: rgba(255, 255, 255, 0.05);
   color: $white;
 
   .side-menu-item {
     padding: 4px 0;
     list-style: none;
+
     @include font-size(15px);
 
     a {
@@ -126,10 +166,23 @@ $side-menu-right-padding: 24px;
       cursor: pointer;
     }
 
+    &::before {
+      display: inline-block;
+      width: 16px;
+      margin-left: 16px;
+      color: $white;
+      content: '\2022';
+    }
+
     .side-menu-item--active {
       color: $tealish;
       font-weight: 600;
     }
+
+    &.side-menu-item--active {
+      &::before {
+        color: $tealish;
+      }
+    }
   }
 }
-

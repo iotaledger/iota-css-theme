@@ -1357,6 +1357,22 @@ textarea,
   width: 311px;
   height: 100%;
   background-color: #3f3f3f; }
+  .side-menu.side-menu__hidden {
+    position: fixed;
+    top: 0;
+    right: -328px;
+    padding-right: 17px;
+    transition: 300ms ease;
+    z-index: 3;
+    overflow-y: scroll; }
+  .side-menu.side-menu__shown {
+    position: fixed;
+    top: 0;
+    right: -32px;
+    padding-right: 17px;
+    transition: 300ms ease;
+    z-index: 3;
+    overflow-y: scroll; }
 
 .side-menu__group {
   margin-bottom: 2px; }
@@ -1402,14 +1418,15 @@ textarea,
 
 .side-menu__group--selected .side-menu__heading {
   color: #20a49d; }
-  .side-menu__group--selected .side-menu__heading::before {
-    font-family: "IOTA icons";
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 16px;
-    content: "⬆️"; }
 
-.side-menu__group--selected .side-menu__list {
+.side-menu__group--expanded .side-menu__heading::before {
+  font-family: "IOTA icons";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 16px;
+  content: "⬆️"; }
+
+.side-menu__group--expanded .side-menu__list {
   display: block; }
 
 .side-menu__close {
@@ -1433,9 +1450,17 @@ textarea,
   .side-menu__close:focus {
     outline: none; }
 
+.side-menu-item__header {
+  font-weight: 600; }
+
+.side-menu__sub-list {
+  padding: 10px 0px 0px 16px; }
+  .side-menu__sub-list ul {
+    padding: 0; }
+
 .side-menu__list {
   margin: 0px;
-  padding: 16px 28px;
+  padding: 16px;
   background: rgba(255, 255, 255, 0.05);
   color: #ffffff; }
   .side-menu__list .side-menu-item {
@@ -1450,9 +1475,17 @@ textarea,
     .side-menu__list .side-menu-item:hover {
       text-decoration: underline;
       cursor: pointer; }
+    .side-menu__list .side-menu-item::before {
+      display: inline-block;
+      width: 16px;
+      margin-left: 16px;
+      color: #ffffff;
+      content: '\2022'; }
     .side-menu__list .side-menu-item .side-menu-item--active {
       color: #20a49d;
       font-weight: 600; }
+    .side-menu__list .side-menu-item.side-menu-item--active::before {
+      color: #20a49d; }
 
 .sub-header {
   display: flex;
@@ -1836,6 +1869,7 @@ table,
   padding: 0 20px; }
 
 .tree-menu__section-title {
+  margin-bottom: 0;
   color: #3f3f3f;
   font-size: 17px;
   font-size: 1.0625rem;
@@ -1858,6 +1892,7 @@ table,
   color: #20a49d; }
 
 .tree-menu__section {
+  margin-top: 8px;
   padding-left: 20px;
   list-style-type: none; }
 
