@@ -13,7 +13,9 @@
 .tree-menu__section-title {
   margin-bottom: 0;
   color: $gunmetal-grey;
+
   @include font-size(17px);
+
   font-style: normal;
   font-weight: 600;
   line-height: 2.06;
@@ -52,8 +54,13 @@
     font-weight: 300;
     letter-spacing: normal;
     line-height: 1.9;
-    text-decoration: none;
+    text-decoration: underline;
     font-stretch: normal;
+
+    @include desktop {
+      text-decoration: none;
+    }
+
 
     &:hover {
       text-decoration: underline;
@@ -67,4 +74,3 @@
   border-left: 4px solid $tealish;
   color: $tealish;
 }
-
