@@ -12,11 +12,12 @@
   width: 100%;
 
   &::before {
+    @extend %icon-search;
     position: absolute;
     top: calc(50% - 16px);
     left: 24px;
     color: $light-grey;
-    @include icon(🔍, 32px);
+    @include icon(32px);
   }
 
   .input-search-basic {

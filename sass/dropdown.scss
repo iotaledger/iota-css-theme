@@ -15,16 +15,17 @@
   background-color: rgba(255, 255, 255, 0.1);
   line-height: 1.5;
 
-  @include phone-down{
+  @include phone-down {
     max-width: none;
   }
 
   &::after {
+    @extend %icon-chevron-down;
     position: absolute;
     top: calc(50% - 9px);
     right: 25px;
     color: $white;
-    @include icon(⬇️, 18px);
+    @include icon(18px);
     line-height: 18px;
     pointer-events: none;
   }

@@ -52,25 +52,28 @@
 
   .feedback-button--icon {
     &::before {
+      @extend %icon-feedback;
       position: absolute;
       top: calc(50% - 12px);
       left: calc(50% - 13px);
       color: $white;
-      @include icon(💬, 28px);
+      @include icon(28px);
     }
   }
 
   .feedback-button--icon-yes {
     &::before {
+      @extend %icon-thumb-up;
       top: calc(50% - 14px);
-      @include icon(👍, 28px);
+      @include icon(28px);
     }
   }
 
   .feedback-button--icon-no {
     &::before {
+      @extend %icon-thumb-down;
       top: calc(50% - 10px);
-      @include icon(👎, 28px);
+      @include icon(28px);
     }
   }
 }

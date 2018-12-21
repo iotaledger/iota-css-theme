@@ -70,11 +70,12 @@
   line-height: 1.5;
 
   &::after {
+    @extend %icon-chevron-down;
     position: absolute;
     top: calc(50% - 9px);
     right: 25px;
     color: $white;
-    @include icon(⬇️, 18px);
+    @include icon(18px);
     pointer-events: none;
   }
 
@@ -108,10 +109,12 @@
 
   option {
     color: $black;
+    @include font-size(16px);
   }
 
   optgroup {
     color: $gunmetal-grey;
+    @include font-size(16px);
   }
 
   // Remove the down arrow on Edge
@@ -126,7 +129,7 @@
   }
 
   &:-moz-focusring * {
-    color: $white;
+    color: $black;
     text-shadow: none;
   }
 

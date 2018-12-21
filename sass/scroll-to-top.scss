@@ -16,11 +16,23 @@
   background-color: $blueberry;
   color: $white;
   line-height: 58px;
+
   @include font-size(26px);
+
   cursor: pointer;
 
   &:focus {
     outline: none;
+  }
+
+  i {
+    &.icon-chevron-up {
+      &::before {
+        @extend %icon-chevron-up;
+
+        @include icon(24px);
+      }
+    }
   }
 }
 

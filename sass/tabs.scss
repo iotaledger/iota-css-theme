@@ -84,6 +84,14 @@
         &:focus {
           outline: none;
         }
+
+        i {
+          &.icon-copy {
+            &::before {
+              @extend %icon-copy;
+            }
+          }
+        }
       }
     }
   }

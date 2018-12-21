@@ -325,14 +325,14 @@ body {
 .hidden {
   display: none; }
 
-input, button {
+input,
+button {
   -webkit-appearance: none; }
-  input[type='search'], button[type='search'] {
+  input[type='search']::-webkit-search-cancel-button,
+  button[type='search']::-webkit-search-cancel-button {
+    width: 0px;
+    height: 0px;
     -webkit-appearance: none; }
-    input[type='search']::-webkit-search-cancel-button, button[type='search']::-webkit-search-cancel-button {
-      width: 0px;
-      height: 0px;
-      -webkit-appearance: none; }
 
 .arrow-button {
   position: relative;
@@ -363,7 +363,6 @@ input, button {
   font-size: 16px;
   font-weight: 300;
   line-height: 16px;
-  content: "⬅️";
   left: calc(50% - 9px); }
 
 .arrow-button--right::before {
@@ -371,7 +370,6 @@ input, button {
   font-size: 16px;
   font-weight: 300;
   line-height: 16px;
-  content: "➡️";
   left: calc(50% - 7px); }
 
 blockquote,
@@ -457,7 +455,6 @@ blockquote,
     font-size: 18px;
     font-weight: 300;
     line-height: 18px;
-    content: "⬇️";
     line-height: 18px;
     pointer-events: none; }
 
@@ -684,30 +681,42 @@ textarea,
   font-variant: normal;
   line-height: 1;
   text-rendering: auto; }
-  .icon.icon-arrow-right::before {
-    content: '→'; }
-  .icon.icon-burger::before {
-    content: '🍔'; }
-  .icon.icon-chevron-up::before {
-    content: '⬆'; }
-  .icon.icon-chevron-down::before {
-    content: '⬇️'; }
-  .icon.icon-chevron-right::before {
-    content: '➡️'; }
-  .icon.icon-chevron-left::before {
-    content: '⬅️'; }
-  .icon.icon-cross::before {
-    content: '✖︎'; }
-  .icon.icon-copy::before {
-    content: '📄'; }
-  .icon.icon-feedback::before {
-    content: '💬'; }
-  .icon.icon-search::before {
-    content: '🔍'; }
-  .icon.icon-thumb-up::before {
-    content: '👍'; }
-  .icon.icon-thumb-down::before {
-    content: '👎'; }
+
+.input-register__button::after {
+  content: '→'; }
+
+.header__icon::before, .sticky-header__icon::before {
+  content: '🍔'; }
+
+.scroll-to-top i.icon-chevron-up::before, .side-menu__group--expanded .side-menu__heading::before {
+  content: '↑'; }
+
+.select-wrapper::after, .side-menu__heading::before, .version-picker-select__wrapper::after {
+  content: '↓'; }
+
+.arrow-button--right::before {
+  content: '>'; }
+
+.arrow-button--left::before {
+  content: '<'; }
+
+.feedback-overlay .feedback-overlay-close i.icon-cross::before, .side-menu__close::before {
+  content: 'X'; }
+
+.tabs .tab-header .tab-header-copy .tab-header-copy-button i.icon-copy::before {
+  content: '📄'; }
+
+.feedback-button .feedback-button--icon::before {
+  content: '💬'; }
+
+.input-wrapper::before, .input-wrapper-basic::before, .input-sticky-wrapper::before {
+  content: '🔍'; }
+
+.feedback-button .feedback-button--icon-yes::before, .feedback-form .feedback-form-button .feedback-form-button-circle i.icon-thumb-up::before {
+  content: '👍'; }
+
+.feedback-button .feedback-button--icon-no::before, .feedback-form .feedback-form-button .feedback-form-button-circle i.icon-thumb-down::before {
+  content: '👎'; }
 
 .card__link {
   display: block;
@@ -825,22 +834,19 @@ textarea,
     font-family: "IOTA icons";
     font-size: 28px;
     font-weight: 300;
-    line-height: 28px;
-    content: "💬"; }
+    line-height: 28px; }
   .feedback-button .feedback-button--icon-yes::before {
     top: calc(50% - 14px);
     font-family: "IOTA icons";
     font-size: 28px;
     font-weight: 300;
-    line-height: 28px;
-    content: "👍"; }
+    line-height: 28px; }
   .feedback-button .feedback-button--icon-no::before {
     top: calc(50% - 10px);
     font-family: "IOTA icons";
     font-size: 28px;
     font-weight: 300;
-    line-height: 28px;
-    content: "👎"; }
+    line-height: 28px; }
 
 .feedback-button--hide-content {
   display: none; }
@@ -956,8 +962,7 @@ textarea,
   .input-register__button::after {
     color: #ffffff;
     font-family: "IOTA icons";
-    font-weight: 300;
-    content: "→"; }
+    font-weight: 300; }
   @media (min-width: 1024px) {
     .input-register__button {
       justify-content: space-between;
@@ -983,8 +988,7 @@ textarea,
     font-family: "IOTA icons";
     font-size: 24px;
     font-weight: 300;
-    line-height: 24px;
-    content: "🔍"; }
+    line-height: 24px; }
 
 .input-search {
   width: 100%;
@@ -1049,8 +1053,7 @@ textarea,
     font-family: "IOTA icons";
     font-size: 32px;
     font-weight: 300;
-    line-height: 32px;
-    content: "🔍"; }
+    line-height: 32px; }
   .input-wrapper-basic .input-search-basic {
     width: 100%;
     max-width: 100%;
@@ -1111,8 +1114,7 @@ textarea,
     font-family: "IOTA icons";
     font-size: 18px;
     font-weight: 300;
-    line-height: 18px;
-    content: "🔍"; }
+    line-height: 18px; }
 
 .input-sticky-wrapper--expanded {
   width: 100%; }
@@ -1388,6 +1390,11 @@ textarea,
   cursor: pointer; }
   .scroll-to-top:focus {
     outline: none; }
+  .scroll-to-top i.icon-chevron-up::before {
+    font-family: "IOTA icons";
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 24px; }
 
 .scroll-to-top--hidden {
   opacity: 0; }
@@ -1459,8 +1466,7 @@ textarea,
     font-family: "IOTA icons";
     font-size: 16px;
     font-weight: 300;
-    line-height: 16px;
-    content: "⬇️"; }
+    line-height: 16px; }
   .side-menu__heading:hover {
     text-decoration: none; }
 
@@ -1471,8 +1477,7 @@ textarea,
   font-family: "IOTA icons";
   font-size: 16px;
   font-weight: 300;
-  line-height: 16px;
-  content: "⬆️"; }
+  line-height: 16px; }
 
 .side-menu__group--expanded .side-menu__list {
   height: auto;
@@ -1492,8 +1497,7 @@ textarea,
     font-family: "IOTA icons";
     font-size: 18px;
     font-weight: 300;
-    line-height: 18px;
-    content: "✖︎"; }
+    line-height: 18px; }
   .side-menu__close:hover:not([disabled]) {
     cursor: pointer; }
   .side-menu__close:focus {
@@ -2024,7 +2028,6 @@ table,
     font-size: 18px;
     font-weight: 300;
     line-height: 18px;
-    content: "⬇️";
     pointer-events: none; }
   @media (max-width: 514px) {
     .version-picker-select__wrapper {
@@ -2050,16 +2053,20 @@ table,
   -moz-appearance: none;
   appearance: none; }
   .version-picker__select option {
-    color: #1c1e21; }
+    color: #1c1e21;
+    font-size: 16px;
+    font-size: 1rem; }
   .version-picker__select optgroup {
-    color: #3f3f3f; }
+    color: #3f3f3f;
+    font-size: 16px;
+    font-size: 1rem; }
   .version-picker__select::-ms-expand {
     display: none; }
   .version-picker__select:-moz-focusring {
     color: transparent;
     text-shadow: 0 0 0 #ffffff; }
   .version-picker__select:-moz-focusring * {
-    color: #ffffff;
+    color: #1c1e21;
     text-shadow: none; }
   @media (max-width: 514px) {
     .version-picker__select {
@@ -2354,8 +2361,7 @@ footer {
     font-family: "IOTA icons";
     font-size: 24px;
     font-weight: 300;
-    line-height: 24px;
-    content: "🍔"; }
+    line-height: 24px; }
   .header__icon:hover {
     opacity: 0.5; }
   .header__icon:focus {
@@ -2448,8 +2454,7 @@ footer {
     font-family: "IOTA icons";
     font-size: 24px;
     font-weight: 300;
-    line-height: 24px;
-    content: "🍔"; }
+    line-height: 24px; }
   .sticky-header__icon:focus {
     outline: none; }
   .sticky-header__icon:hover {

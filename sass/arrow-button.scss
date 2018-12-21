@@ -49,14 +49,16 @@
 
 .arrow-button--left {
   &::before {
-    @include icon(⬅️, 16px);
+    @extend %icon-chevron-left;
+    @include icon(16px);
     left: calc(50% - 9px);
   }
 }
 
 .arrow-button--right {
   &::before {
-    @include icon(➡️, 16px);
+    @extend %icon-chevron-right;
+    @include icon(16px);
     left: calc(50% - 7px);
   }
 }

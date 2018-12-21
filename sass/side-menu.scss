@@ -73,17 +73,21 @@ $side-menu-right-padding: 24px;
   padding: 0 $side-menu-right-padding 0 $side-menu-left-padding;
   background-color: rgba(255, 255, 255, 0.1);
   color: $white;
+
   @include font-size(17px);
+
   font-weight: 600;
   text-decoration: none;
   cursor: pointer;
 
   &::before {
+    @extend %icon-chevron-down;
+
     position: absolute;
     top: calc(50% - 9px);
     right: 28px;
 
-    @include icon(⬇️, 16px);
+    @include icon(16px);
   }
 
   &:hover {
@@ -100,7 +104,9 @@ $side-menu-right-padding: 24px;
 .side-menu__group--expanded {
   .side-menu__heading {
     &::before {
-      @include icon(⬆️, 16px);
+      @extend %icon-chevron-up;
+
+      @include icon(16px);
     }
   }
 
@@ -119,11 +125,13 @@ $side-menu-right-padding: 24px;
   color: $white;
 
   &::before {
+    @extend %icon-cross;
+
     position: absolute;
     top: 0px;
     left: 0px;
 
-    @include icon(✖︎, 18px);
+    @include icon(18px);
   }
 
   &:hover {

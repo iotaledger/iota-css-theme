@@ -27,9 +27,16 @@
     &:focus {
       outline: none;
     }
+
+    i {
+      &.icon-cross {
+        &::before {
+          @extend %icon-cross;
+        }
+      }
+    }
   }
 }
-
 
 .feedback-overlay--expanded {
   transition: $transition-duration ease-in;

@@ -16,11 +16,12 @@
   transition-property: width;
 
   &::before {
+    @extend %icon-search;
     position: absolute;
     top: 12px;
     left: 12px;
     color: $white;
-    @include icon(🔍, 18px);
+    @include icon(18px);
   }
 }
 

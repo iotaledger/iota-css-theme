@@ -7,77 +7,52 @@
   font-variant: normal;
   line-height: 1;
   text-rendering: auto;
+}
 
-  &.icon-arrow-right {
-    &::before {
-      content: '→';
-    }
-  };
+%icon-arrow-right {
+  content: '→';
+}
 
-  &.icon-burger {
-    &::before {
-      content: '🍔';
-    }
-  };
+%icon-burger {
+  content: '🍔';
+}
 
-  &.icon-chevron-up {
-    &::before {
-      content: '⬆';
-    }
-  };
+%icon-chevron-up {
+  content: '↑';
+}
 
-  &.icon-chevron-down {
-    &::before {
-      content: '⬇️';
-    }
-  };
+%icon-chevron-down {
+  content: '↓';
+}
 
-  &.icon-chevron-right {
-    &::before {
-      content: '➡️';
-    }
-  };
+%icon-chevron-right {
+  content: '>';
+}
 
-  &.icon-chevron-left {
-    &::before {
-      content: '⬅️';
-    }
-  };
+%icon-chevron-left {
+  content: '<';
+}
 
-  &.icon-cross {
-    &::before {
-      content: '✖︎';
-    }
-  };
+%icon-cross {
+  content: 'X';
+}
 
-  &.icon-copy {
-    &::before {
-      content: '📄';
-    }
-  };
+%icon-copy {
+  content: '📄';
+}
 
-  &.icon-feedback {
-    &::before {
-      content: '💬';
-    }
-  };
+%icon-feedback {
+  content: '💬';
+}
 
-  &.icon-search {
-    &::before {
-      content: '🔍';
-    }
-  };
+%icon-search {
+  content: '🔍';
+}
 
-  &.icon-thumb-up {
-    &::before {
-      content: '👍';
-    }
-  };
+%icon-thumb-up {
+  content: '👍';
+}
 
-  &.icon-thumb-down {
-    &::before {
-      content: '👎';
-    }
-  };
-
+%icon-thumb-down {
+  content: '👎';
 }

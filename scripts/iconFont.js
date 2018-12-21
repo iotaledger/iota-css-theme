@@ -16,7 +16,6 @@ const iconSCSS = `
   font-variant: normal;
   line-height: 1;
   text-rendering: auto;
-#{icons}
 }
 `;
 
@@ -42,14 +41,12 @@ Object.keys(icons).forEach((glyph) => {
     fontStream.write(iconFile);
 
     iconClasses += `
-  &.icon-${glyph} {
-    &::before {
-      content: '${icons[glyph]}';
-    }
-  };
+%icon-${glyph} {
+  content: '${icons[glyph]}';
+}
 `
 });
 
-fs.writeFileSync('./sass/icon.scss', iconSCSS.replace('#{icons}', iconClasses));
+fs.writeFileSync('./sass/icon.scss', iconSCSS + iconClasses);
 
 fontStream.end();

@@ -78,7 +78,8 @@
   cursor: pointer;
 
   &::before {
-    @include icon(🍔, 24px);
+    @extend %icon-burger;
+    @include icon(24px);
   }
 
   &:focus {

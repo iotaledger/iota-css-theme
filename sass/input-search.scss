@@ -12,11 +12,12 @@
   width: 100%;
 
   &::before {
+    @extend %icon-search;
     position: absolute;
     top: calc(50% - 12px);
     left: 0;
     color: $white;
-    @include icon(🔍, 24px);
+    @include icon(24px);
   }
 }
 

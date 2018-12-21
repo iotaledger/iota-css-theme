@@ -66,12 +66,25 @@
       background: none;
       color: rgba(0, 0, 0, 0.1);
       cursor: pointer;
+
       @include font-size(40px);
 
       i {
         position: absolute;
         top: calc(50% - 24px);
         left: calc(50% - 20px);
+
+        &.icon-thumb-up {
+          &::before {
+            @extend %icon-thumb-up;
+          }
+        }
+
+        &.icon-thumb-down {
+          &::before {
+            @extend %icon-thumb-down;
+          }
+        }
       }
 
       &:hover {

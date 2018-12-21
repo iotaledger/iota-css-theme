@@ -69,8 +69,9 @@ $common-desktop-width: 155px;
   }
 
   &::after {
+    @extend %icon-arrow-right;
     color: $white;
-    @include icon(→);
+    @include icon;
   }
 
   @include desktop {
