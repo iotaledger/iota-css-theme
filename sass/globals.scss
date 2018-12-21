@@ -20,7 +20,8 @@ body {
   display: none;
 }
 
-input {
+input, button{
+  -webkit-appearance: none;
   &[type='search'] {
     // sass-lint:disable no-vendor-prefixes
     &::-webkit-search-cancel-button {
