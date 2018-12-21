@@ -1941,7 +1941,7 @@ table,
 .tree-menu__section-title--selected {
   margin-left: -20px;
   padding-left: 20px;
-  border-left: 4px solid #20a49d;
+  border-left: 3px solid #20a49d;
   color: #20a49d; }
 
 .tree-menu__section {
@@ -1949,26 +1949,29 @@ table,
   padding-left: 20px;
   list-style-type: none; }
 
-.tree-menu__section-item a {
-  color: #696f76;
-  font-size: 15px;
-  font-size: 0.9375rem;
-  font-style: normal;
-  font-weight: 300;
-  letter-spacing: normal;
-  line-height: 1.9;
-  text-decoration: underline;
-  font-stretch: normal; }
-  @media (min-width: 1024px) {
-    .tree-menu__section-item a {
-      text-decoration: none; } }
-  .tree-menu__section-item a:hover {
-    text-decoration: underline; }
+.tree-menu__section-item {
+  border-left: 4px solid transparent;
+  line-height: 1.4;
+  margin: 12px 0; }
+  .tree-menu__section-item a {
+    color: #696f76;
+    font-size: 15px;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: normal;
+    text-decoration: underline;
+    font-stretch: normal; }
+    @media (min-width: 1024px) {
+      .tree-menu__section-item a {
+        text-decoration: none; } }
+    .tree-menu__section-item a:hover {
+      text-decoration: underline; }
 
 .tree-menu__section-item--selected {
   margin-left: -20px;
   padding-left: 20px;
-  border-left: 4px solid #20a49d; }
+  border-left: 3px solid #20a49d; }
   .tree-menu__section-item--selected a {
     color: #20a49d;
     font-weight: 600; }

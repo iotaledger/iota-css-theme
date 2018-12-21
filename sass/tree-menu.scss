@@ -34,7 +34,7 @@
 .tree-menu__section-title--selected {
   margin-left: -20px;
   padding-left: 20px;
-  border-left: 4px solid $tealish;
+  border-left: 3px solid $tealish;
   color: $tealish;
 }
 
@@ -45,6 +45,10 @@
 }
 
 .tree-menu__section-item {
+  margin: 12px 0;
+  border-left: 4px solid transparent;
+  line-height: 1.4;
+
   a {
     color: $body-copy;
 
@@ -53,7 +57,6 @@
     font-style: normal;
     font-weight: 300;
     letter-spacing: normal;
-    line-height: 1.9;
     text-decoration: underline;
     font-stretch: normal;
 
@@ -70,7 +73,7 @@
 .tree-menu__section-item--selected {
   margin-left: -20px;
   padding-left: 20px;
-  border-left: 4px solid $tealish;
+  border-left: 3px solid $tealish;
 
   a {
     color: $tealish;
