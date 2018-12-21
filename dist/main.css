@@ -1192,7 +1192,8 @@ textarea,
       font-size: 1.5rem;
       font-weight: bold; } }
 
-.navigator__back {
+.navigator__back,
+.navigator__next {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1200,49 +1201,38 @@ textarea,
   width: 100%;
   padding: 18px 16px;
   border: 1px #f3f2f1 solid;
+  border-right: 0;
+  border-left: 0;
   background-color: transparent;
   text-align: left;
   text-decoration: underline;
   cursor: pointer; }
-  .navigator__back:focus {
-    outline: none; }
-  .navigator__back:disabled {
-    text-decoration: none;
-    cursor: default;
-    opacity: 0.5;
-    pointer-events: none; }
-  .navigator__back:hover:not([disabled]) {
-    text-decoration: underline; }
-  @media (min-width: 1024px) {
-    .navigator__back {
-      padding-left: 90px;
-      text-decoration: none; } }
-
-.navigator__next {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-  width: 100%;
-  padding: 18px 16px;
-  border: 1px #f3f2f1 solid;
-  background-color: transparent;
-  text-align: right;
-  text-decoration: underline;
-  cursor: pointer; }
+  .navigator__back:focus,
   .navigator__next:focus {
     outline: none; }
+  .navigator__back:disabled,
   .navigator__next:disabled {
     text-decoration: none;
     cursor: default;
     opacity: 0.5;
     pointer-events: none; }
+  .navigator__back:hover:not([disabled]),
   .navigator__next:hover:not([disabled]) {
     text-decoration: underline; }
   @media (min-width: 1024px) {
+    .navigator__back,
     .navigator__next {
-      padding-right: 90px;
-      text-decoration: none; } }
+      padding-left: 90px;
+      text-decoration: none;
+      border-width: 2px; } }
+
+.navigator__next {
+  align-items: flex-end;
+  border-left: 1px #f3f2f1 solid; }
+  @media (min-width: 1024px) {
+    .navigator__next {
+      padding: 18px 90px 18px 16px;
+      border-width: 2px; } }
 
 .navigator__label {
   color: #20a49d; }
@@ -1548,12 +1538,14 @@ textarea,
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  margin-bottom: 20px;
   padding: 19px 16px;
   background-color: #1e9a93;
   color: #ffffff; }
   @media (min-width: 768px) {
     .sub-header {
       height: 110px;
+      margin-bottom: 40px;
       padding: 0 40px; } }
 
 .sub-header__title {

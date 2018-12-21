@@ -11,12 +11,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  margin-bottom: 20px;
   padding: 19px 16px;
   background-color: $jade;
   color: $white;
 
   @include tablet-up {
     height: 110px;
+    margin-bottom: 40px;
     padding: 0 40px;
   }
 }
