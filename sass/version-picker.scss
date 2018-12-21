@@ -18,18 +18,16 @@
     max-width: $max-width;
 
     .left-column {
-      flex: 1;
-      min-width: 200px;
+      flex: 0 0 280px;
     }
 
     .middle-column {
-      flex: 5;
+      flex: 1;
       padding: 0px 10px 0px 10px;
     }
 
     .right-column {
-      flex: 1;
-      min-width: 260px;
+      flex: 0 0 300px;
     }
 
     @include tablet-down {
@@ -64,7 +62,6 @@
 .version-picker-select__wrapper {
   position: relative;
   width: 100%;
-  max-width: 250px;
   border: 0;
   background-color: $light-grey;
   line-height: 1.5;

@@ -1988,14 +1988,12 @@ table,
     width: 100%;
     max-width: 1420px; }
     .version-picker__wrapper .version-picker .left-column {
-      flex: 1;
-      min-width: 200px; }
+      flex: 0 0 280px; }
     .version-picker__wrapper .version-picker .middle-column {
-      flex: 5;
+      flex: 1;
       padding: 0px 10px 0px 10px; }
     .version-picker__wrapper .version-picker .right-column {
-      flex: 1;
-      min-width: 260px; }
+      flex: 0 0 300px; }
     @media (max-width: 767px) {
       .version-picker__wrapper .version-picker .left-column {
         display: none; } }
@@ -2020,7 +2018,6 @@ table,
 .version-picker-select__wrapper {
   position: relative;
   width: 100%;
-  max-width: 250px;
   border: 0;
   background-color: #c4c4c4;
   line-height: 1.5; }
