@@ -28,6 +28,7 @@
   padding: 18px 16px;
   border: 1px $sand-grey solid;
   background-color: transparent;
+  text-align: left;
   text-decoration: underline;
   cursor: pointer;
 
@@ -36,13 +37,16 @@
   }
 
   &:disabled {
+    text-decoration: none;
     cursor: default;
     opacity: 0.5;
     pointer-events: none;
   }
 
   &:hover {
-    text-decoration: underline;
+    &:not([disabled]) {
+      text-decoration: underline;
+    }
   }
 
   @include desktop {
@@ -60,6 +64,7 @@
   padding: 18px 16px;
   border: 1px $sand-grey solid;
   background-color: transparent;
+  text-align: right;
   text-decoration: underline;
   cursor: pointer;
 
@@ -68,13 +73,16 @@
   }
 
   &:disabled {
+    text-decoration: none;
     cursor: default;
     opacity: 0.5;
     pointer-events: none;
   }
 
   &:hover {
-    text-decoration: underline;
+    &:not([disabled]) {
+      text-decoration: underline;
+    }
   }
 
   @include desktop {

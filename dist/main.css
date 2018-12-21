@@ -1180,15 +1180,17 @@ textarea,
   padding: 18px 16px;
   border: 1px #f3f2f1 solid;
   background-color: transparent;
+  text-align: left;
   text-decoration: underline;
   cursor: pointer; }
   .navigator__back:focus {
     outline: none; }
   .navigator__back:disabled {
+    text-decoration: none;
     cursor: default;
     opacity: 0.5;
     pointer-events: none; }
-  .navigator__back:hover {
+  .navigator__back:hover:not([disabled]) {
     text-decoration: underline; }
   @media (min-width: 1024px) {
     .navigator__back {
@@ -1204,15 +1206,17 @@ textarea,
   padding: 18px 16px;
   border: 1px #f3f2f1 solid;
   background-color: transparent;
+  text-align: right;
   text-decoration: underline;
   cursor: pointer; }
   .navigator__next:focus {
     outline: none; }
   .navigator__next:disabled {
+    text-decoration: none;
     cursor: default;
     opacity: 0.5;
     pointer-events: none; }
-  .navigator__next:hover {
+  .navigator__next:hover:not([disabled]) {
     text-decoration: underline; }
   @media (min-width: 1024px) {
     .navigator__next {
