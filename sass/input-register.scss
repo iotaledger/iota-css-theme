@@ -17,11 +17,11 @@ $common-desktop-width: 155px;
 
 .input-register {
   width: 280px;
-  height: $common-height - 4px;
-  padding-left: 16px;
+  height: $common-height - 2px;
+  padding:0 4px 0 16px;
   border: 1px solid $light-grey;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
   outline: none;
   background-color: $white;
   color: $body-copy;

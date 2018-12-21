@@ -920,11 +920,11 @@ textarea,
 
 .input-register {
   width: 280px;
-  height: 51px;
-  padding-left: 16px;
+  height: 53px;
+  padding: 0 4px 0 16px;
   border: 1px solid #c4c4c4;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
   outline: none;
   background-color: #ffffff;
   color: #696f76;
@@ -1001,6 +1001,7 @@ textarea,
   border-bottom: 2px solid #ffffff;
   outline: none;
   background-color: #20a49d;
+  border-radius: 0px;
   color: #ffffff;
   font-size: 20px;
   font-size: 1.25rem;
@@ -1130,6 +1131,7 @@ textarea,
   max-width: 100%;
   padding: 10px 0px 7px 43px;
   border: 0;
+  border-radius: 0px;
   border-color: #20a49d;
   outline: none;
   background-color: #20a49d;
@@ -1551,7 +1553,7 @@ textarea,
   color: #ffffff; }
   @media (min-width: 768px) {
     .sub-header {
-      height: 85px;
+      height: 110px;
       padding: 0 40px; } }
 
 .sub-header__title {
