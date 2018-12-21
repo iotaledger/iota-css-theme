@@ -65,11 +65,12 @@
 }
 
 .header__title {
+  max-width: 420px;
   margin-right: 30px;
 }
 
 .header__search {
-  height: 50px;
+  height: 100px;
   margin-top: 40px;
 
   @include desktop {

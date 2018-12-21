@@ -983,7 +983,7 @@ textarea,
   display: inline-flex;
   position: relative;
   width: 100%;
-  margin-bottom: 60px; }
+  margin-bottom: 50px; }
   .input-wrapper::before {
     position: absolute;
     top: calc(50% - 12px);
@@ -994,19 +994,20 @@ textarea,
     font-weight: 300;
     line-height: 24px; }
   .input-wrapper nav {
-    position: absolute;
     display: flex;
-    top: 70px;
-    font-size: 14px;
+    position: absolute;
+    top: 72px;
     color: #ffffff;
+    font-size: 14px;
     line-height: 1.5; }
     .input-wrapper nav span {
-      opacity: 0.5; }
+      opacity: 0.5;
+      font-weight: 600; }
     .input-wrapper nav a {
-      font-size: 14px;
+      margin-left: 3px;
       color: #ffffff;
-      text-decoration: underline;
-      margin-left: 3px; }
+      font-size: 14px;
+      text-decoration: underline; }
       .input-wrapper nav a:hover {
         text-decoration: none; }
 
@@ -2357,10 +2358,11 @@ footer {
       margin: 32px 40px; } }
 
 .header__title {
-  margin-right: 30px; }
+  margin-right: 30px;
+  max-width: 420px; }
 
 .header__search {
-  height: 50px;
+  height: 100px;
   margin-top: 40px; }
   @media (min-width: 1024px) {
     .header__search {
