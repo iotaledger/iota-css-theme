@@ -67,9 +67,11 @@
       padding-bottom: 50px;
     }
 
+
     @include tablet {
       width: 50%;
     }
+
 
     @include desktop {
       width: calc(33.33% -  14px);
@@ -79,13 +81,14 @@
       }
     }
 
+
     .project-topic__heading {
       color: $gunmetal-grey;
       font-weight: 600;
       line-height: 2;
 
       &.project-topic__primary-bullet,
-      &.project-topic__secondary-bullet  {
+      &.project-topic__secondary-bullet {
         &::before {
           display: inline-block;
           position: relative;
@@ -116,15 +119,18 @@
 
 .project-topics__compressed {
   .project-topic__item {
-    width: calc(40% + 25px);
+    flex: 1 0 calc(50% - 30px);
+    max-width: 50%;
+    margin-right: 20px;
     padding-bottom: 15px;
 
-    &:nth-child(2n) {
-      padding-right: 0;
+    &:nth-child(3n+2) {
+      margin: 0;
     }
 
-    &:nth-child(3n) {
-      padding-right: 50px;
+    @include phone-down {
+      flex: 1 0 calc(100%);
+      max-width: 100%;
     }
   }
 }

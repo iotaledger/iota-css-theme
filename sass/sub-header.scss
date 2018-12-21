@@ -40,6 +40,7 @@
 .sub-header__bottom-title {
   display: flex;
   align-items: center;
+  text-align: center;
   @include tablet-up {
     @include font-size(34px);
     font-style: normal;
