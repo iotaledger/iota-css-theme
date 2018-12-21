@@ -39,10 +39,7 @@ $side-menu-right-padding: 24px;
 
 .side-menu__group {
   margin-bottom: 2px;
-
-  .side-menu__list {
-    display: none;
-  }
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .side-menu__caption {
@@ -99,7 +96,8 @@ $side-menu-right-padding: 24px;
   }
 
   .side-menu__list {
-    display: block;
+    height: auto;
+    padding: 16px;
   }
 }
 
@@ -143,10 +141,13 @@ $side-menu-right-padding: 24px;
 }
 
 .side-menu__list {
+  height: 0;
   margin: 0px;
-  padding: 16px;
-  background: rgba(255, 255, 255, 0.05);
+  padding: 0 16px 0 16px;
+  transition: $transition-duration ease;
+  transition-property: padding, transform, height;
   color: $white;
+  overflow: hidden;
 
   .side-menu-item {
     padding: 4px 0px 0px 16px;

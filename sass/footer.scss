@@ -15,7 +15,6 @@ footer {
 .footer__wrapper {
   display: flex;
   flex-direction: column;
-  width: 100%;
   max-width: $max-width;
   margin-top: 0;
 
@@ -54,7 +53,6 @@ footer {
 .footer-top-content__dropdown-wrapper {
   display: flex;
   flex-direction: column;
-  width: 100%;
   padding: 30px;
 
   @include tablet-up {

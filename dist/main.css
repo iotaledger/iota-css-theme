@@ -313,6 +313,7 @@ template {
   src: url("/assets/iota-icons.ttf") format("truetype"); }
 
 body {
+  min-width: 375px;
   padding: 0;
   color: #696f76;
   font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -1393,9 +1394,8 @@ textarea,
     overflow-y: scroll; }
 
 .side-menu__group {
-  margin-bottom: 2px; }
-  .side-menu__group .side-menu__list {
-    display: none; }
+  margin-bottom: 2px;
+  background: rgba(255, 255, 255, 0.05); }
 
 .side-menu__caption {
   display: flex;
@@ -1446,7 +1446,8 @@ textarea,
   content: "⬆️"; }
 
 .side-menu__group--expanded .side-menu__list {
-  display: block; }
+  height: auto;
+  padding: 16px; }
 
 .side-menu__close {
   position: relative;
@@ -1478,10 +1479,13 @@ textarea,
     padding: 0; }
 
 .side-menu__list {
+  height: 0;
   margin: 0px;
-  padding: 16px;
-  background: rgba(255, 255, 255, 0.05);
-  color: #ffffff; }
+  padding: 0 16px 0 16px;
+  transition: 0.3s ease;
+  transition-property: padding, transform, height;
+  color: #ffffff;
+  overflow: hidden; }
   .side-menu__list .side-menu-item {
     padding: 4px 0px 0px 16px;
     list-style: none;
@@ -2144,7 +2148,6 @@ footer {
 .footer__wrapper {
   display: flex;
   flex-direction: column;
-  width: 100%;
   max-width: 1420px;
   margin-top: 0; }
   @media (min-width: 768px) {
@@ -2176,7 +2179,6 @@ footer {
 .footer-top-content__dropdown-wrapper {
   display: flex;
   flex-direction: column;
-  width: 100%;
   padding: 30px; }
   @media (min-width: 768px) {
     .footer-top-content__dropdown-wrapper {
@@ -2253,7 +2255,6 @@ footer {
 
 .header {
   display: block;
-  min-width: 375px;
   height: 100%;
   background-color: #20a49d; }
   @media (max-width: 767px) {
@@ -2364,7 +2365,6 @@ footer {
 
 .sticky-header {
   display: block;
-  min-width: 375px;
   padding: 22px 40px;
   background-color: #20a49d; }
   .sticky-header .input-sticky-wrapper.input-sticky-wrapper--expanded {

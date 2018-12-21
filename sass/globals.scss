@@ -4,6 +4,7 @@ $max-width: 1420px;
 $transition-duration: 0.3s;
 
 body {
+  min-width: $min-width;
   padding: 0;
   color: $body-copy;
   font-family: $font-primary;
