@@ -1026,6 +1026,7 @@ textarea,
 
 .input-wrapper-basic {
   display: inline-flex;
+  position: relative;
   width: 100%; }
   .input-wrapper-basic::before {
     position: absolute;
