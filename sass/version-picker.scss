@@ -30,19 +30,19 @@
       flex: 0 0 300px;
     }
 
-    @include tablet-down {
+    @media (max-width: 1180px) {
       .left-column {
         display: none;
       }
     }
 
-    @include phone-down {
-      flex-direction: column-reverse;
-      flex-wrap: wrap-reverse;
-      align-items: stretch;
-
-      .left-column {
+    @include tablet-down {
+      .middle-column {
         display: none;
+      }
+
+      .right-column {
+        flex: 1;
       }
     }
   }

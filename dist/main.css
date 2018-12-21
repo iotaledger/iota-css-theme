@@ -1994,16 +1994,14 @@ table,
       padding: 0px 10px 0px 10px; }
     .version-picker__wrapper .version-picker .right-column {
       flex: 0 0 300px; }
-    @media (max-width: 767px) {
+    @media (max-width: 1180px) {
       .version-picker__wrapper .version-picker .left-column {
         display: none; } }
-    @media (max-width: 514px) {
-      .version-picker__wrapper .version-picker {
-        flex-direction: column-reverse;
-        flex-wrap: wrap-reverse;
-        align-items: stretch; }
-        .version-picker__wrapper .version-picker .left-column {
-          display: none; } }
+    @media (max-width: 767px) {
+      .version-picker__wrapper .version-picker .middle-column {
+        display: none; }
+      .version-picker__wrapper .version-picker .right-column {
+        flex: 1; } }
 
 .version-picker__current {
   color: #3f3f3f;

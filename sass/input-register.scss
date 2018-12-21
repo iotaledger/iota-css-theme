@@ -18,9 +18,9 @@ $common-desktop-width: 155px;
 .input-register {
   width: 280px;
   height: $common-height - 2px;
-  padding:0 4px 0 16px;
+  padding: 0 4px 0 16px;
   border: 1px solid $light-grey;
-  border-right: none;
+  border-right: 0;
   border-radius: 5px 0 0 5px;
   outline: none;
   background-color: $white;

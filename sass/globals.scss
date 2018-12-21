@@ -25,8 +25,9 @@ button {
   -webkit-appearance: none;
 
   &[type='search'] {
-    -webkit-appearance: none;
     outline-offset: 0px;
+    -webkit-appearance: none;
+
     &::-webkit-search-cancel-button {
       width: 0px;
       height: 0px;
