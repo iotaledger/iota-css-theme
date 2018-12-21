@@ -37,9 +37,9 @@
     }
 
     @include tablet-down {
-      .middle-column {
-        display: none;
-      }
+      flex-direction: column-reverse;
+      flex-wrap: wrap-reverse;
+      align-items: stretch;
 
       .right-column {
         flex: 1;
@@ -54,7 +54,7 @@
   font-weight: 600;
   text-align: center;
 
-  @include phone-down {
+  @include tablet-down {
     padding: 20px;
   }
 }
