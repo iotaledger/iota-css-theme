@@ -40,6 +40,7 @@
 .project__subheading {
   margin-top: 5px;
   margin-bottom: 45px;
+  line-height: 2;
 }
 
 .project-topics {
@@ -59,8 +60,12 @@
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    padding: 0 0 50px 0;
+    padding: 0 0 25px 0;
     box-sizing: border-box;
+
+    @include tablet-up{
+      padding-bottom: 50px;
+    }
 
     @include tablet {
       width: 50%;

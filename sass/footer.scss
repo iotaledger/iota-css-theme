@@ -54,6 +54,7 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 30px;
+  box-sizing: border-box;
 
   @include tablet-up {
     display: none;
