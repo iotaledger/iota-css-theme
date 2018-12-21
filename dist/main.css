@@ -1388,6 +1388,9 @@ textarea,
     transition: 300ms ease;
     z-index: 3;
     overflow-y: scroll; }
+    @media (max-width: 514px) {
+      .side-menu.side-menu__hidden {
+        padding-right: 0; } }
   .side-menu.side-menu__shown {
     position: fixed;
     top: 0;
@@ -1396,6 +1399,10 @@ textarea,
     transition: 300ms ease;
     z-index: 3;
     overflow-y: scroll; }
+    @media (max-width: 514px) {
+      .side-menu.side-menu__shown {
+        right: 0;
+        padding-right: 0; } }
 
 .side-menu__group {
   margin-bottom: 2px;
@@ -2369,13 +2376,16 @@ footer {
 
 .sticky-header {
   display: block;
-  padding: 22px 40px;
+  padding: 22px 40px 22px 40px;
   background-color: #20a49d; }
   .sticky-header .input-sticky-wrapper.input-sticky-wrapper--expanded {
     margin-right: 0px; }
   @media (min-width: 1024px) {
     .sticky-header .input-sticky-wrapper.input-sticky-wrapper--expanded {
       width: 389px; } }
+  @media (max-width: 767px) {
+    .sticky-header {
+      padding: 15px 20px 15px 20px; } }
 
 .sticky-header__head {
   display: flex;

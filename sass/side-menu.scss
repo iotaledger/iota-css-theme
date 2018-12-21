@@ -24,6 +24,10 @@ $side-menu-right-padding: 24px;
     transition: 300ms ease;
     z-index: 3;
     overflow-y: scroll;
+
+    @include phone-down {
+      padding-right: 0;
+    }
   }
 
   &.side-menu__shown {
@@ -34,6 +38,11 @@ $side-menu-right-padding: 24px;
     transition: 300ms ease;
     z-index: 3;
     overflow-y: scroll;
+
+    @include phone-down {
+      right: 0;
+      padding-right: 0;
+    }
   }
 }
 

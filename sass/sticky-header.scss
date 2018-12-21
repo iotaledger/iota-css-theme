@@ -10,7 +10,7 @@
 
 .sticky-header {
   display: block;
-  padding: 22px 40px;
+  padding: 22px 40px 22px 40px;
   background-color: $tealish;
 
   .input-sticky-wrapper {
@@ -25,6 +25,10 @@
         width: 389px;
       }
     }
+  }
+
+  @include tablet-down {
+    padding: 15px 20px 15px 20px;
   }
 }
 
