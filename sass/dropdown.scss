@@ -15,6 +15,10 @@
   background-color: rgba(255, 255, 255, 0.1);
   line-height: 1.5;
 
+  @include phone-down{
+    max-width: none;
+  }
+
   &::after {
     position: absolute;
     top: calc(50% - 9px);

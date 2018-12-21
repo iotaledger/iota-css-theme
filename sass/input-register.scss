@@ -30,6 +30,10 @@ $common-desktop-width: 155px;
   font-weight: 300;
   line-height: normal;
   font-stretch: normal;
+
+  @include phone-down {
+    width: 100%;
+  }
 }
 
 .input-register__button {

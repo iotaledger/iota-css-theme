@@ -53,7 +53,7 @@ footer {
 .footer-top-content__dropdown-wrapper {
   display: flex;
   flex-direction: column;
-  padding: 30px;
+  padding: 30px 16px;
   box-sizing: border-box;
 
   @include tablet-up {
@@ -112,7 +112,11 @@ footer {
   flex-direction: column;
   flex-grow: 1;
   min-width: 250px;
-  padding: 0 40px 30px;
+  padding: 0 16px 30px;
+
+  @include tablet-up {
+    padding: 0 40px 30px;
+  }
 
   &.legal {
     .footer-bottom-content__item {
@@ -133,7 +137,7 @@ footer {
       width: 50%;
       min-width: 250px;
       padding-right: 30px;
-      padding-left: 40px;
+      padding-left: 16px;
     }
   }
 
