@@ -327,11 +327,15 @@ body {
 input,
 button {
   -webkit-appearance: none; }
-  input[type='search']::-webkit-search-cancel-button,
-  button[type='search']::-webkit-search-cancel-button {
-    width: 0px;
-    height: 0px;
-    -webkit-appearance: none; }
+  input[type='search'],
+  button[type='search'] {
+    -webkit-appearance: none;
+    outline-offset: 0px; }
+    input[type='search']::-webkit-search-cancel-button,
+    button[type='search']::-webkit-search-cancel-button {
+      width: 0px;
+      height: 0px;
+      -webkit-appearance: none; }
 
 .arrow-button {
   position: relative;
