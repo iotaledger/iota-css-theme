@@ -10,6 +10,7 @@
   display: inline-flex;
   position: relative;
   width: 100%;
+  margin-bottom: 50px;
 
   &::before {
     @extend %icon-search;
@@ -18,6 +19,30 @@
     left: 0;
     color: $white;
     @include icon(24px);
+  }
+
+  nav {
+    display: flex;
+    position: absolute;
+    top: 72px;
+    color: $white;
+    font-size: 14px;
+    line-height: 1.5;
+
+    span {
+      opacity: 0.5;
+    }
+
+    a {
+      margin-left: 3px;
+      color: $white;
+      font-size: 14px;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
 }
 
