@@ -14,7 +14,7 @@
   margin-bottom: 0;
   color: $gunmetal-grey;
 
-  @include font-size(17px);
+  @include font-size(21px);
 
   font-style: normal;
   font-weight: 600;
@@ -45,9 +45,9 @@
 }
 
 .tree-menu__section-item {
-  margin: 12px 0;
+  margin: 8px 0;
   border-left: 4px solid transparent;
-  line-height: 1.4;
+  line-height: 1.5rem;
 
   a {
     color: $body-copy;
