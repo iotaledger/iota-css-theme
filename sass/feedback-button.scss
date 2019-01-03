@@ -64,7 +64,7 @@
   .feedback-button--icon-yes {
     &::before {
       @extend %icon-thumb-up;
-      top: calc(50% - 14px);
+      top: calc(50% - 16px);
       @include icon(28px);
     }
   }
@@ -72,7 +72,7 @@
   .feedback-button--icon-no {
     &::before {
       @extend %icon-thumb-down;
-      top: calc(50% - 10px);
+      top: calc(50% - 13px);
       @include icon(28px);
     }
   }
