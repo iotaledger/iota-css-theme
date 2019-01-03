@@ -550,6 +550,7 @@ li {
 
 h1,
 .text--level1 {
+  margin: 0px 0px 48px 0px;
   font-size: 36px;
   font-size: 2.25rem;
   font-weight: bold;
