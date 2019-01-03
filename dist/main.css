@@ -1940,13 +1940,14 @@ table,
   padding: 0 20px; }
 
 .tree-menu__section-title {
-  margin-bottom: 0;
+  margin: 0;
   color: #3f3f3f;
-  font-size: 21px;
-  font-size: 1.3125rem;
+  font-size: 15px;
+  font-size: 0.9375rem;
   font-style: normal;
   font-weight: 600;
   line-height: 2.06;
+  text-transform: uppercase;
   font-stretch: normal; }
   .tree-menu__section-title a {
     color: inherit;
@@ -1958,19 +1959,25 @@ table,
 
 .tree-menu__section-title--selected {
   margin-left: -20px;
-  padding-left: 20px;
+  padding-left: 17px;
   border-left: 3px solid #20a49d;
   color: #20a49d; }
 
+.tree-menu__section--selected {
+  margin-left: -20px;
+  border-left: 3px solid #20a49d; }
+  .tree-menu__section--selected .tree-menu__section-item {
+    margin-left: 20px; }
+
 .tree-menu__section {
-  margin-top: 8px;
-  padding-left: 20px;
+  margin-top: 0px;
+  margin-bottom: 16px;
+  padding: 0px 0px 5px 20px;
   list-style-type: none; }
 
 .tree-menu__section-item {
-  margin: 8px 0;
   border-left: 4px solid transparent;
-  line-height: 1.5rem; }
+  line-height: 1.75rem; }
   .tree-menu__section-item a {
     color: #696f76;
     font-size: 15px;
@@ -1986,13 +1993,9 @@ table,
     .tree-menu__section-item a:hover {
       text-decoration: underline; }
 
-.tree-menu__section-item--selected {
-  margin-left: -20px;
-  padding-left: 20px;
-  border-left: 3px solid #20a49d; }
-  .tree-menu__section-item--selected a {
-    color: #20a49d;
-    font-weight: 600; }
+.tree-menu__section-item--selected a {
+  color: #20a49d;
+  font-weight: 600; }
 
 .version-picker__wrapper {
   display: flex;
