@@ -550,7 +550,6 @@ li {
 
 h1,
 .text--level1 {
-  margin: 0 0 50px;
   font-size: 36px;
   font-size: 2.25rem;
   font-weight: bold;
@@ -1246,7 +1245,8 @@ textarea,
 
 .navigator__next {
   align-items: flex-end;
-  border-left: 1px #f3f2f1 solid; }
+  border-left: 1px #f3f2f1 solid;
+  text-align: right; }
   @media (min-width: 1024px) {
     .navigator__next {
       padding: 18px 90px 18px 16px;

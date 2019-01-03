@@ -62,6 +62,7 @@
 .navigator__next {
   align-items: flex-end;
   border-left: 1px $sand-grey solid;
+  text-align: right;
 
   @include desktop {
     padding: 18px 90px 18px 16px;
