@@ -306,6 +306,27 @@ template {
 [hidden] {
   display: none; }
 
+body {
+  --tealish: #20a49d;
+  --jade: #1e9a93;
+  --blueberry: #603f98; }
+
+body {
+  --black: #1c1e21;
+  --white: #ffffff;
+  --gunmetal-grey: #3f3f3f;
+  --body-copy: #696f76;
+  --brown-grey: #8e8e8e;
+  --dark-grey: #1c1e21;
+  --light-grey: #c4c4c4;
+  --sand-grey: #f3f2f1; }
+
+body {
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --success: #28a745;
+  --info: #17a2b8; }
+
 @font-face {
   font-family: 'IOTA icons';
   font-style: normal;
@@ -1926,7 +1947,8 @@ table,
   list-style: none; }
 
 .top-header__item {
-  padding: 0 15px; }
+  padding: 0 15px;
+  text-transform: uppercase; }
   .top-header__item a {
     color: #ffffff;
     font-size: 12px;

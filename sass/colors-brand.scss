@@ -12,3 +12,9 @@
 $tealish: #20a49d;
 $jade: #1e9a93;
 $blueberry: #603f98;
+
+body {
+  --tealish: #{$tealish};
+  --jade: #{$jade};
+  --blueberry: #{$blueberry};
+}
