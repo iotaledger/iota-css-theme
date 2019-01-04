@@ -358,6 +358,58 @@ button {
       height: 0px;
       -webkit-appearance: none; }
 
+form {
+  width: 100%; }
+  form .fieldset {
+    padding: 0px 0px 10px 0px;
+    border: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    @media (max-width: 514px) {
+      form .fieldset {
+        flex-direction: column;
+        align-items: stretch; } }
+    form .fieldset label {
+      flex: none;
+      display: block;
+      width: 125px;
+      font-size: 16px;
+      font-size: 1rem;
+      font-weight: 600; }
+      @media (max-width: 514px) {
+        form .fieldset label {
+          width: auto; } }
+    form .fieldset label + input {
+      margin-left: 20px; }
+      @media (max-width: 514px) {
+        form .fieldset label + input {
+          margin-left: 0px;
+          margin-top: 5px; } }
+    form .fieldset input {
+      flex: 1 1 auto;
+      display: block;
+      padding: 20px;
+      border: 1px solid #c4c4c4;
+      border-radius: 5px;
+      outline: none;
+      background-color: #ffffff;
+      color: #1c1e21; }
+      @media (max-width: 514px) {
+        form .fieldset input {
+          padding: 10px; } }
+      form .fieldset input::placeholder {
+        color: #c4c4c4;
+        opacity: 1; }
+      form .fieldset input:read-only {
+        background-color: #eaeaea;
+        color: #1c1e21; }
+  form .buttons {
+    margin-left: 137px; }
+    @media (max-width: 514px) {
+      form .buttons {
+        margin-left: -7px; } }
+
 .arrow-button {
   position: relative;
   width: 35px;

@@ -1,0 +1,83 @@
+// Forms
+//
+// For generic forms.
+//
+// Markup: html/forms.html
+//
+// Styleguide Molecules.Forms
+
+$common-label-width: 125px;
+
+form {
+  width: 100%;
+
+  .fieldset {
+    padding: 0px 0px 10px 0px;
+    border: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    @include phone-down {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+
+    label {
+      flex: none;
+      display: block;
+      width: $common-label-width;
+
+      @include font-size(16px);
+
+      font-weight: 600;
+
+      @include phone-down {
+        width: auto;
+      }
+    }
+
+    label + input {
+      margin-left: 20px;
+
+      @include phone-down {
+        margin-left: 0px;
+        margin-top: 5px;
+      }
+    }
+
+    input {
+      flex: 1 1 auto;
+      display: block;
+      padding: 20px;
+      border: 1px solid $light-grey;
+      border-radius: 5px;
+      outline: none;
+      background-color: $white;
+      color: $black;
+
+      @include phone-down {
+        padding: 10px;
+      }
+
+
+      &::placeholder {
+        color: $light-grey;
+        opacity: 1;
+      }
+
+      &:read-only {
+        background-color: lighten($light-grey, 15%);
+        color: $black;
+      }
+    }
+  }
+
+  .buttons {
+    margin-left: $common-label-width + 12px;
+    @include phone-down {
+        margin-left: -7px;
+      }
+  }
+}
