@@ -374,18 +374,15 @@ form {
       flex: none;
       display: block;
       width: 125px;
+      margin-right: 20px;
       font-size: 16px;
       font-size: 1rem;
       font-weight: 600; }
       @media (max-width: 514px) {
         form .fieldset label {
-          width: auto; } }
-    form .fieldset label + input {
-      margin-left: 20px; }
-      @media (max-width: 514px) {
-        form .fieldset label + input {
+          width: auto;
           margin-left: 0px;
-          margin-top: 5px; } }
+          margin-bottom: 5px; } }
     form .fieldset input {
       flex: 1 1 auto;
       display: block;
@@ -467,7 +464,9 @@ blockquote,
   font-size: 14.5px;
   font-size: 0.90625rem;
   font-weight: bold;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  word-break: break-all;
+  line-height: 1.5; }
   .button:hover:not([disabled]) {
     border-color: #493074;
     background-color: #493074;

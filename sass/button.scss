@@ -34,6 +34,8 @@
   @include font-size(14.5px);
   font-weight: bold;
   text-transform: uppercase;
+  word-break: break-all;
+  line-height: 1.5;
 
   &:hover {
     &:not([disabled]) {
