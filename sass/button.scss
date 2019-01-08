@@ -36,12 +36,14 @@
   text-transform: uppercase;
   word-break: break-all;
   line-height: 1.5;
+  text-decoration: none;
 
   &:hover {
     &:not([disabled]) {
       border-color: darken($blueberry, 10%);
       background-color: darken($blueberry, 10%);
       cursor: pointer;
+      text-decoration: none;
     }
   }
 

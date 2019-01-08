@@ -466,11 +466,13 @@ blockquote,
   font-weight: bold;
   text-transform: uppercase;
   word-break: break-all;
-  line-height: 1.5; }
+  line-height: 1.5;
+  text-decoration: none; }
   .button:hover:not([disabled]) {
     border-color: #493074;
     background-color: #493074;
-    cursor: pointer; }
+    cursor: pointer;
+    text-decoration: none; }
   .button:focus:enabled {
     outline: none; }
   .button:disabled {
