@@ -760,7 +760,7 @@ textarea,
 .input-register__button::after {
   content: '→'; }
 
-.header__icon::before, .sticky-header__icon::before {
+.header .header__wrapper .header__head .header__icon::before, .sticky-header__icon::before {
   content: '🍔'; }
 
 .scroll-to-top i.icon-chevron-up::before, .side-menu__group--expanded .side-menu__heading::before {
@@ -2398,76 +2398,80 @@ footer {
   @media (max-width: 767px) {
     .header .top-header {
       display: none; } }
-
-.header__wrapper {
-  padding-bottom: 40px; }
-
-.header__head {
-  display: flex;
-  justify-content: space-between; }
-  .header__head > div {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end; }
-  @media (max-width: 767px) {
-    .header__head {
-      padding-top: 10px; } }
-
-.header__body {
-  max-width: 1420px;
-  margin: 60px auto 0px auto;
-  padding: 0 16px; }
-  .header__body .text {
-    max-width: 420px; }
-  @media (min-width: 1024px) {
-    .header__body {
+  .header .header__wrapper {
+    padding-bottom: 40px; }
+    .header .header__wrapper .header__head {
       display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 40px; } }
-
-.header__brand {
-  width: 167px;
-  height: 56px;
-  margin: 17px; }
-  @media (min-width: 768px) {
-    .header__brand {
-      margin: 32px 40px; } }
-
-.header__title {
-  max-width: 420px;
-  margin-right: 30px; }
-
-.header__search {
-  height: 100px;
-  margin-top: 40px; }
-  @media (min-width: 1024px) {
-    .header__search {
-      width: 700px;
-      margin-top: 0; } }
-
-.header__icon {
-  margin: 27px 25px 0 0;
-  padding: 5px 10px;
-  border: 0;
-  background: none;
-  color: #ffffff;
-  cursor: pointer; }
-  @media (min-width: 1024px) {
-    .header__icon {
-      margin: 27px 36px 0 0; } }
-  .header__icon::before {
-    font-family: "IOTA icons";
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 24px; }
-  .header__icon:hover {
-    opacity: 0.5; }
-  .header__icon:focus {
-    outline: none; }
-  .header__icon:disabled {
-    cursor: default;
-    pointer-events: none; }
+      justify-content: space-between; }
+      .header .header__wrapper .header__head > div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end; }
+      @media (max-width: 767px) {
+        .header .header__wrapper .header__head {
+          padding-top: 10px; } }
+      .header .header__wrapper .header__head .header__brand {
+        width: 167px;
+        height: 56px;
+        margin: 17px; }
+        @media (min-width: 768px) {
+          .header .header__wrapper .header__head .header__brand {
+            margin: 32px 17px; } }
+        @media (min-width: 1024px) {
+          .header .header__wrapper .header__head .header__brand {
+            margin: 32px 40px; } }
+      .header .header__wrapper .header__head .header__icon {
+        margin: 27px 25px 0 0;
+        padding: 5px 10px;
+        border: 0;
+        background: none;
+        color: #ffffff;
+        cursor: pointer; }
+        @media (min-width: 1024px) {
+          .header .header__wrapper .header__head .header__icon {
+            margin: 27px 36px 0 0; } }
+        .header .header__wrapper .header__head .header__icon::before {
+          font-family: "IOTA icons";
+          font-size: 24px;
+          font-weight: 300;
+          line-height: 24px; }
+        .header .header__wrapper .header__head .header__icon:hover {
+          opacity: 0.5; }
+        .header .header__wrapper .header__head .header__icon:focus {
+          outline: none; }
+        .header .header__wrapper .header__head .header__icon:disabled {
+          cursor: default;
+          pointer-events: none; }
+    .header .header__wrapper .header__body {
+      max-width: 1420px;
+      margin: 60px auto 0px auto;
+      padding: 0 16px; }
+      .header .header__wrapper .header__body .text {
+        max-width: 420px; }
+      @media (min-width: 1024px) {
+        .header .header__wrapper .header__body {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0 40px; } }
+      .header .header__wrapper .header__body .header__title {
+        max-width: 420px;
+        margin-right: 30px; }
+      .header .header__wrapper .header__body .header__search {
+        height: 100px;
+        margin-top: 40px; }
+        @media (min-width: 1024px) {
+          .header .header__wrapper .header__body .header__search {
+            width: 700px;
+            margin-top: 0; } }
+  .header.compact .header__wrapper {
+    padding-bottom: 20px; }
+    .header.compact .header__wrapper .header__body {
+      margin: 0px auto 0px auto;
+      max-width: none; }
+      .header.compact .header__wrapper .header__body .header__title {
+        max-width: none;
+        margin-bottom: 0px; }
 
 .search-result {
   display: flex;
