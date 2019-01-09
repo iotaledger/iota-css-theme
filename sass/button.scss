@@ -34,7 +34,7 @@
   @include font-size(14.5px);
   font-weight: bold;
   text-transform: uppercase;
-  word-break: break-all;
+  @include word-break;
   line-height: 1.5;
   text-decoration: none;
 

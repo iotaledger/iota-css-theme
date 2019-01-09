@@ -401,6 +401,20 @@ form {
       form .fieldset input:read-only {
         background-color: #eaeaea;
         color: #1c1e21; }
+    form .fieldset .select-wrapper {
+      max-width: none !important;
+      flex: 1 1 auto !important;
+      background-color: #ffffff !important;
+      border: 1px solid #c4c4c4 !important;
+      border-radius: 5px !important; }
+      form .fieldset .select-wrapper::after {
+        color: #3f3f3f !important; }
+    form .fieldset select {
+      color: #1c1e21 !important;
+      max-width: none !important; }
+      form .fieldset select:disabled {
+        background-color: #eaeaea;
+        color: #1c1e21; }
   form .buttons {
     margin-left: 137px; }
     @media (max-width: 514px) {
@@ -466,6 +480,7 @@ blockquote,
   font-weight: bold;
   text-transform: uppercase;
   word-break: break-all;
+  word-break: break-word;
   line-height: 1.5;
   text-decoration: none; }
   .button:hover:not([disabled]) {
@@ -512,7 +527,7 @@ blockquote,
     border-color: #ffffff;
     background-color: rgba(255, 255, 255, 0.2); }
 
-.select-wrapper {
+.select-wrapper, form .fieldset .select-wrapper {
   position: relative;
   width: 100%;
   max-width: 343px;
@@ -521,9 +536,9 @@ blockquote,
   background-color: rgba(255, 255, 255, 0.1);
   line-height: 1.5; }
   @media (max-width: 514px) {
-    .select-wrapper {
+    .select-wrapper, form .fieldset .select-wrapper {
       max-width: none; } }
-  .select-wrapper::after {
+  .select-wrapper::after, form .fieldset .select-wrapper::after {
     position: absolute;
     top: calc(50% - 9px);
     right: 25px;
@@ -535,13 +550,14 @@ blockquote,
     line-height: 18px;
     pointer-events: none; }
 
-.select {
+.select, form .fieldset select {
   width: 100%;
   max-width: 343px;
   height: 55px;
   padding-right: 55px;
   padding-left: 20px;
   border: 0;
+  border-radius: 5px !important;
   outline: none;
   background: none;
   color: #ffffff;
@@ -552,16 +568,16 @@ blockquote,
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none; }
-  .select option {
+  .select option, form .fieldset select option {
     color: #1c1e21; }
-  .select optgroup {
+  .select optgroup, form .fieldset select optgroup {
     color: #3f3f3f; }
-  .select::-ms-expand {
+  .select::-ms-expand, form .fieldset select::-ms-expand {
     display: none; }
-  .select:-moz-focusring {
+  .select:-moz-focusring, form .fieldset select:-moz-focusring {
     color: transparent;
     text-shadow: 0 0 0 #ffffff; }
-  .select:-moz-focusring * {
+  .select:-moz-focusring *, form .fieldset select:-moz-focusring * {
     color: #ffffff;
     text-shadow: none; }
 
@@ -768,7 +784,7 @@ textarea,
 .scroll-to-top i.icon-chevron-up::before, .side-menu__group--expanded .side-menu__heading::before {
   content: '↑'; }
 
-.select-wrapper::after, .side-menu__heading::before, .version-picker-select__wrapper::after {
+.select-wrapper::after, form .fieldset .select-wrapper::after, .side-menu__heading::before, .version-picker-select__wrapper::after {
   content: '↓'; }
 
 .arrow-button--right::before {

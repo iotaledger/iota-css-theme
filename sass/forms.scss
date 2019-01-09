@@ -66,6 +66,32 @@ form {
         color: $black;
       }
     }
+
+    .select-wrapper {
+      @extend .select-wrapper;
+
+      max-width: none !important;
+      flex: 1 1 auto !important;
+      background-color: $white !important;
+      border: 1px solid $light-grey !important;
+      border-radius: 5px !important;
+
+      &::after {
+        color: $gunmetal-grey !important;
+      }
+    }
+
+    select {
+      @extend .select;
+
+      color: $black !important;
+      max-width: none !important;
+
+      &:disabled {
+        background-color: lighten($light-grey, 15%);
+        color: $black;
+      }
+    }
   }
 
   .buttons {
