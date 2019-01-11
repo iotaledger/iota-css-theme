@@ -527,7 +527,7 @@ blockquote,
     border-color: #ffffff;
     background-color: rgba(255, 255, 255, 0.2); }
 
-.select-wrapper, form .fieldset .select-wrapper {
+form .fieldset .select-wrapper, .select-wrapper {
   position: relative;
   width: 100%;
   max-width: 343px;
@@ -536,9 +536,9 @@ blockquote,
   background-color: rgba(255, 255, 255, 0.1);
   line-height: 1.5; }
   @media (max-width: 514px) {
-    .select-wrapper, form .fieldset .select-wrapper {
+    form .fieldset .select-wrapper, .select-wrapper {
       max-width: none; } }
-  .select-wrapper::after, form .fieldset .select-wrapper::after {
+  form .fieldset .select-wrapper::after, .select-wrapper::after {
     position: absolute;
     top: calc(50% - 9px);
     right: 25px;
@@ -550,7 +550,7 @@ blockquote,
     line-height: 18px;
     pointer-events: none; }
 
-.select, form .fieldset select {
+form .fieldset select, select {
   width: 100%;
   max-width: 343px;
   height: 55px;
@@ -568,16 +568,16 @@ blockquote,
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none; }
-  .select option, form .fieldset select option {
+  form .fieldset select option, select option {
     color: #1c1e21; }
-  .select optgroup, form .fieldset select optgroup {
+  form .fieldset select optgroup, select optgroup {
     color: #3f3f3f; }
-  .select::-ms-expand, form .fieldset select::-ms-expand {
+  form .fieldset select::-ms-expand, select::-ms-expand {
     display: none; }
-  .select:-moz-focusring, form .fieldset select:-moz-focusring {
+  form .fieldset select:-moz-focusring, select:-moz-focusring {
     color: transparent;
     text-shadow: 0 0 0 #ffffff; }
-  .select:-moz-focusring *, form .fieldset select:-moz-focusring * {
+  form .fieldset select:-moz-focusring *, select:-moz-focusring * {
     color: #ffffff;
     text-shadow: none; }
 
@@ -784,7 +784,7 @@ textarea,
 .scroll-to-top i.icon-chevron-up::before, .side-menu__group--expanded .side-menu__heading::before {
   content: '↑'; }
 
-.select-wrapper::after, form .fieldset .select-wrapper::after, .side-menu__heading::before, .version-picker-select__wrapper::after {
+form .fieldset .select-wrapper::after, .select-wrapper::after, .side-menu__heading::before, .version-picker-select__wrapper::after {
   content: '↓'; }
 
 .arrow-button--right::before {
@@ -1109,7 +1109,7 @@ textarea,
   border-bottom: 2px solid #ffffff;
   border-radius: 0px;
   outline: none;
-  background-color: #20a49d;
+  background-color: transparent;
   color: #ffffff;
   font-size: 20px;
   font-size: 1.25rem;
@@ -1174,7 +1174,7 @@ textarea,
     border-radius: 5px;
     outline: none;
     background-color: #ffffff;
-    color: #c4c4c4;
+    color: #1c1e21;
     font-size: 18px;
     font-size: 1.125rem;
     font-style: normal;
@@ -1242,7 +1242,7 @@ textarea,
   border-radius: 0px;
   border-color: #20a49d;
   outline: none;
-  background-color: #20a49d;
+  background-color: transparent;
   color: #ffffff;
   font-size: 18px;
   font-size: 1.125rem;
@@ -1646,20 +1646,22 @@ textarea,
       color: #20a49d;
       font-weight: 600; }
 
-.sub-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  margin-bottom: 20px;
-  padding: 19px 16px;
-  background-color: #1e9a93;
-  color: #ffffff; }
-  @media (min-width: 768px) {
-    .sub-header {
-      height: 110px;
-      margin-bottom: 40px;
-      padding: 0 40px; } }
+.sub-header__wrapper {
+  background: linear-gradient(to right, #092a33, #019792); }
+  .sub-header__wrapper .sub-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    padding: 19px 16px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff; }
+    @media (min-width: 768px) {
+      .sub-header__wrapper .sub-header {
+        height: 110px;
+        margin-bottom: 40px;
+        padding: 0 40px; } }
 
 .sub-header__title {
   display: block;
@@ -2412,7 +2414,7 @@ footer {
 .header {
   display: block;
   height: 100%;
-  background-color: #20a49d; }
+  background: linear-gradient(to right, #092a33, #019792); }
   @media (max-width: 767px) {
     .header .top-header {
       display: none; } }
@@ -2526,7 +2528,7 @@ footer {
 .sticky-header {
   display: block;
   padding: 22px 40px 22px 40px;
-  background-color: #20a49d; }
+  background: linear-gradient(to right, #092a33, #019792); }
   .sticky-header .input-sticky-wrapper.input-sticky-wrapper--expanded {
     margin-right: 0px; }
   @media (min-width: 1024px) {

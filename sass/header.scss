@@ -9,7 +9,7 @@
 .header {
   display: block;
   height: 100%;
-  background-color: $tealish;
+  background: $hero-dark-gradient;
 
   .top-header {
     @include tablet-down {
@@ -41,10 +41,11 @@
         margin: 17px;
 
         @include tablet-up {
-            margin: 32px 17px;
-          }
+          margin: 32px 17px;
+        }
 
-          @include desktop {
+
+        @include desktop {
           margin: 32px 40px;
         }
       }

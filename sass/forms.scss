@@ -68,7 +68,7 @@ form {
     }
 
     .select-wrapper {
-      @extend .select-wrapper;
+      @extend %select-wrapper-base;
 
       max-width: none !important;
       flex: 1 1 auto !important;
@@ -82,7 +82,7 @@ form {
     }
 
     select {
-      @extend .select;
+      @extend %select-base;
 
       color: $black !important;
       max-width: none !important;

@@ -6,7 +6,7 @@
 //
 // Styleguide Atoms.Dropdown
 
-.select-wrapper {
+%select-wrapper-base {
   position: relative;
   width: 100%;
   max-width: 343px;
@@ -19,19 +19,23 @@
     max-width: none;
   }
 
+
   &::after {
     @extend %icon-chevron-down;
+
     position: absolute;
     top: calc(50% - 9px);
     right: 25px;
     color: $white;
+
     @include icon(18px);
+
     line-height: 18px;
     pointer-events: none;
   }
 }
 
-.select {
+%select-base {
   width: 100%;
   max-width: 343px;
   height: 55px;
@@ -75,4 +79,12 @@
     color: $white;
     text-shadow: none;
   }
+}
+
+.select-wrapper {
+  @extend %select-wrapper-base;
+}
+
+select {
+  @extend %select-base;
 }

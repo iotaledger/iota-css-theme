@@ -5,14 +5,14 @@
 // The $hero-dark-gradient variable defines the linear gradient from $hero-dark-start to $hero-dark-end
 //
 // Colors:
-// $hero-dark-start: #3f3f3f - Hero Dark Start
-// $hero-dark-end: #131313 - Hero Dark End
+// $hero-dark-start: #092a33 - Hero Dark Start
+// $hero-dark-end: #019792 - Hero Dark End
 // $image-dark: #414141 - Image Dark
 //
 // Styleguide Atoms.Colors Overlay
 
-$hero-dark-start: $gunmetal-grey;
-$hero-dark-end: #131313;
-$hero-dark-gradient: linear-gradient(to top, $hero-dark-start, $hero-dark-end);
+$hero-dark-start: #092a33;
+$hero-dark-end: #019792;
+$hero-dark-gradient: linear-gradient(to right, $hero-dark-start, $hero-dark-end);
 $image-dark: #414141;
 

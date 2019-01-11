@@ -6,26 +6,32 @@
 //
 // Styleguide Molecules.Sub Header
 
-.sub-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  margin-bottom: 20px;
-  padding: 19px 16px;
-  background-color: $jade;
-  color: $white;
+.sub-header__wrapper {
+  background: $hero-dark-gradient;
 
-  @include tablet-up {
-    height: 110px;
-    margin-bottom: 40px;
-    padding: 0 40px;
+  .sub-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    padding: 19px 16px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: $white;
+
+    @include tablet-up {
+      height: 110px;
+      margin-bottom: 40px;
+      padding: 0 40px;
+    }
   }
 }
 
 .sub-header__title {
   display: block;
+
   @include font-size(28px);
+
   font-style: normal;
   font-weight: bold;
   font-stretch: normal;
@@ -33,6 +39,7 @@
   @include tablet-up {
     display: none;
   }
+
 
   &.sub-header-title__fixed {
     display: block;
@@ -43,8 +50,10 @@
   display: flex;
   align-items: center;
   text-align: center;
+
   @include tablet-up {
     @include font-size(34px);
+
     font-style: normal;
     font-weight: bold;
     line-height: 1.59;
