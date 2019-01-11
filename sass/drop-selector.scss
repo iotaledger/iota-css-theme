@@ -11,6 +11,8 @@ $drop-selector-width: 260px;
 
   .drop-selector-title {
     display: flex;
+    position: relative;
+    top: 1px;
     align-items: center;
     justify-content: space-between;
     height: 50px;
@@ -31,7 +33,9 @@ $drop-selector-width: 260px;
     .drop-selector-title__icon {
       &::before {
         @extend %icon-up-down;
-
+        position: relative;
+        top: 2px;
+    
         color: $jade;
 
         @include icon(14px);

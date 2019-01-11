@@ -585,6 +585,8 @@ form .fieldset select, select {
   width: 260px; }
   .drop-selector .drop-selector-title {
     display: flex;
+    position: relative;
+    top: 1px;
     align-items: center;
     justify-content: space-between;
     height: 50px;
@@ -600,6 +602,8 @@ form .fieldset select, select {
       font-weight: bold;
       line-height: 1; }
     .drop-selector .drop-selector-title .drop-selector-title__icon::before {
+      position: relative;
+      top: 2px;
       color: #1e9a93;
       font-family: "IOTA icons";
       font-size: 14px;
