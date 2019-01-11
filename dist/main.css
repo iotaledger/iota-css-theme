@@ -594,7 +594,8 @@ form .fieldset select, select {
     padding-left: 18px;
     border: 1px solid #ededed;
     border-radius: 5px;
-    background-color: #fafafa; }
+    background-color: #fafafa;
+    cursor: pointer; }
     .drop-selector .drop-selector-title .drop-selector-title__text {
       font-size: 18px;
       font-size: 1.125rem;

@@ -21,6 +21,7 @@ $drop-selector-width: 260px;
     border: 1px solid #ededed;
     border-radius: 5px;
     background-color: #fafafa;
+    cursor: pointer;
 
     .drop-selector-title__text {
       @include font-size(18px);
