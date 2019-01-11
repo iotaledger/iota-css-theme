@@ -1,0 +1,96 @@
+// Drop Selector
+//
+// Markup: html/drop-selector.html
+//
+// Styleguide Molecules.Drop Selector
+
+$drop-selector-width: 260px;
+
+.drop-selector {
+  width: $drop-selector-width;
+
+  .drop-selector-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding-right: 18px;
+    padding-left: 18px;
+    border: 1px solid #ededed;
+    border-radius: 5px;
+    background-color: #fafafa;
+
+    .drop-selector-title__text {
+      @include font-size(18px);
+
+      color: $jade;
+      font-weight: bold;
+      line-height: 1;
+    }
+
+    .drop-selector-title__icon {
+      &::before {
+        @extend %icon-up-down;
+
+        color: $jade;
+
+        @include icon(14px);
+      }
+    }
+  }
+
+  .drop-selector-list {
+    display: none;
+  }
+
+  &.drop-selector__expanded {
+    .drop-selector-title {
+      border-radius: 5px 5px 0px 0px;
+    }
+
+    .drop-selector-list {
+      display: block;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      border-right: 1px solid #ededed;
+      border-bottom: 1px solid #ededed;
+      border-left: 1px solid #ededed;
+      border-radius: 0px 0px 5px 5px;
+      background-color: $white;
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.15);
+
+      .drop-selector-list-item {
+        a {
+          display: block;
+          padding-right: 18px;
+          padding-left: 18px;
+
+          @include font-size(17px);
+
+          color: #373e46;
+          font-weight: 600;
+          line-height: 2.5;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+
+        &.drop-selector-list-item__selected {
+          background-color: #fafafa;
+
+          a {
+            color: $jade;
+            font-weight: bold;
+          }
+        }
+      }
+
+      .drop-selector-list-item + .drop-selector-list-item {
+        border-top: 1px solid #ededed;
+      }
+    }
+  }
+}

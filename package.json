@@ -1,39 +1,39 @@
 {
-  "name": "iota-css-theme",
-  "version": "0.5.3",
-  "description": "IOTA CSS Theme",
-  "main": "dist/main.css",
-  "scripts": {
-    "serve": "browser-sync start --port 4100 --ui-port 4101 --server ./dist",
-    "serve-watch": "browser-sync start --port 4100 --ui-port 4101 --server ./dist --watch --files ./dist/",
-    "build-clean": "rimraf ./dist",
-    "build-compile-kss": "kss --config kss-config.json",
-    "build-compile-sass": "node-sass ./sass/main.scss ./dist/main.css",
-    "build-compile-sass-watch": "chokidar \"./sass/**/*\" -c \"run-s build-compile-kss build-compile-sass\"",
-    "build-copy": "copyfiles assets/*.* dist",
-    "build": "run-s build-clean build-compile-kss build-copy build-compile-sass",
-    "build-font": "node ./scripts/iconFont.js",
-    "sass-lint": "sass-lint -v -c ./.sass-lint.yml",
-    "build-serve": "run-s build serve",
-    "watch": "run-p serve-watch build-compile-sass-watch",
-    "build-serve-watch": "run-s build watch",
-    "deploy": "cd dist && now --local-config=../now.json && now alias --local-config=../now.json"
-  },
-  "author": "IOTA Foundation",
-  "license": "Apache-2.0",
-  "devDependencies": {
-    "browser-sync": "^2.26.3",
-    "chokidar-cli": "^1.2.1",
-    "copyfiles": "^2.1.0",
-    "kss": "^3.0.0-beta.23",
-    "node-sass": "^4.11.0",
-    "npm-run-all": "^4.1.3",
-    "rimraf": "^2.6.2",
-    "sass-lint": "^1.12.1",
-    "svg2ttf": "^4.2.0",
-    "svgicons2svgfont": "^9.0.4"
-  },
-  "dependencies": {
-    "normalize.css": "^8.0.1"
-  }
+    "name": "iota-css-theme",
+    "version": "0.5.3",
+    "description": "IOTA CSS Theme",
+    "main": "dist/main.css",
+    "scripts": {
+        "serve": "browser-sync start --port 4100 --ui-port 4101 --server ./dist",
+        "serve-watch": "browser-sync start --port 4100 --ui-port 4101 --server ./dist --watch --files ./dist/",
+        "build-clean": "rimraf ./dist",
+        "build-compile-kss": "kss --config kss-config.json",
+        "build-compile-sass": "node-sass ./sass/main.scss ./dist/main.css",
+        "build-compile-sass-watch": "chokidar \"./sass/**/*\" -c \"run-s build-compile-kss build-compile-sass\"",
+        "build-copy": "copyfiles assets/*.* dist",
+        "build": "run-s build-clean build-compile-kss build-copy build-compile-sass",
+        "build-font": "node ./scripts/iconFont.js",
+        "sass-lint": "sass-lint -v -c ./.sass-lint.yml",
+        "build-serve": "run-s build serve",
+        "watch": "run-p serve-watch build-compile-sass-watch",
+        "build-serve-watch": "run-s build watch",
+        "deploy": "cd dist && now --local-config=../now.json && now alias --local-config=../now.json"
+    },
+    "author": "IOTA Foundation",
+    "license": "Apache-2.0",
+    "devDependencies": {
+        "browser-sync": "^2.26.3",
+        "chokidar-cli": "^1.2.1",
+        "copyfiles": "^2.1.0",
+        "kss": "^3.0.0-beta.23",
+        "node-sass": "^4.11.0",
+        "npm-run-all": "^4.1.3",
+        "rimraf": "^2.6.2",
+        "sass-lint": "git+https://github.com/sasstools/sass-lint.git",
+        "svg2ttf": "^4.2.0",
+        "svgicons2svgfont": "^9.0.4"
+    },
+    "dependencies": {
+        "normalize.css": "^8.0.1"
+    }
 }

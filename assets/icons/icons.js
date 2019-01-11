@@ -11,4 +11,5 @@ module.exports = {
    "search": '🔍',
    "thumb-up": "👍",
    "thumb-down": "👎",
+   "up-down": "↕️"
 }
