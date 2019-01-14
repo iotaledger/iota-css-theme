@@ -589,7 +589,7 @@ form .fieldset select, select {
     text-shadow: none; }
 
 .drop-selector {
-  width: 260px; }
+  width: 240px; }
   .drop-selector .drop-selector-title {
     display: flex;
     position: relative;
@@ -621,7 +621,7 @@ form .fieldset select, select {
       line-height: 14px; }
   .drop-selector .drop-selector-list {
     position: absolute;
-    width: 260px;
+    width: 240px;
     max-height: 0;
     margin: 1px 0px 0px 0px;
     padding: 0;
@@ -2002,6 +2002,7 @@ table,
 
 .table-of-contents .table-of-contents__section-title {
   margin: 0;
+  padding-bottom: 8px;
   font-size: 15px;
   font-size: 0.9375rem;
   color: #3e3e3e;
@@ -2012,11 +2013,11 @@ table,
   text-transform: uppercase; }
 
 .table-of-contents .table-of-contents__section {
-  margin-top: 5px;
-  margin-bottom: 16px;
-  padding: 0px 0px 5px 6px;
+  margin: 0;
+  padding: 0;
   list-style-type: none; }
   .table-of-contents .table-of-contents__section .table-of-contents-list-item {
+    padding: 0px 8px 0px 8px;
     line-height: 1.75rem; }
     .table-of-contents .table-of-contents__section .table-of-contents-list-item a {
       color: #3e3e3e;
@@ -2032,6 +2033,28 @@ table,
           text-decoration: none; } }
       .table-of-contents .table-of-contents__section .table-of-contents-list-item a:hover {
         text-decoration: underline; }
+
+.table-of-contents.table-of-contents__compact .table-of-contents__section-title {
+  padding: 10px 18px 10px 18px;
+  font-size: 14px;
+  font-size: 0.875rem;
+  background-color: #ededed;
+  color: #3f3f3f; }
+
+.table-of-contents.table-of-contents__compact .table-of-contents-list-item {
+  padding: 10px 18px 10px 18px;
+  border-top: 1px solid #ededed;
+  border-right: 1px solid #ededed;
+  border-left: 1px solid #ededed; }
+  .table-of-contents.table-of-contents__compact .table-of-contents-list-item a {
+    color: #373e46;
+    font-size: 17px;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    text-decoration: underline; }
+
+.table-of-contents.table-of-contents__compact .table-of-contents-list-item + .table-of-contents-list-item {
+  border-bottom: 1px solid #ededed; }
 
 .tabs {
   display: flex;

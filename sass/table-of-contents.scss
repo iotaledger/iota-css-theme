@@ -7,11 +7,11 @@
 .table-of-contents {
   .table-of-contents__section-title {
     margin: 0;
+    padding-bottom: 8px;
 
     @include font-size(15px);
 
     color: #3e3e3e;
-
     font-stretch: normal;
     font-style: normal;
     font-weight: 600;
@@ -20,12 +20,12 @@
   }
 
   .table-of-contents__section {
-    margin-top: 5px;
-    margin-bottom: 16px;
-    padding: 0px 0px 5px 6px;
+    margin: 0;
+    padding: 0;
     list-style-type: none;
 
     .table-of-contents-list-item {
+      padding: 0px 8px 0px 8px;
       line-height: 1.75rem;
 
       a {
@@ -43,10 +43,38 @@
           text-decoration: none;
         }
 
+
         &:hover {
           text-decoration: underline;
         }
       }
+    }
+  }
+
+  &.table-of-contents__compact {
+    .table-of-contents__section-title {
+      padding: 10px 18px 10px 18px;
+      @include font-size(14px);
+      background-color: #ededed;
+      color: $gunmetal-grey;
+    }
+
+    .table-of-contents-list-item {
+      padding: 10px 18px 10px 18px;
+      border-top: 1px solid #ededed;
+      border-right: 1px solid #ededed;
+      border-left: 1px solid #ededed;
+
+      a {
+        color: #373e46;
+        @include font-size(17px);
+        font-weight: 600;
+        text-decoration: underline;
+      }
+    }
+
+    .table-of-contents-list-item + .table-of-contents-list-item {
+      border-bottom: 1px solid #ededed;
     }
   }
 }
