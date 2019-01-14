@@ -1079,7 +1079,7 @@ form .fieldset .select-wrapper::after, .select-wrapper::after, .side-menu__headi
     font-stretch: normal;
     font-style: normal;
     font-weight: 600;
-    line-height: 46px;
+    line-height: 38px;
     text-decoration: none; }
   .floating-menu__item:hover, .floating-menu__item.floating-menu__item--selected {
     border-color: #20a49d; }
@@ -2173,7 +2173,8 @@ table,
     padding: 0px 0px 5px 6px;
     list-style-type: none; }
     .tree-menu .tree-menu__section .tree-menu__section-item {
-      line-height: 1.75rem; }
+      line-height: 1.1;
+      margin-bottom: 6px; }
       .tree-menu .tree-menu__section .tree-menu__section-item a {
         color: #4f4f4f;
         font-size: 15px;
