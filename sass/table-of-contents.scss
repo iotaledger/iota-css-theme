@@ -1,47 +1,35 @@
-// Tree Menu
+// Table Of Contents
 //
-// Home page card styles.
+// Markup: html/table-of-contents.html
 //
-// Markup: html/tree-menu.html
-//
-// Styleguide Molecules.Tree Menu
+// Styleguide Molecules.Table Of Contents
 
-.tree-menu {
-  padding: 0 18px;
-
-  .tree-menu__section-title {
+.table-of-contents {
+  .table-of-contents__section-title {
     margin: 0;
-    color: #4f4f4f;
 
-    @include font-size(14px);
+    @include font-size(15px);
+
+    color: #3e3e3e;
 
     font-stretch: normal;
     font-style: normal;
     font-weight: 600;
     line-height: 1.5;
     text-transform: uppercase;
-
-    a {
-      color: inherit;
-      font-size: inherit;
-      font-stretch: inherit;
-      font-style: inherit;
-      font-weight: inherit;
-      line-height: inherit;
-    }
   }
 
-  .tree-menu__section {
+  .table-of-contents__section {
     margin-top: 5px;
     margin-bottom: 16px;
     padding: 0px 0px 5px 6px;
     list-style-type: none;
 
-    .tree-menu__section-item {
+    .table-of-contents-list-item {
       line-height: 1.75rem;
 
       a {
-        color: #4f4f4f;
+        color: #3e3e3e;
 
         @include font-size(15px);
 
@@ -58,13 +46,6 @@
         &:hover {
           text-decoration: underline;
         }
-      }
-    }
-
-    .tree-menu__section-item--selected {
-      a {
-        color: $tealish;
-        font-weight: 600;
       }
     }
   }
