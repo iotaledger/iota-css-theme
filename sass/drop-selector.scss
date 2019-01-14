@@ -2,7 +2,7 @@
 //
 // Markup: html/drop-selector.html
 //
-// Styleguide Molecules.Drop Selector
+// Styleguide Atoms.Drop Selector
 
 $drop-selector-width: 260px;
 
@@ -18,6 +18,8 @@ $drop-selector-width: 260px;
     height: 50px;
     padding-right: 18px;
     padding-left: 18px;
+    transition: $transition-duration ease;
+    transition-property: border-radius;
     border: 1px solid #ededed;
     border-radius: 5px;
     background-color: #fafafa;
@@ -45,19 +47,20 @@ $drop-selector-width: 260px;
   }
 
   .drop-selector-list {
+    position: absolute;
+    width: $drop-selector-width;
     max-height: 0;
-    margin: 0;
+    margin: 1px 0px 0px 0px;
     padding: 0;
     overflow: hidden;
     list-style: none;
     transition: $transition-duration ease-out;
     transition-property: max-height;
-    border-right: 1px solid #ededed;
-    border-bottom: 1px solid #ededed;
-    border-left: 1px solid #ededed;
+    border: 1px solid #ededed;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
     border-radius: 0px 0px 5px 5px;
     background-color: $white;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.15);
 
     .drop-selector-list-item {
       a {
@@ -102,6 +105,7 @@ $drop-selector-width: 260px;
       max-height: 1000px;
       transition: $transition-duration ease-in;
       transition-property: max-height;
+      border-bottom-width: 1px;
     }
   }
 }
