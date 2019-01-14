@@ -76,10 +76,11 @@ $drop-selector-width: 240px;
         text-decoration: none;
 
         &:hover {
-          text-decoration: none;
+          text-decoration: underline;
         }
       }
 
+      &:hover,
       &.drop-selector-list-item__selected {
         background-color: #fafafa;
 
