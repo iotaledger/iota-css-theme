@@ -7,9 +7,10 @@
 // Styleguide Molecules.Input Search Basic
 
 .input-wrapper-basic {
-  display: inline-flex;
+  display: flex;
   position: relative;
   width: 100%;
+  max-width: $desktop-width;
 
   &::before {
     @extend %icon-search;

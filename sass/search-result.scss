@@ -17,6 +17,8 @@
     margin-bottom: 30px;
     @include font-size(17px);
     color: $black;
+    font-weight: 600;
+    text-align: center;
   }
 
   .search-result__item {
@@ -32,12 +34,15 @@
       color: $tealish;
       @include font-size(18px);
       font-weight: bold;
+      text-align: center;
     }
 
     .search-result-item__link {
+      @include word-break;
       color: $gunmetal-grey;
       @include font-size(17px);
       font-weight: 300;
+      text-align: center;
     }
   }
 }

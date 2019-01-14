@@ -599,6 +599,8 @@ form .fieldset select, select {
     height: 50px;
     padding-right: 18px;
     padding-left: 18px;
+    transition: 0.3s ease;
+    transition-property: border-radius;
     border: 1px solid #ededed;
     border-radius: 5px;
     background-color: #fafafa;
@@ -618,19 +620,20 @@ form .fieldset select, select {
       font-weight: 300;
       line-height: 14px; }
   .drop-selector .drop-selector-list {
+    position: absolute;
+    width: 260px;
     max-height: 0;
-    margin: 0;
+    margin: 1px 0px 0px 0px;
     padding: 0;
     overflow: hidden;
     list-style: none;
     transition: 0.3s ease-out;
     transition-property: max-height;
-    border-right: 1px solid #ededed;
-    border-bottom: 1px solid #ededed;
-    border-left: 1px solid #ededed;
+    border: 1px solid #ededed;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
     border-radius: 0px 0px 5px 5px;
-    background-color: #ffffff;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.15); }
+    background-color: #ffffff; }
     .drop-selector .drop-selector-list .drop-selector-list-item a {
       display: block;
       padding-right: 18px;
@@ -656,7 +659,8 @@ form .fieldset select, select {
     height: auto;
     max-height: 1000px;
     transition: 0.3s ease-in;
-    transition-property: max-height; }
+    transition-property: max-height;
+    border-bottom-width: 1px; }
 
 .heading-label {
   display: inline-flex;
@@ -1225,9 +1229,10 @@ form .fieldset .select-wrapper::after, .select-wrapper::after, .side-menu__headi
     font-weight: 300; }
 
 .input-wrapper-basic {
-  display: inline-flex;
+  display: flex;
   position: relative;
-  width: 100%; }
+  width: 100%;
+  max-width: 1024px; }
   .input-wrapper-basic::before {
     position: absolute;
     top: calc(50% - 16px);
@@ -2108,18 +2113,6 @@ table,
     font-weight: inherit;
     line-height: inherit; }
 
-.tree-menu__section-title--selected {
-  margin-left: -20px;
-  padding-left: 17px;
-  border-left: 3px solid #20a49d;
-  color: #20a49d; }
-
-.tree-menu__section--selected {
-  margin-left: -20px;
-  border-left: 3px solid #20a49d; }
-  .tree-menu__section--selected .tree-menu__section-item {
-    margin-left: 20px; }
-
 .tree-menu__section {
   margin-top: 0px;
   margin-bottom: 16px;
@@ -2561,7 +2554,9 @@ footer {
     margin-bottom: 30px;
     font-size: 17px;
     font-size: 1.0625rem;
-    color: #1c1e21; }
+    color: #1c1e21;
+    font-weight: 600;
+    text-align: center; }
   .search-result .search-result__item {
     display: flex;
     flex-direction: column;
@@ -2574,12 +2569,16 @@ footer {
       color: #20a49d;
       font-size: 18px;
       font-size: 1.125rem;
-      font-weight: bold; }
+      font-weight: bold;
+      text-align: center; }
     .search-result .search-result__item .search-result-item__link {
+      word-break: break-all;
+      word-break: break-word;
       color: #3f3f3f;
       font-size: 17px;
       font-size: 1.0625rem;
-      font-weight: 300; }
+      font-weight: 300;
+      text-align: center; }
 
 .sticky-header {
   display: block;
