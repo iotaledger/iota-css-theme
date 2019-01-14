@@ -16,19 +16,19 @@
 
   @include font-size(15px);
 
+  font-stretch: normal;
   font-style: normal;
   font-weight: 600;
   line-height: 2.06;
   text-transform: uppercase;
-  font-stretch: normal;
 
   a {
     color: inherit;
     font-size: inherit;
+    font-stretch: inherit;
     font-style: inherit;
     font-weight: inherit;
     line-height: inherit;
-    font-stretch: inherit;
   }
 }
 
@@ -64,11 +64,11 @@
 
     @include font-size(15px);
 
+    font-stretch: normal;
     font-style: normal;
     font-weight: 300;
     letter-spacing: normal;
     text-decoration: underline;
-    font-stretch: normal;
 
     @include desktop {
       text-decoration: none;

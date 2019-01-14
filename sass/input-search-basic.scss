@@ -32,10 +32,10 @@
 
     @include font-size(18px);
 
+    font-stretch: normal;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    font-stretch: normal;
 
     @include placeholder {
       color: $white;

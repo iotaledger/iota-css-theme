@@ -26,13 +26,13 @@ $common-desktop-width: 155px;
   background-color: $white;
   color: $body-copy;
   @include font-size(18px);
+  font-stretch: normal;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  font-stretch: normal;
 
   @include phone-down {
-    width: 100%;
+    width: auto;
   }
 }
 
@@ -63,8 +63,8 @@ $common-desktop-width: 155px;
   }
 
   &:disabled {
-    cursor: default;
     opacity: 0.5;
+    cursor: default;
     pointer-events: none;
   }
 

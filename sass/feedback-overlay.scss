@@ -9,10 +9,10 @@
   width: 100vw;
   height: 100vh;
   padding: 50px 0px 50px 0px;
+  overflow: auto;
   transition: 0.1s ease-out;
   transition-property: opacity;
   opacity: 0;
-  overflow: auto;
   pointer-events: none;
 
   .feedback-overlay-close {

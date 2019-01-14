@@ -33,20 +33,19 @@
 
 .card__label {
   position: relative;
+  z-index: 2;
   width: 100%;
   margin: 0;
   padding: 24px;
   background-color: $white;
   line-height: 1;
   text-align: left;
-  z-index: 2;
 }
 
 .card {
   width: 100%;
   max-width: 380px;
   margin-bottom: 20px;
-  box-sizing: border-box;
 
   &:first-child {
     justify-content: flex-start;

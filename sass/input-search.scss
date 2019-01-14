@@ -30,8 +30,8 @@
     line-height: 1.5;
 
     span {
-      font-weight: 600;
       opacity: 0.5;
+      font-weight: 600;
     }
 
     a {
@@ -58,16 +58,16 @@
   background-color: transparent;
   color: $white;
   @include font-size(20px);
+  font-stretch: normal;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  font-stretch: normal;
 
   @include placeholder {
+    opacity: 0.6;
     color: $white;
     @include font-size(20px);
     font-style: normal;
     font-weight: 300;
-    opacity: 0.6;
   }
 }

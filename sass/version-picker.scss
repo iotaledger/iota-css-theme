@@ -50,7 +50,9 @@
 
 .version-picker__current {
   color: $gunmetal-grey;
+
   @include font-size(16px);
+
   font-weight: 600;
   text-align: center;
 
@@ -68,11 +70,14 @@
 
   &::after {
     @extend %icon-chevron-down;
+
     position: absolute;
     top: calc(50% - 9px);
     right: 25px;
     color: $white;
+
     @include icon(18px);
+
     pointer-events: none;
   }
 
@@ -87,6 +92,7 @@
   height: 50px;
   padding-right: 55px;
   padding-left: 20px;
+  overflow: hidden;
   border: 0;
   outline: none;
   background: none;
@@ -97,20 +103,21 @@
   font-weight: bold;
   text-overflow: ellipsis;
   white-space: nowrap;
-  overflow: hidden;
 
-  // sass-lint:disable no-vendor-prefixes
+  // sass-lint:disable no-property-vendor-prefix
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 
   option {
     color: $black;
+
     @include font-size(16px);
   }
 
   optgroup {
     color: $gunmetal-grey;
+
     @include font-size(16px);
   }
 

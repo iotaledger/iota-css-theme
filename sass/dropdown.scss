@@ -41,6 +41,7 @@
   height: 55px;
   padding-right: 55px;
   padding-left: 20px;
+  overflow: hidden;
   border: 0;
   border-radius: 5px !important;
   outline: none;
@@ -49,9 +50,8 @@
   font-size: inherit;
   text-overflow: ellipsis;
   white-space: nowrap;
-  overflow: hidden;
 
-  // sass-lint:disable no-vendor-prefixes
+  // sass-lint:disable no-property-vendor-prefix
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;

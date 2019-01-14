@@ -51,8 +51,8 @@
   width: 100%;
 
   &::after {
-    flex: auto;
     content: ' ';
+    flex: auto;
   }
 
   .project-topic__item {
@@ -61,7 +61,6 @@
     align-items: flex-start;
     width: 100%;
     padding: 0 0 25px 0;
-    box-sizing: border-box;
 
     @include tablet-up {
       padding-bottom: 50px;
@@ -90,6 +89,7 @@
       &.project-topic__primary-bullet,
       &.project-topic__secondary-bullet {
         &::before {
+          content: ' ';
           display: inline-block;
           position: relative;
           top: -2px;
@@ -97,7 +97,6 @@
           height: 8px;
           margin-right: 10px;
           background: $blueberry;
-          content: ' ';
         }
       }
 
@@ -112,7 +111,6 @@
       padding-right: 36px;
       font-weight: 200;
       line-height: 30px;
-      box-sizing: border-box;
     }
   }
 }

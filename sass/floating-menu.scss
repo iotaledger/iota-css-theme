@@ -29,11 +29,11 @@
     transition-property: transform, color, border-color;
     color: $black;
     @include font-size(17px);
+    font-stretch: normal;
     font-style: normal;
     font-weight: 600;
     line-height: 46px;
     text-decoration: none;
-    font-stretch: normal;
   }
 
   &:hover,

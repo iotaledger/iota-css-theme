@@ -20,13 +20,13 @@
     padding: 0px 8px 0px 8px;
 
     &::before {
+      content: '';
       position: relative;
       top: 0px;
       left: -9px;
       width: 1px;
       height: 24px;
       background-color: $light-grey;
-      content: '';
     }
 
     &:first-child {

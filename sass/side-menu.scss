@@ -18,12 +18,12 @@ $side-menu-right-padding: 24px;
 
   &.side-menu__hidden {
     position: fixed;
+    z-index: 3;
     top: 0;
     right: -328px;
     padding-right: 17px;
-    transition: 300ms ease;
-    z-index: 3;
     overflow-y: scroll;
+    transition: 300ms ease;
 
     @include phone-down {
       padding-right: 0;
@@ -32,12 +32,12 @@ $side-menu-right-padding: 24px;
 
   &.side-menu__shown {
     position: fixed;
+    z-index: 3;
     top: 0;
     right: -32px;
     padding-right: 17px;
-    transition: 300ms ease;
-    z-index: 3;
     overflow-y: scroll;
+    transition: 300ms ease;
 
     @include phone-down {
       right: 0;
@@ -161,10 +161,10 @@ $side-menu-right-padding: 24px;
   height: 0;
   margin: 0px;
   padding: 0 16px 0 16px;
+  overflow: hidden;
   transition: $transition-duration ease;
   transition-property: padding, transform, height;
   color: $white;
-  overflow: hidden;
 
   .side-menu-item {
     padding: 4px 0px 0px 16px;

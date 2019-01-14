@@ -12,11 +12,11 @@ form {
   width: 100%;
 
   .fieldset {
-    padding: 0px 0px 10px 0px;
-    border: 0;
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 0px 0px 10px 0px;
+    border: 0;
 
     @include phone-down {
       flex-direction: column;
@@ -25,8 +25,8 @@ form {
 
 
     label {
-      flex: none;
       display: block;
+      flex: none;
       width: $common-label-width;
       margin-right: 20px;
 
@@ -36,14 +36,14 @@ form {
 
       @include phone-down {
         width: auto;
-        margin-left: 0px;
         margin-bottom: 5px;
+        margin-left: 0px;
       }
     }
 
     input {
-      flex: 1 1 auto;
       display: block;
+      flex: 1 1 auto;
       padding: 20px;
       border: 1px solid $light-grey;
       border-radius: 5px;
@@ -57,8 +57,8 @@ form {
 
 
       &::placeholder {
-        color: $light-grey;
         opacity: 1;
+        color: $light-grey;
       }
 
       &:read-only {
@@ -70,11 +70,11 @@ form {
     .select-wrapper {
       @extend %select-wrapper-base;
 
-      max-width: none !important;
       flex: 1 1 auto !important;
-      background-color: $white !important;
+      max-width: none !important;
       border: 1px solid $light-grey !important;
       border-radius: 5px !important;
+      background-color: $white !important;
 
       &::after {
         color: $gunmetal-grey !important;
@@ -84,8 +84,8 @@ form {
     select {
       @extend %select-base;
 
-      color: $black !important;
       max-width: none !important;
+      color: $black !important;
 
       &:disabled {
         background-color: lighten($light-grey, 15%);

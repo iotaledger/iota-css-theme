@@ -31,8 +31,8 @@
 
   &:hover {
     &:not([disabled]) {
-      cursor: pointer;
       opacity: 0.75;
+      cursor: pointer;
     }
   }
 
@@ -41,8 +41,8 @@
   }
 
   &:disabled {
-    cursor: default;
     opacity: 0.5;
+    cursor: default;
     pointer-events: none;
   }
 }

@@ -20,11 +20,11 @@
 .text-inline {
   color: $body-copy;
   @include font-size(17px);
+  font-stretch: normal;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
   line-height: 1.41;
-  font-stretch: normal;
 }
 
 .text-inline--strong {

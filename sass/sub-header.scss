@@ -30,9 +30,9 @@
 
       @include font-size(28px);
 
+      font-stretch: normal;
       font-style: normal;
       font-weight: bold;
-      font-stretch: normal;
 
       @include tablet-up {
         display: none;
@@ -53,19 +53,19 @@
       .sub-header__bottom-title {
         display: flex;
         align-items: center;
-        text-align: center;
-        padding-left: 5px;
         padding-right: 5px;
+        padding-left: 5px;
+        text-align: center;
 
         @include tablet-up {
           @include font-size(34px);
 
+          padding-right: 10px;
+          padding-left: 10px;
+          font-stretch: normal;
           font-style: normal;
           font-weight: bold;
           line-height: 1.59;
-          font-stretch: normal;
-          padding-left: 10px;
-          padding-right: 10px;
         }
       }
     }

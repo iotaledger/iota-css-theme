@@ -3,12 +3,21 @@ $max-width: 1420px;
 
 $transition-duration: 0.3s;
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   padding: 0;
   color: $body-copy;
   font-family: $font-primary;
   font-weight: 200;
-  box-sizing: border-box;
 
   &.no-scroll {
     overflow: hidden;
@@ -21,7 +30,7 @@ body {
 
 input,
 button {
-  // sass-lint:disable no-vendor-prefixes
+  // sass-lint:disable no-property-vendor-prefix
   -webkit-appearance: none;
 
   &[type='search'] {

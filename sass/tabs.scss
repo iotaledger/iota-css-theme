@@ -34,19 +34,19 @@
         margin: 0px 12px 0px 12px;
 
         a {
+          opacity: 0.5;
           color: $white;
 
           @include font-size(17px);
 
           font-weight: normal;
           text-decoration: none;
-          opacity: 0.5;
         }
 
         &.tab-header-item--selected {
           a {
-            font-weight: bold;
             opacity: 1;
+            font-weight: bold;
           }
         }
       }
@@ -60,8 +60,8 @@
       .tab-header-copy-text {
         transition: $transition-duration ease-out;
         transition-property: opacity;
-        color: $success;
         opacity: 0;
+        color: $success;
       }
 
       .tab-header-copy-text--active {

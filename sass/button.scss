@@ -33,17 +33,17 @@
   color: $white;
   @include font-size(14.5px);
   font-weight: bold;
-  text-transform: uppercase;
   @include word-break;
   line-height: 1.5;
   text-decoration: none;
+  text-transform: uppercase;
 
   &:hover {
     &:not([disabled]) {
       border-color: darken($blueberry, 10%);
       background-color: darken($blueberry, 10%);
-      cursor: pointer;
       text-decoration: none;
+      cursor: pointer;
     }
   }
 
@@ -54,8 +54,8 @@
   }
 
   &:disabled {
-    cursor: default;
     opacity: 0.5;
+    cursor: default;
     pointer-events: none;
   }
 }
