@@ -34,9 +34,9 @@ $drop-selector-width: 260px;
     .drop-selector-title__icon {
       &::before {
         @extend %icon-up-down;
+
         position: relative;
         top: 2px;
-    
         color: $jade;
 
         @include icon(14px);
@@ -45,7 +45,51 @@ $drop-selector-width: 260px;
   }
 
   .drop-selector-list {
-    display: none;
+    max-height: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+    transition: $transition-duration ease-out;
+    transition-property: max-height;
+    border-right: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+    border-left: 1px solid #ededed;
+    border-radius: 0px 0px 5px 5px;
+    background-color: $white;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.15);
+
+    .drop-selector-list-item {
+      a {
+        display: block;
+        padding-right: 18px;
+        padding-left: 18px;
+
+        @include font-size(17px);
+
+        color: #373e46;
+        font-weight: 600;
+        line-height: 2.5;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      &.drop-selector-list-item__selected {
+        background-color: #fafafa;
+
+        a {
+          color: $jade;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .drop-selector-list-item + .drop-selector-list-item {
+      border-top: 1px solid #ededed;
+    }
   }
 
   &.drop-selector__expanded {
@@ -54,48 +98,10 @@ $drop-selector-width: 260px;
     }
 
     .drop-selector-list {
-      display: block;
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      border-right: 1px solid #ededed;
-      border-bottom: 1px solid #ededed;
-      border-left: 1px solid #ededed;
-      border-radius: 0px 0px 5px 5px;
-      background-color: $white;
-      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.15);
-
-      .drop-selector-list-item {
-        a {
-          display: block;
-          padding-right: 18px;
-          padding-left: 18px;
-
-          @include font-size(17px);
-
-          color: #373e46;
-          font-weight: 600;
-          line-height: 2.5;
-          text-decoration: none;
-
-          &:hover {
-            text-decoration: none;
-          }
-        }
-
-        &.drop-selector-list-item__selected {
-          background-color: #fafafa;
-
-          a {
-            color: $jade;
-            font-weight: bold;
-          }
-        }
-      }
-
-      .drop-selector-list-item + .drop-selector-list-item {
-        border-top: 1px solid #ededed;
-      }
+      height: auto;
+      max-height: 1000px;
+      transition: $transition-duration ease-in;
+      transition-property: max-height;
     }
   }
 }
