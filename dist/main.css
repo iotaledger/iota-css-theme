@@ -365,19 +365,19 @@ button {
       height: 0px;
       -webkit-appearance: none; }
 
-form {
+.form {
   width: 100%; }
-  form .fieldset {
+  .form .fieldset {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 0px 0px 10px 0px;
     border: 0; }
     @media (max-width: 514px) {
-      form .fieldset {
+      .form .fieldset {
         flex-direction: column;
         align-items: stretch; } }
-    form .fieldset label {
+    .form .fieldset label {
       display: block;
       flex: none;
       width: 125px;
@@ -386,11 +386,11 @@ form {
       font-size: 1rem;
       font-weight: 600; }
       @media (max-width: 514px) {
-        form .fieldset label {
+        .form .fieldset label {
           width: auto;
           margin-bottom: 5px;
           margin-left: 0px; } }
-    form .fieldset input {
+    .form .fieldset input {
       display: block;
       flex: 1 1 auto;
       padding: 20px;
@@ -400,32 +400,32 @@ form {
       background-color: #ffffff;
       color: #1c1e21; }
       @media (max-width: 514px) {
-        form .fieldset input {
+        .form .fieldset input {
           padding: 10px; } }
-      form .fieldset input::placeholder {
+      .form .fieldset input::placeholder {
         opacity: 1;
         color: #c4c4c4; }
-      form .fieldset input:read-only {
+      .form .fieldset input:read-only {
         background-color: #eaeaea;
         color: #1c1e21; }
-    form .fieldset .select-wrapper {
+    .form .fieldset .select-wrapper {
       flex: 1 1 auto !important;
       max-width: none !important;
       border: 1px solid #c4c4c4 !important;
       border-radius: 5px !important;
       background-color: #ffffff !important; }
-      form .fieldset .select-wrapper::after {
+      .form .fieldset .select-wrapper::after {
         color: #3f3f3f !important; }
-    form .fieldset select {
+    .form .fieldset select {
       max-width: none !important;
       color: #1c1e21 !important; }
-      form .fieldset select:disabled {
+      .form .fieldset select:disabled {
         background-color: #eaeaea;
         color: #1c1e21; }
-  form .buttons {
+  .form .buttons {
     margin-left: 137px; }
     @media (max-width: 514px) {
-      form .buttons {
+      .form .buttons {
         margin-left: -7px; } }
 
 .arrow-button {
@@ -534,7 +534,7 @@ blockquote,
     border-color: #ffffff;
     background-color: rgba(255, 255, 255, 0.2); }
 
-form .fieldset .select-wrapper, .select-wrapper {
+.form .fieldset .select-wrapper, .select-wrapper {
   position: relative;
   width: 100%;
   max-width: 343px;
@@ -543,9 +543,9 @@ form .fieldset .select-wrapper, .select-wrapper {
   background-color: rgba(255, 255, 255, 0.1);
   line-height: 1.5; }
   @media (max-width: 514px) {
-    form .fieldset .select-wrapper, .select-wrapper {
+    .form .fieldset .select-wrapper, .select-wrapper {
       max-width: none; } }
-  form .fieldset .select-wrapper::after, .select-wrapper::after {
+  .form .fieldset .select-wrapper::after, .select-wrapper::after {
     position: absolute;
     top: calc(50% - 9px);
     right: 25px;
@@ -557,7 +557,7 @@ form .fieldset .select-wrapper, .select-wrapper {
     line-height: 18px;
     pointer-events: none; }
 
-form .fieldset select, select {
+.form .fieldset select, select {
   width: 100%;
   max-width: 343px;
   height: 55px;
@@ -575,16 +575,16 @@ form .fieldset select, select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none; }
-  form .fieldset select option, select option {
+  .form .fieldset select option, select option {
     color: #1c1e21; }
-  form .fieldset select optgroup, select optgroup {
+  .form .fieldset select optgroup, select optgroup {
     color: #3f3f3f; }
-  form .fieldset select::-ms-expand, select::-ms-expand {
+  .form .fieldset select::-ms-expand, select::-ms-expand {
     display: none; }
-  form .fieldset select:-moz-focusring, select:-moz-focusring {
+  .form .fieldset select:-moz-focusring, select:-moz-focusring {
     color: transparent;
     text-shadow: 0 0 0 #ffffff; }
-  form .fieldset select:-moz-focusring *, select:-moz-focusring * {
+  .form .fieldset select:-moz-focusring *, select:-moz-focusring * {
     color: #ffffff;
     text-shadow: none; }
 
@@ -864,7 +864,7 @@ textarea,
 .scroll-to-top i.icon-chevron-up::before, .side-menu__group--expanded .side-menu__heading::before {
   content: '↑'; }
 
-form .fieldset .select-wrapper::after, .select-wrapper::after, .side-menu__heading::before, .version-picker-select__wrapper::after {
+.form .fieldset .select-wrapper::after, .select-wrapper::after, .side-menu__heading::before, .version-picker-select__wrapper::after {
   content: '↓'; }
 
 .arrow-button--right::before {
@@ -1092,7 +1092,7 @@ form .fieldset .select-wrapper::after, .select-wrapper::after, .side-menu__headi
 
 .input-register {
   width: 280px;
-  height: 53px;
+  height: 55px;
   padding: 0 4px 0 16px;
   border: 1px solid #c4c4c4;
   border-right: 0;
