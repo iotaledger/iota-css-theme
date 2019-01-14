@@ -7,19 +7,19 @@
 // Styleguide Molecules.Tree Menu
 
 .tree-menu {
-  padding: 0 20px;
+  padding: 0 18px;
 }
 
 .tree-menu__section-title {
   margin: 0;
-  color: $gunmetal-grey;
+  color: #4f4f4f;
 
-  @include font-size(15px);
+  @include font-size(14px);
 
   font-stretch: normal;
   font-style: normal;
   font-weight: 600;
-  line-height: 2.06;
+  line-height: 1.5;
   text-transform: uppercase;
 
   a {
@@ -33,9 +33,9 @@
 }
 
 .tree-menu__section {
-  margin-top: 0px;
+  margin-top: 5px;
   margin-bottom: 16px;
-  padding: 0px 0px 5px 20px;
+  padding: 0px 0px 5px 6px;
   list-style-type: none;
 }
 
@@ -44,7 +44,7 @@
   line-height: 1.75rem;
 
   a {
-    color: $body-copy;
+    color: #4f4f4f;
 
     @include font-size(15px);
 

@@ -2093,17 +2093,17 @@ table,
       text-decoration: underline; }
 
 .tree-menu {
-  padding: 0 20px; }
+  padding: 0 18px; }
 
 .tree-menu__section-title {
   margin: 0;
-  color: #3f3f3f;
-  font-size: 15px;
-  font-size: 0.9375rem;
+  color: #4f4f4f;
+  font-size: 14px;
+  font-size: 0.875rem;
   font-stretch: normal;
   font-style: normal;
   font-weight: 600;
-  line-height: 2.06;
+  line-height: 1.5;
   text-transform: uppercase; }
   .tree-menu__section-title a {
     color: inherit;
@@ -2114,16 +2114,16 @@ table,
     line-height: inherit; }
 
 .tree-menu__section {
-  margin-top: 0px;
+  margin-top: 5px;
   margin-bottom: 16px;
-  padding: 0px 0px 5px 20px;
+  padding: 0px 0px 5px 6px;
   list-style-type: none; }
 
 .tree-menu__section-item {
   border-left: 4px solid transparent;
   line-height: 1.75rem; }
   .tree-menu__section-item a {
-    color: #696f76;
+    color: #4f4f4f;
     font-size: 15px;
     font-size: 0.9375rem;
     font-stretch: normal;
