@@ -1768,6 +1768,12 @@ textarea,
             font-weight: bold;
             line-height: 1.59; } }
 
+.table-scroll-wrapper {
+  overflow-x: auto; }
+  .table-scroll-wrapper table,
+  .table-scroll-wrapper .table {
+    width: auto; }
+
 table,
 .table {
   width: 100%;
@@ -1805,9 +1811,7 @@ table,
       font-size: 20px;
       font-size: 1.25rem;
       font-weight: bold;
-      line-height: 2.4;
-      word-break: break-all;
-      word-break: break-word; }
+      line-height: 2.4; }
     table thead th,
     table .table-head th,
     .table thead th,
@@ -1894,9 +1898,7 @@ table,
       font-size: 17px;
       font-size: 1.0625rem;
       font-weight: normal;
-      line-height: 2.82;
-      word-break: break-all;
-      word-break: break-word; }
+      line-height: 2.82; }
     table tbody tr th,
     table tbody tr td,
     table tbody .table-body-row th,
@@ -1971,9 +1973,7 @@ table,
       font-size: 17px;
       font-size: 1.0625rem;
       font-weight: normal;
-      line-height: 1.88;
-      word-break: break-all;
-      word-break: break-word; }
+      line-height: 1.88; }
     table tbody .table-body-row,
     table .table-body .table-body-row,
     .table tbody .table-body-row,
@@ -2010,6 +2010,191 @@ table,
       .table .table-body .table-body-row--header.table-body-row-item--right,
       .table .table-body .table-body-row--item.table-body-row-item--right {
         justify-content: flex-end; }
+  @media (max-width: 514px) {
+    table,
+    .table {
+      border-left-width: 0px; }
+      table thead th,
+      table thead .table-head-row--item,
+      table .table-head th,
+      table .table-head .table-head-row--item,
+      .table thead th,
+      .table thead .table-head-row--item,
+      .table .table-head th,
+      .table .table-head .table-head-row--item {
+        display: none; }
+      table tbody th,
+      table tbody .table-body-row--header,
+      table tbody td,
+      table tbody .table-body-row--item,
+      table .table-body th,
+      table .table-body .table-body-row--header,
+      table .table-body td,
+      table .table-body .table-body-row--item,
+      .table tbody th,
+      .table tbody .table-body-row--header,
+      .table tbody td,
+      .table tbody .table-body-row--item,
+      .table .table-body th,
+      .table .table-body .table-body-row--header,
+      .table .table-body td,
+      .table .table-body .table-body-row--item {
+        display: block;
+        padding: 0px 8px 0px 8px !important;
+        line-height: 2 !important;
+        vertical-align: top; }
+      table tbody tr,
+      table tbody .table-body-row,
+      table .table-body tr,
+      table .table-body .table-body-row,
+      .table tbody tr,
+      .table tbody .table-body-row,
+      .table .table-body tr,
+      .table .table-body .table-body-row {
+        display: block;
+        margin-bottom: 10px;
+        border-top: 1px solid #ececec;
+        border-left: 1px solid #ececec; }
+        table tbody tr th::before,
+        table tbody tr .table-body-row--header::before,
+        table tbody tr td::before,
+        table tbody tr .table-body-row--item::before,
+        table tbody .table-body-row th::before,
+        table tbody .table-body-row .table-body-row--header::before,
+        table tbody .table-body-row td::before,
+        table tbody .table-body-row .table-body-row--item::before,
+        table .table-body tr th::before,
+        table .table-body tr .table-body-row--header::before,
+        table .table-body tr td::before,
+        table .table-body tr .table-body-row--item::before,
+        table .table-body .table-body-row th::before,
+        table .table-body .table-body-row .table-body-row--header::before,
+        table .table-body .table-body-row td::before,
+        table .table-body .table-body-row .table-body-row--item::before,
+        .table tbody tr th::before,
+        .table tbody tr .table-body-row--header::before,
+        .table tbody tr td::before,
+        .table tbody tr .table-body-row--item::before,
+        .table tbody .table-body-row th::before,
+        .table tbody .table-body-row .table-body-row--header::before,
+        .table tbody .table-body-row td::before,
+        .table tbody .table-body-row .table-body-row--item::before,
+        .table .table-body tr th::before,
+        .table .table-body tr .table-body-row--header::before,
+        .table .table-body tr td::before,
+        .table .table-body tr .table-body-row--item::before,
+        .table .table-body .table-body-row th::before,
+        .table .table-body .table-body-row .table-body-row--header::before,
+        .table .table-body .table-body-row td::before,
+        .table .table-body .table-body-row .table-body-row--item::before {
+          content: attr(data-heading);
+          display: inline-block;
+          width: 120px;
+          margin-right: 8px;
+          margin-left: -8px;
+          padding: 8px;
+          overflow: hidden;
+          border: 0;
+          background-color: #3f3f3f;
+          color: #ffffff;
+          font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+          font-size: 15px;
+          font-size: 0.9375rem;
+          font-weight: bold;
+          line-height: 1.5;
+          vertical-align: top; } }
+  table.table--compact,
+  .table.table--compact {
+    border-left-width: 0px; }
+    table.table--compact thead th,
+    table.table--compact thead .table-head-row--item,
+    table.table--compact .table-head th,
+    table.table--compact .table-head .table-head-row--item,
+    .table.table--compact thead th,
+    .table.table--compact thead .table-head-row--item,
+    .table.table--compact .table-head th,
+    .table.table--compact .table-head .table-head-row--item {
+      display: none; }
+    table.table--compact tbody th,
+    table.table--compact tbody .table-body-row--header,
+    table.table--compact tbody td,
+    table.table--compact tbody .table-body-row--item,
+    table.table--compact .table-body th,
+    table.table--compact .table-body .table-body-row--header,
+    table.table--compact .table-body td,
+    table.table--compact .table-body .table-body-row--item,
+    .table.table--compact tbody th,
+    .table.table--compact tbody .table-body-row--header,
+    .table.table--compact tbody td,
+    .table.table--compact tbody .table-body-row--item,
+    .table.table--compact .table-body th,
+    .table.table--compact .table-body .table-body-row--header,
+    .table.table--compact .table-body td,
+    .table.table--compact .table-body .table-body-row--item {
+      display: block;
+      padding: 0px 8px 0px 8px !important;
+      line-height: 2 !important;
+      vertical-align: top; }
+    table.table--compact tbody tr,
+    table.table--compact tbody .table-body-row,
+    table.table--compact .table-body tr,
+    table.table--compact .table-body .table-body-row,
+    .table.table--compact tbody tr,
+    .table.table--compact tbody .table-body-row,
+    .table.table--compact .table-body tr,
+    .table.table--compact .table-body .table-body-row {
+      display: block;
+      margin-bottom: 10px;
+      border-top: 1px solid #ececec;
+      border-left: 1px solid #ececec; }
+      table.table--compact tbody tr th::before,
+      table.table--compact tbody tr .table-body-row--header::before,
+      table.table--compact tbody tr td::before,
+      table.table--compact tbody tr .table-body-row--item::before,
+      table.table--compact tbody .table-body-row th::before,
+      table.table--compact tbody .table-body-row .table-body-row--header::before,
+      table.table--compact tbody .table-body-row td::before,
+      table.table--compact tbody .table-body-row .table-body-row--item::before,
+      table.table--compact .table-body tr th::before,
+      table.table--compact .table-body tr .table-body-row--header::before,
+      table.table--compact .table-body tr td::before,
+      table.table--compact .table-body tr .table-body-row--item::before,
+      table.table--compact .table-body .table-body-row th::before,
+      table.table--compact .table-body .table-body-row .table-body-row--header::before,
+      table.table--compact .table-body .table-body-row td::before,
+      table.table--compact .table-body .table-body-row .table-body-row--item::before,
+      .table.table--compact tbody tr th::before,
+      .table.table--compact tbody tr .table-body-row--header::before,
+      .table.table--compact tbody tr td::before,
+      .table.table--compact tbody tr .table-body-row--item::before,
+      .table.table--compact tbody .table-body-row th::before,
+      .table.table--compact tbody .table-body-row .table-body-row--header::before,
+      .table.table--compact tbody .table-body-row td::before,
+      .table.table--compact tbody .table-body-row .table-body-row--item::before,
+      .table.table--compact .table-body tr th::before,
+      .table.table--compact .table-body tr .table-body-row--header::before,
+      .table.table--compact .table-body tr td::before,
+      .table.table--compact .table-body tr .table-body-row--item::before,
+      .table.table--compact .table-body .table-body-row th::before,
+      .table.table--compact .table-body .table-body-row .table-body-row--header::before,
+      .table.table--compact .table-body .table-body-row td::before,
+      .table.table--compact .table-body .table-body-row .table-body-row--item::before {
+        content: attr(data-heading);
+        display: inline-block;
+        width: 120px;
+        margin-right: 8px;
+        margin-left: -8px;
+        padding: 8px;
+        overflow: hidden;
+        border: 0;
+        background-color: #3f3f3f;
+        color: #ffffff;
+        font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-size: 15px;
+        font-size: 0.9375rem;
+        font-weight: bold;
+        line-height: 1.5;
+        vertical-align: top; }
 
 .table-of-contents .table-of-contents__section-title {
   margin: 0;

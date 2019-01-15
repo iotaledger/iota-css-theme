@@ -4,6 +4,73 @@
 //
 // Styleguide Molecules.Table
 
+@mixin phone-down-style {
+  border-left-width: 0px;
+
+  thead,
+  .table-head {
+    th,
+    .table-head-row--item {
+      display: none;
+    }
+  }
+
+  tbody,
+  .table-body {
+    th,
+    .table-body-row--header,
+    td,
+    .table-body-row--item {
+      display: block;
+      padding: 0px 8px 0px 8px !important;
+      line-height: 2 !important;
+      vertical-align: top;
+    }
+
+    tr,
+    .table-body-row {
+      display: block;
+      margin-bottom: 10px;
+      border-top: 1px solid #ececec;
+      border-left: 1px solid #ececec;
+
+      th,
+      .table-body-row--header,
+      td,
+      .table-body-row--item {
+        &::before {
+          content: attr(data-heading);
+          display: inline-block;
+          width: 120px;
+          margin-right: 8px;
+          margin-left: -8px;
+          padding: 8px;
+          overflow: hidden;
+          border: 0;
+          background-color: $gunmetal-grey;
+          color: $white;
+          font-family: $font-primary;
+
+          @include font-size(15px);
+
+          font-weight: bold;
+          line-height: 1.5;
+          vertical-align: top;
+        }
+      }
+    }
+  }
+}
+
+.table-scroll-wrapper {
+  overflow-x: auto;
+
+  table,
+  .table {
+    width: auto;
+  }
+}
+
 table,
 .table {
   width: 100%;
@@ -26,10 +93,11 @@ table,
         border-bottom: 1px solid #ececec;
         background-color: $gunmetal-grey;
         color: $white;
+
         @include font-size(20px);
+
         font-weight: bold;
         line-height: 2.4;
-        @include word-break;
       }
     }
 
@@ -87,10 +155,11 @@ table,
         border-bottom: 1px solid #ececec;
         color: $blueberry;
         font-family: $font-secondary;
+
         @include font-size(17px);
+
         font-weight: normal;
         line-height: 2.82;
-        @include word-break;
       }
 
       th,
@@ -112,10 +181,11 @@ table,
         border-right: 1px solid #ececec;
         border-bottom: 1px solid #ececec;
         color: $body-copy;
+
         @include font-size(17px);
+
         font-weight: normal;
         line-height: 1.88;
-        @include word-break;
       }
     }
 
@@ -139,5 +209,14 @@ table,
         justify-content: flex-end;
       }
     }
+  }
+
+  @include phone-down {
+    @include phone-down-style;
+  }
+
+
+  &.table--compact {
+    @include phone-down-style;
   }
 }
