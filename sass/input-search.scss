@@ -14,10 +14,12 @@
 
   &::before {
     @extend %icon-search;
+
     position: absolute;
     top: calc(50% - 12px);
     left: 0;
     color: $white;
+
     @include icon(24px);
   }
 
@@ -57,7 +59,9 @@
   outline: none;
   background-color: transparent;
   color: $white;
+
   @include font-size(20px);
+
   font-stretch: normal;
   font-style: normal;
   font-weight: 600;
@@ -66,7 +70,9 @@
   @include placeholder {
     opacity: 0.6;
     color: $white;
+
     @include font-size(20px);
+
     font-style: normal;
     font-weight: 300;
   }

@@ -44,3 +44,23 @@ button {
     }
   }
 }
+
+@include phone-down {
+  ::-webkit-scrollbar {
+    -webkit-appearance: none;
+
+    &::horizontal {
+      height: 16px;
+    }
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border: 2px solid #eeeeee;
+    border-radius: 10px;
+    background-color: #cccccc;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #eeeeee;
+  }
+}

@@ -365,6 +365,18 @@ button {
       height: 0px;
       -webkit-appearance: none; }
 
+@media (max-width: 514px) {
+  ::-webkit-scrollbar {
+    -webkit-appearance: none; }
+    ::-webkit-scrollbar::horizontal {
+      height: 16px; }
+  ::-webkit-scrollbar-thumb {
+    border: 2px solid #eeeeee;
+    border-radius: 10px;
+    background-color: #cccccc; }
+  ::-webkit-scrollbar-track {
+    background-color: #eeeeee; } }
+
 .form {
   width: 100%; }
   .form .fieldset {
@@ -1297,58 +1309,57 @@ textarea,
     font-size: 18px;
     font-weight: 300;
     line-height: 18px; }
+  .input-sticky-wrapper .input-search-sticky {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px 0px 7px 43px;
+    overflow: hidden;
+    border: 0;
+    border-radius: 0px;
+    border-color: #20a49d;
+    outline: none;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 18px;
+    font-size: 1.125rem;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal; }
+    .input-sticky-wrapper .input-search-sticky::placeholder {
+      opacity: 0.6;
+      color: #ffffff;
+      font-size: 20px;
+      font-size: 1.25rem;
+      font-style: normal;
+      font-weight: 300; }
+    .input-sticky-wrapper .input-search-sticky::-webkit-input-placeholder {
+      opacity: 0.6;
+      color: #ffffff;
+      font-size: 20px;
+      font-size: 1.25rem;
+      font-style: normal;
+      font-weight: 300; }
+    .input-sticky-wrapper .input-search-sticky::-moz-placeholder {
+      opacity: 0.6;
+      color: #ffffff;
+      font-size: 20px;
+      font-size: 1.25rem;
+      font-style: normal;
+      font-weight: 300; }
+    .input-sticky-wrapper .input-search-sticky:-ms-input-placeholder {
+      opacity: 0.6;
+      color: #ffffff;
+      font-size: 20px;
+      font-size: 1.25rem;
+      font-style: normal;
+      font-weight: 300; }
 
 .input-sticky-wrapper--expanded {
   width: 100%; }
   .input-sticky-wrapper--expanded .input-search-sticky {
     padding-right: 40px;
     border-bottom: 2px solid #ffffff; }
-
-.input-search-sticky {
-  width: 100%;
-  max-width: 100%;
-  padding: 10px 0px 7px 43px;
-  overflow: hidden;
-  border: 0;
-  border-radius: 0px;
-  border-color: #20a49d;
-  outline: none;
-  background-color: transparent;
-  color: #ffffff;
-  font-size: 18px;
-  font-size: 1.125rem;
-  font-stretch: normal;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal; }
-  .input-search-sticky::placeholder {
-    opacity: 0.6;
-    color: #ffffff;
-    font-size: 20px;
-    font-size: 1.25rem;
-    font-style: normal;
-    font-weight: 300; }
-  .input-search-sticky::-webkit-input-placeholder {
-    opacity: 0.6;
-    color: #ffffff;
-    font-size: 20px;
-    font-size: 1.25rem;
-    font-style: normal;
-    font-weight: 300; }
-  .input-search-sticky::-moz-placeholder {
-    opacity: 0.6;
-    color: #ffffff;
-    font-size: 20px;
-    font-size: 1.25rem;
-    font-style: normal;
-    font-weight: 300; }
-  .input-search-sticky:-ms-input-placeholder {
-    opacity: 0.6;
-    color: #ffffff;
-    font-size: 20px;
-    font-size: 1.25rem;
-    font-style: normal;
-    font-weight: 300; }
 
 .navigator {
   display: flex;
@@ -2173,8 +2184,8 @@ table,
     padding: 0px 0px 5px 6px;
     list-style-type: none; }
     .tree-menu .tree-menu__section .tree-menu__section-item {
-      line-height: 1.1;
-      margin-bottom: 6px; }
+      margin-bottom: 6px;
+      line-height: 1.1; }
       .tree-menu .tree-menu__section .tree-menu__section-item a {
         color: #4f4f4f;
         font-size: 15px;

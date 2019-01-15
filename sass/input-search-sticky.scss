@@ -17,11 +17,43 @@
 
   &::before {
     @extend %icon-search;
+
     position: absolute;
     top: 12px;
     left: 12px;
     color: $white;
+
     @include icon(18px);
+  }
+
+  .input-search-sticky {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px 0px 7px 43px;
+    overflow: hidden;
+    border: 0;
+    border-radius: 0px;
+    border-color: $tealish;
+    outline: none;
+    background-color: transparent;
+    color: $white;
+
+    @include font-size(18px);
+
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    @include placeholder {
+      opacity: 0.6;
+      color: $white;
+
+      @include font-size(20px);
+
+      font-style: normal;
+      font-weight: 300;
+    }
   }
 }
 
@@ -31,31 +63,5 @@
   .input-search-sticky {
     padding-right: 40px;
     border-bottom: 2px solid $white;
-  }
-}
-
-.input-search-sticky {
-  width: 100%;
-  max-width: 100%;
-  padding: 10px 0px 7px 43px;
-  overflow: hidden;
-  border: 0;
-  border-radius: 0px;
-  border-color: $tealish;
-  outline: none;
-  background-color: transparent;
-  color: $white;
-  @include font-size(18px);
-  font-stretch: normal;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-
-  @include placeholder {
-    opacity: 0.6;
-    color: $white;
-    @include font-size(20px);
-    font-style: normal;
-    font-weight: 300;
   }
 }
