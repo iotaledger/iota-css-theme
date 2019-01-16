@@ -2,6 +2,7 @@ $min-width: 375px;
 $max-width: 1420px;
 
 $transition-duration: 0.3s;
+$transition-duration-quick: 0.2s;
 
 html {
   box-sizing: border-box;
@@ -42,25 +43,5 @@ button {
       height: 0px;
       -webkit-appearance: none;
     }
-  }
-}
-
-@include phone-down {
-  ::-webkit-scrollbar {
-    -webkit-appearance: none;
-
-    &::horizontal {
-      height: 16px;
-    }
-  }
-
-  ::-webkit-scrollbar-thumb {
-    border: 2px solid #eeeeee;
-    border-radius: 10px;
-    background-color: #cccccc;
-  }
-
-  ::-webkit-scrollbar-track {
-    background-color: #eeeeee;
   }
 }

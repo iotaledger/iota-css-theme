@@ -26,8 +26,15 @@ $desktop-width: 1024px;
   }
 }
 
+@mixin phone-up {
+  @media (min-width: #{$phone-width}) {
+    @content;
+  }
+}
+
 @mixin phone-down {
   @media (max-width: #{$phone-width}) {
     @content;
   }
 }
+

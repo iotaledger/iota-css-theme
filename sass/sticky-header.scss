@@ -1,97 +1,126 @@
-// Sticky header
+// Sticky Header
 //
 // This is the home page header.
 //
 // Markup: html/sticky-header.html
 //
-// .input-sticky-wrapper--expanded - when the input is expandedf.
-//
-// Styleguide Organisms.sticky-header
+// Styleguide Organisms.Sticky Header
 
 .sticky-header {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 22px 40px 22px 40px;
   background: $hero-dark-gradient;
-
-  .input-sticky-wrapper {
-    &.input-sticky-wrapper--expanded {
-      margin-right: 0px;
-    }
-  }
-
-  @include desktop {
-    .input-sticky-wrapper {
-      &.input-sticky-wrapper--expanded {
-        width: 389px;
-      }
-    }
-  }
 
   @include tablet-down {
     padding: 15px 20px 15px 20px;
   }
-}
 
-.sticky-header__head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
-.sticky-header__body {
-  max-width: $max-width;
-  margin: 87px auto 50px auto;
-
-  @include desktop {
-    display: flex;
-    justify-content: space-between;
+  .sticky-header__brand {
+    width: 167px;
+    height: 56px;
+    margin-right: 20px;
+    transition: $transition-duration ease-in;
+    transition-property: width, opacity;
+    opacity: 1;
   }
-}
 
-.sticky-header__brand {
-  width: 167px;
-  height: 56px;
-  margin-right: 30px;
-}
+  .sticky-header__control {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-top: 4px;
 
-.sticky-header__control {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  padding-top: 4px;
+    .input-sticky-wrapper {
+      &::before {
+        top: calc(50% - 12px);
+        left: 8px;
 
-  .input-sticky-wrapper {
-    margin-right: 10px;
+        @include font-size(24px);
+      }
 
-    &::before {
-      top: calc(50% - 12px);
-      left: 8px;
-      font-size: x-large;
+      @include phone-up {
+        &.input-sticky-wrapper--expanded {
+          width: 389px;
+        }
+      }
+
+      .sticky-header__icon-close {
+        position: absolute;
+        top: 7px;
+        right: 0px;
+        transition: opacity $transition-duration-quick ease-in;
+        border: 0;
+        opacity: 0;
+        background: none;
+        color: $white;
+        cursor: pointer;
+
+        &::before {
+          @extend %icon-cross;
+
+          @include icon(24px);
+        }
+
+        &:focus {
+          outline: none;
+        }
+
+        &:disabled {
+          cursor: default;
+          pointer-events: none;
+        }
+      }
+    }
+
+    .sticky-header__icon-burger {
+      border: 0;
+      background: none;
+      color: $white;
+      cursor: pointer;
+
+      &::before {
+        @extend %icon-burger;
+
+        @include icon(24px);
+      }
+
+      &:focus {
+        outline: none;
+      }
+
+      &:hover {
+        opacity: 0.5;
+      }
+
+      &:disabled {
+        cursor: default;
+        pointer-events: none;
+      }
     }
   }
-}
 
-.sticky-header__icon {
-  border: 0;
-  background: none;
-  color: $white;
-  cursor: pointer;
+  &.sticky-header--expanded {
+    @include phone-down {
+      .sticky-header__brand {
+        width: 0px;
+        margin-right: 0px;
+        transition: $transition-duration-quick ease-in;
+        transition-property: width, opacity;
+        opacity: 0;
+      }
+    }
 
-  &::before {
-    @extend %icon-burger;
-    @include icon(24px);
-  }
 
-  &:focus {
-    outline: none;
-  }
-
-  &:hover {
-    opacity: 0.5;
-  }
-
-  &:disabled {
-    cursor: default;
-    pointer-events: none;
+    .sticky-header__control {
+      .input-sticky-wrapper {
+        .sticky-header__icon-close {
+          transition-duration: $transition-duration;
+          opacity: 1;
+        }
+      }
+    }
   }
 }

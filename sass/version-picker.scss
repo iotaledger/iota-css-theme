@@ -97,13 +97,13 @@
   outline: none;
   background: none;
   color: $white;
-  cursor: pointer;
 
   @include font-size(17px);
 
   font-weight: bold;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: pointer;
 
   // sass-lint:disable no-property-vendor-prefix
   -webkit-appearance: none;

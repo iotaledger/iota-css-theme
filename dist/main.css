@@ -365,18 +365,6 @@ button {
       height: 0px;
       -webkit-appearance: none; }
 
-@media (max-width: 514px) {
-  ::-webkit-scrollbar {
-    -webkit-appearance: none; }
-    ::-webkit-scrollbar::horizontal {
-      height: 16px; }
-  ::-webkit-scrollbar-thumb {
-    border: 2px solid #eeeeee;
-    border-radius: 10px;
-    background-color: #cccccc; }
-  ::-webkit-scrollbar-track {
-    background-color: #eeeeee; } }
-
 .form {
   width: 100%; }
   .form .fieldset {
@@ -875,7 +863,7 @@ textarea,
 .input-register__button::after {
   content: '→'; }
 
-.header .header__wrapper .header__head .header__icon::before, .sticky-header__icon::before {
+.header .header__wrapper .header__head .header__icon::before, .sticky-header .sticky-header__control .sticky-header__icon-burger::before {
   content: '🍔'; }
 
 .scroll-to-top i.icon-chevron-up::before, .side-menu__group--expanded .side-menu__heading::before {
@@ -890,7 +878,7 @@ textarea,
 .arrow-button--left::before {
   content: '<'; }
 
-.feedback-overlay .feedback-overlay-close i.icon-cross::before, .side-menu__close::before {
+.feedback-overlay .feedback-overlay-close i.icon-cross::before, .side-menu__close::before, .sticky-header .sticky-header__control .input-sticky-wrapper .sticky-header__icon-close::before {
   content: 'X'; }
 
 .tabs .tab-header .tab-header-copy .tab-header-copy-button i.icon-copy::before {
@@ -1300,8 +1288,8 @@ textarea,
   display: inline-flex;
   position: relative;
   width: 40px;
-  transition: 0.3s ease;
-  transition-property: width; }
+  overflow: hidden;
+  transition: width 0.2s ease-out; }
   .input-sticky-wrapper::before {
     position: absolute;
     top: 12px;
@@ -1313,13 +1301,12 @@ textarea,
     line-height: 18px; }
   .input-sticky-wrapper .input-search-sticky {
     width: 100%;
-    max-width: 100%;
     padding: 10px 0px 7px 43px;
-    overflow: hidden;
+    transition: opacity 0.3s ease;
     border: 0;
-    border-radius: 0px;
-    border-color: #20a49d;
+    border-bottom: 2px solid transparent;
     outline: none;
+    opacity: 0;
     background-color: transparent;
     color: #ffffff;
     font-size: 18px;
@@ -1356,12 +1343,13 @@ textarea,
       font-size: 1.25rem;
       font-style: normal;
       font-weight: 300; }
-
-.input-sticky-wrapper--expanded {
-  width: 100%; }
-  .input-sticky-wrapper--expanded .input-search-sticky {
-    padding-right: 40px;
-    border-bottom: 2px solid #ffffff; }
+  .input-sticky-wrapper.input-sticky-wrapper--expanded {
+    width: 100%;
+    transition: width 0.3s ease-in; }
+    .input-sticky-wrapper.input-sticky-wrapper--expanded .input-search-sticky {
+      padding-right: 40px;
+      border-bottom-color: #ffffff;
+      opacity: 1; }
 
 .navigator {
   display: flex;
@@ -2622,12 +2610,12 @@ table,
   outline: none;
   background: none;
   color: #ffffff;
-  cursor: pointer;
   font-size: 17px;
   font-size: 1.0625rem;
   font-weight: bold;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none; }
@@ -2990,62 +2978,78 @@ footer {
       text-align: center; }
 
 .sticky-header {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 22px 40px 22px 40px;
   background: linear-gradient(to right, #092a33, #019792); }
-  .sticky-header .input-sticky-wrapper.input-sticky-wrapper--expanded {
-    margin-right: 0px; }
-  @media (min-width: 1024px) {
-    .sticky-header .input-sticky-wrapper.input-sticky-wrapper--expanded {
-      width: 389px; } }
   @media (max-width: 767px) {
     .sticky-header {
       padding: 15px 20px 15px 20px; } }
-
-.sticky-header__head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; }
-
-.sticky-header__body {
-  max-width: 1420px;
-  margin: 87px auto 50px auto; }
-  @media (min-width: 1024px) {
-    .sticky-header__body {
-      display: flex;
-      justify-content: space-between; } }
-
-.sticky-header__brand {
-  width: 167px;
-  height: 56px;
-  margin-right: 30px; }
-
-.sticky-header__control {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  padding-top: 4px; }
-  .sticky-header__control .input-sticky-wrapper {
-    margin-right: 10px; }
-    .sticky-header__control .input-sticky-wrapper::before {
+  .sticky-header .sticky-header__brand {
+    width: 167px;
+    height: 56px;
+    margin-right: 20px;
+    transition: 0.3s ease-in;
+    transition-property: width, opacity;
+    opacity: 1; }
+  .sticky-header .sticky-header__control {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-top: 4px; }
+    .sticky-header .sticky-header__control .input-sticky-wrapper::before {
       top: calc(50% - 12px);
       left: 8px;
-      font-size: x-large; }
-
-.sticky-header__icon {
-  border: 0;
-  background: none;
-  color: #ffffff;
-  cursor: pointer; }
-  .sticky-header__icon::before {
-    font-family: "IOTA icons";
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 24px; }
-  .sticky-header__icon:focus {
-    outline: none; }
-  .sticky-header__icon:hover {
-    opacity: 0.5; }
-  .sticky-header__icon:disabled {
-    cursor: default;
-    pointer-events: none; }
+      font-size: 24px;
+      font-size: 1.5rem; }
+    @media (min-width: 514px) {
+      .sticky-header .sticky-header__control .input-sticky-wrapper.input-sticky-wrapper--expanded {
+        width: 389px; } }
+    .sticky-header .sticky-header__control .input-sticky-wrapper .sticky-header__icon-close {
+      position: absolute;
+      top: 7px;
+      right: 0px;
+      transition: opacity 0.2s ease-in;
+      border: 0;
+      opacity: 0;
+      background: none;
+      color: #ffffff;
+      cursor: pointer; }
+      .sticky-header .sticky-header__control .input-sticky-wrapper .sticky-header__icon-close::before {
+        font-family: "IOTA icons";
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 24px; }
+      .sticky-header .sticky-header__control .input-sticky-wrapper .sticky-header__icon-close:focus {
+        outline: none; }
+      .sticky-header .sticky-header__control .input-sticky-wrapper .sticky-header__icon-close:disabled {
+        cursor: default;
+        pointer-events: none; }
+    .sticky-header .sticky-header__control .sticky-header__icon-burger {
+      border: 0;
+      background: none;
+      color: #ffffff;
+      cursor: pointer; }
+      .sticky-header .sticky-header__control .sticky-header__icon-burger::before {
+        font-family: "IOTA icons";
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 24px; }
+      .sticky-header .sticky-header__control .sticky-header__icon-burger:focus {
+        outline: none; }
+      .sticky-header .sticky-header__control .sticky-header__icon-burger:hover {
+        opacity: 0.5; }
+      .sticky-header .sticky-header__control .sticky-header__icon-burger:disabled {
+        cursor: default;
+        pointer-events: none; }
+  @media (max-width: 514px) {
+    .sticky-header.sticky-header--expanded .sticky-header__brand {
+      width: 0px;
+      margin-right: 0px;
+      transition: 0.2s ease-in;
+      transition-property: width, opacity;
+      opacity: 0; } }
+  .sticky-header.sticky-header--expanded .sticky-header__control .input-sticky-wrapper .sticky-header__icon-close {
+    transition-duration: 0.3s;
+    opacity: 1; }

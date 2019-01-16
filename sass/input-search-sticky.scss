@@ -12,8 +12,8 @@
   display: inline-flex;
   position: relative;
   width: 40px;
-  transition: $transition-duration ease;
-  transition-property: width;
+  overflow: hidden;
+  transition: width $transition-duration-quick ease-out;
 
   &::before {
     @extend %icon-search;
@@ -28,13 +28,12 @@
 
   .input-search-sticky {
     width: 100%;
-    max-width: 100%;
     padding: 10px 0px 7px 43px;
-    overflow: hidden;
+    transition: opacity $transition-duration ease;
     border: 0;
-    border-radius: 0px;
-    border-color: $tealish;
+    border-bottom: 2px solid transparent;
     outline: none;
+    opacity: 0;
     background-color: transparent;
     color: $white;
 
@@ -55,13 +54,15 @@
       font-weight: 300;
     }
   }
-}
 
-.input-sticky-wrapper--expanded {
-  width: 100%;
+  &.input-sticky-wrapper--expanded {
+    width: 100%;
+    transition: width $transition-duration ease-in;
 
-  .input-search-sticky {
-    padding-right: 40px;
-    border-bottom: 2px solid $white;
+    .input-search-sticky {
+      padding-right: 40px;
+      border-bottom-color: $white;
+      opacity: 1;
+    }
   }
 }

@@ -1,13 +1,21 @@
 <header class="sticky-header">
-  <div class="sticky-header__wrapper">
-    <section class="sticky-header__head">
-      <img class="sticky-header__brand" src="assets/Logo.svg" />
-      <div class="sticky-header__control">
-          <div class="input-sticky-wrapper {{modifier_class}}">
-            <input type="text" class="input-search-sticky" placeholder="Search for topics" />
-          </div>
-          <button class="sticky-header__icon"></button>
-      </div>
-    </section>
+  <img class="sticky-header__brand" src="assets/Logo.svg" />
+  <div class="sticky-header__control">
+    <div class="input-sticky-wrapper {{modifier_class}}">
+      <input type="text" class="input-search-sticky" placeholder="Search for topics" />
+      <button class="sticky-header__icon-close"></button>
+    </div>
+    <button class="sticky-header__icon-burger"></button>
+  </div>
+</header>
+<br/>
+<header class="sticky-header sticky-header--expanded">
+  <img class="sticky-header__brand" src="assets/Logo.svg" />
+  <div class="sticky-header__control">
+    <div class="input-sticky-wrapper input-sticky-wrapper--expanded">
+      <input type="text" class="input-search-sticky" placeholder="Search for topics" />
+      <button class="sticky-header__icon-close"></button>
+    </div>
+    <button class="sticky-header__icon-burger"></button>
   </div>
 </header>
