@@ -342,6 +342,7 @@ html {
   box-sizing: inherit; }
 
 body {
+  min-width: 320px;
   padding: 0;
   color: #696f76;
   font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -1288,8 +1289,10 @@ textarea,
   display: inline-flex;
   position: relative;
   width: 40px;
+  max-width: 389px;
   overflow: hidden;
-  transition: width 0.2s ease-out; }
+  transition: 0.1s ease;
+  transition-property: width; }
   .input-sticky-wrapper::before {
     position: absolute;
     top: 12px;
@@ -1302,7 +1305,7 @@ textarea,
   .input-sticky-wrapper .input-search-sticky {
     width: 100%;
     padding: 10px 0px 7px 43px;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.1s ease;
     border: 0;
     border-bottom: 2px solid transparent;
     outline: none;
@@ -1345,9 +1348,11 @@ textarea,
       font-weight: 300; }
   .input-sticky-wrapper.input-sticky-wrapper--expanded {
     width: 100%;
-    transition: width 0.3s ease-in; }
+    transition: 0.3s ease;
+    transition-property: width; }
     .input-sticky-wrapper.input-sticky-wrapper--expanded .input-search-sticky {
       padding-right: 40px;
+      transition: opacity 0.3s ease;
       border-bottom-color: #ffffff;
       opacity: 1; }
 
@@ -2981,18 +2986,24 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 107px;
   padding: 22px 40px 22px 40px;
   background: linear-gradient(to right, #092a33, #019792); }
   @media (max-width: 767px) {
     .sticky-header {
+      height: 93px;
       padding: 15px 20px 15px 20px; } }
   .sticky-header .sticky-header__brand {
+    top: 22px;
     width: 167px;
     height: 56px;
     margin-right: 20px;
-    transition: 0.3s ease-in;
-    transition-property: width, opacity;
+    transition: opacity 0.3s ease;
     opacity: 1; }
+    @media (max-width: 514px) {
+      .sticky-header .sticky-header__brand {
+        position: absolute;
+        top: 15px; } }
   .sticky-header .sticky-header__control {
     display: flex;
     justify-content: flex-end;
@@ -3003,14 +3014,11 @@ footer {
       left: 8px;
       font-size: 24px;
       font-size: 1.5rem; }
-    @media (min-width: 514px) {
-      .sticky-header .sticky-header__control .input-sticky-wrapper.input-sticky-wrapper--expanded {
-        width: 389px; } }
     .sticky-header .sticky-header__control .input-sticky-wrapper .sticky-header__icon-close {
       position: absolute;
       top: 7px;
       right: 0px;
-      transition: opacity 0.2s ease-in;
+      transition: opacity 0.3s ease;
       border: 0;
       opacity: 0;
       background: none;
@@ -3046,11 +3054,8 @@ footer {
         pointer-events: none; }
   @media (max-width: 514px) {
     .sticky-header.sticky-header--expanded .sticky-header__brand {
-      width: 0px;
       margin-right: 0px;
-      transition: 0.2s ease-in;
-      transition-property: width, opacity;
+      transition: opacity 0.1s ease;
       opacity: 0; } }
   .sticky-header.sticky-header--expanded .sticky-header__control .input-sticky-wrapper .sticky-header__icon-close {
-    transition-duration: 0.3s;
     opacity: 1; }

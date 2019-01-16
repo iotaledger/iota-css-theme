@@ -10,21 +10,26 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 107px;
   padding: 22px 40px 22px 40px;
   background: $hero-dark-gradient;
 
   @include tablet-down {
+    height: 93px;
     padding: 15px 20px 15px 20px;
   }
 
-
   .sticky-header__brand {
+    top: 22px;
     width: 167px;
     height: 56px;
     margin-right: 20px;
-    transition: $transition-duration ease-in;
-    transition-property: width, opacity;
+    transition: opacity $transition-duration ease;
     opacity: 1;
+    @include phone-down {
+      position: absolute;
+      top: 15px;
+    }
   }
 
   .sticky-header__control {
@@ -41,17 +46,11 @@
         @include font-size(24px);
       }
 
-      @include phone-up {
-        &.input-sticky-wrapper--expanded {
-          width: 389px;
-        }
-      }
-
       .sticky-header__icon-close {
         position: absolute;
         top: 7px;
         right: 0px;
-        transition: opacity $transition-duration-quick ease-in;
+        transition: opacity $transition-duration ease;
         border: 0;
         opacity: 0;
         background: none;
@@ -62,6 +61,7 @@
           @extend %icon-cross;
 
           @include icon(14px);
+
           line-height: 24px;
         }
 
@@ -106,10 +106,8 @@
   &.sticky-header--expanded {
     @include phone-down {
       .sticky-header__brand {
-        width: 0px;
         margin-right: 0px;
-        transition: $transition-duration-quick ease-in;
-        transition-property: width, opacity;
+        transition: opacity $transition-duration-quick ease;
         opacity: 0;
       }
     }
@@ -118,7 +116,6 @@
     .sticky-header__control {
       .input-sticky-wrapper {
         .sticky-header__icon-close {
-          transition-duration: $transition-duration;
           opacity: 1;
         }
       }

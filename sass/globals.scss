@@ -2,7 +2,7 @@ $min-width: 375px;
 $max-width: 1420px;
 
 $transition-duration: 0.3s;
-$transition-duration-quick: 0.2s;
+$transition-duration-quick: 0.1s;
 
 html {
   box-sizing: border-box;
@@ -15,6 +15,7 @@ html {
 }
 
 body {
+  min-width: 320px;
   padding: 0;
   color: $body-copy;
   font-family: $font-primary;

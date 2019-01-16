@@ -12,8 +12,10 @@
   display: inline-flex;
   position: relative;
   width: 40px;
+  max-width: 389px;
   overflow: hidden;
-  transition: width $transition-duration-quick ease-out;
+  transition: $transition-duration-quick ease;
+  transition-property: width;
 
   &::before {
     @extend %icon-search;
@@ -29,7 +31,7 @@
   .input-search-sticky {
     width: 100%;
     padding: 10px 0px 7px 43px;
-    transition: opacity $transition-duration ease;
+    transition: opacity $transition-duration-quick ease;
     border: 0;
     border-bottom: 2px solid transparent;
     outline: none;
@@ -57,10 +59,12 @@
 
   &.input-sticky-wrapper--expanded {
     width: 100%;
-    transition: width $transition-duration ease-in;
+    transition: $transition-duration ease;
+    transition-property: width;
 
     .input-search-sticky {
       padding-right: 40px;
+      transition: opacity $transition-duration ease;
       border-bottom-color: $white;
       opacity: 1;
     }
