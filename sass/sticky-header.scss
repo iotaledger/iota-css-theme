@@ -61,7 +61,8 @@
         &::before {
           @extend %icon-cross;
 
-          @include icon(24px);
+          @include icon(14px);
+          line-height: 24px;
         }
 
         &:focus {

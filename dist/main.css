@@ -3018,8 +3018,9 @@ footer {
       cursor: pointer; }
       .sticky-header .sticky-header__control .input-sticky-wrapper .sticky-header__icon-close::before {
         font-family: "IOTA icons";
-        font-size: 24px;
+        font-size: 14px;
         font-weight: 300;
+        line-height: 14px;
         line-height: 24px; }
       .sticky-header .sticky-header__control .input-sticky-wrapper .sticky-header__icon-close:focus {
         outline: none; }
