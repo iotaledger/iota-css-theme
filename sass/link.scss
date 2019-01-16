@@ -3,7 +3,8 @@
 // Markup: html/link.html
 //
 // .link - Default link.
-// .link:hover - Link in hover state.
+// :hover - Link in hover state.
+// .disabled - Link in disabled state.
 //
 // Styleguide Atoms.Link
 
@@ -25,5 +26,11 @@ a,
 
   &:focus {
     outline: 0;
+  }
+
+  &.disabled {
+    opacity: 0.5;
+    cursor: default;
+    pointer-events: none;
   }
 }

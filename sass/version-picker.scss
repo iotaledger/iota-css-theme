@@ -88,7 +88,7 @@
 
 .version-picker__select {
   width: 100%;
-  max-width: 250px;
+  max-width: none;
   height: 50px;
   padding-right: 55px;
   padding-left: 20px;
@@ -97,6 +97,7 @@
   outline: none;
   background: none;
   color: $white;
+  cursor: pointer;
 
   @include font-size(17px);
 
@@ -135,9 +136,5 @@
   &:-moz-focusring * {
     color: $black;
     text-shadow: none;
-  }
-
-  @include phone-down {
-    max-width: unset;
   }
 }

@@ -10,70 +10,86 @@
   display: flex;
   min-height: 120px;
   background-color: $white;
-  @include font-size(18px);
 
   @include desktop {
     height: 152px;
-    @include font-size(24px);
-    font-weight: bold;
-  }
-}
-
-.navigator__back,
-.navigator__next {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  width: 100%;
-  padding: 18px 16px;
-  border: 1px $sand-grey solid;
-  border-right: 0;
-  border-left: 0;
-  background-color: transparent;
-  text-align: left;
-  text-decoration: underline;
-  cursor: pointer;
-
-  &:focus {
-    outline: none;
   }
 
-  &:disabled {
-    opacity: 0.5;
-    text-decoration: none;
-    cursor: default;
-    pointer-events: none;
-  }
 
-  &:hover {
-    &:not([disabled]) {
-      text-decoration: underline;
+  .navigator__back,
+  .navigator__next {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    padding: 18px 16px;
+    border: 1px $sand-grey solid;
+    border-right: 0;
+    border-left: 0;
+    background-color: transparent;
+    text-align: left;
+    text-decoration: underline;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      text-decoration: none;
+      cursor: default;
+      pointer-events: none;
+    }
+
+    &:hover {
+      &:not([disabled]) {
+        text-decoration: underline;
+      }
+    }
+
+    @include desktop {
+      padding-left: 90px;
+      border-width: 2px;
+      text-decoration: none;
     }
   }
 
-  @include desktop {
-    padding-left: 90px;
-    border-width: 2px;
-    text-decoration: none;
+  .navigator__next {
+    align-items: flex-end;
+    border-left: 1px $sand-grey solid;
+    text-align: right;
+
+    @include desktop {
+      padding: 18px 90px 18px 16px;
+      border-width: 2px;
+    }
   }
-}
 
-.navigator__next {
-  align-items: flex-end;
-  border-left: 1px $sand-grey solid;
-  text-align: right;
+  .navigator__label {
+    @include font-size(18px);
 
-  @include desktop {
-    padding: 18px 90px 18px 16px;
-    border-width: 2px;
+    color: $tealish;
+    font-weight: normal;
+
+    @include desktop {
+      @include font-size(24px);
+
+      font-weight: bold;
+    }
   }
-}
 
-.navigator__label {
-  color: $tealish;
-}
+  .navigator__title {
+    @include font-size(18px);
 
-.navigator__title {
-  color: $body-copy;
+    color: $body-copy;
+    font-weight: normal;
+
+    @include desktop {
+      @include font-size(24px);
+
+      font-weight: bold;
+    }
+  }
 }
