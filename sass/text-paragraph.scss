@@ -12,4 +12,8 @@ p,
   color: $body-copy;
   @include font-size(17px);
   line-height: 1.9;
+
+  a {
+    text-decoration: underline;
+  }
 }

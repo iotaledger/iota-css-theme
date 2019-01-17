@@ -315,7 +315,7 @@ body {
   --black: #1c1e21;
   --white: #ffffff;
   --gunmetal-grey: #3f3f3f;
-  --body-copy: #696f76;
+  --body-copy: #4f4f4f;
   --brown-grey: #8e8e8e;
   --dark-grey: #1c1e21;
   --light-grey: #c4c4c4;
@@ -344,7 +344,7 @@ html {
 body {
   min-width: 320px;
   padding: 0;
-  color: #696f76;
+  color: #4f4f4f;
   font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 200; }
   body.no-scroll {
@@ -453,7 +453,8 @@ strong {
     color: #ffffff; }
     @media (min-width: 768px) {
       .arrow-button::before {
-        font-size: 40px; } }
+        font-size: 40px;
+        line-height: 40px; } }
   .arrow-button:hover:not([disabled]) {
     opacity: 0.75;
     cursor: pointer; }
@@ -683,7 +684,7 @@ hr,
 a,
 .link {
   outline: 0;
-  color: #696f76;
+  color: #4f4f4f;
   font-size: 16px;
   font-size: 1rem;
   font-weight: bold;
@@ -706,7 +707,7 @@ a,
     pointer-events: none; }
 
 li {
-  color: #696f76;
+  color: #4f4f4f;
   font-size: 17px;
   font-size: 1.0625rem;
   line-height: 2; }
@@ -781,7 +782,7 @@ h6,
   color: #17a2b8; }
 
 .text-inline {
-  color: #696f76;
+  color: #4f4f4f;
   font-size: 17px;
   font-size: 1.0625rem;
   font-stretch: normal;
@@ -827,10 +828,13 @@ h6,
 p,
 .text-paragraph {
   margin-bottom: 1.0625rem;
-  color: #696f76;
+  color: #4f4f4f;
   font-size: 17px;
   font-size: 1.0625rem;
   line-height: 1.9; }
+  p a,
+  .text-paragraph a {
+    text-decoration: underline; }
 
 textarea,
 .textarea {
@@ -838,7 +842,7 @@ textarea,
   padding: 25px;
   border: 1px solid #c4c4c4;
   border-radius: 5px;
-  color: #696f76;
+  color: #4f4f4f;
   resize: none; }
   textarea:focus,
   .textarea:focus {
@@ -1095,7 +1099,7 @@ textarea,
   border-radius: 5px 0 0 5px;
   outline: none;
   background-color: #ffffff;
-  color: #696f76;
+  color: #4f4f4f;
   font-size: 18px;
   font-size: 1.125rem;
   font-stretch: normal;
@@ -1411,7 +1415,7 @@ textarea,
   .navigator .navigator__title {
     font-size: 18px;
     font-size: 1.125rem;
-    color: #696f76;
+    color: #4f4f4f;
     font-weight: normal; }
     @media (min-width: 1024px) {
       .navigator .navigator__title {
@@ -1721,12 +1725,12 @@ textarea,
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding: 19px 16px;
+    padding: 0 16px;
     background-color: rgba(255, 255, 255, 0.1);
     color: #ffffff; }
     @media (min-width: 768px) {
       .sub-header__wrapper .sub-header {
-        height: 110px;
+        height: 100px;
         padding: 0 40px; } }
     .sub-header__wrapper .sub-header .sub-header__title {
       display: block;
@@ -1759,8 +1763,7 @@ textarea,
             padding-left: 10px;
             font-stretch: normal;
             font-style: normal;
-            font-weight: bold;
-            line-height: 1.59; } }
+            font-weight: bold; } }
 
 table,
 .table {
@@ -1974,7 +1977,7 @@ table,
       padding: 12px 18px 12px 18px;
       border-right: 1px solid #ececec;
       border-bottom: 1px solid #ececec;
-      color: #696f76;
+      color: #4f4f4f;
       font-size: 17px;
       font-size: 1.0625rem;
       font-weight: normal;
@@ -2698,7 +2701,7 @@ table,
       transition-property: border, color;
       border: 0;
       background: none;
-      color: #696f76;
+      color: #4f4f4f;
       font-size: 17px;
       font-size: 1.0625rem;
       font-weight: bold;
@@ -2878,7 +2881,7 @@ footer {
       .header .header__wrapper .header__head .header__brand {
         width: 167px;
         height: 56px;
-        margin: 25px 20px; }
+        margin: 22px 20px; }
         @media (min-width: 768px) {
           .header .header__wrapper .header__head .header__brand {
             margin: 25px 40px; } }
@@ -2980,9 +2983,11 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 107px;
-  padding: 25px 40px 19px 40px;
+  height: 100px;
+  padding: 0 40px;
   background: linear-gradient(to right, #092a33, #019792); }
+  .sticky-header > a {
+    height: 56px; }
   @media (max-width: 767px) {
     .sticky-header {
       height: 93px;

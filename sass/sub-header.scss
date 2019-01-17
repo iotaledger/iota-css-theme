@@ -14,12 +14,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding: 19px 16px;
+    padding: 0 16px;
     background-color: rgba(255, 255, 255, 0.1);
     color: $white;
 
     @include tablet-up {
-      height: 110px;
+      height: 100px;
       padding: 0 40px;
     }
 
@@ -63,7 +63,6 @@
           font-stretch: normal;
           font-style: normal;
           font-weight: bold;
-          line-height: 1.59;
         }
       }
     }

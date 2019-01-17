@@ -10,9 +10,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 107px;
-  padding: 25px 40px 19px 40px;
+  height: 100px;
+  padding: 0 40px;
   background: $hero-dark-gradient;
+
+  >a {
+    height: 56px;
+  }
 
   @include tablet-down {
     height: 93px;
