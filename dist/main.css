@@ -597,10 +597,7 @@ blockquote,
     height: 50px;
     padding-right: 18px;
     padding-left: 18px;
-    transition: 0.3s ease;
-    transition-property: border-radius;
-    border: 1px solid #ededed;
-    border-radius: 5px;
+    border-bottom: 2px solid #20a49d;
     background-color: #fafafa;
     cursor: pointer; }
     .drop-selector .drop-selector-title .drop-selector-title__text {
@@ -611,12 +608,12 @@ blockquote,
       line-height: 1; }
     .drop-selector .drop-selector-title .drop-selector-title__icon::before {
       position: relative;
-      top: 2px;
+      top: 1px;
       color: #1e9a93;
       font-family: "IOTA icons";
-      font-size: 14px;
+      font-size: 11px;
       font-weight: 300;
-      line-height: 14px; }
+      line-height: 11px; }
   .drop-selector .drop-selector-list {
     position: absolute;
     width: 240px;
@@ -630,7 +627,6 @@ blockquote,
     border: 1px solid #ededed;
     border-top-width: 0px;
     border-bottom-width: 0px;
-    border-radius: 0px 0px 5px 5px;
     background-color: #ffffff; }
     .drop-selector .drop-selector-list .drop-selector-list-item a {
       display: block;
@@ -651,8 +647,6 @@ blockquote,
         font-weight: bold; }
     .drop-selector .drop-selector-list .drop-selector-list-item + .drop-selector-list-item {
       border-top: 1px solid #ededed; }
-  .drop-selector.drop-selector__expanded .drop-selector-title {
-    border-radius: 5px 5px 0px 0px; }
   .drop-selector.drop-selector__expanded .drop-selector-list {
     height: auto;
     max-height: 1000px;

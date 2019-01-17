@@ -18,10 +18,7 @@ $drop-selector-width: 240px;
     height: 50px;
     padding-right: 18px;
     padding-left: 18px;
-    transition: $transition-duration ease;
-    transition-property: border-radius;
-    border: 1px solid #ededed;
-    border-radius: 5px;
+    border-bottom: 2px solid $tealish;
     background-color: #fafafa;
     cursor: pointer;
 
@@ -38,10 +35,10 @@ $drop-selector-width: 240px;
         @extend %icon-up-down;
 
         position: relative;
-        top: 2px;
+        top: 1px;
         color: $jade;
 
-        @include icon(14px);
+        @include icon(11px);
       }
     }
   }
@@ -59,7 +56,6 @@ $drop-selector-width: 240px;
     border: 1px solid #ededed;
     border-top-width: 0px;
     border-bottom-width: 0px;
-    border-radius: 0px 0px 5px 5px;
     background-color: $white;
 
     .drop-selector-list-item {
@@ -97,10 +93,6 @@ $drop-selector-width: 240px;
   }
 
   &.drop-selector__expanded {
-    .drop-selector-title {
-      border-radius: 5px 5px 0px 0px;
-    }
-
     .drop-selector-list {
       height: auto;
       max-height: 1000px;
