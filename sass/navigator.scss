@@ -29,7 +29,7 @@
     border-left: 0;
     background-color: transparent;
     text-align: left;
-    text-decoration: underline;
+    text-decoration: none;
     cursor: pointer;
 
     &:focus {
@@ -38,7 +38,6 @@
 
     &:disabled {
       opacity: 0.5;
-      text-decoration: none;
       cursor: default;
       pointer-events: none;
     }
@@ -52,7 +51,6 @@
     @include desktop {
       padding-left: 90px;
       border-width: 2px;
-      text-decoration: none;
     }
   }
 

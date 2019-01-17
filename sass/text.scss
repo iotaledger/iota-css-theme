@@ -41,7 +41,7 @@ h2,
 .text--level2 {
   @include font-size(24px);
   font-weight: bold;
-  line-height: 1.45;
+  line-height: 1.5;
   margin: 1.45rem 0;
 
   @include tablet-up {
@@ -53,7 +53,7 @@ h3,
 .text--level3 {
   @include font-size(21px);
   font-weight: bold;
-  line-height: 1.45;
+  line-height: 1.5;
   margin: 1.25rem 0;
 
   @include tablet-up {

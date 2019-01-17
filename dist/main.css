@@ -730,7 +730,7 @@ h2,
   font-size: 24px;
   font-size: 1.5rem;
   font-weight: bold;
-  line-height: 1.45;
+  line-height: 1.5;
   margin: 1.45rem 0; }
   @media (min-width: 768px) {
     h2,
@@ -742,7 +742,7 @@ h3,
   font-size: 21px;
   font-size: 1.3125rem;
   font-weight: bold;
-  line-height: 1.45;
+  line-height: 1.5;
   margin: 1.25rem 0; }
   @media (min-width: 768px) {
     h3,
@@ -1384,7 +1384,7 @@ textarea,
     border-left: 0;
     background-color: transparent;
     text-align: left;
-    text-decoration: underline;
+    text-decoration: none;
     cursor: pointer; }
     .navigator .navigator__back:focus,
     .navigator .navigator__next:focus {
@@ -1392,7 +1392,6 @@ textarea,
     .navigator .navigator__back:disabled,
     .navigator .navigator__next:disabled {
       opacity: 0.5;
-      text-decoration: none;
       cursor: default;
       pointer-events: none; }
     .navigator .navigator__back:hover:not([disabled]),
@@ -1402,8 +1401,7 @@ textarea,
       .navigator .navigator__back,
       .navigator .navigator__next {
         padding-left: 90px;
-        border-width: 2px;
-        text-decoration: none; } }
+        border-width: 2px; } }
   .navigator .navigator__next {
     align-items: flex-end;
     border-left: 1px #f3f2f1 solid;
