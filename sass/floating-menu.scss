@@ -42,8 +42,11 @@
       color: $tealish;
     }
   }
-  &:hover a{
-    text-decoration: underline;
+
+  &:hover {
+    a {
+      text-decoration: underline;
+    }
   }
 
 }

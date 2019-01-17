@@ -32,21 +32,21 @@
 h1,
 .text--level1 {
   margin: 0px 0px 48px 0px;
-  @include font-size(36px);
+  @include font-size(32px);
   font-weight: bold;
   line-height: 1.2;
 }
 
 h2,
 .text--level2 {
-  @include font-size(28px);
+  @include font-size(24px);
   font-weight: bold;
   line-height: 1.71;
 }
 
 h3,
 .text--level3 {
-  @include font-size(24px);
+  @include font-size(21px);
   font-weight: bold;
   line-height: 2;
 }

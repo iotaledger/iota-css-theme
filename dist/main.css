@@ -366,6 +366,9 @@ button {
       height: 0px;
       -webkit-appearance: none; }
 
+strong {
+  font-weight: 600; }
+
 .form {
   width: 100%; }
   .form .fieldset {
@@ -722,22 +725,22 @@ li {
 h1,
 .text--level1 {
   margin: 0px 0px 48px 0px;
-  font-size: 36px;
-  font-size: 2.25rem;
+  font-size: 32px;
+  font-size: 2rem;
   font-weight: bold;
   line-height: 1.2; }
 
 h2,
 .text--level2 {
-  font-size: 28px;
-  font-size: 1.75rem;
+  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   line-height: 1.71; }
 
 h3,
 .text--level3 {
-  font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 21px;
+  font-size: 1.3125rem;
   font-weight: bold;
   line-height: 2; }
 
@@ -833,7 +836,7 @@ p,
   color: #696f76;
   font-size: 17px;
   font-size: 1.0625rem;
-  line-height: 2; }
+  line-height: 1.9; }
 
 textarea,
 .textarea {
