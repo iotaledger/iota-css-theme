@@ -829,9 +829,9 @@ p,
 .text-paragraph {
   margin-bottom: 1.0625rem;
   color: #4f4f4f;
-  font-size: 17px;
-  font-size: 1.0625rem;
-  line-height: 1.9; }
+  font-size: 16.8px;
+  font-size: 1.05rem;
+  line-height: 1.75; }
   p a,
   .text-paragraph a {
     text-decoration: underline; }
@@ -2501,6 +2501,7 @@ table,
   padding: 0 18px; }
   .tree-menu .tree-menu__section-title {
     margin: 0;
+    padding-bottom: 6px;
     color: #4f4f4f;
     font-size: 14px;
     font-size: 0.875rem;
@@ -2884,10 +2885,10 @@ footer {
         margin: 22px 20px; }
         @media (min-width: 768px) {
           .header .header__wrapper .header__head .header__brand {
-            margin: 25px 40px; } }
+            margin: 22px 40px; } }
         @media (min-width: 1024px) {
           .header .header__wrapper .header__head .header__brand {
-            margin: 25px 40px; } }
+            margin: 22px 40px; } }
       .header .header__wrapper .header__head .header__icon {
         margin: 27px 25px 0 0;
         padding: 5px 10px;

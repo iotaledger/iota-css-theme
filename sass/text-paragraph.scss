@@ -10,8 +10,8 @@ p,
 .text-paragraph {
   margin-bottom: 1.0625rem;
   color: $body-copy;
-  @include font-size(17px);
-  line-height: 1.9;
+  @include font-size(16.8px);
+  line-height: 1.75;
 
   a {
     text-decoration: underline;
