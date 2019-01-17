@@ -730,14 +730,24 @@ h2,
   font-size: 24px;
   font-size: 1.5rem;
   font-weight: bold;
-  line-height: 1.71; }
+  line-height: 1.45;
+  margin: 1.45rem 0; }
+  @media (min-width: 768px) {
+    h2,
+    .text--level2 {
+      margin: 1.75rem 0; } }
 
 h3,
 .text--level3 {
   font-size: 21px;
   font-size: 1.3125rem;
   font-weight: bold;
-  line-height: 2; }
+  line-height: 1.45;
+  margin: 1.25rem 0; }
+  @media (min-width: 768px) {
+    h3,
+    .text--level3 {
+      margin: 1.75rem 0; } }
 
 h4,
 .text--level4 {
@@ -862,7 +872,7 @@ textarea,
 .header .header__wrapper .header__head .header__icon::before, .sticky-header .sticky-header__control .sticky-header__icon-burger::before {
   content: '🍔'; }
 
-.scroll-to-top i.icon-chevron-up::before, .side-menu__group--expanded .side-menu__heading::before {
+.side-menu__group--expanded .side-menu__heading::before {
   content: '↑'; }
 
 .form .fieldset .select-wrapper::after, .select-wrapper::after, .side-menu__heading::before, .version-picker-select__wrapper::after {
@@ -871,7 +881,7 @@ textarea,
 .arrow-button--right::before {
   content: '>'; }
 
-.arrow-button--left::before {
+.arrow-button--left::before, .scroll-to-top i.icon-chevron-up::before {
   content: '<'; }
 
 .feedback-overlay .feedback-overlay-close i.icon-cross::before, .side-menu__close::before, .sticky-header .sticky-header__control .input-sticky-wrapper .sticky-header__icon-close::before {
@@ -1548,32 +1558,22 @@ textarea,
       max-width: 100%; } }
 
 .scroll-to-top {
-  width: 50px;
-  height: 50px;
+  width: 38px;
+  height: 38px;
   margin: 0;
   padding: 0;
-  transition: 0.3s ease;
-  transition-property: opacity;
   border: 0;
-  border-radius: 5px;
-  background-color: #603f98;
+  background: none;
   color: #ffffff;
-  line-height: 58px;
-  font-size: 26px;
-  font-size: 1.625rem;
+  transform: rotate(90deg);
   cursor: pointer; }
   .scroll-to-top:focus {
     outline: none; }
   .scroll-to-top i.icon-chevron-up::before {
     font-family: "IOTA icons";
-    font-size: 24px;
+    font-size: 38px;
     font-weight: 300;
-    line-height: 24px; }
-
-.scroll-to-top--hidden {
-  opacity: 0; }
-  .scroll-to-top--hidden:hover {
-    opacity: 0; }
+    line-height: 38px; }
 
 .side-menu {
   width: 311px;
@@ -1719,7 +1719,7 @@ textarea,
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding: 0 16px;
+    padding: 15px 16px;
     background-color: rgba(255, 255, 255, 0.1);
     color: #ffffff; }
     @media (min-width: 768px) {
@@ -1732,7 +1732,8 @@ textarea,
       font-size: 1.75rem;
       font-stretch: normal;
       font-style: normal;
-      font-weight: bold; }
+      font-weight: bold;
+      margin-bottom: 10px; }
       @media (min-width: 768px) {
         .sub-header__wrapper .sub-header .sub-header__title {
           display: none; } }

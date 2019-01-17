@@ -5,20 +5,14 @@
 // Styleguide Molecules.Scroll To Top
 
 .scroll-to-top {
-  width: 50px;
-  height: 50px;
+  width: 38px;
+  height: 38px;
   margin: 0;
   padding: 0;
-  transition: $transition-duration ease;
-  transition-property: opacity;
   border: 0;
-  border-radius: 5px;
-  background-color: $blueberry;
+  background: none;
   color: $white;
-  line-height: 58px;
-
-  @include font-size(26px);
-
+  transform: rotate(90deg);
   cursor: pointer;
 
   &:focus {
@@ -28,18 +22,9 @@
   i {
     &.icon-chevron-up {
       &::before {
-        @extend %icon-chevron-up;
-
-        @include icon(24px);
+        @extend %icon-chevron-left;
+        @include icon(38px);
       }
     }
-  }
-}
-
-.scroll-to-top--hidden {
-  opacity: 0;
-
-  &:hover {
-    opacity: 0;
   }
 }
