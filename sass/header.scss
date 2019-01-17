@@ -38,15 +38,15 @@
       .header__brand {
         width: 167px;
         height: 56px;
-        margin: 17px;
+        margin: 25px 20px;
 
         @include tablet-up {
-          margin: 32px 17px;
+          margin: 25px 40px;
         }
 
 
         @include desktop {
-          margin: 32px 40px;
+          margin: 25px 40px;
         }
       }
 

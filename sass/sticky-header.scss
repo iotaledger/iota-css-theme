@@ -11,7 +11,7 @@
   align-items: center;
   justify-content: space-between;
   height: 107px;
-  padding: 22px 40px 22px 40px;
+  padding: 25px 40px 19px 40px;
   background: $hero-dark-gradient;
 
   @include tablet-down {
@@ -20,7 +20,6 @@
   }
 
   .sticky-header__brand {
-    top: 22px;
     width: 167px;
     height: 56px;
     margin-right: 20px;
