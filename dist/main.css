@@ -2805,14 +2805,21 @@ footer {
     margin-bottom: 20px; }
 
 .footer-bottom-content {
+  position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin-bottom: 50px; }
+  padding-bottom: 50px; }
+  .footer-bottom-content .scroll-to-top {
+    position: absolute;
+    bottom: 0px;
+    right: 16px; }
   @media (min-width: 768px) {
     .footer-bottom-content {
-      margin-bottom: 95px; } }
+      padding-bottom: 95px; }
+      .footer-bottom-content .scroll-to-top {
+        right: 40px; } }
 
 .footer-bottom-content__wrapper {
   display: flex;

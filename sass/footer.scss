@@ -95,14 +95,25 @@ footer {
 }
 
 .footer-bottom-content {
+  position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
+
+  .scroll-to-top {
+    position: absolute;
+    bottom: 0px;
+    right: 16px;
+  }
 
   @include tablet-up {
-    margin-bottom: 95px;
+    padding-bottom: 95px;
+
+    .scroll-to-top {
+      right: 40px;
+    }
   }
 }
 
