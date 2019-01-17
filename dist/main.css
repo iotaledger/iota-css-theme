@@ -434,15 +434,23 @@ button {
   width: 35px;
   height: 35px;
   border: 0;
-  background-color: #ffffff; }
+  background: none; }
   @media (min-width: 768px) {
     .arrow-button {
       width: 40px;
       height: 40px; } }
   .arrow-button::before {
     position: absolute;
-    top: calc(50% - 8px);
-    color: #20a49d; }
+    top: 0px;
+    left: 0px;
+    font-family: "IOTA icons";
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 35px;
+    color: #ffffff; }
+    @media (min-width: 768px) {
+      .arrow-button::before {
+        font-size: 40px; } }
   .arrow-button:hover:not([disabled]) {
     opacity: 0.75;
     cursor: pointer; }
@@ -452,20 +460,6 @@ button {
     opacity: 0.5;
     cursor: default;
     pointer-events: none; }
-
-.arrow-button--left::before {
-  font-family: "IOTA icons";
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 16px;
-  left: calc(50% - 9px); }
-
-.arrow-button--right::before {
-  font-family: "IOTA icons";
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 16px;
-  left: calc(50% - 7px); }
 
 blockquote,
 .blockquote {

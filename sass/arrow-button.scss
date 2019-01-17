@@ -16,7 +16,7 @@
   width: 35px;
   height: 35px;
   border: 0;
-  background-color: $white;
+  background: none;
 
   @include tablet-up {
     width: 40px;
@@ -25,8 +25,14 @@
 
   &::before {
     position: absolute;
-    top: calc(50% - 8px);
-    color: $tealish;
+    top: 0px;
+    left: 0px;
+    @include icon(35px);
+    color: $white;
+
+    @include tablet-up {
+      font-size: 40px;
+    }
   }
 
   &:hover {
@@ -50,15 +56,11 @@
 .arrow-button--left {
   &::before {
     @extend %icon-chevron-left;
-    @include icon(16px);
-    left: calc(50% - 9px);
   }
 }
 
 .arrow-button--right {
   &::before {
     @extend %icon-chevron-right;
-    @include icon(16px);
-    left: calc(50% - 7px);
   }
 }
