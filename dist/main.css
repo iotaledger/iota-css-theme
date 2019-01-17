@@ -588,7 +588,7 @@ blockquote,
     text-shadow: none; }
 
 .drop-selector {
-  width: 240px; }
+  position: relative; }
   .drop-selector .drop-selector-title {
     display: flex;
     position: relative;
@@ -617,7 +617,7 @@ blockquote,
       line-height: 11px; }
   .drop-selector .drop-selector-list {
     position: absolute;
-    width: 240px;
+    width: 100%;
     max-height: 0;
     margin: 1px 0px 0px 0px;
     padding: 0;
