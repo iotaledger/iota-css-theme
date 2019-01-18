@@ -95,8 +95,8 @@ footer {
 }
 
 .footer-bottom-content {
-  position: relative;
   display: flex;
+  position: relative;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -104,8 +104,8 @@ footer {
 
   .scroll-to-top {
     position: absolute;
-    bottom: 0px;
     right: 16px;
+    bottom: 0px;
   }
 
   @include tablet-up {

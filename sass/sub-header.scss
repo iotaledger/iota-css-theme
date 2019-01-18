@@ -25,13 +25,13 @@
 
     .sub-header__title {
       display: block;
+      margin-bottom: 10px;
 
       @include font-size(28px);
 
       font-stretch: normal;
       font-style: normal;
       font-weight: bold;
-      margin-bottom: 10px;
 
       @include tablet-up {
         display: none;
