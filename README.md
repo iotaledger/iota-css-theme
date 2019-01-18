@@ -12,7 +12,7 @@ import "iota-css-theme";
 
 View the Styleguide at <https://iota-css-theme.dag.sh>
 
-## Developement
+## Development
 
 To build the package run:
 
