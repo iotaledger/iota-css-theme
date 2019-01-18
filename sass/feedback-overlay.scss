@@ -4,11 +4,13 @@
 
 .feedback-overlay {
   position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 50px 0px 50px 0px;
   overflow: auto;
   transition: 0.1s ease-out;
   transition-property: opacity;
@@ -17,8 +19,8 @@
 
   .feedback-overlay-close {
     position: absolute;
-    top: 15px;
-    right: 30px;
+    top: 40px;
+    right: 40px;
     border: 0;
     background: none;
     color: $white;

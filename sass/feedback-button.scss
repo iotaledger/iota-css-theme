@@ -20,16 +20,13 @@
   border: 0;
   border-radius: 50%;
   background-color: $blueberry;
-  box-shadow: 0px 0px 0px 0px lighten($blueberry, 20);
+  box-shadow: 0px 0px 0px 0px #f6f6f6;
 }
 
 .feedback-button__wrapper--expanded {
-  top: 150vh;
-  left: -150vh;
-  width: 400vh;
-  height: 400vh;
   transition: 0.5s ease-out;
-  box-shadow: 0px 0px 0px 100px lighten($blueberry, 20);
+  background-color: #f6f6f6;
+  box-shadow: 0px 0px 0px 150vw #f6f6f6;
 }
 
 .feedback-button {

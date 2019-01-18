@@ -989,15 +989,12 @@ textarea,
   border: 0;
   border-radius: 50%;
   background-color: #603f98;
-  box-shadow: 0px 0px 0px 0px #9477c6; }
+  box-shadow: 0px 0px 0px 0px #f6f6f6; }
 
 .feedback-button__wrapper--expanded {
-  top: 150vh;
-  left: -150vh;
-  width: 400vh;
-  height: 400vh;
   transition: 0.5s ease-out;
-  box-shadow: 0px 0px 0px 100px #9477c6; }
+  background-color: #f6f6f6;
+  box-shadow: 0px 0px 0px 150vw #f6f6f6; }
 
 .feedback-button {
   width: 65px;
@@ -1039,11 +1036,13 @@ textarea,
 
 .feedback-overlay {
   position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 50px 0px 50px 0px;
   overflow: auto;
   transition: 0.1s ease-out;
   transition-property: opacity;
@@ -1051,8 +1050,8 @@ textarea,
   pointer-events: none; }
   .feedback-overlay .feedback-overlay-close {
     position: absolute;
-    top: 15px;
-    right: 30px;
+    top: 40px;
+    right: 40px;
     border: 0;
     background: none;
     color: #ffffff;
@@ -2059,7 +2058,9 @@ table,
       .table .table-body .table-body-row--item {
         display: block;
         padding: 0px 8px 0px 8px !important;
-        line-height: 2 !important; }
+        line-height: 1.75 !important;
+        font-size: 1rem !important;
+        font-weight: 200; }
       table tbody tr,
       table tbody .table-body-row,
       table .table-body tr,
@@ -2215,7 +2216,9 @@ table,
     .table.table--compact .table-body .table-body-row--item {
       display: block;
       padding: 0px 8px 0px 8px !important;
-      line-height: 2 !important; }
+      line-height: 1.75 !important;
+      font-size: 1rem !important;
+      font-weight: 200; }
     table.table--compact tbody tr,
     table.table--compact tbody .table-body-row,
     table.table--compact .table-body tr,
