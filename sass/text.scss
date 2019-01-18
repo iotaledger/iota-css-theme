@@ -40,9 +40,9 @@ h1,
 h2,
 .text--level2 {
   @include font-size(24px);
+  margin: 1.45rem 0;
   font-weight: bold;
   line-height: 1.5;
-  margin: 1.45rem 0;
 
   @include tablet-up {
     margin: 1.75rem 0;
@@ -51,10 +51,10 @@ h2,
 
 h3,
 .text--level3 {
+  margin: 1.25rem 0;
   @include font-size(21px);
   font-weight: bold;
   line-height: 1.5;
-  margin: 1.25rem 0;
 
   @include tablet-up {
     margin: 1.75rem 0;

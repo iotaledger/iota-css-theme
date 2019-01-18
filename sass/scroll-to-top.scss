@@ -9,10 +9,10 @@
   height: 38px;
   margin: 0;
   padding: 0;
+  transform: rotate(90deg);
   border: 0;
   background: none;
   color: $white;
-  transform: rotate(90deg);
   cursor: pointer;
 
   &:focus {
