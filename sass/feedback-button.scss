@@ -26,9 +26,9 @@
 .feedback-button__wrapper--expanded {
   transition: $transition-duration ease-out;
   transition-property: box-shadow, background-color, opacity;
+  opacity: 0.8;
   background-color: #3f3f3f;
   box-shadow: 0px 0px 0px 150vw #3f3f3f;
-  opacity: 0.8;
 }
 
 .feedback-button {

@@ -384,7 +384,7 @@ body {
 .light-grey-background {
   background-color: #c4c4c4; }
 
-.sand-grey {
+.sand-grey-background {
   background-color: #f3f2f1; }
 
 body {
@@ -1085,9 +1085,9 @@ textarea,
 .feedback-button__wrapper--expanded {
   transition: 0.3s ease-out;
   transition-property: box-shadow, background-color, opacity;
+  opacity: 0.8;
   background-color: #3f3f3f;
-  box-shadow: 0px 0px 0px 150vw #3f3f3f;
-  opacity: 0.8; }
+  box-shadow: 0px 0px 0px 150vw #3f3f3f; }
 
 .feedback-button {
   width: 65px;
@@ -1128,12 +1128,12 @@ textarea,
   display: none; }
 
 .feedback-overlay {
-  position: fixed;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  position: fixed;
   top: 0;
   left: 0;
+  align-items: center;
+  justify-content: center;
   width: 100vw;
   height: 100vh;
   overflow: auto;
@@ -2151,9 +2151,9 @@ table,
       .table .table-body .table-body-row--item {
         display: block;
         padding: 0px 8px 0px 8px !important;
-        line-height: 1.75 !important;
         font-size: 1rem !important;
-        font-weight: 200; }
+        font-weight: 200;
+        line-height: 1.75 !important; }
       table tbody tr,
       table tbody .table-body-row,
       table .table-body tr,
@@ -2309,9 +2309,9 @@ table,
     .table.table--compact .table-body .table-body-row--item {
       display: block;
       padding: 0px 8px 0px 8px !important;
-      line-height: 1.75 !important;
       font-size: 1rem !important;
-      font-weight: 200; }
+      font-weight: 200;
+      line-height: 1.75 !important; }
     table.table--compact tbody tr,
     table.table--compact tbody .table-body-row,
     table.table--compact .table-body tr,
