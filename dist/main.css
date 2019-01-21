@@ -574,11 +574,12 @@ blockquote,
   font-size: 14.5px;
   font-size: 0.90625rem;
   font-weight: bold;
-  word-break: break-all;
-  word-break: break-word;
   line-height: 1.5;
   text-decoration: none;
   text-transform: uppercase; }
+  .button.button--long {
+    word-break: break-all;
+    word-break: break-word; }
   .button:hover:not([disabled]) {
     border-color: #493074;
     background-color: #493074;
@@ -3032,7 +3033,10 @@ footer {
     padding-bottom: 20px; }
     .header.compact .header__wrapper .header__body {
       max-width: none;
-      margin: 0px auto 0px auto; }
+      margin: 0px 20px 0px 20px; }
+      @media (max-width: 767px) {
+        .header.compact .header__wrapper .header__body {
+          margin: 0px 10px 0px 10px; } }
       .header.compact .header__wrapper .header__body .header__title {
         max-width: none;
         margin-bottom: 0px; }

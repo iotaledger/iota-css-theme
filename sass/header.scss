@@ -124,7 +124,11 @@
 
       .header__body {
         max-width: none;
-        margin: 0px auto 0px auto;
+        margin: 0px 20px 0px 20px;
+
+        @include tablet-down {
+          margin: 0px 10px 0px 10px;
+        }
 
         .header__title {
           max-width: none;

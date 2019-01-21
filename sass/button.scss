@@ -33,10 +33,13 @@
   color: $white;
   @include font-size(14.5px);
   font-weight: bold;
-  @include word-break;
   line-height: 1.5;
   text-decoration: none;
   text-transform: uppercase;
+
+  &.button--long {
+    @include word-break;
+  }
 
   &:hover {
     &:not([disabled]) {
