@@ -20,7 +20,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 60px 0 15px;
+  padding: 45px 0 25px;
   border-bottom: 3px solid $sand-grey;
 
   &:last-child {
@@ -56,12 +56,14 @@
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    padding: 0 0 25px 0;
+
+    @mixin tablet-up {
+      padding: 0 0 25px 0;
+    }
 
     @include tablet {
       width: 50%;
     }
-
 
     @include desktop {
       width: calc(33.33% -  14px);
