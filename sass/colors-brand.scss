@@ -18,3 +18,28 @@ body {
   --jade: #{$jade};
   --blueberry: #{$blueberry};
 }
+
+.tealish {
+  color: $tealish;
+}
+
+.jade {
+  color: $jade;
+}
+
+.blueberry {
+  color: $blueberry;
+}
+
+.tealish-background {
+  background-color: $tealish;
+}
+
+.jade-background {
+  background-color: $jade;
+}
+
+.blueberry-background {
+  background-color: $blueberry;
+}
+

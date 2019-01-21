@@ -21,3 +21,35 @@ body {
   --success: #{$success};
   --info: #{$info};
 }
+
+.warning {
+  color: $warning;
+}
+
+.danger {
+  color: $danger;
+}
+
+.success {
+  color: $success;
+}
+
+.info {
+  color: $info;
+}
+
+.warning-background {
+  background-color: $warning;
+}
+
+.danger-background {
+  background-color: $danger;
+}
+
+.success-background {
+  background-color: $success;
+}
+
+.info-background {
+  background-color: $info;
+}
