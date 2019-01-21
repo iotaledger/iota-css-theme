@@ -1403,7 +1403,7 @@ textarea,
     line-height: 18px; }
   .input-sticky-wrapper .input-search-sticky {
     width: 100%;
-    padding: 10px 0px 7px 43px;
+    padding: 10px 0px 12px 43px;
     transition: opacity 0.1s ease;
     border: 0;
     border-bottom: 2px solid transparent;
@@ -1513,15 +1513,14 @@ textarea,
         font-size: 1.5rem;
         font-weight: bold; } }
   .navigator .navigator__title {
-    font-size: 18px;
-    font-size: 1.125rem;
+    font-size: 1px;
+    font-size: 0.0625rem;
     color: #4f4f4f;
     font-weight: normal; }
     @media (min-width: 1024px) {
       .navigator .navigator__title {
-        font-size: 24px;
-        font-size: 1.5rem;
-        font-weight: bold; } }
+        font-size: 22px;
+        font-size: 1.375rem; } }
 
 .pagination {
   margin: 0;
@@ -2457,6 +2456,8 @@ table,
   .table-of-contents .table-of-contents__section .table-of-contents-list-item {
     padding: 0px 8px 0px 8px;
     line-height: 1.75rem; }
+    .table-of-contents .table-of-contents__section .table-of-contents-list-item.table-of-contents-list-item__sub {
+      padding-left: 18px; }
     .table-of-contents .table-of-contents__section .table-of-contents-list-item a {
       color: #3e3e3e;
       font-size: 15px;
@@ -3114,7 +3115,7 @@ footer {
       font-size: 1.5rem; }
     .sticky-header .sticky-header__control .input-sticky-wrapper .sticky-header__icon-close {
       position: absolute;
-      top: 7px;
+      top: 10px;
       right: 0px;
       transition: opacity 0.3s ease;
       border: 0;

@@ -28,6 +28,10 @@
       padding: 0px 8px 0px 8px;
       line-height: 1.75rem;
 
+      &.table-of-contents-list-item__sub {
+        padding-left: 18px;
+      }
+
       a {
         color: #3e3e3e;
 

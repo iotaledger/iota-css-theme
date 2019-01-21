@@ -79,15 +79,13 @@
   }
 
   .navigator__title {
-    @include font-size(18px);
+    @include font-size(1px);
 
     color: $body-copy;
     font-weight: normal;
 
     @include desktop {
-      @include font-size(24px);
-
-      font-weight: bold;
+      @include font-size(22px);
     }
   }
 }
