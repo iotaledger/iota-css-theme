@@ -2647,7 +2647,7 @@ table,
     flex-direction: row;
     align-items: center;
     width: 100%;
-    max-width: 1420px; }
+    max-width: 1495px; }
     .version-picker__wrapper .version-picker .left-column {
       flex: 0 0 280px; }
     .version-picker__wrapper .version-picker .middle-column {
@@ -2846,7 +2846,7 @@ footer {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 1420px;
+  max-width: 1495px;
   margin-top: 0; }
   @media (min-width: 768px) {
     .footer__wrapper {
@@ -3013,7 +3013,7 @@ footer {
           cursor: default;
           pointer-events: none; }
     .header .header__wrapper .header__body {
-      max-width: 1420px;
+      max-width: 1495px;
       margin: 60px auto 0px auto;
       padding: 0 16px; }
       .header .header__wrapper .header__body .text {
