@@ -3049,7 +3049,6 @@ footer {
 .search-result {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   width: 100%; }
   .search-result .search-result__total {
     display: flex;
@@ -3059,30 +3058,26 @@ footer {
     font-size: 17px;
     font-size: 1.0625rem;
     color: #1c1e21;
-    font-weight: 600;
-    text-align: center; }
+    font-weight: 600; }
   .search-result .search-result__item {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 20px; }
+    margin-top: 30px; }
     .search-result .search-result__item .search-result-item__heading {
-      margin-bottom: 10px;
       color: #20a49d;
-      font-size: 18px;
-      font-size: 1.125rem;
-      font-weight: bold;
-      text-align: center; }
+      font-size: 19px;
+      font-size: 1.1875rem;
+      line-height: 36px;
+      font-weight: 600; }
+    .search-result .search-result__item .text-paragraph {
+      margin-bottom: 10px; }
     .search-result .search-result__item .search-result-item__link {
       word-break: break-all;
       word-break: break-word;
       color: #3f3f3f;
       font-size: 17px;
       font-size: 1.0625rem;
-      font-weight: 300;
-      text-align: center; }
+      font-weight: 600; }
 
 .sticky-header {
   display: flex;

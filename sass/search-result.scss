@@ -7,7 +7,6 @@
 .search-result {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   width: 100%;
 
   .search-result__total {
@@ -18,31 +17,29 @@
     @include font-size(17px);
     color: $black;
     font-weight: 600;
-    text-align: center;
   }
 
   .search-result__item {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     margin-top: 30px;
-    margin-bottom: 20px;
 
     .search-result-item__heading {
-      margin-bottom: 10px;
       color: $tealish;
-      @include font-size(18px);
-      font-weight: bold;
-      text-align: center;
+      @include font-size(19px);
+      line-height: 36px;
+      font-weight: 600;
+    }
+
+    .text-paragraph {
+      margin-bottom: 10px;
     }
 
     .search-result-item__link {
       @include word-break;
       color: $gunmetal-grey;
       @include font-size(17px);
-      font-weight: 300;
-      text-align: center;
+      font-weight: 600;
     }
   }
 }
