@@ -3054,7 +3054,7 @@ footer {
     display: flex;
     justify-content: center;
     margin-top: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 22px;
     font-size: 17px;
     font-size: 1.0625rem;
     color: #1c1e21;
@@ -3070,7 +3070,7 @@ footer {
       line-height: 36px;
       font-weight: 600; }
     .search-result .search-result__item .text-paragraph {
-      margin-bottom: 10px; }
+      margin: 0 0 10px; }
     .search-result .search-result__item .search-result-item__link {
       word-break: break-all;
       word-break: break-word;
