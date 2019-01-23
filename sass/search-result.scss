@@ -27,12 +27,12 @@
     .search-result-item__heading {
       color: $tealish;
       @include font-size(19px);
-      line-height: 36px;
       font-weight: 600;
+      line-height: 36px;
     }
 
     .text-paragraph {
-      margin:0 0 10px;
+      margin: 0 0 10px;
     }
 
     .search-result-item__link {
