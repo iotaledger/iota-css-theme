@@ -436,7 +436,7 @@ body {
   padding: 0;
   color: #4f4f4f;
   font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-weight: 200; }
+  font-weight: 300; }
   body.no-scroll {
     overflow: hidden; }
 
@@ -1626,7 +1626,7 @@ textarea,
         background: #20a49d; }
     .project-topics .project-topic__item .project-topic__subheading {
       padding-right: 36px;
-      font-weight: 200;
+      font-weight: 300;
       line-height: 30px; }
 
 .project-topics__compressed .project-topic__item {
@@ -2146,7 +2146,7 @@ table,
         display: block;
         padding: 0px 8px 0px 8px !important;
         font-size: 1rem !important;
-        font-weight: 200;
+        font-weight: 300;
         line-height: 1.75 !important; }
       table tbody tr,
       table tbody .table-body-row,
@@ -2304,7 +2304,7 @@ table,
       display: block;
       padding: 0px 8px 0px 8px !important;
       font-size: 1rem !important;
-      font-weight: 200;
+      font-weight: 300;
       line-height: 1.75 !important; }
     table.table--compact tbody tr,
     table.table--compact tbody .table-body-row,
