@@ -8,7 +8,7 @@ module.exports = {
    "cross": "X",
    "copy": "📄",
    "feedback": "💬",
-   "search": '🔍',
+   "search": "🔍",
    "thumb-up": "👍",
    "thumb-down": "👎",
    "up-down": "↕️"

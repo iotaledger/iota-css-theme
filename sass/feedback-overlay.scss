@@ -16,28 +16,6 @@
   transition-property: opacity;
   opacity: 0;
   pointer-events: none;
-
-  .feedback-overlay-close {
-    position: absolute;
-    top: 40px;
-    right: 40px;
-    border: 0;
-    background: none;
-    color: $white;
-    cursor: pointer;
-
-    &:focus {
-      outline: none;
-    }
-
-    i {
-      &.icon-cross {
-        &::before {
-          @extend %icon-cross;
-        }
-      }
-    }
-  }
 }
 
 .feedback-overlay--expanded {

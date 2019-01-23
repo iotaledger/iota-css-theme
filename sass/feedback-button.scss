@@ -19,8 +19,8 @@
   transition-property: box-shadow, background-color, opacity;
   border: 0;
   border-radius: 50%;
-  background-color: $blueberry;
-  box-shadow: 0px 0px 0px 0px $blueberry;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 0px 0px #ffffff;
 }
 
 .feedback-button__wrapper--expanded {
@@ -36,13 +36,13 @@
   height: 65px;
   transition: $transition-duration ease;
   transition-property: background;
-  border: 0;
+  border: 2px solid $white;
   border-radius: 50%;
-  background-color: $blueberry;
+  background-color: #f6f6f6;
   cursor: pointer;
 
   &:hover {
-    background-color: #4e2c88;
+    background-color: #e6e6e6;
   }
 
   &:focus {
@@ -53,10 +53,10 @@
     &::before {
       @extend %icon-feedback;
       position: absolute;
-      top: calc(50% - 12px);
-      left: calc(50% - 13px);
-      color: $white;
-      @include icon(28px);
+      top: calc(50% - 14px);
+      left: calc(50% - 15px);
+      color: $jade;
+      @include icon(30px);
     }
   }
 
