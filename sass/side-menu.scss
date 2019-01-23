@@ -18,7 +18,7 @@ $side-menu-right-padding: 24px;
 
   &.side-menu__hidden {
     position: fixed;
-    z-index: 3;
+    z-index: 25;
     top: 0;
     right: -328px;
     padding-right: 17px;

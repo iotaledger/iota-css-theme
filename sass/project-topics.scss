@@ -20,7 +20,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 45px 0 25px;
+  padding: 45px 0 10px;
   border-bottom: 3px solid $sand-grey;
 
   &:last-child {
@@ -35,7 +35,7 @@
 
 .project__subheading {
   margin-top: 5px;
-  margin-bottom: 45px;
+  margin-bottom: 32px;
   line-height: 2;
 }
 
@@ -56,6 +56,7 @@
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
+    padding: 0px 20px 18px 0px;
 
     @mixin tablet-up {
       padding: 0 0 25px 0;

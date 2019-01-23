@@ -1572,7 +1572,7 @@ textarea,
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 45px 0 25px;
+  padding: 45px 0 10px;
   border-bottom: 3px solid #f3f2f1; }
   .project:last-child {
     border-bottom: 0; }
@@ -1583,7 +1583,7 @@ textarea,
 
 .project__subheading {
   margin-top: 5px;
-  margin-bottom: 45px;
+  margin-bottom: 32px;
   line-height: 2; }
 
 .project-topics {
@@ -1599,7 +1599,8 @@ textarea,
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 100%; }
+    width: 100%;
+    padding: 0px 20px 18px 0px; }
     @media (min-width: 768px) and (max-width: 1023px) {
       .project-topics .project-topic__item {
         width: 50%; } }
@@ -1664,7 +1665,7 @@ textarea,
   background-color: #3f3f3f; }
   .side-menu.side-menu__hidden {
     position: fixed;
-    z-index: 3;
+    z-index: 25;
     top: 0;
     right: -328px;
     padding-right: 17px;
