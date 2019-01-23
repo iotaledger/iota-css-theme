@@ -8,7 +8,8 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: #f8f8f8;
+  border-bottom: 1px solid #e6e6e6;
+  background-color: $white;
 
   .version-picker {
     display: flex;
@@ -65,16 +66,19 @@
   position: relative;
   width: 100%;
   border: 0;
-  background-color: $light-grey;
+  border-right: 1px solid #e6e6e6;
+  border-bottom: 2px solid $jade;
+  border-left: 1px solid #e6e6e6;
+  background-color: #fafafa;
   line-height: 1.5;
 
   &::after {
-    @extend %icon-chevron-down;
+    @extend %icon-up-down;
 
     position: absolute;
     top: calc(50% - 9px);
     right: 25px;
-    color: $white;
+    color: $jade;
 
     @include icon(18px);
 
@@ -96,7 +100,7 @@
   border: 0;
   outline: none;
   background: none;
-  color: $white;
+  color: $jade;
 
   @include font-size(17px);
 

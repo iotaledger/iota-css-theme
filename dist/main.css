@@ -971,7 +971,7 @@ textarea,
 .side-menu__group--expanded .side-menu__heading::before {
   content: '↑'; }
 
-.form .fieldset .select-wrapper::after, .select-wrapper::after, .side-menu__heading::before, .version-picker-select__wrapper::after {
+.form .fieldset .select-wrapper::after, .select-wrapper::after, .side-menu__heading::before {
   content: '↓'; }
 
 .arrow-button--right::before {
@@ -998,7 +998,7 @@ textarea,
 .feedback-button .feedback-button--icon-no::before, .feedback-form .feedback-form-button .feedback-form-button-circle i.icon-thumb-down::before {
   content: '👎'; }
 
-.drop-selector .drop-selector-title .drop-selector-title__icon::before {
+.drop-selector .drop-selector-title .drop-selector-title__icon::before, .version-picker-select__wrapper::after {
   content: '↕️'; }
 
 .card__link {
@@ -2631,7 +2631,8 @@ table,
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: #f8f8f8; }
+  border-bottom: 1px solid #e6e6e6;
+  background-color: #ffffff; }
   .version-picker__wrapper .version-picker {
     display: flex;
     flex-direction: row;
@@ -2670,13 +2671,16 @@ table,
   position: relative;
   width: 100%;
   border: 0;
-  background-color: #c4c4c4;
+  border-right: 1px solid #e6e6e6;
+  border-bottom: 2px solid #1e9a93;
+  border-left: 1px solid #e6e6e6;
+  background-color: #fafafa;
   line-height: 1.5; }
   .version-picker-select__wrapper::after {
     position: absolute;
     top: calc(50% - 9px);
     right: 25px;
-    color: #ffffff;
+    color: #1e9a93;
     font-family: "IOTA icons";
     font-size: 18px;
     font-weight: 300;
@@ -2696,7 +2700,7 @@ table,
   border: 0;
   outline: none;
   background: none;
-  color: #ffffff;
+  color: #1e9a93;
   font-size: 17px;
   font-size: 1.0625rem;
   font-weight: bold;
