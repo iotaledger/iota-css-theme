@@ -1508,8 +1508,8 @@ textarea,
         font-size: 1.5rem;
         font-weight: bold; } }
   .navigator .navigator__title {
-    font-size: 1px;
-    font-size: 0.0625rem;
+    font-size: 18px;
+    font-size: 1.125rem;
     color: #4f4f4f;
     font-weight: normal; }
     @media (min-width: 1024px) {

@@ -79,7 +79,7 @@
   }
 
   .navigator__title {
-    @include font-size(1px);
+    @include font-size(18px);
 
     color: $body-copy;
     font-weight: normal;
