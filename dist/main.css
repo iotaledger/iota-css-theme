@@ -1463,7 +1463,7 @@ textarea,
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
     padding: 18px 16px;
     border: 1px #f3f2f1 solid;
