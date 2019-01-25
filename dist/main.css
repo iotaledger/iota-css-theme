@@ -1676,7 +1676,7 @@ textarea,
         padding-right: 0; } }
   .side-menu.side-menu__shown {
     position: fixed;
-    z-index: 3;
+    z-index: 15;
     top: 0;
     right: -32px;
     padding-right: 17px;
