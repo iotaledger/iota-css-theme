@@ -38,8 +38,9 @@
     .search-result-item__link {
       @include word-break;
       color: $gunmetal-grey;
-      @include font-size(17px);
+      @include font-size(16px);
       font-weight: 600;
+      line-height: 2;
     }
   }
 }

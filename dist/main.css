@@ -3085,9 +3085,10 @@ footer {
       word-break: break-all;
       word-break: break-word;
       color: #3f3f3f;
-      font-size: 17px;
-      font-size: 1.0625rem;
-      font-weight: 600; }
+      font-size: 16px;
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 2; }
 
 .sticky-header {
   display: flex;
