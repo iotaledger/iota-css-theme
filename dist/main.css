@@ -1488,6 +1488,10 @@ textarea,
       .navigator .navigator__next {
         padding-left: 90px;
         border-width: 2px; } }
+    @media (max-width: 514px) {
+      .navigator .navigator__back,
+      .navigator .navigator__next {
+        justify-content: flex-start; } }
   .navigator .navigator__next {
     align-items: flex-end;
     border-left: 1px #f3f2f1 solid;

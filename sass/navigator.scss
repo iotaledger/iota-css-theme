@@ -52,6 +52,10 @@
       padding-left: 90px;
       border-width: 2px;
     }
+
+    @include phone-down {
+      justify-content: flex-start;
+    }
   }
 
   .navigator__next {
