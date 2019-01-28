@@ -104,6 +104,7 @@
       .header__title {
         max-width: 320px;
         margin: 0 30px 0 0;
+        @include font-size(37.6px)
       }
 
       .header__search {
