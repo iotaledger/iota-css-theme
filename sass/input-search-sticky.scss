@@ -17,8 +17,15 @@
   transition: $transition-duration-quick ease;
   transition-property: width;
 
+  &:hover {
+    &::before {
+      opacity: 0.5;
+    }
+  }
+
   &::before {
     @extend %icon-search;
+    transition: opacity $transition-duration-quick ease;
 
     position: absolute;
     top: 12px;
@@ -56,12 +63,19 @@
       font-style: normal;
       font-weight: 300;
     }
+
   }
 
   &.input-sticky-wrapper--expanded {
     width: 100%;
     transition: $transition-duration ease;
     transition-property: width;
+
+    &:hover {
+      &::before {
+        opacity: 1;
+      }
+    }
 
     .input-search-sticky {
       padding-right: 40px;

@@ -84,6 +84,7 @@
       background: none;
       color: $white;
       cursor: pointer;
+      transition: opacity $transition-duration-quick ease;
 
       &::before {
         @extend %icon-burger;
@@ -120,6 +121,10 @@
       .input-sticky-wrapper {
         .sticky-header__icon-close {
           opacity: 1;
+
+          &:hover {
+            opacity: 0.5;
+          }
         }
       }
     }
