@@ -32,6 +32,13 @@
         padding-left: 16px;
       }
 
+      &.table-of-contents-list-item__selected {
+        a {
+          color: $jade;
+          font-weight: bold;
+        }
+      }
+
       a {
         color: #3e3e3e;
 
