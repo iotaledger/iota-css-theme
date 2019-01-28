@@ -1,0 +1,111 @@
+// Layouts
+//
+// Various layout styles.
+//
+// Markup: html/layouts.html
+//
+// Styleguide Atoms.Layouts
+
+.layouts--home {
+  display: flex;
+  max-width: $max-width;
+  margin: 0 auto;
+
+  .left-column {
+    flex: 0 0 250px;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .right-column {
+    flex: 1;
+    max-width: 1495px;
+    margin: auto;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  @include tablet-down {
+    .left-column {
+      display: none;
+    }
+
+    .right-column {
+      padding-right: 16px;
+      padding-left: 16px;
+    }
+  }
+}
+
+.layouts--doc {
+  display: flex;
+  justify-content: space-between;
+  max-width: $max-width;
+  margin: 0 auto;
+
+  .left-column {
+    flex: 0 0 300px;
+    padding: 70px 0px 120px 40px;
+  }
+
+  .middle-column {
+    flex: 1;
+    max-width: 720px;
+    min-height: 500px;
+    padding: 70px 55px 120px 45px;
+    overflow: hidden;
+  }
+
+  .middle-toc {
+    display: none;
+  }
+
+  .right-column {
+    flex: 0 0 300px;
+    padding: 70px 40px 120px 0;
+  }
+
+  @include desktop-narrow-down {
+    .left-column {
+      display: none;
+    }
+  }
+
+
+  @include desktop-down {
+    justify-content: center;
+
+    .left-column {
+      display: none;
+    }
+
+    .middle-column {
+      min-height: unset;
+      padding: 35px 16px 60px 16px;
+    }
+
+    .right-column {
+      display: none;
+    }
+
+    .middle-toc {
+      display: block;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.layouts--search {
+  display: flex;
+  justify-content: space-around;
+
+  .middle-column {
+    flex: 1;
+    max-width: 820px;
+    padding: 72px 60px 72px 60px;
+
+    @include desktop-down {
+      padding: 72px 16px 72px 16px;
+    }
+  }
+}

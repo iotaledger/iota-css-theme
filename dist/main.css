@@ -306,6 +306,10 @@ template {
 [hidden] {
   display: none; }
 
+@media (max-width: 767px) {
+  .table-hidden {
+    display: none; } }
+
 body {
   --tealish: #20a49d;
   --jade: #1e9a93;
@@ -772,6 +776,74 @@ hr,
 
 .horizontal-rule--small {
   width: 160px; }
+
+.layouts--home {
+  display: flex;
+  max-width: 1495px;
+  margin: 0 auto; }
+  .layouts--home .left-column {
+    flex: 0 0 250px;
+    padding-right: 40px;
+    padding-left: 40px; }
+  .layouts--home .right-column {
+    flex: 1;
+    max-width: 1495px;
+    margin: auto;
+    padding-right: 40px;
+    padding-left: 40px; }
+  @media (max-width: 767px) {
+    .layouts--home .left-column {
+      display: none; }
+    .layouts--home .right-column {
+      padding-right: 16px;
+      padding-left: 16px; } }
+
+.layouts--doc {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1495px;
+  margin: 0 auto; }
+  .layouts--doc .left-column {
+    flex: 0 0 300px;
+    padding: 70px 0px 120px 40px; }
+  .layouts--doc .middle-column {
+    flex: 1;
+    max-width: 720px;
+    min-height: 500px;
+    padding: 70px 55px 120px 45px;
+    overflow: hidden; }
+  .layouts--doc .middle-toc {
+    display: none; }
+  .layouts--doc .right-column {
+    flex: 0 0 300px;
+    padding: 70px 40px 120px 0; }
+  @media (max-width: 1180px) {
+    .layouts--doc .left-column {
+      display: none; } }
+  @media (max-width: 1024px) {
+    .layouts--doc {
+      justify-content: center; }
+      .layouts--doc .left-column {
+        display: none; }
+      .layouts--doc .middle-column {
+        min-height: unset;
+        padding: 35px 16px 60px 16px; }
+      .layouts--doc .right-column {
+        display: none; }
+      .layouts--doc .middle-toc {
+        display: block;
+        margin-bottom: 30px; } }
+
+.layouts--search {
+  display: flex;
+  justify-content: space-around; }
+  .layouts--search .middle-column {
+    flex: 1;
+    max-width: 820px;
+    padding: 72px 60px 72px 60px; }
+    @media (max-width: 1024px) {
+      .layouts--search .middle-column {
+        padding: 72px 16px 72px 16px; } }
 
 a,
 .link {
