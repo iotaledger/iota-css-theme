@@ -34,7 +34,7 @@ $side-menu-right-padding: 24px;
     position: fixed;
     z-index: 15;
     top: 0;
-    right: -32px;
+    right: -20px;
     padding-right: 17px;
     overflow-y: scroll;
     transition: 300ms ease;
@@ -123,6 +123,7 @@ $side-menu-right-padding: 24px;
   border: 0;
   background: none;
   color: $white;
+  transition: opacity $transition-duration ease;
 
   &::before {
     @extend %icon-cross;
@@ -136,6 +137,7 @@ $side-menu-right-padding: 24px;
 
   &:hover {
     &:not([disabled]) {
+      opacity: 0.5;
       cursor: pointer;
     }
   }
