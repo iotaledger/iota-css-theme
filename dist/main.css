@@ -1386,10 +1386,13 @@ textarea,
   overflow: hidden;
   transition: 0.1s ease;
   transition-property: width; }
+  .input-sticky-wrapper:hover::before {
+    opacity: 0.5; }
   .input-sticky-wrapper::before {
     position: absolute;
     top: 12px;
     left: 12px;
+    transition: opacity 0.3s ease;
     color: #ffffff;
     font-family: "IOTA icons";
     font-size: 18px;
@@ -1398,7 +1401,7 @@ textarea,
   .input-sticky-wrapper .input-search-sticky {
     width: 100%;
     padding: 10px 0px 12px 43px;
-    transition: opacity 0.1s ease;
+    transition: opacity 0.3s ease;
     border: 0;
     border-bottom: 2px solid transparent;
     border-radius: 0;
@@ -1444,6 +1447,8 @@ textarea,
     width: 100%;
     transition: 0.3s ease;
     transition-property: width; }
+    .input-sticky-wrapper.input-sticky-wrapper--expanded:hover::before {
+      opacity: 1; }
     .input-sticky-wrapper.input-sticky-wrapper--expanded .input-search-sticky {
       padding-right: 40px;
       transition: opacity 0.3s ease;
@@ -1681,7 +1686,7 @@ textarea,
     position: fixed;
     z-index: 15;
     top: 0;
-    right: -32px;
+    right: -20px;
     padding-right: 17px;
     overflow-y: scroll;
     transition: 300ms ease; }
@@ -1748,6 +1753,7 @@ textarea,
   position: relative;
   width: 20px;
   height: 20px;
+  transition: opacity 0.3s ease;
   border: 0;
   background: none;
   color: #ffffff; }
@@ -1760,6 +1766,7 @@ textarea,
     font-weight: 300;
     line-height: 18px; }
   .side-menu__close:hover:not([disabled]) {
+    opacity: 0.5;
     cursor: pointer; }
   .side-menu__close:focus {
     outline: none; }
@@ -1876,7 +1883,7 @@ table,
     .table .table-head tr .table-head-row--item,
     .table .table-head .table-head-row th,
     .table .table-head .table-head-row .table-head-row--item {
-      padding: 0px 18px 0px 18px;
+      padding: 10px 18px 10px 18px;
       border-right: 1px solid #ececec;
       border-bottom: 1px solid #ececec;
       background-color: #3f3f3f;
@@ -1884,7 +1891,7 @@ table,
       font-size: 20px;
       font-size: 1.25rem;
       font-weight: bold;
-      line-height: 2.4; }
+      line-height: 1.5; }
     table thead th,
     table .table-head th,
     .table thead th,
@@ -1968,10 +1975,10 @@ table,
       border-bottom: 1px solid #ececec;
       color: #603f98;
       font-family: "Source Code Pro", monospace;
-      font-size: 17px;
-      font-size: 1.0625rem;
+      font-size: 16px;
+      font-size: 1rem;
       font-weight: normal;
-      line-height: 2.82; }
+      line-height: 1.5; }
       table tbody tr th .table-body-row-item--inline-header,
       table tbody tr .table-body-row--header .table-body-row-item--inline-header,
       table tbody .table-body-row th .table-body-row-item--inline-header,
@@ -2060,10 +2067,10 @@ table,
       border-right: 1px solid #ececec;
       border-bottom: 1px solid #ececec;
       color: #4f4f4f;
-      font-size: 17px;
-      font-size: 1.0625rem;
+      font-size: 16px;
+      font-size: 1rem;
       font-weight: normal;
-      line-height: 1.88; }
+      line-height: 1.5; }
       table tbody tr td .table-body-row-item--inline-header,
       table tbody tr .table-body-row--item .table-body-row-item--inline-header,
       table tbody .table-body-row td .table-body-row-item--inline-header,
@@ -2607,7 +2614,7 @@ table,
       line-height: inherit; }
   .tree-menu .tree-menu__section {
     margin-top: 5px;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
     padding: 0px 0px 5px 6px;
     list-style-type: none; }
     .tree-menu .tree-menu__section .tree-menu__section-item {
@@ -3039,7 +3046,9 @@ footer {
           padding: 0 40px; } }
       .header .header__wrapper .header__body .header__title {
         max-width: 320px;
-        margin: 0 30px 0 0; }
+        margin: 0 30px 0 0;
+        font-size: 37.6px;
+        font-size: 2.35rem; }
       .header .header__wrapper .header__body .header__search {
         height: 100px;
         margin-top: 40px; }
@@ -3148,6 +3157,7 @@ footer {
         cursor: default;
         pointer-events: none; }
     .sticky-header .sticky-header__control .sticky-header__icon-burger {
+      transition: opacity 0.3s ease;
       border: 0;
       background: none;
       color: #ffffff;
@@ -3167,7 +3177,9 @@ footer {
   @media (max-width: 514px) {
     .sticky-header.sticky-header--expanded .sticky-header__brand {
       margin-right: 0px;
-      transition: opacity 0.1s ease;
+      transition: opacity 0.3s ease;
       opacity: 0; } }
   .sticky-header.sticky-header--expanded .sticky-header__control .input-sticky-wrapper .sticky-header__icon-close {
     opacity: 1; }
+    .sticky-header.sticky-header--expanded .sticky-header__control .input-sticky-wrapper .sticky-header__icon-close:hover {
+      opacity: 0.5; }

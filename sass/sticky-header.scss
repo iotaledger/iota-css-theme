@@ -80,11 +80,11 @@
     }
 
     .sticky-header__icon-burger {
+      transition: opacity $transition-duration ease;
       border: 0;
       background: none;
       color: $white;
       cursor: pointer;
-      transition: opacity $transition-duration-quick ease;
 
       &::before {
         @extend %icon-burger;
@@ -111,7 +111,7 @@
     @include phone-down {
       .sticky-header__brand {
         margin-right: 0px;
-        transition: opacity $transition-duration-quick ease;
+        transition: opacity $transition-duration ease;
         opacity: 0;
       }
     }
