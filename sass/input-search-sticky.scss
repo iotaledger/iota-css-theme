@@ -19,7 +19,9 @@
 
   &:hover {
     &::before {
-      opacity: 0.5;
+      @include phone-up {
+        opacity: 0.5;
+      }
     }
   }
 

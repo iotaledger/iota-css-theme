@@ -15,16 +15,16 @@
   &::before {
     @extend %icon-search;
     position: absolute;
-    top: calc(50% - 16px);
+    top: calc(50% - 12px);
     left: 24px;
     color: $light-grey;
-    @include icon(32px);
+    @include icon(24px);
   }
 
   .input-search-basic {
     width: 100%;
     max-width: 100%;
-    padding: 20px 40px 20px 73px;
+    padding: 15px 40px 15px 73px;
     border: 1px solid $light-grey;
     border-radius: 5px;
     outline: none;

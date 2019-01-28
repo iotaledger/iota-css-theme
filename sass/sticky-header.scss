@@ -82,8 +82,8 @@
     }
 
     .sticky-header__icon-burger {
-      transition: opacity $transition-duration ease;
       margin: 0px 0px 2px 9px;
+      transition: opacity $transition-duration ease;
       border: 0;
       background: none;
       color: $white;
