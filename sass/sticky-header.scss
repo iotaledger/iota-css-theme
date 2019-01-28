@@ -14,7 +14,7 @@
   padding: 0 40px;
   background: $hero-dark-gradient;
 
-  >a {
+  > a {
     height: 56px;
   }
 
@@ -23,15 +23,17 @@
     padding: 15px 20px 15px 20px;
   }
 
+
   .sticky-header__brand {
     width: 183px;
     height: 56px;
     margin-right: 20px;
     transition: opacity $transition-duration ease;
     opacity: 1;
+
     @include phone-down {
       position: absolute;
-      top: 15px;
+      top: 18px;
     }
   }
 
@@ -81,6 +83,7 @@
 
     .sticky-header__icon-burger {
       transition: opacity $transition-duration ease;
+      margin: 0px 0px 2px 9px;
       border: 0;
       background: none;
       color: $white;
@@ -97,7 +100,9 @@
       }
 
       &:hover {
-        opacity: 0.5;
+        @include phone-up {
+          opacity: 0.5;
+        }
       }
 
       &:disabled {
@@ -123,7 +128,9 @@
           opacity: 1;
 
           &:hover {
-            opacity: 0.5;
+            @include phone-up {
+              opacity: 0.5;
+            }
           }
         }
       }

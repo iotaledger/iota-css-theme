@@ -30,28 +30,18 @@
         align-items: flex-end;
       }
 
-      @include tablet-down {
-        padding-top: 10px;
-      }
-
-
       .header__brand {
         width: 183px;
         height: 56px;
-        margin: 22px 20px;
+        margin: 18px 20px 22px 20px;
 
         @include tablet-up {
-          margin: 22px 40px;
-        }
-
-
-        @include desktop {
           margin: 22px 40px;
         }
       }
 
       .header__icon {
-        margin: 27px 25px 0 0;
+        margin: 28px 16px 0 0;
         padding: 5px 10px;
         border: 0;
         background: none;
@@ -61,7 +51,6 @@
         @include desktop {
           margin: 27px 36px 0 0;
         }
-
 
         &::before {
           @extend %icon-burger;
