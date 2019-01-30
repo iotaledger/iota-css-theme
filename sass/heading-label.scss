@@ -15,6 +15,7 @@
   color: #f6f6f6;
   @include font-size(12px);
   font-weight: 600;
+  text-transform: uppercase;
 
   &.heading-label--secondary {
     background-color: $tealish;
