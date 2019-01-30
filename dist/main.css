@@ -2603,8 +2603,7 @@ table,
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    height: 50px;
-    padding: 0 12px;
+    padding: 8px 12px 8px 12px;
     background-color: #3f3f3f; }
     .tabs .tab-header .tab-header-list {
       display: inline-flex;
@@ -2631,10 +2630,12 @@ table,
       align-items: center;
       padding: 0px 12px; }
       .tabs .tab-header .tab-header-copy .tab-header-copy-text {
+        width: 55px;
         transition: 0.3s ease-out;
         transition-property: opacity;
         opacity: 0;
-        color: #28a745; }
+        color: #28a745;
+        text-align: right; }
       .tabs .tab-header .tab-header-copy .tab-header-copy-text--active {
         opacity: 1; }
       .tabs .tab-header .tab-header-copy .tab-header-copy-text--failed {

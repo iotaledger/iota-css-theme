@@ -17,8 +17,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    height: 50px;
-    padding: 0 12px;
+    padding: 8px 12px 8px 12px;
     background-color: $gunmetal-grey;
 
     .tab-header-list {
@@ -58,10 +57,12 @@
       padding: 0px 12px;
 
       .tab-header-copy-text {
+        width: 55px;
         transition: $transition-duration ease-out;
         transition-property: opacity;
         opacity: 0;
         color: $success;
+        text-align: right;
       }
 
       .tab-header-copy-text--active {
