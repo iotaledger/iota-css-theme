@@ -761,7 +761,8 @@ blockquote,
   color: #f6f6f6;
   font-size: 12px;
   font-size: 0.75rem;
-  font-weight: 600; }
+  font-weight: 600;
+  text-transform: uppercase; }
   .heading-label.heading-label--secondary {
     background-color: #20a49d; }
 
@@ -2648,8 +2649,6 @@ table,
         cursor: pointer; }
         .tabs .tab-header .tab-header-copy .tab-header-copy-button:focus {
           outline: none; }
-  .tabs .tab-container {
-    padding: 22px; }
   .tabs .tab-item {
     display: none; }
   .tabs .tab-item--selected {
