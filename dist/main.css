@@ -2829,9 +2829,7 @@ table,
     text-shadow: none; }
 
 .feedback-form__wrapper {
-  display: flex;
-  justify-content: center;
-  margin: 40px; }
+  margin: auto; }
 
 .feedback-form {
   display: flex;
@@ -2839,6 +2837,7 @@ table,
   flex-direction: column;
   align-items: center;
   width: 720px;
+  height: 650px;
   padding: 20px;
   border-radius: 20px;
   background-color: #ffffff; }
