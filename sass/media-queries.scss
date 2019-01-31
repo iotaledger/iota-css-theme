@@ -51,7 +51,7 @@ $desktop-narrow-width: 1180px;
   }
 }
 
-.table-hidden {
+.tablet-down-hidden {
   @include tablet-down {
     display: none;
   }

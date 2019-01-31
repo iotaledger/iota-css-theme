@@ -307,7 +307,7 @@ template {
   display: none; }
 
 @media (max-width: 767px) {
-  .table-hidden {
+  .tablet-down-hidden {
     display: none; } }
 
 body {
