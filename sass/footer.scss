@@ -56,6 +56,10 @@ footer {
   flex-direction: column;
   padding: 30px 16px;
 
+  select {
+    outline: none;
+  }
+
   @include tablet-up {
     display: none;
   }

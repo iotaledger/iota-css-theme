@@ -19,7 +19,6 @@
     max-width: none;
   }
 
-
   &::after {
     @extend %icon-chevron-down;
 
@@ -42,8 +41,7 @@
   padding-left: 20px;
   overflow: hidden;
   border: 0;
-  border-radius: 5px !important;
-  outline: none;
+  border-radius: 6px !important;
   background: none;
   color: $white;
   font-size: inherit;
