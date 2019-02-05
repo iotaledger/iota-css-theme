@@ -93,7 +93,8 @@
       .header__title {
         max-width: 320px;
         margin: 0 30px 0 0;
-        @include font-size(37.6px)
+
+        @include font-size(37.6px);
       }
 
       .header__search {
@@ -112,13 +113,25 @@
     .header__wrapper {
       padding-bottom: 20px;
 
+      .header__head {
+        .header__brand {
+          margin-left: 30px;
+
+          @include tablet-down {
+            margin-left: 10px;
+          }
+        }
+      }
+
       .header__body {
         max-width: none;
-        margin: 0px 20px 0px 20px;
+        margin: 0px 40px 0px 40px;
+        padding: 0;
 
         @include tablet-down {
-          margin: 0px 10px 0px 10px;
+          margin: 0 16px 0 16px;
         }
+
 
         .header__title {
           max-width: none;
