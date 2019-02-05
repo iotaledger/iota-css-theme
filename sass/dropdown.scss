@@ -9,11 +9,11 @@
 %select-wrapper-base {
   position: relative;
   width: 100%;
-  max-width: 343px;
+  height: 60px;
   border: 1px solid $white;
   border-radius: 6px;
   background-color: rgba(255, 255, 255, 0.1);
-  line-height: 1.5;
+  line-height: 1;
 
   @include phone-down {
     max-width: none;
@@ -37,8 +37,7 @@
 
 %select-base {
   width: 100%;
-  max-width: 343px;
-  height: 55px;
+  height: 58px;
   padding-right: 55px;
   padding-left: 20px;
   overflow: hidden;

@@ -79,6 +79,10 @@ $common-label-width: 125px;
       &::after {
         color: $gunmetal-grey !important;
       }
+
+      @include phone-down {
+        height: 40px !important;
+      }
     }
 
     select {
@@ -90,6 +94,10 @@ $common-label-width: 125px;
       &:disabled {
         background-color: lighten($light-grey, 15%);
         color: $black;
+      }
+
+      @include phone-down {
+        height: 38px !important;
       }
     }
   }

@@ -514,12 +514,18 @@ strong {
       background-color: #ffffff !important; }
       .form .fieldset .select-wrapper::after {
         color: #3f3f3f !important; }
+      @media (max-width: 514px) {
+        .form .fieldset .select-wrapper {
+          height: 40px !important; } }
     .form .fieldset select {
       max-width: none !important;
       color: #1c1e21 !important; }
       .form .fieldset select:disabled {
         background-color: #eaeaea;
         color: #1c1e21; }
+      @media (max-width: 514px) {
+        .form .fieldset select {
+          height: 38px !important; } }
   .form .buttons {
     margin-left: 137px; }
     @media (max-width: 514px) {
@@ -631,11 +637,11 @@ blockquote,
 .form .fieldset .select-wrapper, .select-wrapper {
   position: relative;
   width: 100%;
-  max-width: 343px;
+  height: 60px;
   border: 1px solid #ffffff;
   border-radius: 6px;
   background-color: rgba(255, 255, 255, 0.1);
-  line-height: 1.5; }
+  line-height: 1; }
   @media (max-width: 514px) {
     .form .fieldset .select-wrapper, .select-wrapper {
       max-width: none; } }
@@ -653,8 +659,7 @@ blockquote,
 
 .form .fieldset select, select {
   width: 100%;
-  max-width: 343px;
-  height: 55px;
+  height: 58px;
   padding-right: 55px;
   padding-left: 20px;
   overflow: hidden;
@@ -3141,12 +3146,18 @@ footer {
             margin-top: 0; } }
   .header.compact .header__wrapper {
     padding-bottom: 20px; }
+    .header.compact .header__wrapper .header__head .header__brand {
+      margin-left: 30px; }
+      @media (max-width: 767px) {
+        .header.compact .header__wrapper .header__head .header__brand {
+          margin-left: 10px; } }
     .header.compact .header__wrapper .header__body {
       max-width: none;
-      margin: 0px 20px 0px 20px; }
+      margin: 0px 40px 0px 40px;
+      padding: 0; }
       @media (max-width: 767px) {
         .header.compact .header__wrapper .header__body {
-          margin: 0px 10px 0px 10px; } }
+          margin: 0 16px 0 16px; } }
       .header.compact .header__wrapper .header__body .header__title {
         max-width: none;
         margin-bottom: 0px; }
