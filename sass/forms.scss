@@ -100,6 +100,12 @@ $common-label-width: 125px;
         height: 38px !important;
       }
     }
+
+    .button {
+      @include phone-down {
+        padding: 8px 32px;
+      }
+    }
   }
 
   .buttons {
@@ -107,6 +113,12 @@ $common-label-width: 125px;
 
     @include phone-down {
       margin-left: -7px;
+    }
+
+    .button {
+      @include phone-down {
+        padding: 8px 32px;
+      }
     }
   }
 }

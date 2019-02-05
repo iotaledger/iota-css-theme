@@ -526,11 +526,17 @@ strong {
       @media (max-width: 514px) {
         .form .fieldset select {
           height: 38px !important; } }
+    @media (max-width: 514px) {
+      .form .fieldset .button {
+        padding: 8px 32px; } }
   .form .buttons {
     margin-left: 137px; }
     @media (max-width: 514px) {
       .form .buttons {
         margin-left: -7px; } }
+    @media (max-width: 514px) {
+      .form .buttons .button {
+        padding: 8px 32px; } }
 
 .arrow-button {
   position: relative;
