@@ -640,6 +640,9 @@ blockquote,
     border-color: #ffffff;
     background-color: rgba(255, 255, 255, 0.2); }
 
+.button--no-case {
+  text-transform: none; }
+
 .form .fieldset .select-wrapper, .select-wrapper {
   position: relative;
   width: 100%;
