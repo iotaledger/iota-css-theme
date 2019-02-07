@@ -688,6 +688,9 @@ blockquote,
     color: #3f3f3f; }
   .form .fieldset select::-ms-expand, select::-ms-expand {
     display: none; }
+  .form .fieldset select:-moz-focusring, select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #ffffff; }
   .form .fieldset select:-moz-focusring *, select:-moz-focusring * {
     color: #ffffff;
     text-shadow: none; }

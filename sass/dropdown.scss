@@ -66,6 +66,12 @@
     display: none;
   }
 
+  // Remove the focus rect on Firefox
+  &:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 $white;
+  }
+
   &:-moz-focusring * {
     color: $white;
     text-shadow: none;
