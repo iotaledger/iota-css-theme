@@ -48,7 +48,9 @@
     border: 0;
     background: none;
     color: $black;
+
     @include font-size(20px);
+
     font-weight: 600;
     cursor: pointer;
 
@@ -56,9 +58,10 @@
       outline: none;
     }
 
-    .icon-cross {
-      &::before {
-        @extend %icon-cross;
+    &.icon-cross {
+      &::after {
+        @include font-size(20px);
+        font-weight: 600;
       }
     }
   }
@@ -71,7 +74,7 @@
 
     &:last-of-type {
       .feedback-form-button-circle {
-        i {
+        span {
           top: calc(50% - 14px);
         }
       }
@@ -90,23 +93,22 @@
       color: rgba(0, 0, 0, 0.1);
       cursor: pointer;
 
-      @include font-size(40px);
+      &::after {
+        @include font-size(40px);
 
-      i {
         position: absolute;
-        top: calc(50% - 24px);
         left: calc(50% - 20px);
+      }
 
-        &.icon-thumb-up {
-          &::before {
-            @extend %icon-thumb-up;
-          }
+      &.icon-thumb-up {
+        &::after {
+          top: calc(50% - 12px);
         }
+      }
 
-        &.icon-thumb-down {
-          &::before {
-            @extend %icon-thumb-down;
-          }
+      &.icon-thumb-down {
+        &::after {
+          top: 50%;
         }
       }
 

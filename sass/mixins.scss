@@ -23,7 +23,9 @@
 
 @mixin icon($size: null) {
   font-family: $font-family-icons;
-  font-size: $size;
   font-weight: 300;
-  line-height: $size;
+  @if ($size) {
+    font-size: $size;
+    line-height: $size;
+  }
 }

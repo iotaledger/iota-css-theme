@@ -39,7 +39,16 @@
           @include font-size(17px);
 
           font-weight: normal;
-          text-decoration: none;
+          text-decoration: underline;
+
+          &:hover {
+            opacity: 1;
+            text-decoration: underline;
+          }
+
+          @include desktop {
+            text-decoration: none;
+          }
         }
 
         &.tab-header-item--selected {
@@ -61,7 +70,7 @@
         transition: $transition-duration ease-out;
         transition-property: opacity;
         opacity: 0;
-        color: $success;
+        color: $tealish;
         text-align: right;
       }
 
@@ -86,12 +95,12 @@
           outline: none;
         }
 
-        i {
-          &.icon-copy {
-            &::before {
-              @extend %icon-copy;
-            }
-          }
+        &::after {
+          @include font-size(18px);
+        }
+
+        &:hover {
+          opacity: 0.5;
         }
       }
     }

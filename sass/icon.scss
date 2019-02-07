@@ -1,13 +1,5 @@
 
 // This file is auto-generated, do not edit
-.icon {
-  display: inline-block;
-  font-family: $font-family-icons;
-  font-style: normal;
-  font-variant: normal;
-  line-height: 1;
-  text-rendering: auto;
-}
 
 %icon-arrow-right {
   content: '→';
@@ -58,5 +50,96 @@
 }
 
 %icon-up-down {
-  content: '↕️';
+  content: '🔽';
+}
+
+.icon-arrow-right {
+  &::after {
+    @extend %icon-arrow-right;
+    @include icon(12px);
+  }
+}
+
+.icon-burger {
+  &::after {
+    @extend %icon-burger;
+    @include icon(12px);
+  }
+}
+
+.icon-chevron-up {
+  &::after {
+    @extend %icon-chevron-up;
+    @include icon(12px);
+  }
+}
+
+.icon-chevron-down {
+  &::after {
+    @extend %icon-chevron-down;
+    @include icon(12px);
+  }
+}
+
+.icon-chevron-right {
+  &::after {
+    @extend %icon-chevron-right;
+    @include icon(12px);
+  }
+}
+
+.icon-chevron-left {
+  &::after {
+    @extend %icon-chevron-left;
+    @include icon(12px);
+  }
+}
+
+.icon-cross {
+  &::after {
+    @extend %icon-cross;
+    @include icon(12px);
+  }
+}
+
+.icon-copy {
+  &::after {
+    @extend %icon-copy;
+    @include icon(12px);
+  }
+}
+
+.icon-feedback {
+  &::after {
+    @extend %icon-feedback;
+    @include icon(12px);
+  }
+}
+
+.icon-search {
+  &::after {
+    @extend %icon-search;
+    @include icon(12px);
+  }
+}
+
+.icon-thumb-up {
+  &::after {
+    @extend %icon-thumb-up;
+    @include icon(12px);
+  }
+}
+
+.icon-thumb-down {
+  &::after {
+    @extend %icon-thumb-down;
+    @include icon(12px);
+  }
+}
+
+.icon-up-down {
+  &::after {
+    @extend %icon-up-down;
+    @include icon(12px);
+  }
 }

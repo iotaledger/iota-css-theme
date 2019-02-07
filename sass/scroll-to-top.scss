@@ -19,12 +19,8 @@
     outline: none;
   }
 
-  i {
-    &.icon-chevron-up {
-      &::before {
-        @extend %icon-chevron-left;
-        @include icon(38px);
-      }
-    }
+  &::before {
+    @extend %icon-chevron-left;
+    @include icon(38px);
   }
 }

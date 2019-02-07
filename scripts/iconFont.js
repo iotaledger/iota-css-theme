@@ -9,16 +9,9 @@ const fontStream = new SVGIcons2SVGFontStream({
 
 const iconSCSS = `
 // This file is auto-generated, do not edit
-.icon {
-  display: inline-block;
-  font-family: $font-family-icons;
-  font-style: normal;
-  font-variant: normal;
-  line-height: 1;
-  text-rendering: auto;
-}
 `;
 
+let iconPlaceholders = "";
 let iconClasses = "";
 
 fontStream
@@ -40,13 +33,22 @@ Object.keys(icons).forEach((glyph) => {
     };
     fontStream.write(iconFile);
 
-    iconClasses += `
+    iconPlaceholders += `
 %icon-${glyph} {
   content: '${icons[glyph]}';
 }
 `
+
+iconClasses += `
+.icon-${glyph} {
+  &::after {
+    @extend %icon-${glyph};
+    @include icon(12px);
+  }
+}
+`
 });
 
-fs.writeFileSync('./sass/icon.scss', iconSCSS + iconClasses);
+fs.writeFileSync('./sass/icon.scss', iconSCSS + iconPlaceholders + iconClasses);
 
 fontStream.end();
