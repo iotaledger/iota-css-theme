@@ -2733,6 +2733,7 @@ table,
         margin-left: 8px;
         padding: 2px 4px 0;
         border: 0;
+        opacity: 0.5;
         background: none;
         color: #ffffff;
         font-size: 18px;
@@ -2743,7 +2744,7 @@ table,
           font-size: 18px;
           font-size: 1.125rem; }
         .tabs .tab-header .tab-header-copy .tab-header-copy-button:hover {
-          opacity: 0.5; }
+          opacity: 1; }
   .tabs .tab-item {
     display: none; }
   .tabs .tab-item--selected {
