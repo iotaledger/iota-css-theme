@@ -1,0 +1,44 @@
+// Status Message
+//
+// For generic status messages.
+//
+// Markup: html/status-message.html
+//
+// Styleguide Molecules.Status Message
+
+.status-message {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid var(--light-grey);
+  border-radius: 5px;
+  background: #ffffff;
+  font-weight: 600;
+  word-break: break-all;
+
+  &.status-message__warning {
+    color: var(--warning);
+  }
+
+  &.status-message__danger {
+    color: var(--danger);
+  }
+
+  &.status-message__info {
+    color: var(--info);
+  }
+
+  &.status-message__success {
+    color: var(--success);
+  }
+
+  .spinner {
+    margin-right: 20px;
+  }
+
+  .status {
+    display: flex;
+    flex-direction: column;
+  }
+}

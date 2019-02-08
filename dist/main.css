@@ -577,6 +577,9 @@ strong {
       .form .form--status .form--status-content.form--status-content__error {
         border-color: #dc3545;
         color: #dc3545; }
+      .form .form--status .form--status-content .form--status-message {
+        display: flex;
+        flex-direction: column; }
       .form .form--status .form--status-content .spinner {
         margin-right: 20px; }
       .form .form--status .form--status-content .alert {
@@ -2085,6 +2088,30 @@ textarea,
             font-stretch: normal;
             font-style: normal;
             font-weight: bold; } }
+
+.status-message {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid var(--light-grey);
+  border-radius: 5px;
+  background: #ffffff;
+  font-weight: 600;
+  word-break: break-all; }
+  .status-message.status-message__warning {
+    color: var(--warning); }
+  .status-message.status-message__danger {
+    color: var(--danger); }
+  .status-message.status-message__info {
+    color: var(--info); }
+  .status-message.status-message__success {
+    color: var(--success); }
+  .status-message .spinner {
+    margin-right: 20px; }
+  .status-message .status {
+    display: flex;
+    flex-direction: column; }
 
 table,
 .table {

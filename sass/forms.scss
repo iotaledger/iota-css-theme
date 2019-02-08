@@ -45,6 +45,7 @@ $common-label-width: 140px;
       align-items: center;
       width: 100%;
       margin: 10px 0px 10px 0px;
+
       @include word-break;
       @include phone-down {
         margin: 0;
@@ -169,6 +170,11 @@ $common-label-width: 140px;
       &.form--status-content__error {
         border-color: $danger;
         color: $danger;
+      }
+
+      .form--status-message {
+        display: flex;
+        flex-direction: column;
       }
 
       .spinner {
