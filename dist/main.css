@@ -575,7 +575,6 @@ strong {
       border-radius: 5px;
       font-weight: bold; }
       .form .form--status .form--status-content.form--status-content__error {
-        border-color: #dc3545;
         color: #dc3545; }
       .form .form--status .form--status-content .form--status-message {
         display: flex;
