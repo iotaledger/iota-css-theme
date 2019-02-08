@@ -6,7 +6,7 @@
 //
 // Styleguide Molecules.Forms
 
-$common-label-width: 125px;
+$common-label-width: 140px;
 
 .form {
   width: 100%;
@@ -26,8 +26,7 @@ $common-label-width: 125px;
 
     label {
       display: block;
-      flex: none;
-      width: $common-label-width;
+      flex: 1 0 $common-label-width;
       margin-right: 20px;
 
       @include font-size(16px);
@@ -35,15 +34,26 @@ $common-label-width: 125px;
       font-weight: 600;
 
       @include phone-down {
-        width: auto;
+        flex: none;
         margin-bottom: 5px;
         margin-left: 0px;
       }
     }
 
+    label + span {
+      display: inline-flex;
+      align-items: center;
+      width: 100%;
+      margin: 10px 0px 10px 0px;
+      @include word-break;
+      @include phone-down {
+        margin: 0;
+      }
+    }
+
     input {
       display: block;
-      flex: 1 1 auto;
+      width: 100%;
       padding: 20px;
       border: 1px solid $light-grey;
       border-radius: 5px;
@@ -70,7 +80,6 @@ $common-label-width: 125px;
     .select-wrapper {
       @extend %select-wrapper-base;
 
-      flex: 1 1 auto !important;
       max-width: none !important;
       border: 1px solid $light-grey !important;
       border-radius: 5px !important;
@@ -98,26 +107,76 @@ $common-label-width: 125px;
 
       @include phone-down {
         height: 38px !important;
+        padding-left: 10px !important;
       }
     }
 
     .button {
+      margin: 0px 0px 0px 10px;
+      white-space: nowrap;
+
+      @include phone-down {
+        margin: 10px 0px 0px 0px;
+        padding: 8px 32px;
+      }
+    }
+  }
+
+  .form--actions {
+    display: flex;
+    justify-content: flex-end;
+
+    @include phone-down {
+      margin-left: -7px;
+    }
+
+
+    .button {
+      margin: 0px;
+
       @include phone-down {
         padding: 8px 32px;
       }
     }
   }
 
-  .buttons {
-    margin-left: $common-label-width + 12px;
+  .form--status {
+    display: flex;
 
-    @include phone-down {
-      margin-left: -7px;
+    label {
+      display: block;
+      flex: 1 0 $common-label-width;
+      margin-right: 20px;
+
+      @include phone-down {
+        flex: none;
+        margin-right: 0px;
+      }
     }
 
-    .button {
-      @include phone-down {
-        padding: 8px 32px;
+    .form--status-content {
+      display: flex;
+      align-items: center;
+      justify-content: stretch;
+      width: 100%;
+      min-height: 100px;
+      margin-top: 10px;
+      padding: 20px;
+      border: 1px solid $light-grey;
+      border-radius: 5px;
+      font-weight: bold;
+
+      &.form--status-content__error {
+        border-color: $danger;
+        color: $danger;
+      }
+
+      .spinner {
+        margin-right: 20px;
+      }
+
+      .alert {
+        width: 100%;
       }
     }
   }
