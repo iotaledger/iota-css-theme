@@ -1,0 +1,22 @@
+// Success
+//
+// For generic status messages.
+//
+// Styleguide Molecules.Success
+
+.success-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-weight: 600;
+  @include word-break;
+
+  .success-icon {
+    margin-right: 20px;
+  }
+
+  .success-message {
+    display: flex;
+    flex-direction: column;
+  }
+}
