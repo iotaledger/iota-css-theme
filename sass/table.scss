@@ -41,10 +41,6 @@
       .table-body-row--item {
         display: flex;
 
-        * {
-          flex: 3;
-        }
-
         .table-body-row-item--inline-header {
           display: block;
           flex: 1;
@@ -62,6 +58,13 @@
           font-weight: bold;
           line-height: 1.2;
           text-overflow: ellipsis;
+        }
+
+        span {
+          &:nth-child(2) {
+            flex: 3;
+            padding-top: 3px;
+          }
         }
       }
     }
