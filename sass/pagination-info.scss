@@ -1,0 +1,26 @@
+// Pagination Info
+//
+// Markup: html/pagination-info.html
+//
+// Styleguide Molecules.Pagination Info
+
+.pagination-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+
+  .pagination-info--text {
+    font-weight: bold;
+  }
+
+  @include phone-down {
+    flex-direction: column;
+    margin-top: 20px;
+
+    .pagination {
+      margin-top: 20px;
+    }
+  }
+}
