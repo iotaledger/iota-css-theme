@@ -1,0 +1,35 @@
+// Button Container
+//
+// Various button container styles.
+//
+// Markup: html/button-container.html
+//
+// Styleguide Molecules.Button Container
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+
+  @include phone-down {
+    flex-direction: column;
+    justify-content: stretch;
+
+    .button {
+      width: 100%;
+      min-width: 180px;
+      margin-right: 0px;
+      margin-left: 0px;
+      text-align: center;
+    }
+  }
+
+  &.button-container__center {
+    justify-content: center;
+  }
+
+  &.button-container__right {
+    justify-content: flex-end;
+  }
+}
