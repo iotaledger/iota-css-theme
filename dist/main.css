@@ -536,6 +536,7 @@ strong {
           height: 38px !important;
           padding-left: 10px !important; } }
     .form .fieldset .button {
+      min-width: 180px;
       margin: 0px 0px 0px 10px;
       white-space: nowrap; }
       @media (max-width: 514px) {
@@ -544,15 +545,23 @@ strong {
           padding: 8px 32px; } }
   .form .form--actions {
     display: flex;
-    justify-content: flex-end; }
-    @media (max-width: 514px) {
-      .form .form--actions {
-        margin-left: -7px; } }
-    .form .form--actions .button {
-      margin: 0px; }
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    .form .form--actions .form--actions--spacer {
+      flex: 1 0 140px;
+      margin-right: 20px; }
       @media (max-width: 514px) {
-        .form .form--actions .button {
-          padding: 8px 32px; } }
+        .form .form--actions .form--actions--spacer {
+          display: none; } }
+    .form .form--actions .form--actions--content {
+      width: 100%; }
+      .form .form--actions .form--actions--content .button {
+        min-width: 180px;
+        margin: 0px; }
+        @media (max-width: 514px) {
+          .form .form--actions .form--actions--content .button {
+            width: 100%;
+            padding: 8px 32px; } }
   .form .form--status {
     display: flex; }
     .form .form--status label {
@@ -1221,6 +1230,26 @@ textarea,
   font-size: 12px;
   line-height: 12px; }
 
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%; }
+  @media (max-width: 514px) {
+    .button-container {
+      flex-direction: column;
+      justify-content: stretch; }
+      .button-container .button {
+        width: 100%;
+        min-width: 180px;
+        margin-right: 0px;
+        margin-left: 0px;
+        text-align: center; } }
+  .button-container.button-container__center {
+    justify-content: center; }
+  .button-container.button-container__right {
+    justify-content: flex-end; }
+
 .card__link {
   display: block;
   position: relative;
@@ -1789,6 +1818,21 @@ textarea,
     background-color: #20a49d;
     color: #ffffff; }
 
+.pagination-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px; }
+  .pagination-info .pagination-info--text {
+    font-weight: bold; }
+  @media (max-width: 514px) {
+    .pagination-info {
+      flex-direction: column;
+      margin-top: 20px; }
+      .pagination-info .pagination {
+        margin-top: 20px; } }
+
 .project__wrapper {
   display: flex;
   flex-direction: column;
@@ -2040,6 +2084,31 @@ textarea,
       color: #20a49d;
       font-weight: 600; }
 
+.status-message {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid var(--light-grey);
+  border-radius: 5px;
+  background: #ffffff;
+  font-weight: 600;
+  word-break: break-all;
+  word-break: break-word; }
+  .status-message.status-message__warning {
+    color: var(--warning); }
+  .status-message.status-message__danger {
+    color: var(--danger); }
+  .status-message.status-message__info {
+    color: var(--info); }
+  .status-message.status-message__success {
+    color: var(--success); }
+  .status-message .spinner {
+    margin-right: 20px; }
+  .status-message .status {
+    display: flex;
+    flex-direction: column; }
+
 .sub-header__wrapper {
   background: linear-gradient(to right, #092a33, #019792); }
   .sub-header__wrapper .sub-header {
@@ -2088,27 +2157,16 @@ textarea,
             font-style: normal;
             font-weight: bold; } }
 
-.status-message {
+.success-wrapper {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 20px;
-  border: 1px solid var(--light-grey);
-  border-radius: 5px;
-  background: #ffffff;
   font-weight: 600;
-  word-break: break-all; }
-  .status-message.status-message__warning {
-    color: var(--warning); }
-  .status-message.status-message__danger {
-    color: var(--danger); }
-  .status-message.status-message__info {
-    color: var(--info); }
-  .status-message.status-message__success {
-    color: var(--success); }
-  .status-message .spinner {
+  word-break: break-all;
+  word-break: break-word; }
+  .success-wrapper .success-icon {
     margin-right: 20px; }
-  .status-message .status {
+  .success-wrapper .success-message {
     display: flex;
     flex-direction: column; }
 
@@ -2461,39 +2519,6 @@ table,
         .table .table-body .table-body-row td,
         .table .table-body .table-body-row .table-body-row--item {
           display: flex; }
-          table tbody tr th *,
-          table tbody tr .table-body-row--header *,
-          table tbody tr td *,
-          table tbody tr .table-body-row--item *,
-          table tbody .table-body-row th *,
-          table tbody .table-body-row .table-body-row--header *,
-          table tbody .table-body-row td *,
-          table tbody .table-body-row .table-body-row--item *,
-          table .table-body tr th *,
-          table .table-body tr .table-body-row--header *,
-          table .table-body tr td *,
-          table .table-body tr .table-body-row--item *,
-          table .table-body .table-body-row th *,
-          table .table-body .table-body-row .table-body-row--header *,
-          table .table-body .table-body-row td *,
-          table .table-body .table-body-row .table-body-row--item *,
-          .table tbody tr th *,
-          .table tbody tr .table-body-row--header *,
-          .table tbody tr td *,
-          .table tbody tr .table-body-row--item *,
-          .table tbody .table-body-row th *,
-          .table tbody .table-body-row .table-body-row--header *,
-          .table tbody .table-body-row td *,
-          .table tbody .table-body-row .table-body-row--item *,
-          .table .table-body tr th *,
-          .table .table-body tr .table-body-row--header *,
-          .table .table-body tr td *,
-          .table .table-body tr .table-body-row--item *,
-          .table .table-body .table-body-row th *,
-          .table .table-body .table-body-row .table-body-row--header *,
-          .table .table-body .table-body-row td *,
-          .table .table-body .table-body-row .table-body-row--item * {
-            flex: 3; }
           table tbody tr th .table-body-row-item--inline-header,
           table tbody tr .table-body-row--header .table-body-row-item--inline-header,
           table tbody tr td .table-body-row-item--inline-header,
@@ -2540,7 +2565,41 @@ table,
             font-size: 0.9375rem;
             font-weight: bold;
             line-height: 1.2;
-            text-overflow: ellipsis; } }
+            text-overflow: ellipsis; }
+          table tbody tr th span:nth-child(2),
+          table tbody tr .table-body-row--header span:nth-child(2),
+          table tbody tr td span:nth-child(2),
+          table tbody tr .table-body-row--item span:nth-child(2),
+          table tbody .table-body-row th span:nth-child(2),
+          table tbody .table-body-row .table-body-row--header span:nth-child(2),
+          table tbody .table-body-row td span:nth-child(2),
+          table tbody .table-body-row .table-body-row--item span:nth-child(2),
+          table .table-body tr th span:nth-child(2),
+          table .table-body tr .table-body-row--header span:nth-child(2),
+          table .table-body tr td span:nth-child(2),
+          table .table-body tr .table-body-row--item span:nth-child(2),
+          table .table-body .table-body-row th span:nth-child(2),
+          table .table-body .table-body-row .table-body-row--header span:nth-child(2),
+          table .table-body .table-body-row td span:nth-child(2),
+          table .table-body .table-body-row .table-body-row--item span:nth-child(2),
+          .table tbody tr th span:nth-child(2),
+          .table tbody tr .table-body-row--header span:nth-child(2),
+          .table tbody tr td span:nth-child(2),
+          .table tbody tr .table-body-row--item span:nth-child(2),
+          .table tbody .table-body-row th span:nth-child(2),
+          .table tbody .table-body-row .table-body-row--header span:nth-child(2),
+          .table tbody .table-body-row td span:nth-child(2),
+          .table tbody .table-body-row .table-body-row--item span:nth-child(2),
+          .table .table-body tr th span:nth-child(2),
+          .table .table-body tr .table-body-row--header span:nth-child(2),
+          .table .table-body tr td span:nth-child(2),
+          .table .table-body tr .table-body-row--item span:nth-child(2),
+          .table .table-body .table-body-row th span:nth-child(2),
+          .table .table-body .table-body-row .table-body-row--header span:nth-child(2),
+          .table .table-body .table-body-row td span:nth-child(2),
+          .table .table-body .table-body-row .table-body-row--item span:nth-child(2) {
+            flex: 3;
+            padding-top: 3px; } }
   table.table--compact,
   .table.table--compact {
     border-left-width: 0px; }
@@ -2619,39 +2678,6 @@ table,
       .table.table--compact .table-body .table-body-row td,
       .table.table--compact .table-body .table-body-row .table-body-row--item {
         display: flex; }
-        table.table--compact tbody tr th *,
-        table.table--compact tbody tr .table-body-row--header *,
-        table.table--compact tbody tr td *,
-        table.table--compact tbody tr .table-body-row--item *,
-        table.table--compact tbody .table-body-row th *,
-        table.table--compact tbody .table-body-row .table-body-row--header *,
-        table.table--compact tbody .table-body-row td *,
-        table.table--compact tbody .table-body-row .table-body-row--item *,
-        table.table--compact .table-body tr th *,
-        table.table--compact .table-body tr .table-body-row--header *,
-        table.table--compact .table-body tr td *,
-        table.table--compact .table-body tr .table-body-row--item *,
-        table.table--compact .table-body .table-body-row th *,
-        table.table--compact .table-body .table-body-row .table-body-row--header *,
-        table.table--compact .table-body .table-body-row td *,
-        table.table--compact .table-body .table-body-row .table-body-row--item *,
-        .table.table--compact tbody tr th *,
-        .table.table--compact tbody tr .table-body-row--header *,
-        .table.table--compact tbody tr td *,
-        .table.table--compact tbody tr .table-body-row--item *,
-        .table.table--compact tbody .table-body-row th *,
-        .table.table--compact tbody .table-body-row .table-body-row--header *,
-        .table.table--compact tbody .table-body-row td *,
-        .table.table--compact tbody .table-body-row .table-body-row--item *,
-        .table.table--compact .table-body tr th *,
-        .table.table--compact .table-body tr .table-body-row--header *,
-        .table.table--compact .table-body tr td *,
-        .table.table--compact .table-body tr .table-body-row--item *,
-        .table.table--compact .table-body .table-body-row th *,
-        .table.table--compact .table-body .table-body-row .table-body-row--header *,
-        .table.table--compact .table-body .table-body-row td *,
-        .table.table--compact .table-body .table-body-row .table-body-row--item * {
-          flex: 3; }
         table.table--compact tbody tr th .table-body-row-item--inline-header,
         table.table--compact tbody tr .table-body-row--header .table-body-row-item--inline-header,
         table.table--compact tbody tr td .table-body-row-item--inline-header,
@@ -2699,6 +2725,40 @@ table,
           font-weight: bold;
           line-height: 1.2;
           text-overflow: ellipsis; }
+        table.table--compact tbody tr th span:nth-child(2),
+        table.table--compact tbody tr .table-body-row--header span:nth-child(2),
+        table.table--compact tbody tr td span:nth-child(2),
+        table.table--compact tbody tr .table-body-row--item span:nth-child(2),
+        table.table--compact tbody .table-body-row th span:nth-child(2),
+        table.table--compact tbody .table-body-row .table-body-row--header span:nth-child(2),
+        table.table--compact tbody .table-body-row td span:nth-child(2),
+        table.table--compact tbody .table-body-row .table-body-row--item span:nth-child(2),
+        table.table--compact .table-body tr th span:nth-child(2),
+        table.table--compact .table-body tr .table-body-row--header span:nth-child(2),
+        table.table--compact .table-body tr td span:nth-child(2),
+        table.table--compact .table-body tr .table-body-row--item span:nth-child(2),
+        table.table--compact .table-body .table-body-row th span:nth-child(2),
+        table.table--compact .table-body .table-body-row .table-body-row--header span:nth-child(2),
+        table.table--compact .table-body .table-body-row td span:nth-child(2),
+        table.table--compact .table-body .table-body-row .table-body-row--item span:nth-child(2),
+        .table.table--compact tbody tr th span:nth-child(2),
+        .table.table--compact tbody tr .table-body-row--header span:nth-child(2),
+        .table.table--compact tbody tr td span:nth-child(2),
+        .table.table--compact tbody tr .table-body-row--item span:nth-child(2),
+        .table.table--compact tbody .table-body-row th span:nth-child(2),
+        .table.table--compact tbody .table-body-row .table-body-row--header span:nth-child(2),
+        .table.table--compact tbody .table-body-row td span:nth-child(2),
+        .table.table--compact tbody .table-body-row .table-body-row--item span:nth-child(2),
+        .table.table--compact .table-body tr th span:nth-child(2),
+        .table.table--compact .table-body tr .table-body-row--header span:nth-child(2),
+        .table.table--compact .table-body tr td span:nth-child(2),
+        .table.table--compact .table-body tr .table-body-row--item span:nth-child(2),
+        .table.table--compact .table-body .table-body-row th span:nth-child(2),
+        .table.table--compact .table-body .table-body-row .table-body-row--header span:nth-child(2),
+        .table.table--compact .table-body .table-body-row td span:nth-child(2),
+        .table.table--compact .table-body .table-body-row .table-body-row--item span:nth-child(2) {
+          flex: 3;
+          padding-top: 3px; }
 
 .table-of-contents .table-of-contents__section-title {
   margin: 0;
@@ -3347,6 +3407,80 @@ footer {
       .header.compact .header__wrapper .header__body .header__title {
         max-width: none;
         margin-bottom: 0px; }
+
+.qr-reader.qr-reader__fill {
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+  @media (max-width: 514px) {
+    .qr-reader.qr-reader__fill {
+      display: block; } }
+  .qr-reader.qr-reader__fill .qr-reader-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.95;
+    background: #ffffff; }
+    @media (max-width: 514px) {
+      .qr-reader.qr-reader__fill .qr-reader-overlay {
+        opacity: 1; } }
+
+.qr-reader.qr-reader__inline {
+  background: #ffffff; }
+  .qr-reader.qr-reader__inline .qr-reader-close {
+    display: none; }
+
+.qr-reader .qr-reader-content {
+  position: relative;
+  margin: auto;
+  padding: 30px;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  background: #ffffff; }
+  @media (max-width: 514px) {
+    .qr-reader .qr-reader-content {
+      padding: 10px;
+      border: 0; } }
+  .qr-reader .qr-reader-content h1 {
+    margin-bottom: 10px; }
+  .qr-reader .qr-reader-content .qr-reader-close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    border: 0;
+    opacity: 1;
+    background: none;
+    color: #1c1e21;
+    font-size: 20px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer; }
+    @media (max-width: 514px) {
+      .qr-reader .qr-reader-content .qr-reader-close {
+        top: 18px;
+        right: 10px; } }
+    .qr-reader .qr-reader-content .qr-reader-close:focus {
+      outline: none; }
+    .qr-reader .qr-reader-content .qr-reader-close:hover {
+      opacity: 0.5; }
+    .qr-reader .qr-reader-content .qr-reader-close.icon-cross::after {
+      font-size: 20px;
+      font-size: 1.25rem;
+      font-weight: 600; }
+  .qr-reader .qr-reader-content .qr-reader-scan {
+    margin: 10px 0px 10px 0px; }
+    @media (max-width: 514px) {
+      .qr-reader .qr-reader-content .qr-reader-scan {
+        max-width: none; } }
+    .qr-reader .qr-reader-content .qr-reader-scan section div {
+      border: 8px solid #20a49d !important;
+      box-shadow: none !important; }
 
 .search-result {
   display: flex;
