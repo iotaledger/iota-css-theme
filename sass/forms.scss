@@ -113,6 +113,7 @@ $common-label-width: 140px;
     }
 
     .button {
+      min-width: 180px;
       margin: 0px 0px 0px 10px;
       white-space: nowrap;
 
@@ -125,18 +126,29 @@ $common-label-width: 140px;
 
   .form--actions {
     display: flex;
-    justify-content: flex-end;
+    margin-top: 10px;
+    margin-bottom: 10px;
 
-    @include phone-down {
-      margin-left: -7px;
-    }
-
-
-    .button {
-      margin: 0px;
+    .form--actions--spacer {
+      flex: 1 0 $common-label-width;
+      margin-right: 20px;
 
       @include phone-down {
-        padding: 8px 32px;
+        display: none;
+      }
+    }
+
+    .form--actions--content {
+      width: 100%;
+
+      .button {
+        min-width: 180px;
+        margin: 0px;
+
+        @include phone-down {
+          width: 100%;
+          padding: 8px 32px;
+        }
       }
     }
   }
