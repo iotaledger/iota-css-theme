@@ -1,0 +1,116 @@
+// QR Reader
+//
+// QR Reader styles.
+//
+// Markup: html/qr-reader.html
+//
+// Styleguide Organisms.QRReader
+
+.qr-reader {
+  &.qr-reader__fill {
+    display: flex;
+
+    @include phone-down {
+      display: block;
+    }
+
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    .qr-reader-overlay {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      opacity: 0.95;
+      background: $white;
+
+      @include phone-down {
+        opacity: 1;
+      }
+    }
+  }
+
+  &.qr-reader__inline {
+    background: $white;
+
+    .qr-reader-close {
+      display: none;
+    }
+  }
+
+  .qr-reader-content {
+    position: relative;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid $light-grey;
+    border-radius: 5px;
+    background: $white;
+
+    @include phone-down {
+      padding: 10px;
+      border: 0;
+    }
+
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    .qr-reader-close {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      border: 0;
+      opacity: 1;
+      background: none;
+      color: $black;
+
+      @include phone-down {
+        top: 18px;
+        right: 10px;
+      }
+
+      @include font-size(20px);
+
+      font-weight: 600;
+      cursor: pointer;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:hover {
+        opacity: 0.5;
+      }
+
+      &.icon-cross {
+        &::after {
+          @include font-size(20px);
+
+          font-weight: 600;
+        }
+      }
+    }
+
+    .qr-reader-scan {
+      margin: 10px 0px 10px 0px;
+
+      @include phone-down {
+        max-width: none;
+      }
+
+      section {
+        div {
+          border: 8px solid $tealish !important;
+          box-shadow: none !important;
+        }
+      }
+    }
+  }
+}
