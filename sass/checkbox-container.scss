@@ -1,0 +1,25 @@
+// Checkbox Container
+//
+// Various checkbox container styles.
+//
+// Markup: html/checkbox-container.html
+//
+// Styleguide Molecules.Checkbox Container
+
+.checkbox-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+
+  @include phone-down {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .checkbox {
+    margin-right: 20px;
+  }
+}

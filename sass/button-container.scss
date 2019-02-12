@@ -12,6 +12,11 @@
   justify-content: flex-start;
   width: 100%;
 
+  .button {
+    margin-right: 10px !important;
+    margin-left: 0px !important;
+  }
+
   @include phone-down {
     flex-direction: column;
     justify-content: stretch;
@@ -27,9 +32,19 @@
 
   &.button-container__center {
     justify-content: center;
+
+    .button {
+      margin-right: 5px !important;
+      margin-left: 5px !important;
+    }
   }
 
   &.button-container__right {
     justify-content: flex-end;
+
+    .button {
+      margin-right: 0px !important;
+      margin-left: 10px !important;
+    }
   }
 }

@@ -14,7 +14,7 @@ $common-label-width: 140px;
   .fieldset {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     padding: 0px 0px 10px 0px;
     border: 0;
 
@@ -27,6 +27,7 @@ $common-label-width: 140px;
     label {
       display: block;
       flex: 1 0 $common-label-width;
+      margin-top: 20px;
       margin-right: 20px;
 
       @include font-size(16px);
@@ -53,28 +54,31 @@ $common-label-width: 140px;
     }
 
     input {
-      display: block;
-      width: 100%;
-      padding: 20px;
-      border: 1px solid $light-grey;
-      border-radius: 5px;
-      outline: none;
-      background-color: $white;
-      color: $black;
-
-      @include phone-down {
-        padding: 10px;
-      }
-
-
-      &::placeholder {
-        opacity: 1;
-        color: $light-grey;
-      }
-
-      &:read-only {
-        background-color: lighten($light-grey, 15%);
+      &[type='text'],
+      &[type='password'] {
+        display: block;
+        width: 100%;
+        padding: 20px;
+        border: 1px solid $light-grey;
+        border-radius: 5px;
+        outline: none;
+        background-color: $white;
         color: $black;
+
+        @include phone-down {
+          padding: 10px;
+        }
+
+
+        &::placeholder {
+          opacity: 1;
+          color: $light-grey;
+        }
+
+        &:read-only {
+          background-color: lighten($light-grey, 15%);
+          color: $black;
+        }
       }
     }
 
@@ -93,6 +97,11 @@ $common-label-width: 140px;
       @include phone-down {
         height: 40px !important;
       }
+    }
+
+    .checkbox-container {
+      position: relative;
+      top: 8px;
     }
 
     select {

@@ -1,0 +1,63 @@
+// Checkbox
+//
+// Various checkbox styles.
+//
+// Markup: html/checkbox.html
+//
+// Styleguide Atoms.Checkbox
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+
+  &.checkbox__disabled {
+    opacity: 0.5;
+  }
+
+  .checkbox-border {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border: 1px solid $light-grey;
+    border-radius: 5px;
+    background-color: $white;
+
+    input {
+      &[type='checkbox'] {
+        width: 100%;
+        height: 100%;
+        transition: $transition-duration ease;
+        transition-property: opacity;
+        border: 5px solid $white;
+        border-radius: 5px;
+        outline: none;
+        opacity: 0;
+        background-color: $jade;
+
+        &:focus {
+          outline: none;
+        }
+
+        &:hover {
+          &:not([disabled]) {
+            opacity: 0.5;
+            cursor: pointer;
+          }
+        }
+
+        &:checked {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .checkbox-border + label {
+    flex: 0;
+    margin: auto;
+    font-weight: normal;
+    white-space: nowrap;
+  }
+}
