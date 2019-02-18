@@ -51,8 +51,38 @@ $desktop-narrow-width: 1180px;
   }
 }
 
+.desktop-up-hidden {
+  @include desktop-down {
+    display: none !important;
+  }
+}
+
+.desktop-down-hidden {
+  @include desktop-down {
+    display: none !important;
+  }
+}
+
+.tablet-up-hidden {
+  @include tablet-up {
+    display: none !important;
+  }
+}
+
 .tablet-down-hidden {
   @include tablet-down {
-    display: none;
+    display: none !important;
+  }
+}
+
+.phone-down-hidden {
+  @include phone-down {
+    display: none !important;
+  }
+}
+
+.phone-up-hidden {
+  @include phone-up {
+    display: none !important;
   }
 }
