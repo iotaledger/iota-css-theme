@@ -306,9 +306,29 @@ template {
 [hidden] {
   display: none; }
 
+@media (max-width: 1024px) {
+  .desktop-up-hidden {
+    display: none !important; } }
+
+@media (max-width: 1024px) {
+  .desktop-down-hidden {
+    display: none !important; } }
+
+@media (min-width: 768px) {
+  .tablet-up-hidden {
+    display: none !important; } }
+
 @media (max-width: 767px) {
   .tablet-down-hidden {
-    display: none; } }
+    display: none !important; } }
+
+@media (max-width: 514px) {
+  .phone-down-hidden {
+    display: none !important; } }
+
+@media (min-width: 514px) {
+  .phone-up-hidden {
+    display: none !important; } }
 
 body {
   --tealish: #20a49d;
@@ -2148,6 +2168,15 @@ textarea,
     .side-menu__list .side-menu-item .side-menu-item--active {
       color: #20a49d;
       font-weight: 600; }
+
+.side-menu__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.5;
+  background-color: #ffffff; }
 
 .status-message {
   display: flex;
