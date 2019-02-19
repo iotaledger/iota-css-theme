@@ -23,6 +23,15 @@ $common-label-width: 140px;
       align-items: stretch;
     }
 
+    &.fieldset--small {
+      label {
+        margin-top: 10px;
+      }
+
+      label + span {
+        margin: 10px 0px 10px 0px;
+      }
+    }
 
     label {
       display: block;

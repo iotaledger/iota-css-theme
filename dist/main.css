@@ -495,6 +495,10 @@ strong {
       .form .fieldset {
         flex-direction: column;
         align-items: stretch; } }
+    .form .fieldset.fieldset--small label {
+      margin-top: 10px; }
+    .form .fieldset.fieldset--small label + span {
+      margin: 10px 0px 10px 0px; }
     .form .fieldset label {
       display: block;
       flex: 1 0 140px;
