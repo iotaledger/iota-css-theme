@@ -45,7 +45,7 @@ $common-label-width: 140px;
       display: inline-flex;
       align-items: center;
       width: 100%;
-      margin: 10px 0px 10px 0px;
+      margin: 20px 0px 20px 0px;
 
       @include word-break;
       @include phone-down {
