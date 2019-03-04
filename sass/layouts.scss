@@ -6,7 +6,8 @@
 //
 // Styleguide Atoms.Layouts
 
-.layouts--home {
+.layouts--home,
+.layouts--2-column {
   display: flex;
   max-width: $max-width;
   margin: 0 auto;
@@ -37,7 +38,8 @@
   }
 }
 
-.layouts--doc {
+.layouts--doc,
+.layouts-3-column {
   display: flex;
   justify-content: space-between;
   max-width: $max-width;
@@ -95,7 +97,8 @@
   }
 }
 
-.layouts--search {
+.layouts--search,
+.layouts--one-column {
   display: flex;
   justify-content: space-around;
 
