@@ -985,17 +985,17 @@ hr,
         margin-bottom: 30px; } }
 
 .layouts--search,
-.layouts--one-column {
+.layouts--1-column {
   display: flex;
   justify-content: space-around; }
   .layouts--search .middle-column,
-  .layouts--one-column .middle-column {
+  .layouts--1-column .middle-column {
     flex: 1;
     max-width: 820px;
     padding: 72px 60px 72px 60px; }
     @media (max-width: 1024px) {
       .layouts--search .middle-column,
-      .layouts--one-column .middle-column {
+      .layouts--1-column .middle-column {
         padding: 72px 16px 72px 16px; } }
 
 .layouts--app-single {
