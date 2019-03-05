@@ -498,10 +498,10 @@ strong {
     .form .fieldset.fieldset--small label {
       margin-top: 10px; }
     .form .fieldset.fieldset--small label + span {
-      margin: 10px 0px 10px 0px; }
+      margin: 10px 10px 10px 0px; }
     .form .fieldset label {
       display: block;
-      flex: 1 0 140px;
+      flex: 1 0 150px;
       margin-top: 20px;
       margin-right: 20px;
       font-size: 16px;
@@ -576,7 +576,7 @@ strong {
     margin-top: 10px;
     margin-bottom: 10px; }
     .form .form--actions .form--actions--spacer {
-      flex: 1 0 140px;
+      flex: 1 0 150px;
       margin-right: 20px; }
       @media (max-width: 514px) {
         .form .form--actions .form--actions--spacer {
@@ -594,7 +594,7 @@ strong {
     display: flex; }
     .form .form--status label {
       display: block;
-      flex: 1 0 140px;
+      flex: 1 0 150px;
       margin-right: 20px; }
       @media (max-width: 514px) {
         .form .form--status label {

@@ -6,7 +6,7 @@
 //
 // Styleguide Molecules.Forms
 
-$common-label-width: 140px;
+$common-label-width: 150px;
 
 .form {
   width: 100%;
@@ -29,7 +29,7 @@ $common-label-width: 140px;
       }
 
       label + span {
-        margin: 10px 0px 10px 0px;
+        margin: 10px 10px 10px 0px;
       }
     }
 
