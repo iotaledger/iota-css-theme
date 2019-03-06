@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: row;
   padding: 25px 20px;
-  border: 2px solid $black;
+  border: 1px solid $black;
   border-radius: 6px;
   background: #060606;
 
@@ -26,12 +26,12 @@
   .message-box--text {
     display: flex;
     flex-direction: column;
-    padding-top: 3px;
 
     .message-box--title {
       flex: 1;
+      margin-top: 3px;
 
-      @include font-size(14px);
+      @include font-size(16.8px);
 
       color: $black;
       font-weight: 600;
@@ -45,7 +45,7 @@
     .message-box--content {
       flex: 1;
 
-      @include font-size(13px);
+      @include font-size(16.8px);
 
       font-weight: normal;
       line-height: 1.5;

@@ -1853,7 +1853,7 @@ textarea,
   display: flex;
   flex-direction: row;
   padding: 25px 20px;
-  border: 2px solid #1c1e21;
+  border: 1px solid #1c1e21;
   border-radius: 6px;
   background: #060606; }
   .message-box .message-box--icon {
@@ -1866,12 +1866,12 @@ textarea,
       line-height: 22px; }
   .message-box .message-box--text {
     display: flex;
-    flex-direction: column;
-    padding-top: 3px; }
+    flex-direction: column; }
     .message-box .message-box--text .message-box--title {
       flex: 1;
-      font-size: 14px;
-      font-size: 0.875rem;
+      margin-top: 3px;
+      font-size: 16.8px;
+      font-size: 1.05rem;
       color: #1c1e21;
       font-weight: 600;
       line-height: 1; }
@@ -1879,8 +1879,8 @@ textarea,
       margin-top: 16px; }
     .message-box .message-box--text .message-box--content {
       flex: 1;
-      font-size: 13px;
-      font-size: 0.8125rem;
+      font-size: 16.8px;
+      font-size: 1.05rem;
       font-weight: normal;
       line-height: 1.5; }
   .message-box.message-box__success {
