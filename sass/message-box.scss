@@ -1,0 +1,106 @@
+// Message Box
+//
+// Markup: html/message-box.html
+//
+// Styleguide Molecules.Message Box
+
+.message-box {
+  display: flex;
+  flex-direction: row;
+  padding: 25px 20px;
+  border: 2px solid $black;
+  border-radius: 6px;
+  background: #060606;
+
+  .message-box--icon {
+    flex: 0 0 35px;
+    line-height: 1;
+
+    &::before {
+      @extend %icon-success;
+
+      @include icon(22px);
+    }
+  }
+
+  .message-box--text {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3px;
+
+    .message-box--title {
+      flex: 1;
+
+      @include font-size(14px);
+
+      color: $black;
+      font-weight: 600;
+      line-height: 1;
+    }
+
+    .message-box--title + .message-box--content {
+      margin-top: 16px;
+    }
+
+    .message-box--content {
+      flex: 1;
+
+      @include font-size(13px);
+
+      font-weight: normal;
+      line-height: 1.5;
+    }
+  }
+
+  &.message-box__success {
+    border-color: $success;
+    background: #f4fbf6;
+
+    .message-box--icon {
+      &::before {
+        @extend %icon-success;
+
+        color: $success;
+      }
+    }
+  }
+
+  &.message-box__danger {
+    border-color: $danger;
+    background: #fdf5f6;
+
+    .message-box--icon {
+      &::before {
+        @extend %icon-danger;
+
+        color: $danger;
+      }
+    }
+  }
+
+  &.message-box__warning {
+    border-color: $warning;
+    background: #fffcf3;
+
+    .message-box--icon {
+      &::before {
+        @extend %icon-warning;
+
+        color: $warning;
+      }
+    }
+  }
+
+  &.message-box__info {
+    border-color: $info;
+    background: #f3fafb;
+
+    .message-box--icon {
+      &::before {
+        @extend %icon-info;
+
+        color: $info;
+      }
+    }
+  }
+}

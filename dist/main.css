@@ -445,7 +445,7 @@ body {
   font-family: 'IOTA icons';
   font-style: normal;
   font-weight: normal;
-  src: url("/assets/iota-icons.ttf?build=1.0.1") format("truetype"); }
+  src: url("/assets/iota-icons.ttf?build=1.0.3") format("truetype"); }
 
 html {
   box-sizing: border-box; }
@@ -1236,6 +1236,18 @@ textarea,
 .drop-selector .drop-selector-title .drop-selector-title__icon::before, .icon-up-down::after, .version-picker-select__wrapper::after {
   content: '🔽'; }
 
+.icon-success::after, .message-box .message-box--icon::before, .message-box.message-box__success .message-box--icon::before {
+  content: '✔️'; }
+
+.icon-danger::after, .message-box.message-box__danger .message-box--icon::before {
+  content: '⛔'; }
+
+.icon-info::after, .message-box.message-box__info .message-box--icon::before {
+  content: 'ℹ️'; }
+
+.icon-warning::after, .message-box.message-box__warning .message-box--icon::before {
+  content: '⚠️'; }
+
 .icon-arrow-right::after {
   font-family: "IOTA icons";
   font-weight: 300;
@@ -1309,6 +1321,30 @@ textarea,
   line-height: 12px; }
 
 .icon-up-down::after {
+  font-family: "IOTA icons";
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 12px; }
+
+.icon-success::after {
+  font-family: "IOTA icons";
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 12px; }
+
+.icon-danger::after {
+  font-family: "IOTA icons";
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 12px; }
+
+.icon-info::after {
+  font-family: "IOTA icons";
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 12px; }
+
+.icon-warning::after {
   font-family: "IOTA icons";
   font-weight: 300;
   font-size: 12px;
@@ -1812,6 +1848,61 @@ textarea,
       transition: opacity 0.3s ease;
       border-bottom-color: #ffffff;
       opacity: 1; }
+
+.message-box {
+  display: flex;
+  flex-direction: row;
+  padding: 25px 20px;
+  border: 2px solid #1c1e21;
+  border-radius: 6px;
+  background: #060606; }
+  .message-box .message-box--icon {
+    flex: 0 0 35px;
+    line-height: 1; }
+    .message-box .message-box--icon::before {
+      font-family: "IOTA icons";
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 22px; }
+  .message-box .message-box--text {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3px; }
+    .message-box .message-box--text .message-box--title {
+      flex: 1;
+      font-size: 14px;
+      font-size: 0.875rem;
+      color: #1c1e21;
+      font-weight: 600;
+      line-height: 1; }
+    .message-box .message-box--text .message-box--title + .message-box--content {
+      margin-top: 16px; }
+    .message-box .message-box--text .message-box--content {
+      flex: 1;
+      font-size: 13px;
+      font-size: 0.8125rem;
+      font-weight: normal;
+      line-height: 1.5; }
+  .message-box.message-box__success {
+    border-color: #28a745;
+    background: #f4fbf6; }
+    .message-box.message-box__success .message-box--icon::before {
+      color: #28a745; }
+  .message-box.message-box__danger {
+    border-color: #dc3545;
+    background: #fdf5f6; }
+    .message-box.message-box__danger .message-box--icon::before {
+      color: #dc3545; }
+  .message-box.message-box__warning {
+    border-color: #ffc107;
+    background: #fffcf3; }
+    .message-box.message-box__warning .message-box--icon::before {
+      color: #ffc107; }
+  .message-box.message-box__info {
+    border-color: #17a2b8;
+    background: #f3fafb; }
+    .message-box.message-box__info .message-box--icon::before {
+      color: #17a2b8; }
 
 .navigator {
   display: flex;

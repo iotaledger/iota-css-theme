@@ -11,5 +11,9 @@ module.exports = {
    "search": "🔍",
    "thumb-up": "👍",
    "thumb-down": "👎",
-   "up-down": "🔽"
+   "up-down": "🔽",
+   "success": "✔️",
+   "danger": "⛔",
+   "info": "ℹ️",
+   "warning": "⚠️"
 }

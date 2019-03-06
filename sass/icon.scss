@@ -53,6 +53,22 @@
   content: '🔽';
 }
 
+%icon-success {
+  content: '✔️';
+}
+
+%icon-danger {
+  content: '⛔';
+}
+
+%icon-info {
+  content: 'ℹ️';
+}
+
+%icon-warning {
+  content: '⚠️';
+}
+
 .icon-arrow-right {
   &::after {
     @extend %icon-arrow-right;
@@ -140,6 +156,34 @@
 .icon-up-down {
   &::after {
     @extend %icon-up-down;
+    @include icon(12px);
+  }
+}
+
+.icon-success {
+  &::after {
+    @extend %icon-success;
+    @include icon(12px);
+  }
+}
+
+.icon-danger {
+  &::after {
+    @extend %icon-danger;
+    @include icon(12px);
+  }
+}
+
+.icon-info {
+  &::after {
+    @extend %icon-info;
+    @include icon(12px);
+  }
+}
+
+.icon-warning {
+  &::after {
+    @extend %icon-warning;
     @include icon(12px);
   }
 }
