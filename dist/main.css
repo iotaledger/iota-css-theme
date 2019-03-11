@@ -445,7 +445,7 @@ body {
   font-family: 'IOTA icons';
   font-style: normal;
   font-weight: normal;
-  src: url("/assets/iota-icons.ttf?build=1.0.3") format("truetype"); }
+  src: url("/assets/iota-icons.ttf?build=1.0.4") format("truetype"); }
 
 html {
   box-sizing: border-box; }
@@ -1237,16 +1237,16 @@ textarea,
   content: '🔽'; }
 
 .icon-success::after, .message-box .message-box--icon::before, .message-box.message-box__success .message-box--icon::before {
-  content: '✔️'; }
+  content: '✅'; }
 
 .icon-danger::after, .message-box.message-box__danger .message-box--icon::before {
   content: '⛔'; }
 
 .icon-info::after, .message-box.message-box__info .message-box--icon::before {
-  content: 'ℹ️'; }
+  content: 'i'; }
 
 .icon-warning::after, .message-box.message-box__warning .message-box--icon::before {
-  content: '⚠️'; }
+  content: '!'; }
 
 .icon-arrow-right::after {
   font-family: "IOTA icons";

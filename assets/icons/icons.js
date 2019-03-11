@@ -12,8 +12,8 @@ module.exports = {
    "thumb-up": "👍",
    "thumb-down": "👎",
    "up-down": "🔽",
-   "success": "✔️",
+   "success": "✅",
    "danger": "⛔",
-   "info": "ℹ️",
-   "warning": "⚠️"
+   "info": "i",
+   "warning": "!"
 }
