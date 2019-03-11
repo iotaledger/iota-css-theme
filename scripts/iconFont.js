@@ -25,7 +25,12 @@ fontStream
         console.log(err);
     });
 
+let characterErrors = 0;
 Object.keys(icons).forEach((glyph) => {
+    if (encodeURIComponent(icons[glyph]).length >= 14) {
+      console.error(`glyph '${glyph}' uses a unicode character that is beyond the range that can be used in an icon font, it will fail to display in Edge`)
+      characterErrors++;
+    }
     const iconFile = fs.createReadStream(`./assets/icons/${glyph}.svg`);
     iconFile.metadata = {
         unicode: [icons[glyph]],
@@ -48,6 +53,10 @@ iconClasses += `
 }
 `
 });
+
+if (characterErrors > 0) {
+  process.exit(1);
+}
 
 fs.writeFileSync('./sass/icon.scss', iconSCSS + iconPlaceholders + iconClasses);
 
