@@ -585,11 +585,13 @@ strong {
       width: 100%; }
       .form .form--actions .form--actions--content .button {
         min-width: 180px;
-        margin: 0px; }
+        margin: 0px 10px 0px 0px; }
         @media (max-width: 514px) {
           .form .form--actions .form--actions--content .button {
             width: 100%;
-            padding: 8px 32px; } }
+            padding: 8px 32px;
+            margin: 10px 0px 0px 0px;
+            text-align: center; } }
   .form .form--status {
     display: flex; }
     .form .form--status label {
