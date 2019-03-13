@@ -23,6 +23,7 @@ $common-label-width: 150px;
       align-items: stretch;
     }
 
+
     &.fieldset--small {
       label {
         margin-top: 10px;
@@ -165,8 +166,8 @@ $common-label-width: 150px;
 
         @include phone-down {
           width: 100%;
-          margin: 0px 0px 10px 0px;
           padding: 8px 32px;
+          margin: 0px 0px 10px 0px;
           text-align: center;
         }
       }
