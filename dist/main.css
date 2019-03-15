@@ -589,8 +589,8 @@ strong {
         @media (max-width: 514px) {
           .form .form--actions .form--actions--content .button {
             width: 100%;
-            padding: 8px 32px;
             margin: 0px 0px 10px 0px;
+            padding: 8px 32px;
             text-align: center; } }
   .form .form--status {
     display: flex; }
@@ -620,6 +620,8 @@ strong {
         flex-direction: column; }
       .form .form--status .form--status-content .spinner {
         margin-right: 20px; }
+      .form .form--status .form--status-content .success-wrapper {
+        width: auto; }
       .form .form--status .form--status-content .alert {
         width: 100%; }
 
