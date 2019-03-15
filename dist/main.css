@@ -540,6 +540,9 @@ strong {
       .form .fieldset input[type='text']:read-only, .form .fieldset input[type='password']:read-only {
         background-color: #eaeaea;
         color: #1c1e21; }
+    @media (max-width: 514px) {
+      .form .fieldset textarea {
+        padding: 10px; } }
     .form .fieldset .select-wrapper {
       max-width: none !important;
       border: 1px solid #c4c4c4 !important;
@@ -1200,6 +1203,14 @@ textarea,
   textarea:focus,
   .textarea:focus {
     outline: none; }
+  textarea::placeholder,
+  .textarea::placeholder {
+    opacity: 1;
+    color: #c4c4c4; }
+  textarea:disabled,
+  .textarea:disabled {
+    background-color: #eaeaea;
+    color: #1c1e21; }
 
 .icon-arrow-right::after, .input-register__button::after {
   content: '→'; }

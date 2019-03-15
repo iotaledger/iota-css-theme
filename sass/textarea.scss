@@ -16,4 +16,14 @@ textarea,
   &:focus {
     outline: none;
   }
+
+  &::placeholder {
+    opacity: 1;
+    color: $light-grey;
+  }
+
+  &:disabled {
+    background-color: lighten($light-grey, 15%);
+    color: $black;
+  }
 }

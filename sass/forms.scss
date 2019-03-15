@@ -79,7 +79,6 @@ $common-label-width: 150px;
           padding: 10px;
         }
 
-
         &::placeholder {
           opacity: 1;
           color: $light-grey;
@@ -89,6 +88,12 @@ $common-label-width: 150px;
           background-color: lighten($light-grey, 15%);
           color: $black;
         }
+      }
+    }
+
+    textarea {
+      @include phone-down {
+        padding: 10px;
       }
     }
 
