@@ -2516,6 +2516,8 @@ table,
       font-family: "Source Code Pro", monospace;
       font-size: 16px;
       font-size: 1rem;
+      word-break: break-all;
+      word-break: break-word;
       font-weight: normal;
       line-height: 1.5; }
       table tbody tr th .table-body-row-item--inline-header,
@@ -2608,6 +2610,8 @@ table,
       color: #4f4f4f;
       font-size: 16px;
       font-size: 1rem;
+      word-break: break-all;
+      word-break: break-word;
       font-weight: normal;
       line-height: 1.5; }
       table tbody tr td .table-body-row-item--inline-header,
