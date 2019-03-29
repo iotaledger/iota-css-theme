@@ -64,7 +64,8 @@
 }
 
 .button--small {
-  @include font-size(8px);
+  padding: 8px 16px;
+  @include font-size(12px);
 }
 
 .button--large {
