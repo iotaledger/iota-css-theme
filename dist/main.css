@@ -1054,6 +1054,54 @@ li {
   font-size: 1.0625rem;
   line-height: 2; }
 
+.modal-wrapper {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.9;
+  background-color: #ffffff; }
+
+.modal-container {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  padding: 40px; }
+
+.modal {
+  max-width: 100%;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  background: #ffffff; }
+  .modal .modal-title {
+    padding: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    font-size: 1.25rem; }
+  .modal .modal-content {
+    padding: 20px;
+    word-break: break-all;
+    word-break: break-word; }
+  .modal .modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px; }
+
 .text {
   color: #1c1e21;
   font-stretch: normal;

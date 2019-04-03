@@ -1,0 +1,63 @@
+// Modal
+//
+// Markup: html/modal.html
+//
+// Styleguide Molecules.Modal
+
+.modal-wrapper {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.9;
+  background-color: #ffffff;
+}
+
+.modal-container {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  padding: 40px;
+}
+
+.modal {
+  max-width: 100%;
+  border: 1px solid $light-grey;
+  border-radius: 5px;
+  background: $white;
+
+  .modal-title {
+    padding: 20px;
+    font-weight: bold;
+
+    @include font-size(20px);
+  }
+
+  .modal-content {
+    padding: 20px;
+
+    @include word-break;
+  }
+
+  .modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+  }
+}
