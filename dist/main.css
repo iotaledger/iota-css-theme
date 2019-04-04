@@ -2841,6 +2841,7 @@ table,
             font-size: 0.9375rem;
             font-weight: bold;
             line-height: 1.2;
+            text-align: left;
             text-overflow: ellipsis; }
           table tbody tr th span:nth-child(2),
           table tbody tr .table-body-row--header span:nth-child(2),
@@ -3000,6 +3001,7 @@ table,
           font-size: 0.9375rem;
           font-weight: bold;
           line-height: 1.2;
+          text-align: left;
           text-overflow: ellipsis; }
         table.table--compact tbody tr th span:nth-child(2),
         table.table--compact tbody tr .table-body-row--header span:nth-child(2),
