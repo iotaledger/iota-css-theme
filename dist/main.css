@@ -703,6 +703,11 @@ blockquote,
   font-size: 12px;
   font-size: 0.75rem; }
 
+.button--extra-small {
+  padding: 4px 10px;
+  font-size: 10px;
+  font-size: 0.625rem; }
+
 .button--large {
   font-size: 24px;
   font-size: 1.5rem; }

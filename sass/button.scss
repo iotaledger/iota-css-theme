@@ -68,6 +68,12 @@
   @include font-size(12px);
 }
 
+.button--extra-small {
+  padding: 4px 10px;
+  @include font-size(10px);
+}
+
+
 .button--large {
   @include font-size(24px);
 }
