@@ -8,6 +8,17 @@ In your main React file, you could do :
 import "iota-css-theme";
 ```
 
+### Fonts
+You have to manually include fonts in your project, for instance if you are using [create-react-app](https://github.com/facebook/create-react-app), you need to copy the whole *assets* under your *public* folder and include the font file like the following:
+
+```html
+    <!-- public/index.html -->
+    <link href='%PUBLIC_URL%/assets/iota-icons.ttf' rel='stylesheet' type='text/css'>
+```
+
+Make sure to always clear the cache and reload, it's very common that the browser keeps the same file having the same name! 
+So either rename it or clear the cache.
+
 ## Documentation
 
 View the Styleguide at <https://iota-css-theme.dag.sh>
