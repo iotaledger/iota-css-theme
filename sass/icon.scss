@@ -69,6 +69,10 @@
   content: '!';
 }
 
+%icon-file-upload {
+  content: '📤';
+}
+
 .icon-arrow-right {
   &::after {
     @extend %icon-arrow-right;
@@ -184,6 +188,13 @@
 .icon-warning {
   &::after {
     @extend %icon-warning;
+    @include icon(12px);
+  }
+}
+
+.icon-file-upload {
+  &::after {
+    @extend %icon-file-upload;
     @include icon(12px);
   }
 }

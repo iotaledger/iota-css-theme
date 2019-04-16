@@ -15,5 +15,6 @@ module.exports = {
    "success": "✅",
    "danger": "⛔",
    "info": "i",
-   "warning": "!"
+   "warning": "!",
+   "file-upload": "📤"
 }

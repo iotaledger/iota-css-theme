@@ -1305,7 +1305,7 @@ textarea,
 .drop-selector .drop-selector-title .drop-selector-title__icon::before, .icon-up-down::after, .version-picker-select__wrapper::after {
   content: '🔽'; }
 
-.icon-success::after, .message-box .message-box--icon::before, .message-box.message-box__success .message-box--icon::before {
+.icon-success::after, .message-box .message-box--icon::before, .message-box.message-box__success .message-box--icon::before, .file-upload.file-upload--selected .file-upload__icon.icon-file-upload::after {
   content: '✅'; }
 
 .icon-danger::after, .message-box.message-box__danger .message-box--icon::before {
@@ -1316,6 +1316,9 @@ textarea,
 
 .icon-warning::after, .message-box.message-box__warning .message-box--icon::before {
   content: '!'; }
+
+.icon-file-upload::after, .file-upload .file-upload__icon.icon-file-upload::after, .file-upload.file-upload--removable .file-upload__icon.icon-file-upload::after {
+  content: '📤'; }
 
 .icon-arrow-right::after {
   font-family: "IOTA icons";
@@ -1414,6 +1417,12 @@ textarea,
   line-height: 12px; }
 
 .icon-warning::after {
+  font-family: "IOTA icons";
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 12px; }
+
+.icon-file-upload::after {
   font-family: "IOTA icons";
   font-weight: 300;
   font-size: 12px;
@@ -3352,6 +3361,110 @@ table,
   .version-picker__select:-moz-focusring * {
     color: #1c1e21;
     text-shadow: none; }
+
+.file-upload {
+  display: flex;
+  flex-direction: column;
+  padding: 57px 32px;
+  transition: 0.3s ease;
+  transition-property: color, background-color, border-color;
+  border: 2px dashed #c4c4c4;
+  border-radius: 10px;
+  background-color: #f3f2f1;
+  color: #1c1e21;
+  font-size: 14.5px;
+  font-size: 0.90625rem;
+  font-weight: bold;
+  line-height: 1.5;
+  text-decoration: none; }
+  .file-upload .file-upload__icon {
+    display: flex;
+    justify-content: center; }
+    .file-upload .file-upload__icon.icon-file-upload::after {
+      font-family: "IOTA icons";
+      font-weight: 300;
+      font-size: 44px;
+      line-height: 44px;
+      color: #8e8e8e; }
+  .file-upload .file-upload__text {
+    padding: 21px;
+    display: flex;
+    justify-content: center;
+    font-size: 19px;
+    font-size: 1.1875rem;
+    font-style: normal;
+    font-weight: bold;
+    color: #1c1e21; }
+  .file-upload .file-upload__text-filename {
+    display: none; }
+  .file-upload.file-upload--selected {
+    border: 2px solid #28a745;
+    background-color: #ffffff;
+    padding: 0;
+    flex-direction: row;
+    padding: 5px 32px; }
+    .file-upload.file-upload--selected .file-upload__text {
+      margin-left: 20px;
+      margin-top: 0; }
+    .file-upload.file-upload--selected .file-upload__text-filename {
+      padding: 21px;
+      display: flex;
+      justify-content: center;
+      font-size: 19px;
+      font-size: 1.1875rem;
+      font-style: normal;
+      font-weight: bold;
+      color: #1c1e21;
+      flex-grow: 2;
+      margin-top: 0; }
+    .file-upload.file-upload--selected .file-upload__icon {
+      display: flex;
+      justify-content: center;
+      margin-top: 0; }
+      .file-upload.file-upload--selected .file-upload__icon.icon-file-upload {
+        margin-top: 0; }
+        .file-upload.file-upload--selected .file-upload__icon.icon-file-upload::after {
+          font-family: "IOTA icons";
+          font-weight: 300;
+          font-size: 44px;
+          line-height: 44px;
+          color: #28a745;
+          margin-top: 0; }
+  .file-upload.file-upload--removable {
+    padding: 0;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 5px 32px; }
+    .file-upload.file-upload--removable .file-upload__text {
+      margin-left: 20px;
+      margin-top: 0;
+      padding: 0; }
+    .file-upload.file-upload--removable .file-upload__text-filename {
+      padding: 21px;
+      display: flex;
+      justify-content: center;
+      font-size: 19px;
+      font-size: 1.1875rem;
+      font-style: normal;
+      font-weight: bold;
+      color: #1c1e21;
+      flex-grow: 2;
+      margin-top: 0;
+      padding: 0;
+      display: none; }
+    .file-upload.file-upload--removable .file-upload__icon {
+      display: flex;
+      justify-content: center;
+      margin-top: 0; }
+      .file-upload.file-upload--removable .file-upload__icon.icon-file-upload {
+        margin-top: 0; }
+        .file-upload.file-upload--removable .file-upload__icon.icon-file-upload::after {
+          font-family: "IOTA icons";
+          font-weight: 300;
+          font-size: 38px;
+          line-height: 38px;
+          color: #8e8e8e;
+          margin-top: 0; }
 
 .feedback-form__wrapper {
   margin: auto; }
