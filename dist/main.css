@@ -3466,6 +3466,21 @@ table,
           color: #8e8e8e;
           margin-top: 0; }
 
+.step-progress-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; }
+  .step-progress-bar-item {
+    background-color: #c4c4c4;
+    width: 100%;
+    height: 10px;
+    margin-right: 12px; }
+    .step-progress-bar-item:last-child {
+      margin-right: 0; }
+    .step-progress-bar-item--visited {
+      background-color: #603f98; }
+
 .feedback-form__wrapper {
   margin: auto; }
 

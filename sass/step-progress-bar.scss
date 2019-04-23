@@ -1,0 +1,28 @@
+// Step Progress bar
+//
+// Various arrow button styles.
+//
+// Markup: html/step-progress-bar.html
+//
+// .step-progress-bar-item--visited - Arrow left.
+//
+// Styleguide Molecules.Step Progress bar
+
+.step-progress-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  &-item {
+    background-color: $light-grey;
+    width: 100%;
+    height: 10px;
+    margin-right: 12px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &--visited {
+      background-color: $blueberry;
+    }
+  }
+}
