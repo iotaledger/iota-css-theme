@@ -9,18 +9,21 @@
 // Styleguide Molecules.Step Progress bar
 
 .step-progress-bar {
-  width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: stretch;
+  justify-content: space-between;
+  width: 100%;
+
   &-item {
-    background-color: $light-grey;
     width: 100%;
     height: 10px;
     margin-right: 12px;
+    background-color: $light-grey;
+
     &:last-child {
       margin-right: 0;
     }
+
     &--visited {
       background-color: $blueberry;
     }

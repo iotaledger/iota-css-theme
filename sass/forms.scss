@@ -79,6 +79,7 @@ $common-label-width: 150px;
           padding: 10px;
         }
 
+
         &::placeholder {
           opacity: 1;
           color: $light-grey;
@@ -94,6 +95,12 @@ $common-label-width: 150px;
     textarea {
       @include phone-down {
         padding: 10px;
+      }
+
+
+      &:read-only {
+        background-color: lighten($light-grey, 15%);
+        color: $black;
       }
     }
 

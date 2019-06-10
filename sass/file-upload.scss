@@ -8,14 +8,17 @@
 //
 // Styleguide Molecules.FileUpload
 @mixin bold-text {
-  padding: 21px;
   display: flex;
   justify-content: center;
+  padding: 21px;
+
   @include font-size(19px);
+
+  color: $black;
   font-style: normal;
   font-weight: bold;
-  color: $black;
 }
+
 .file-upload {
   display: flex;
   flex-direction: column;
@@ -26,88 +29,110 @@
   border-radius: 10px;
   background-color: $sand-grey;
   color: $black;
+
   @include font-size(14.5px);
+
   font-weight: bold;
   line-height: 1.5;
   text-decoration: none;
+
   .file-upload__icon {
     display: flex;
     justify-content: center;
+
     &.icon-file-upload {
       &::after {
         @extend %icon-file-upload;
+
         @include icon(44px);
+
         color: $brown-grey;
       }
     }
   }
+
   .file-upload__text {
-    @include bold-text();
+    @include bold-text;
   }
+
   .file-upload__text-filename {
     display: none;
   }
+
   &.file-upload--selected {
-    border: 2px solid $success;
-    background-color: $white;
-    padding: 0;
     flex-direction: row;
     padding: 5px 32px;
+    border: 2px solid $success;
+    background-color: $white;
+
     .file-upload__text {
-      margin-left: 20px;
       margin-top: 0;
+      margin-left: 20px;
     }
+
     .file-upload__text-filename {
-      @include bold-text();
+      @include bold-text;
+
       flex-grow: 2;
       margin-top: 0;
     }
+
     .file-upload__icon {
       display: flex;
       justify-content: center;
       margin-top: 0;
+
       &.icon-file-upload {
         margin-top: 0;
+
         &::after {
           @extend %icon-success;
+
           @include icon(44px);
-          color: $success;
+
           margin-top: 0;
+          color: $success;
         }
       }
     }
   }
-  &.file-upload--removable{
-    // border: 2px solid $success;
-    // background-color: $white;
-    padding: 0;
+
+  &.file-upload--removable {
     flex-direction: row;
     align-items: flex-end;
     padding: 5px 32px;
 
     .file-upload__text {
-      margin-left: 20px;
       margin-top: 0;
+      margin-left: 20px;
       padding: 0;
     }
+
     .file-upload__text-filename {
-      @include bold-text();
+      display: none;
+
+      @include bold-text;
+
       flex-grow: 2;
       margin-top: 0;
       padding: 0;
-      display: none
     }
+
     .file-upload__icon {
       display: flex;
       justify-content: center;
       margin-top: 0;
+
       &.icon-file-upload {
         margin-top: 0;
+
         &::after {
           @extend %icon-file-upload;
+
           @include icon(38px);
-          color: $brown-grey;
+
           margin-top: 0;
+          color: $brown-grey;
         }
       }
     }
