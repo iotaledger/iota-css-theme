@@ -543,6 +543,9 @@ strong {
     @media (max-width: 514px) {
       .form .fieldset textarea {
         padding: 10px; } }
+    .form .fieldset textarea:read-only {
+      background-color: #eaeaea;
+      color: #1c1e21; }
     .form .fieldset .select-wrapper {
       max-width: none !important;
       border: 1px solid #c4c4c4 !important;
@@ -3387,34 +3390,33 @@ table,
       line-height: 44px;
       color: #8e8e8e; }
   .file-upload .file-upload__text {
-    padding: 21px;
     display: flex;
     justify-content: center;
+    padding: 21px;
     font-size: 19px;
     font-size: 1.1875rem;
+    color: #1c1e21;
     font-style: normal;
-    font-weight: bold;
-    color: #1c1e21; }
+    font-weight: bold; }
   .file-upload .file-upload__text-filename {
     display: none; }
   .file-upload.file-upload--selected {
-    border: 2px solid #28a745;
-    background-color: #ffffff;
-    padding: 0;
     flex-direction: row;
-    padding: 5px 32px; }
+    padding: 5px 32px;
+    border: 2px solid #28a745;
+    background-color: #ffffff; }
     .file-upload.file-upload--selected .file-upload__text {
-      margin-left: 20px;
-      margin-top: 0; }
+      margin-top: 0;
+      margin-left: 20px; }
     .file-upload.file-upload--selected .file-upload__text-filename {
-      padding: 21px;
       display: flex;
       justify-content: center;
+      padding: 21px;
       font-size: 19px;
       font-size: 1.1875rem;
+      color: #1c1e21;
       font-style: normal;
       font-weight: bold;
-      color: #1c1e21;
       flex-grow: 2;
       margin-top: 0; }
     .file-upload.file-upload--selected .file-upload__icon {
@@ -3428,30 +3430,29 @@ table,
           font-weight: 300;
           font-size: 44px;
           line-height: 44px;
-          color: #28a745;
-          margin-top: 0; }
+          margin-top: 0;
+          color: #28a745; }
   .file-upload.file-upload--removable {
-    padding: 0;
     flex-direction: row;
     align-items: flex-end;
     padding: 5px 32px; }
     .file-upload.file-upload--removable .file-upload__text {
-      margin-left: 20px;
       margin-top: 0;
+      margin-left: 20px;
       padding: 0; }
     .file-upload.file-upload--removable .file-upload__text-filename {
-      padding: 21px;
+      display: none;
       display: flex;
       justify-content: center;
+      padding: 21px;
       font-size: 19px;
       font-size: 1.1875rem;
+      color: #1c1e21;
       font-style: normal;
       font-weight: bold;
-      color: #1c1e21;
       flex-grow: 2;
       margin-top: 0;
-      padding: 0;
-      display: none; }
+      padding: 0; }
     .file-upload.file-upload--removable .file-upload__icon {
       display: flex;
       justify-content: center;
@@ -3463,19 +3464,19 @@ table,
           font-weight: 300;
           font-size: 38px;
           line-height: 38px;
-          color: #8e8e8e;
-          margin-top: 0; }
+          margin-top: 0;
+          color: #8e8e8e; }
 
 .step-progress-bar {
-  width: 100%;
   display: flex;
+  align-items: stretch;
   justify-content: space-between;
-  align-items: stretch; }
+  width: 100%; }
   .step-progress-bar-item {
-    background-color: #c4c4c4;
     width: 100%;
     height: 10px;
-    margin-right: 12px; }
+    margin-right: 12px;
+    background-color: #c4c4c4; }
     .step-progress-bar-item:last-child {
       margin-right: 0; }
     .step-progress-bar-item--visited {
