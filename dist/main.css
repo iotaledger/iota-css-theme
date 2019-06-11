@@ -501,7 +501,7 @@ strong {
       margin: 10px 10px 10px 0px; }
     .form .fieldset label {
       display: block;
-      flex: 1 0 150px;
+      flex: 0 0 150px;
       margin-top: 20px;
       margin-right: 20px;
       font-size: 16px;
@@ -540,6 +540,11 @@ strong {
       .form .fieldset input[type='text']:read-only, .form .fieldset input[type='password']:read-only {
         background-color: #eaeaea;
         color: #1c1e21; }
+    .form .fieldset input.small {
+      width: 30%; }
+      @media (max-width: 514px) {
+        .form .fieldset input.small {
+          width: 100%; } }
     @media (max-width: 514px) {
       .form .fieldset textarea {
         padding: 10px; } }
@@ -556,6 +561,17 @@ strong {
       @media (max-width: 514px) {
         .form .fieldset .select-wrapper {
           height: 40px !important; } }
+      .form .fieldset .select-wrapper.small {
+        width: 30%; }
+        @media (max-width: 514px) {
+          .form .fieldset .select-wrapper.small {
+            width: 100%; } }
+    .form .fieldset .select-wrapper + input {
+      margin-left: 20px; }
+      @media (max-width: 514px) {
+        .form .fieldset .select-wrapper + input {
+          margin-top: 10px;
+          margin-left: 0px; } }
     .form .fieldset .checkbox-container {
       position: relative;
       top: 8px; }
@@ -582,7 +598,7 @@ strong {
     margin-top: 10px;
     margin-bottom: 10px; }
     .form .form--actions .form--actions--spacer {
-      flex: 1 0 150px;
+      flex: 0 0 150px;
       margin-right: 20px; }
       @media (max-width: 514px) {
         .form .form--actions .form--actions--spacer {
@@ -598,11 +614,18 @@ strong {
             margin: 0px 0px 10px 0px;
             padding: 8px 32px;
             text-align: center; } }
+  .form .form--row {
+    min-height: 20px;
+    margin-bottom: 10px;
+    margin-left: 170px; }
+    @media (max-width: 514px) {
+      .form .form--row {
+        margin-left: 0px; } }
   .form .form--status {
     display: flex; }
     .form .form--status label {
       display: block;
-      flex: 1 0 150px;
+      flex: 0 0 150px;
       margin-right: 20px; }
       @media (max-width: 514px) {
         .form .form--status label {
@@ -810,6 +833,7 @@ blockquote,
   overflow: hidden;
   border: 0;
   border-radius: 6px !important;
+  outline: none;
   background: none;
   color: #ffffff;
   font-size: inherit;
@@ -3810,11 +3834,16 @@ footer {
         .header.compact .header__wrapper .header__head .header__brand {
           margin-left: 10px; } }
     .header.compact .header__wrapper .header__body {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       max-width: none;
       margin: 0px 40px 0px 40px;
       padding: 0; }
       @media (max-width: 767px) {
         .header.compact .header__wrapper .header__body {
+          flex-direction: column;
+          align-items: flex-start;
           margin: 0 16px 0 16px; } }
       .header.compact .header__wrapper .header__body .header__title {
         max-width: none;

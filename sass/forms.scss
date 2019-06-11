@@ -36,7 +36,7 @@ $common-label-width: 150px;
 
     label {
       display: block;
-      flex: 1 0 $common-label-width;
+      flex: 0 0 $common-label-width;
       margin-top: 20px;
       margin-right: 20px;
 
@@ -90,6 +90,14 @@ $common-label-width: 150px;
           color: $black;
         }
       }
+
+      &.small {
+        width: 30%;
+
+        @include phone-down {
+          width: 100%;
+        }
+      }
     }
 
     textarea {
@@ -118,6 +126,24 @@ $common-label-width: 150px;
 
       @include phone-down {
         height: 40px !important;
+      }
+
+
+      &.small {
+        width: 30%;
+
+        @include phone-down {
+          width: 100%;
+        }
+      }
+    }
+
+    .select-wrapper + input {
+      margin-left: 20px;
+
+      @include phone-down {
+        margin-top: 10px;
+        margin-left: 0px;
       }
     }
 
@@ -161,7 +187,7 @@ $common-label-width: 150px;
     margin-bottom: 10px;
 
     .form--actions--spacer {
-      flex: 1 0 $common-label-width;
+      flex: 0 0 $common-label-width;
       margin-right: 20px;
 
       @include phone-down {
@@ -186,12 +212,22 @@ $common-label-width: 150px;
     }
   }
 
+  .form--row {
+    min-height: 20px;
+    margin-bottom: 10px;
+    margin-left: $common-label-width + 20px;
+
+    @include phone-down {
+      margin-left: 0px;
+    }
+  }
+
   .form--status {
     display: flex;
 
     label {
       display: block;
-      flex: 1 0 $common-label-width;
+      flex: 0 0 $common-label-width;
       margin-right: 20px;
 
       @include phone-down {
