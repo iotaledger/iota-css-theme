@@ -89,6 +89,11 @@ $common-label-width: 150px;
           background-color: lighten($light-grey, 15%);
           color: $black;
         }
+
+        &:disabled {
+          background-color: lighten($light-grey, 15%);
+          color: $black;
+        }
       }
 
       &.small {
@@ -101,6 +106,8 @@ $common-label-width: 150px;
     }
 
     textarea {
+      padding: 20px;
+
       @include phone-down {
         padding: 10px;
       }
@@ -138,7 +145,8 @@ $common-label-width: 150px;
       }
     }
 
-    .select-wrapper + input {
+    .select-wrapper + input,
+    input + .select-wrapper {
       margin-left: 20px;
 
       @include phone-down {

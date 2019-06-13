@@ -540,17 +540,22 @@ strong {
       .form .fieldset input[type='text']:read-only, .form .fieldset input[type='password']:read-only {
         background-color: #eaeaea;
         color: #1c1e21; }
+      .form .fieldset input[type='text']:disabled, .form .fieldset input[type='password']:disabled {
+        background-color: #eaeaea;
+        color: #1c1e21; }
     .form .fieldset input.small {
       width: 30%; }
       @media (max-width: 514px) {
         .form .fieldset input.small {
           width: 100%; } }
-    @media (max-width: 514px) {
-      .form .fieldset textarea {
-        padding: 10px; } }
-    .form .fieldset textarea:read-only {
-      background-color: #eaeaea;
-      color: #1c1e21; }
+    .form .fieldset textarea {
+      padding: 20px; }
+      @media (max-width: 514px) {
+        .form .fieldset textarea {
+          padding: 10px; } }
+      .form .fieldset textarea:read-only {
+        background-color: #eaeaea;
+        color: #1c1e21; }
     .form .fieldset .select-wrapper {
       max-width: none !important;
       border: 1px solid #c4c4c4 !important;
@@ -566,10 +571,12 @@ strong {
         @media (max-width: 514px) {
           .form .fieldset .select-wrapper.small {
             width: 100%; } }
-    .form .fieldset .select-wrapper + input {
+    .form .fieldset .select-wrapper + input,
+    .form .fieldset input + .select-wrapper {
       margin-left: 20px; }
       @media (max-width: 514px) {
-        .form .fieldset .select-wrapper + input {
+        .form .fieldset .select-wrapper + input,
+        .form .fieldset input + .select-wrapper {
           margin-top: 10px;
           margin-left: 0px; } }
     .form .fieldset .checkbox-container {
