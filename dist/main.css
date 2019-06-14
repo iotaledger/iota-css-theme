@@ -599,7 +599,10 @@ strong {
       @media (max-width: 514px) {
         .form .fieldset .button {
           margin: 10px 0px 0px 0px;
-          padding: 8px 32px; } }
+          padding: 8px 32px;
+          text-align: center; } }
+      .form .fieldset .button.no-min {
+        min-width: auto; }
   .form .form--actions {
     display: flex;
     margin-top: 10px;

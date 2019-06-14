@@ -185,6 +185,11 @@ $common-label-width: 150px;
       @include phone-down {
         margin: 10px 0px 0px 0px;
         padding: 8px 32px;
+        text-align: center;
+      }
+
+      &.no-min {
+          min-width: auto;
       }
     }
   }
