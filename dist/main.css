@@ -3238,6 +3238,7 @@ table,
   padding: 0 18px; }
   .tree-menu .tree-menu__section-title {
     margin: 0;
+    padding-top: 8px;
     padding-bottom: 6px;
     color: #4f4f4f;
     font-size: 14px;
@@ -3260,8 +3261,8 @@ table,
     padding: 0px 0px 5px 0px;
     list-style-type: none; }
     .tree-menu .tree-menu__section .tree-menu__section-item {
-      margin-bottom: 7px;
-      line-height: 1.3; }
+      margin-bottom: 8px;
+      line-height: 1; }
       .tree-menu .tree-menu__section .tree-menu__section-item.tree-menu__section-item--selected a {
         color: #20a49d;
         font-weight: 600; }
