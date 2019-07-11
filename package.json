@@ -1,6 +1,6 @@
 {
     "name": "iota-css-theme",
-    "version": "0.5.3",
+    "version": "0.5.4",
     "description": "IOTA CSS Theme",
     "main": "dist/main.css",
     "scripts": {
