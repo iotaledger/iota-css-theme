@@ -1321,7 +1321,7 @@ textarea,
 .arrow-button--left::before, .icon-chevron-left::after, .scroll-to-top::before {
   content: '<'; }
 
-.icon-cross::after, .sticky-header .sticky-header__control .input-sticky-wrapper .sticky-header__icon-close::before {
+.icon-cross::after, .side-menu__caption .side-menu__close::before, .sticky-header .sticky-header__control .input-sticky-wrapper .sticky-header__icon-close::before {
   content: 'X'; }
 
 .icon-copy::after {
@@ -2288,6 +2288,29 @@ textarea,
   color: #ffffff;
   font-size: 24px;
   font-size: 1.5rem; }
+  .side-menu__caption .side-menu__close {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    transition: opacity 0.3s ease;
+    border: 0;
+    background: none;
+    color: #ffffff; }
+    .side-menu__caption .side-menu__close::before {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      font-family: "IOTA icons";
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 18px; }
+    .side-menu__caption .side-menu__close:hover:not([disabled]) {
+      cursor: pointer; }
+      @media (min-width: 514px) {
+        .side-menu__caption .side-menu__close:hover:not([disabled]) {
+          opacity: 0.5; } }
+    .side-menu__caption .side-menu__close:focus {
+      outline: none; }
 
 .side-menu__group {
   margin-bottom: 2px;
@@ -2351,7 +2374,12 @@ textarea,
         margin-bottom: 7px;
         list-style: none;
         line-height: 1.3; }
+        .side-menu__group .side-menu__list .side-menu__sub-list .side-menu-item .side-menu__item-superscript {
+          font-size: 10px;
+          font-size: 0.625rem;
+          margin-left: 5px; }
         .side-menu__group .side-menu__list .side-menu__sub-list .side-menu-item a {
+          display: flex;
           color: #ffffff;
           font-size: 15px;
           font-size: 0.9375rem;
@@ -2370,14 +2398,18 @@ textarea,
             color: #20a49d;
             font-weight: 600; }
         .side-menu__group .side-menu__list .side-menu__sub-list .side-menu-item .side-menu-item-sub {
-          list-style-type: none;
-          padding: 0px 0px 0px 16px; }
-          .side-menu__group .side-menu__list .side-menu__sub-list .side-menu-item .side-menu-item-sub .side-menu-item-sub-child a {
-            color: #ffffff;
-            font-weight: normal; }
-          .side-menu__group .side-menu__list .side-menu__sub-list .side-menu-item .side-menu-item-sub .side-menu-item-sub-child.side-menu-item-sub-child--active a {
-            color: #20a49d;
-            font-weight: 600; }
+          margin: 0;
+          padding: 10px 0px 3px 14px;
+          list-style-type: none; }
+          .side-menu__group .side-menu__list .side-menu__sub-list .side-menu-item .side-menu-item-sub .side-menu-item-sub-child {
+            margin-bottom: 6px;
+            line-height: 1; }
+            .side-menu__group .side-menu__list .side-menu__sub-list .side-menu-item .side-menu-item-sub .side-menu-item-sub-child a {
+              color: #ffffff;
+              font-weight: normal; }
+            .side-menu__group .side-menu__list .side-menu__sub-list .side-menu-item .side-menu-item-sub .side-menu-item-sub-child.side-menu-item-sub-child--active a {
+              color: #20a49d;
+              font-weight: 600; }
 
 .side-menu__overlay {
   position: fixed;
@@ -3285,11 +3317,11 @@ table,
         .tree-menu .tree-menu__section .tree-menu__section-item a:hover {
           text-decoration: underline; }
       .tree-menu .tree-menu__section .tree-menu__section-item .tree-menu__section-item-sub {
-        padding: 10px 0px 10px 16px;
+        padding: 10px 0px 3px 14px;
         list-style-type: none; }
         .tree-menu .tree-menu__section .tree-menu__section-item .tree-menu__section-item-sub li {
-          line-height: 1.2;
-          margin-bottom: 10px; }
+          margin-bottom: 6px;
+          line-height: 1; }
         .tree-menu .tree-menu__section .tree-menu__section-item .tree-menu__section-item-sub .tree-menu__section-item-sub-child a {
           color: #4f4f4f;
           font-weight: normal; }

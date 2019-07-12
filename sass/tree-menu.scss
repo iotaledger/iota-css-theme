@@ -51,12 +51,12 @@
 
       .tree-menu__section-item-superscript {
         @include font-size(10px);
+
         margin-left: 5px;
       }
 
       a {
-          display: flex;
-          
+        display: flex;
         color: $body-copy;
 
         @include font-size(15px);
@@ -78,12 +78,12 @@
       }
 
       .tree-menu__section-item-sub {
-        padding: 10px 0px 10px 16px;
+        padding: 10px 0px 3px 14px;
         list-style-type: none;
 
         li {
-            line-height: 1.2;
-            margin-bottom: 10px;
+          margin-bottom: 6px;
+          line-height: 1;
         }
 
         .tree-menu__section-item-sub-child {

@@ -56,6 +56,41 @@ $side-menu-right-padding: 24px;
   color: $white;
 
   @include font-size(24px);
+
+  .side-menu__close {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    transition: opacity $transition-duration ease;
+    border: 0;
+    background: none;
+    color: $white;
+
+    &::before {
+      @extend %icon-cross;
+
+      position: absolute;
+      top: 0px;
+      left: 0px;
+
+      @include icon(18px);
+    }
+
+    &:hover {
+      &:not([disabled]) {
+        @include phone-up {
+          opacity: 0.5;
+        }
+
+
+        cursor: pointer;
+      }
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
 }
 
 .side-menu__group {
@@ -147,7 +182,14 @@ $side-menu-right-padding: 24px;
         list-style: none;
         line-height: 1.3;
 
+        .side-menu__item-superscript {
+          @include font-size(10px);
+
+          margin-left: 5px;
+        }
+
         a {
+          display: flex;
           color: $white;
 
           @include font-size(15px);
@@ -177,10 +219,14 @@ $side-menu-right-padding: 24px;
         }
 
         .side-menu-item-sub {
+          margin: 0;
+          padding: 10px 0px 3px 14px;
           list-style-type: none;
-          padding: 0px 0px 0px 16px;
 
           .side-menu-item-sub-child {
+            margin-bottom: 6px;
+            line-height: 1;
+
             a {
               color: $white;
               font-weight: normal;
