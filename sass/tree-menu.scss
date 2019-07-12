@@ -49,6 +49,12 @@
         }
       }
 
+      .tree-menu__section-item-superscript {
+        position: relative;
+        top: -5px;
+        @include font-size(10px);
+      }
+
       a {
         color: $body-copy;
 
@@ -71,8 +77,13 @@
       }
 
       .tree-menu__section-item-sub {
-        padding: 0px 0px 0px 16px;
+        padding: 10px 0px 10px 16px;
         list-style-type: none;
+
+        li {
+            line-height: 1.2;
+            margin-bottom: 10px;
+        }
 
         .tree-menu__section-item-sub-child {
           a {

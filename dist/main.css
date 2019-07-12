@@ -3265,6 +3265,11 @@ table,
       .tree-menu .tree-menu__section .tree-menu__section-item.tree-menu__section-item--selected a {
         color: #20a49d;
         font-weight: 600; }
+      .tree-menu .tree-menu__section .tree-menu__section-item .tree-menu__section-item-superscript {
+        position: relative;
+        top: -5px;
+        font-size: 10px;
+        font-size: 0.625rem; }
       .tree-menu .tree-menu__section .tree-menu__section-item a {
         color: #4f4f4f;
         font-size: 15px;
@@ -3280,8 +3285,11 @@ table,
         .tree-menu .tree-menu__section .tree-menu__section-item a:hover {
           text-decoration: underline; }
       .tree-menu .tree-menu__section .tree-menu__section-item .tree-menu__section-item-sub {
-        padding: 0px 0px 0px 16px;
+        padding: 10px 0px 10px 16px;
         list-style-type: none; }
+        .tree-menu .tree-menu__section .tree-menu__section-item .tree-menu__section-item-sub li {
+          line-height: 1.2;
+          margin-bottom: 10px; }
         .tree-menu .tree-menu__section .tree-menu__section-item .tree-menu__section-item-sub .tree-menu__section-item-sub-child a {
           color: #4f4f4f;
           font-weight: normal; }
