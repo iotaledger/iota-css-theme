@@ -3266,11 +3266,11 @@ table,
         color: #20a49d;
         font-weight: 600; }
       .tree-menu .tree-menu__section .tree-menu__section-item .tree-menu__section-item-superscript {
-        position: relative;
-        top: -5px;
         font-size: 10px;
-        font-size: 0.625rem; }
+        font-size: 0.625rem;
+        margin-left: 5px; }
       .tree-menu .tree-menu__section .tree-menu__section-item a {
+        display: flex;
         color: #4f4f4f;
         font-size: 15px;
         font-size: 0.9375rem;

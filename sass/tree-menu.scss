@@ -50,12 +50,13 @@
       }
 
       .tree-menu__section-item-superscript {
-        position: relative;
-        top: -5px;
         @include font-size(10px);
+        margin-left: 5px;
       }
 
       a {
+          display: flex;
+          
         color: $body-copy;
 
         @include font-size(15px);
