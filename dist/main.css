@@ -1067,7 +1067,9 @@ hr,
 
 a,
 .link {
+  border: 0;
   outline: 0;
+  background: none;
   color: #4f4f4f;
   font-size: 16px;
   font-size: 1rem;
