@@ -3,3 +3,5 @@ dist/**/*
 
 # Allow
 !dist/main.css
+
+.vercel

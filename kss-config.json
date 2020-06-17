@@ -1,7 +1,8 @@
 {
   "title": "IOTA Style Guide",
-  "source": "sass/",
-  "destination": "dist/",
+  "source": "./sass/",
+  "homepage": "./sass/homepage.md",
+  "destination": "./dist/",
   "css": [
     "./assets/kss-override.css",
     "./main.css"
