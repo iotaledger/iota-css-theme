@@ -798,7 +798,8 @@ blockquote,
       border-radius: 5px;
       outline: none;
       opacity: 0;
-      background-color: #1e9a93; }
+      background-color: #1e9a93;
+      appearance: none; }
       .checkbox .checkbox-border input[type='checkbox']:focus {
         outline: none; }
       .checkbox .checkbox-border input[type='checkbox']:hover:not([disabled]) {
@@ -2225,7 +2226,6 @@ textarea,
   .project-topics__compressed .project-topic__item {
     flex: 1 0 calc(50% - 30px);
     max-width: 50%;
-    margin-right: 20px;
     padding-bottom: 12px; }
     .project-topics__compressed .project-topic__item:nth-child(3n+2) {
       margin: 0; }
