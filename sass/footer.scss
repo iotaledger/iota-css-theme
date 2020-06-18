@@ -162,6 +162,10 @@ footer {
     font-weight: 300;
     line-height: 2;
 
+    .data-label {
+      margin-right: 5px;
+    }
+
     a {
       color: $tealish;
       @include font-size(15px);

@@ -3787,6 +3787,8 @@ footer {
     font-size: 0.9375rem;
     font-weight: 300;
     line-height: 2; }
+    .footer-bottom-content__wrapper .footer-bottom-content__item .data-label {
+      margin-right: 5px; }
     .footer-bottom-content__wrapper .footer-bottom-content__item a {
       color: #20a49d;
       font-size: 15px;
