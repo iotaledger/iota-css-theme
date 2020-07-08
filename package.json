@@ -16,7 +16,8 @@
         "sass-lint": "sass-lint -v -c ./.sass-lint.yml",
         "build-serve": "run-s build serve",
         "watch": "run-p serve-watch build-compile-sass-watch",
-        "build-serve-watch": "run-s build watch"
+        "build-serve-watch": "run-s build watch",
+        "start": "serve -p dist"
     },
     "author": "IOTA Foundation",
     "license": "MIT",
