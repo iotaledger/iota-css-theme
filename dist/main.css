@@ -524,7 +524,7 @@ body {
   font-family: "IOTA icons";
   font-style: normal;
   font-weight: normal;
-  src: url("/assets/iota-icons.ttf?build=1.0.4") format("truetype");
+  src: url("../assets/iota-icons.ttf?build=1.0.4") format("truetype");
 }
 html {
   box-sizing: border-box;
