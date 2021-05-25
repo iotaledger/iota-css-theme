@@ -64,14 +64,12 @@ footer {
     display: none;
   }
 
-
   .footer-top-content__heading {
     margin-top: 0;
 
     @include tablet-up {
       margin-top: unset;
     }
-
 
     color: $tealish;
     line-height: 1.75;
@@ -182,4 +180,3 @@ footer {
     }
   }
 }
-

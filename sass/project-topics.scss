@@ -67,13 +67,12 @@
     }
 
     @include desktop {
-      width: calc(33.33% -  14px);
+      width: calc(33.33% - 14px);
 
       &:nth-child(3n+2) {
         margin: 0 21px;
       }
     }
-
 
     .project-topic__heading {
       color: $gunmetal-grey;

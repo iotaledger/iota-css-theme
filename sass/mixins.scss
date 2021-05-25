@@ -1,16 +1,29 @@
+@use "sass:math";
+
 @mixin font-size($size) {
   font-size: $size;
 
   // sass-lint:disable no-duplicate-properties
-  font-size: #{$size / 16px}rem;
+  font-size: #{math.div($size, 16px)}rem;
 }
 
 @mixin placeholder {
   // sass-lint:disable no-selector-vendor-prefix
-  &::placeholder {@content}
-  &::-webkit-input-placeholder {@content}
-  &::-moz-placeholder          {@content}
-  &:-ms-input-placeholder      {@content}
+  &::placeholder {
+    @content;
+  }
+
+  &::-webkit-input-placeholder {
+    @content;
+  }
+
+  &::-moz-placeholder {
+    @content;
+  }
+
+  &:-ms-input-placeholder {
+    @content;
+  }
 }
 
 @mixin word-break {

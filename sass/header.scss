@@ -52,7 +52,6 @@
           margin: 27px 36px 0 0;
         }
 
-
         &::before {
           @extend %icon-burger;
 
@@ -89,7 +88,6 @@
         justify-content: space-between;
         padding: 0 40px;
       }
-
 
       .header__title {
         max-width: 320px;
@@ -137,7 +135,6 @@
           align-items: flex-start;
           margin: 0 16px 0 16px;
         }
-
 
         .header__title {
           max-width: none;

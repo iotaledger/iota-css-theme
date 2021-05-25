@@ -48,13 +48,13 @@
     margin: 1px 0px 0px 0px;
     padding: 0;
     overflow: hidden;
-    list-style: none;
     transition: $transition-duration ease-out;
     transition-property: max-height;
     border: 1px solid #ededed;
     border-top-width: 0px;
     border-bottom-width: 0px;
     background-color: $white;
+    list-style: none;
 
     .drop-selector-list-item {
       a {

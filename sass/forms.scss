@@ -23,7 +23,6 @@ $common-label-width: 150px;
       align-items: stretch;
     }
 
-
     &.fieldset--small {
       label {
         margin-top: 10px;
@@ -79,7 +78,6 @@ $common-label-width: 150px;
           padding: 10px;
         }
 
-
         &::placeholder {
           opacity: 1;
           color: $light-grey;
@@ -112,7 +110,6 @@ $common-label-width: 150px;
         padding: 10px;
       }
 
-
       &:read-only {
         background-color: lighten($light-grey, 15%);
         color: $black;
@@ -134,7 +131,6 @@ $common-label-width: 150px;
       @include phone-down {
         height: 40px !important;
       }
-
 
       &.small {
         width: 30%;
